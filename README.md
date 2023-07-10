@@ -61,9 +61,6 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 ## Notes
 
 ##### By [Saad Khan](https://www.linkedin.com/in/saad-k-7aba04138/)
-#
-#
-
 
 | S. No | Note |
 |--------|----------------------------------|
@@ -77,14 +74,12 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 7|Pipelining only improves throughput.|
 
 ##### By [Zaeem Shakir](https://www.linkedin.com/in/syed-zaeem-shakir-85b82125b/)
-#
-#
+
 | S. No | Note |
 |--------|----------------------------------|
 
 ##### By [Mahnoor Maleeka](https://www.linkedin.com/in/mahnoor-maleeka/)
-#
-#
+
 | S. No | Note |
 |--------|----------------------------------|
 
