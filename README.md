@@ -68,7 +68,7 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 
 ### RISC-V Instruction Types
 <p float="left">
-  <img src="/docs/Media/RISC-V-Instruction-Types.png" width="500" />
+  <img src="/docs/Media/RISC-V-Intruction-Types.png" width="500" />
 </p>
 
 
