@@ -60,13 +60,16 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 |MAC Instructions | False | pending... |
 |FPGA Implementation| False | pending... |
 
-## RISC-V Essential Registers
+### RISC-V Essential Registers
 
 <p float="left">
   <img src="/docs/Media/RISC-V-Essential-Registers.png" width="500" />
-  <img src="/docs/Media/RISC-V-Intruction-Types.png" width="500" />
 </p>
 
+### RISC-V Instruction Types
+<p float="left">
+  <img src="/docs/Media/RISC-V-Instruction-Types.png" width="500" />
+</p>
 
 
 ## Notes
