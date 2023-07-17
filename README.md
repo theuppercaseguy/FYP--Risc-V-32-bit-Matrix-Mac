@@ -48,6 +48,7 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 | RISC-V Pipelined Core | Pipeline version of the above core. | [Link 3](https://github.com/ultraembedded/biriscv)
 | RISC-V Matrix Extension Specification | This is a matrix extension proposal for AI applications under RISC-V architecture. The extension has the following features. | [Link 3](https://github.com/T-head-Semi/riscv-matrix-extension-spec) |
 | Tiny Matrix Extension using RISC-V Custom Instructions | a processor that accelerates matrix multiplication using RISC-V custom instructions, implemented it on an FPGA board and evaluated its performance. | [Link 3](https://www.luffca.com/2022/09/tiny-matrix-extension/)
+
 ## Objectives
 
 
@@ -59,39 +60,114 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 |MAC Instructions | False | pending... |
 |FPGA Implementation| False | pending... |
 
+## RISC-V Essential Registers
+
+<p float="left">
+  <img src="/docs/Media/RISC-V-Essential-Registers.png" width="500" />
+  <img src="/docs/Media/RISC-V-Intruction-Types" width="500" />
+</p>
+
+
 
 ## Notes
 
 ##### By [Saad Khan](https://www.linkedin.com/in/saad-k-7aba04138/)
-#
-#
+
+<table>
+  <tr>
+    <th>S. No</th>
+    <th>Note</th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>RISC-V has 5 steps: fetch, decode, execute, memory ops (optional), writeback (optional).</td>
+  </tr>
+  <tr>
+    <td>0.1</td>
+    <td>
+      <ul>
+        <li>6 types (R, I, S, B, U, J) of instructions in RISC-V:</li>
+        <ul>
+          <li><b>R-Type</b>: An operation on registers (x5, x6).</li>
+          <li> <b>I-Type</b>: Immediate instructions, where a constant is used, x5, 7.</li>
+          <li> <b>S-Type</b>:</li>
+          <li> <b>B-Type</b>:</li>
+        </ul>
+      </ul>
+    </td>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>RISC-V prefers <b>5-stage pipelining</b>, but usually, 14 stages are preferred. We will try to achieve at least 10 stages.</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Pipelining has 3 types of hazards.</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>
+      <ul>
+        <li>A) <b>Structural Hazard</b>: When hardware cannot execute planned instruction because of hardware limitation in the next clock cycle. When the processor has a single memory, use separate instruction and data memory.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>
+      <ul>
+        <li>B) <b>Data Hazard</b>: When data needed to execute an instruction is not yet available, use bypassing/forwarding to fix this.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Note: Load-use data hazard: Using data that isn't loaded yet, bubbles/wasted cycles are used to stall the computer so once the data gets loaded, then to use it.</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>
+      <ul>
+        <li>C) <b>Control Hazard</b>: Branching hazard, when needed to make a decision based on one instruction while others are executing, basically calculating whether to branch or not, while the next instruction gets executed. One solution is to stall until the branch condition gets calculated, good but slow. The best solution is to predict branches!!! Mostly take branches' condition as false, if you get wrong and the branch is actually true, just add delay to it.</li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Note: Pipelining only improves throughput.</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td><b> Temporal locality</b> : If a data location is referenced, it is likely to be referenced again.</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td><b>Spatial locality</b>: If a data location is referenced, the location with nearby addresses will likely be referenced soon.</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Memory hierarchy (Speed): SRAM &gt;&gt; DRAM &gt;&gt; Disk.</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Memory hierarchy is of different levels, but we can only access 2 adjacent levels at a time.</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Memories: SRAM -&gt; Cache, DRAM -&gt; Main Memory, flash/magnetic -&gt; secondary memory.</td>
+  </tr>
+</table>
 
 
-| S. No | Note |
-|--------|----------------------------------|
-0| risc-v have 5 steps: fetch >> decode >> exeucute >> mem ops (opt) >> writeback  (opt).|
-1|risc v preferers 5 stage piplinings, but usualy 14 stages is preffered, we will try to achieve atleast 10 stages |
-2|pipling have 3 type of hazards.|
-3|A) Structural Hazard: When hardware cannot excecute planned instruction because of hardware limitation in the next clock cycle. when the processor has a single memory, use seperate insruction adn data memory|
-4|B) Data hazard: when data needed to execute instruction is not yet available, use bypassing/forwarding to fix this.|
-5|load-use data hazard: using data that isnt loaded yet, bubles/wasted cycle are used to stall the computer so once the data gets loaded, then to use it|
-6|C) Control Hazard: branching hazard, when needed to make decision based on one instruction while other are executing, basically calculating whether to branch or not, while the next instruction gets executed. one solution to stall untill the branch conditon gets calcuated, good but slow. the best solution, predict branches!!!. Mostly take branches condition  as false, if you get wrong and the branch is actually true, just add delay to it|
-7|Pipelining only improves throughput.|
-8|Temporal liaclity: if a data location is referrenced it is likely to be referenced again|
-9|Spatial locality: if a data location is referenced the location with nearby addresses will likely be referenced soon|
-10| Memory heirarchry (Speed): Sram >> Dram >> Disk |
-11|Memroy heirarchy is of different levels, but we can only access 2 adjacent levels at a time|
-12|Memories:  Sram -> Cache, Dram -> Main Memory, flash/magnetic -> secondary memory. |
 
 ##### By [Zaeem Shakir](https://www.linkedin.com/in/syed-zaeem-shakir-85b82125b/)
-#
-#
+
 | S. No | Note |
 |--------|----------------------------------|
 
 ##### By [Mahnoor Maleeka](https://www.linkedin.com/in/mahnoor-maleeka/)
-#
-#
+
 | S. No | Note |
 |--------|----------------------------------|
 
