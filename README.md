@@ -66,7 +66,7 @@ Although the exact edition doesn't matters, just use the as latest as possible.
   <img src="/docs/Media/RISC-V-Essential-Registers.png" width="500" />
 </p>
 
-### RISC-V Instruction Types
+### RISC-V Register File / Instruction Types
 <p float="left">
   <img src="/docs/Media/RISC-V-Intruction-Types.png" width="500" />
 </p>
@@ -87,14 +87,36 @@ Although the exact edition doesn't matters, just use the as latest as possible.
   </tr>
   <tr>
     <td>0.1</td>
+    <td>Risc-V has a <b>32bit-register file with 32 Registers</b> of different Types(R, I, S, B, U, J).    <br> It also acts as tmp registers to work directly with ALU.</td>
+  
+  </tr>
+  <tr>
+    <td>0.2</td>
     <td>
       <ul>
         <li>6 types (R, I, S, B, U, J) of instructions in RISC-V:</li>
         <ul>
-          <li><b>R-Type</b>: An operation on registers (x5, x6).</li>
-          <li> <b>I-Type</b>: Immediate instructions, where a constant is used, x5, 7.</li>
-          <li> <b>S-Type</b>:</li>
-          <li> <b>B-Type</b>:</li>
+          <li><b>R-Type</b>(Register Type): An operation on registers (x5, x6).</li>
+          <li> <b>I-Type</b>(Load/ Load Immediate): Load variables/registers with values or constantns or from external memory, where a constant is used. 
+        <ul>
+            <li></b> x5, x6, 7; <i>// load Imediate</i></li>
+            <li>lw x8, offset(Base); <i>// load 32-bit word from memory to x8</i></li>
+            <li> lw x8, 4(x6);<i> // Memory Base stored in X6 register, with 4 byte as an offset</i></li>
+            <li> <b>Note</b>: offset is in increments of 4 bytes, in hex. ie 4,8,c etc</li>
+        </ul>
+          </li>
+          <li> <b>S-Type</b>:(Store Type): use to store values from registers in register file to the <b>external memory</b>
+          <ul>
+            <li></b> sw rs2, offset( rs1 (aka Base) ); <i>// store word from source register to memory</i></li>
+            <li>sw x9, 8(x6);<i> // store x9 into memory with with base in x6 with 8 offset</i></li>
+        </li><b>Note</b>: offset is also known as Immediate or Imm.
+        </ul>
+          </li>
+          <li> <b>B-Type</b>:(Branch Type): 
+            <ul>
+            <li>beq x8, x9, 8; <i>// branch if equal, combare x8 and x9 if equal, jump to immediat 8, or point PC to immediate.</i></li>
+            </ul>
+          </li>
         </ul>
       </ul>
     </td>
