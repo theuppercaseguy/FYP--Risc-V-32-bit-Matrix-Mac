@@ -83,45 +83,65 @@ Although the exact edition doesn't matters, just use the as latest as possible.
   </tr>
   <tr>
     <td>0</td>
-    <td>RISC-V has 5 steps: fetch, decode, execute, memory ops (optional), writeback (optional).</td>
+    <td>RISC-V has 5 steps: fetch, decode, execute, memory ops (optional), and writeback (optional).</td>
   </tr>
   <tr>
     <td>0.1</td>
-    <td>Risc-V has a <b>32bit-register file with 32 Registers</b> of different Types(R, I, S, B, U, J).    <br> It also acts as tmp registers to work directly with ALU.</td>
-  
+    <td>
+        <b>Register File:</b></br>
+        <ul>
+            <li>    RISC-V has a <b>32bit-Register File with 32 Registers</b> of different Types(R, I, S, B, U, J).</li>
+            <li>It also acts as tmp registers to work directly with ALU.</li>
+            <li>it has 5 input ports as A1,A2,A3 and WD3,WE3, and 2 output ports as RD1 and RD2. A3 is the address of the register to store the data which is in WD3 register. it also has a flag, as WE3, known as Write enable on active high. </li>
+            <li>A1, A2 are connected to RD1 & RD2 respectively, to be able to read 2 different registers value/data concurrently, whose addresses are in A1 and A2. </li>
+            <li>A3 is usually the destination register, to store the value in case of addition/subtraction, etc</li>
+        </ul>
+    </td>
   </tr>
   <tr>
     <td>0.2</td>
     <td>
-      <ul>
-        <li>6 types (R, I, S, B, U, J) of instructions in RISC-V:</li>
+        <b>Instruction Types:</b></br>
+        6 types (R, I, S, B, U, J) of instructions in RISC-V:
         <ul>
-          <li><b>R-Type</b>(Register Type): An operation on registers (x5, x6).</li>
-          <li> <b>I-Type</b>(Load/ Load Immediate): Load variables/registers with values or constantns or from external memory, where a constant is used. 
-        <ul>
-            <li></b> x5, x6, 7; <i>// load Imediate</i></li>
-            <li>lw x8, offset(Base); <i>// load 32-bit word from memory to x8</i></li>
-            <li> lw x8, 4(x6);<i> // Memory Base stored in X6 register, with 4 byte as an offset</i></li>
-            <li> <b>Note</b>: offset is in increments of 4 bytes, in hex. ie 4,8,c etc</li>
-        </ul>
-          </li>
-          <li> <b>S-Type</b>:(Store Type): use to store values from registers in register file to the <b>external memory</b>
-          <ul>
-            <li></b> sw rs2, offset( rs1 (aka Base) ); <i>// store word from source register to memory</i></li>
-            <li>sw x9, 8(x6);<i> // store x9 into memory with with base in x6 with 8 offset</i></li>
-        </li><b>Note</b>: offset is also known as Immediate or Imm.
-        </ul>
-          </li>
-          <li> <b>B-Type</b>:(Branch Type): 
+          <li><b>R-Type</b> (Register Type): An operation on registers (x5, x6).</li>
+          <li><b>I-Type</b> (Load/Load Immediate): Load variables/registers with values or constants from external memory, where a constant is used.
             <ul>
-            <li>beq x8, x9, 8; <i>// branch if equal, combare x8 and x9 if equal, jump to immediat 8, or point PC to immediate.</i></li>
+              <li>x5, x6, 7; <i>// load Immediate</i></li>
+              <li>lw x8, offset(Base); <i>// load 32-bit word from memory to x8</i></li>
+              <li>lw x8, 4(x6); <i>// Memory Base stored in X6 register, with 4 byte as an offset</i></li>
+              <li>Note: offset is in increments of 4 bytes, in hex. i.e., 4, 8, c, etc.</li>
+            </ul>
+          </li>
+          <li><b>S-Type</b> (Store Type): use to store values from registers in register file to the <b>external memory</b>
+            <ul>
+              <li>sw rs2, offset(rs1 (aka Base)); <i>// store word from source register to memory</i></li>
+              <li>sw x9, 8(x6); <i>// store x9 into memory with base in x6 with 8 offset</i></li>
+              <li><b>Note</b>: offset is also known as Immediate or Imm.</li>
+            </ul>
+          </li>
+          <li><b>B-Type</b> (Branch Type):
+            <ul>
+              <li>beq x8, x9, 8; <i>// branch if equal, compare x8 and x9 if equal, jump to immediate 8, or point PC to immediate.</i></li>
             </ul>
           </li>
         </ul>
-      </ul>
     </td>
   </tr>
-
+  <tr>
+  <td>0.3</td>
+  <td>
+    <b>Data Memory</b></br>
+    <ul>
+        <li> it has a signle read/write port. if WE (write enable) is 1, it writes data which is in WD into address A on posedge clk. if the WE is 0, it reads Address A onto RD</li>
+    </ul>
+  </td>
+  
+  </tr>
+  <tr>
+    <td>0.4</td>
+    <td><b>PC: </b> The Program Counter is a standard 32-bit register with a read port and a PCNext value, which points to the next instr. It takes a 32-bit address (A) and reads the corresponding 32-bit data from the instruction memory, outputting it to the RD (read) port. </td>
+  </tr>
   <tr>
     <td>1</td>
     <td>RISC-V prefers <b>5-stage pipelining</b>, but usually, 14 stages are preferred. We will try to achieve at least 10 stages.</td>
@@ -164,7 +184,7 @@ Although the exact edition doesn't matters, just use the as latest as possible.
   </tr>
   <tr>
     <td>8</td>
-    <td><b> Temporal locality</b> : If a data location is referenced, it is likely to be referenced again.</td>
+    <td><b>Temporal locality</b>: If a data location is referenced, it is likely to be referenced again.</td>
   </tr>
   <tr>
     <td>9</td>
