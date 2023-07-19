@@ -1,0 +1,9 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+A + B = 2147483648
+CarryOut: 0, Zero: 0, Negative: 1, Overflow: 0
+A + B = 2147483647
+CarryOut: 0, Zero: 0, Negative: 0, Overflow: 0
+A + B = 2147483647
+CarryOut: 1, Zero: 0, Negative: 0, Overflow: 0
+$finish called at time : 260 ns : File "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/Single_Cycle_Processor_V_1.2.srcs/ALU_SimSet/new/ALU_TB.v" Line 97

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jul 19 11:44:47 2023
+# Process ID: 21620
+# Current directory: E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/Single_Cycle_Processor_V_1.2.sim/ALU_Decoder_SimSet/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/Single_Cycle_Processor_V_1.2.sim/ALU_Decoder_SimSet/behav/xsim/xsim.dir/ALU_Decoder_Testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/Single_Cycle_Processor_V_1.2.sim/ALU_Decoder_SimSet/behav/xsim/webtalk.log
+# Journal file: E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/Single_Cycle_Processor_V_1.2.sim/ALU_Decoder_SimSet/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/Single_Cycle_Processor_V_1.2.sim/ALU_Decoder_SimSet/behav/xsim/xsim.dir/ALU_Decoder_Testbench_behav/webtalk/xsim_webtalk.tcl -notrace

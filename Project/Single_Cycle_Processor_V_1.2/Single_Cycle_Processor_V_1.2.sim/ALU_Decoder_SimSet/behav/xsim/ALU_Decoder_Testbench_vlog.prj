@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/ALU_Decoder.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/ALU_Decoder_SimSet/new/ALU_DcoderTB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
