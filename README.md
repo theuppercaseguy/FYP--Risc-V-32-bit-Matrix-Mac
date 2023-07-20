@@ -1,3 +1,6 @@
+
+
+
 # RISC-V 32-bit MATRIX MAC Processor
 
 Hardware-Based Acceleration of Matrix MAC on an FPGA
@@ -42,23 +45,24 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 | Source Name | Description | Link |
 |-------------|-------------|------|
 | Verilog in 2 Hours    | Understanding of Verilog, how to Write it and How to use it | [Link 1](https://youtu.be/nblGw37Fv8A) 
-| RISC-V Single Cycle Core in Verilog    | Verilog implementation of different modules, in ENGLISH & Urdu, Quiete good for understanding modules Like ALU etc  | [Link 2](https://youtube.com/playlist?list=PL5AmAh9QoSK7Fwk9vOJu-3VqBng_HjGFc) |
-| Introduction to FPGA    | Understand of FPGA and Verilogue and how to use them together. | [Link 3](https://youtu.be/lLg1AgA2Xoo) |
-| RISC-V Core | A 32-bit RISC-V core written in Verilog and an instruction set simulator supporting RV32IM. | [Link 3](https://github.com/ultraembedded/riscv)
-| RISC-V Pipelined Core | Pipeline version of the above core. | [Link 3](https://github.com/ultraembedded/biriscv)
-| RISC-V Matrix Extension Specification | This is a matrix extension proposal for AI applications under RISC-V architecture. The extension has the following features. | [Link 3](https://github.com/T-head-Semi/riscv-matrix-extension-spec) |
-| Tiny Matrix Extension using RISC-V Custom Instructions | a processor that accelerates matrix multiplication using RISC-V custom instructions, implemented it on an FPGA board and evaluated its performance. | [Link 3](https://www.luffca.com/2022/09/tiny-matrix-extension/)
+| RISC-V Single Cycle Core Implementation    | Verilog implementation of MERL Architecture, in ENGLISH & Urdu, Quiete good for understanding modules Like ALU, CU etc  | [Link 2](https://youtube.com/playlist?list=PL5AmAh9QoSK7Fwk9vOJu-3VqBng_HjGFc) |
+|RISC-V Pipeline Implementation|MERL Architecture Pipeline Implementation In Urdu & English |[Link 3](https://youtu.be/9_l6vWEZ5uE)|
+| Introduction to FPGA    | Understand of FPGA and Verilogue and how to use them together. | [Link 4](https://youtu.be/lLg1AgA2Xoo) |
+| RISC-V Core | A 32-bit RISC-V core written in Verilog and an instruction set simulator supporting RV32IM. | [Link 5](https://github.com/ultraembedded/riscv)
+| RISC-V Pipelined Core | Pipeline version of the above core. | [Link 6](https://github.com/ultraembedded/biriscv)
+| RISC-V Matrix Extension Specification | This is a matrix extension proposal for AI applications under RISC-V architecture. The extension has the following features. | [Link 7](https://github.com/T-head-Semi/riscv-matrix-extension-spec) |
+| Tiny Matrix Extension using RISC-V Custom Instructions | a processor that accelerates matrix multiplication using RISC-V custom instructions, implemented it on an FPGA board and evaluated its performance. | [Link 8](https://www.luffca.com/2022/09/tiny-matrix-extension/)
 
 ## Objectives
 
 
-| Objectives | Achived? | Date Completed |
-|-------------------|------|------|
-| Single Cycle Processor    | False | pending... |
-| 5 stages Piplined Processor    | False | pending... |
-| 10 Stages Piplined Processor    | False | pending... |
-|MAC Instructions | False | pending... |
-|FPGA Implementation| False | pending... |
+| Objectives | Date Started | Date Completed | Achived? |
+|-------------------|------|------|------|
+| Single Cycle Processor    | 1/July/2023 | pending... | False |
+| 5 stages Piplined Processor    | Pending... | pending... | False |
+| 10 Stages Piplined Processor    | Pending... | pending... | False |
+|MAC Instructions | Pending... | pending... | False |
+|FPGA Implementation| Pending... | pending... | False |
 
 ### RISC-V Essential Registers
 
