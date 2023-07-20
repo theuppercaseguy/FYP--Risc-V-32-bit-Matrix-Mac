@@ -207,9 +207,68 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 
 
 ##### By [Zaeem Shakir](https://www.linkedin.com/in/syed-zaeem-shakir-85b82125b/)
+<html>
+<body>
+  <h1>RISC-V Architecture Overview</h1>
 
-| S. No | Note |
-|--------|----------------------------------|
+  <h2>Instruction Formats</h2>
+  <p>The RISC-V architecture employs a simple and elegant design, including fixed-length instruction formats. These fixed-length formats allow for straightforward decoding and predictable instruction sizes, which benefits instruction fetching and pipelining.</p>
+  <p>The standard RISC-V instruction formats are as follows:</p>
+  <ul>
+    <li><strong>R-Type:</strong> This format is used for arithmetic, logical, and control flow instructions. It consists of six fields:
+      <ul>
+        <li><em>opcode</em>: Specifies the operation to be performed.</li>
+        <li><em>rd</em>: Destination register where the result of the operation is stored.</li>
+        <li><em>rs1</em>: Source register 1 that holds the first operand.</li>
+        <li><em>rs2</em>: Source register 2 that holds the second operand.</li>
+        <li><em>funct3</em>: Function code that further specifies the operation for certain instructions.</li>
+        <li><em>funct7</em>: Additional function code for certain instructions that require it.</li>
+      </ul>
+    </li>
+    <li><strong>I-Type:</strong> This format is used for immediate instructions, which include load, store, and immediate arithmetic operations. It consists of five fields:
+      <ul>
+        <li><em>opcode</em>: Specifies the operation to be performed.</li>
+        <li><em>rd</em>: Destination register where the result of the operation is stored.</li>
+        <li><em>rs1</em>: Source register that holds one of the operands.</li>
+        <li><em>imm[11:0]</em>: A 12-bit immediate value used as the second operand or offset for memory operations.</li>
+        <li><em>funct3</em>: Function code that further specifies the operation for certain instructions.</li>
+      </ul>
+    </li>
+    <li><strong>S-Type:</strong> This format is used for store instructions that write data to memory. It consists of four fields:
+      <ul>
+        <li><em>opcode</em>: Specifies the operation to be performed (store).</li>
+        <li><em>imm[11:5]</em>: A 7-bit immediate value used as the offset for memory operations.</li>
+        <li><em>rs1</em>: Source register that holds the data to be stored in memory.</li>
+        <li><em>rs2</em>: Source register that holds the memory address where the data is to be stored.</li>
+        <li><em>funct3</em>: Function code that further specifies the operation for store instructions.</li>
+      </ul>
+    </li>
+  </ul>
+  <p>The regularity of the instruction formats simplifies the hardware implementation of the processor, contributing to its efficiency and ease of extension.</p>
+
+  <h2>Pipelining</h2>
+  <p>RISC-V processors are commonly designed with a five-stage pipeline, which divides the instruction execution process into smaller stages. This pipelining allows multiple instructions to be in different stages of execution simultaneously, increasing instruction throughput and improving overall performance. The five pipeline stages are:</p>
+  <ol>
+    <li><strong>Fetch (IF):</strong> This stage is responsible for fetching the instruction from memory. The program counter (PC) holds the address of the next instruction to be fetched, and the instruction cache retrieves the corresponding instruction from memory.</li>
+    <li><strong>Decode (ID):</strong> In this stage, the fetched instruction is decoded to determine the operation to be performed and the operands involved. Additionally, register values for the operands are read from the register file.</li>
+    <li><strong>Execute (EX):</strong> The execution stage performs the actual operation specified by the instruction. For arithmetic and logical operations, the ALU (Arithmetic Logic Unit) performs the computation. For memory instructions, the effective memory address is calculated.</li>
+    <li><strong>Memory Access (MEM):</strong> In this stage, memory access operations such as load and store are performed. For load instructions, data is fetched from memory and placed in a register. For store instructions, data from a register is written to memory.</li>
+    <li><strong>Write Back (WB):</strong> The final stage writes the result of the instruction back to the register file. For instructions that produce a result (e.g., arithmetic, logical), the result is stored in the specified destination register.</li>
+  </ol>
+  <p>Pipelining improves the instruction throughput but introduces potential hazards, which need to be carefully managed to ensure correct execution. Data hazards occur when an instruction depends on the result of a previous instruction still in the pipeline. Forwarding techniques allow the processor to forward the correct data to the dependent instruction. Additionally, control hazards arise when conditional branches change the PC, affecting the instruction fetching. To mitigate these hazards, branch prediction techniques are employed to predict the outcome of conditional branches and fetch the correct instructions in advance.</p>
+
+  <h2>RISC-V Architecture</h2>
+  <p>RISC-V is an open-source and royalty-free Instruction Set Architecture (ISA) based on RISC principles. It aims to provide a simple, modular, and extensible ISA design suitable for various applications and devices. The key features of the RISC-V architecture include:</p>
+  <ul>
+    <li><strong>Load-Store Architecture:</strong> RISC-V follows the load-store architecture, where all data processing operations are performed on registers. Memory access is explicitly done through load and store instructions, enhancing simplicity and orthogonality.</li>
+    <li><strong>Base Integer ISA:</strong> The base integer ISA supports 32-bit (RV32I) and 64-bit (RV64I) variants. It includes a minimal set of instructions for basic arithmetic, logical, and memory operations.</li>
+    <li><strong>Standard Extensions:</strong> RISC-V is designed to support optional standard extensions for specific application domains. These extensions include floating-point arithmetic (F), vector processing (V), atomic operations (A), and more. These extensions allow customization of the processor to cater to diverse workloads.</li>
+    <li><strong>Openness and Extensibility:</strong> The open nature of RISC-V encourages innovation and enables researchers and developers to create custom extensions and accelerators for specialized tasks. Your project introduces an additional instruction set for matrix multiplication, exemplifying the extensibility of RISC-V.</li>
+  </ul>
+  <p>The simplicity and regularity of the RISC-V ISA design make it easier to implement hardware and software tools, reducing the barriers to entry for developing RISC-V-based processors and software ecosystems.</p>
+
+  <h2>Conclusion</h2>
+  <p>The RISC-V architecture with its fixed-length instruction formats
 
 ##### By [Mahnoor Maleeka](https://www.linkedin.com/in/mahnoor-maleeka/)
 
