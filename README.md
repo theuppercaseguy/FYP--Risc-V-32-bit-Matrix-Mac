@@ -214,11 +214,9 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 
 <html>
 <body>
-  <h1>RISC-V Architecture Overview</h1>
+  <h3>RISC-V Architecture Overview</h3>
 
-  <h2>Instruction Formats</h2>
-  <p>The RISC-V architecture employs a simple and elegant design, including fixed-length instruction formats. These fixed-length formats allow for straightforward decoding and predictable instruction sizes, which benefits instruction fetching and pipelining.</p>
-  <p>The standard RISC-V instruction formats are as follows:</p>
+  <h4>Instruction Formats</h4>
   <table>
     <tr>
       <th>Format</th>
@@ -241,10 +239,9 @@ Although the exact edition doesn't matters, just use the as latest as possible.
       <td>Used for store instructions that write data to memory.</td>
     </tr>
   </table>
-  <p>The regularity of the instruction formats simplifies the hardware implementation of the processor, contributing to its efficiency and ease of extension. Each format contains specific fields that hold different pieces of information, such as the opcode that specifies the operation to be performed, destination and source registers, immediate values for certain instructions, and function codes that further specify the operation for certain instructions.</p>
 
   <h2>Pipelining</h2>
-  <p>RISC-V processors are commonly designed with a five-stage pipeline, which divides the instruction execution process into smaller stages. This pipelining allows multiple instructions to be in different stages of execution simultaneously, increasing instruction throughput and improving overall performance. The five pipeline stages are:</p>
+ 
   <table>
     <tr>
       <th>Stage</th>
@@ -271,11 +268,10 @@ Although the exact edition doesn't matters, just use the as latest as possible.
       <td>Writes the result back to the destination register.</td>
     </tr>
   </table>
-  <p>Pipelining improves the instruction throughput and allows the processor to work on multiple instructions simultaneously, achieving higher performance. However, it introduces potential hazards, which need to be carefully managed to ensure correct execution.</p>
-  <p>Data hazards occur when an instruction depends on the result of a previous instruction still in the pipeline. To address data hazards, forwarding techniques are used to forward the correct data to the dependent instruction. Additionally, control hazards arise when conditional branches change the program counter (PC), affecting the instruction fetching. To mitigate control hazards, branch prediction techniques are employed to predict the outcome of conditional branches and fetch the correct instructions in advance, reducing pipeline stalls and improving performance.</p>
+
 
   <h2>RISC-V Architecture</h2>
-  <p>RISC-V is an open-source and royalty-free Instruction Set Architecture (ISA) based on RISC principles. It aims to provide a simple, modular, and extensible ISA design suitable for various applications and devices. The key features of the RISC-V architecture include:</p>
+
   <table>
     <tr>
       <th>Feature</th>
@@ -298,7 +294,6 @@ Although the exact edition doesn't matters, just use the as latest as possible.
       <td>RISC-V's open-source nature encourages innovation and allows researchers and developers to create custom extensions and accelerators for specialized tasks. Your project's introduction of an additional instruction set for matrix multiplication exemplifies the extensibility of RISC-V, showcasing how the architecture can be tailored to meet specific performance demands.</td>
     </tr>
   </table>
-  <p>The simplicity and regularity of the RISC-V ISA design make it easier to implement hardware and software tools, reducing the barriers to entry for developing RISC-V-based processors and software ecosystems. This openness and flexibility have led to the rapid growth of the RISC-V ecosystem, making it an attractive choice for a wide range of applications, from embedded systems to high-performance computing.</p>
 
 </body>
 </html>
