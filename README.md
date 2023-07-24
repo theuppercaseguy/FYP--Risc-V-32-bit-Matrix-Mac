@@ -211,92 +211,153 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 
 
 ##### By [Zaeem Shakir](https://www.linkedin.com/in/syed-zaeem-shakir-85b82125b/)
-
+<!DOCTYPE html>
 <html>
 <body>
-  <h3>RISC-V Architecture Overview</h3>
+  <h1>Verilog Basic Code Examples</h1>
 
-  <h4>Instruction Formats</h4>
+  <h2>Example 1: Basic Logic Gates</h2>
   <table>
     <tr>
-      <th>Format</th>
-      <th>Fields</th>
-      <th>Description</th>
+      <th>Module</th>
+      <th>Verilog Code</th>
     </tr>
     <tr>
-      <td>R-Type</td>
-      <td>opcode, rd, rs1, rs2, funct3, funct7</td>
-      <td>Used for arithmetic, logical, and control flow instructions.</td>
+      <td>ANDGate</td>
+      <td>
+        <pre>
+module ANDGate(input a, input b, output y);
+  assign y = a & b;
+endmodule
+        </pre>
+      </td>
     </tr>
     <tr>
-      <td>I-Type</td>
-      <td>opcode, rd, rs1, imm[11:0], funct3</td>
-      <td>Used for immediate instructions (load, store, immediate arithmetic).</td>
+      <td>ORGate</td>
+      <td>
+        <pre>
+module ORGate(input a, input b, output y);
+  assign y = a | b;
+endmodule
+        </pre>
+      </td>
     </tr>
     <tr>
-      <td>S-Type</td>
-      <td>opcode, imm[11:5], rs1, rs2, funct3</td>
-      <td>Used for store instructions that write data to memory.</td>
+      <td>NOTGate</td>
+      <td>
+        <pre>
+module NOTGate(input a, output y);
+  assign y = ~a;
+endmodule
+        </pre>
+      </td>
     </tr>
   </table>
 
-  <h2>Pipelining</h2>
- 
-  <table>
-    <tr>
-      <th>Stage</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <td>Fetch (IF)</td>
-      <td>Fetches the instruction from memory using the program counter (PC).</td>
-    </tr>
-    <tr>
-      <td>Decode (ID)</td>
-      <td>Decodes the instruction, determines the operation, and reads register values.</td>
-    </tr>
-    <tr>
-      <td>Execute (EX)</td>
-      <td>Performs the specified operation (e.g., ALU computations, memory address calculation).</td>
-    </tr>
-    <tr>
-      <td>Memory Access (MEM)</td>
-      <td>Performs memory access operations (e.g., load, store).</td>
-    </tr>
-    <tr>
-      <td>Write Back (WB)</td>
-      <td>Writes the result back to the destination register.</td>
-    </tr>
-  </table>
+  <h2>Example 2: Ripple Carry Adder (RCA)</h2>
+  <pre>
+module RippleCarryAdder(input [3:0] A, input [3:0] B, output [3:0] Sum, output Carry);
+  assign Carry = 0;
+  genvar i;
+  generate
+    for (i = 0; i < 4; i = i + 1) begin
+      assign Sum[i] = A[i] ^ B[i] ^ Carry;
+      assign Carry = (A[i] & B[i]) | (Carry & (A[i] ^ B[i]));
+    end
+  endgenerate
+endmodule
+  </pre>
 
+  <h2>Example 3: Finite State Machine (FSM)</h2>
+  <pre>
+module MealyFSM(input clk, input reset, input start, output reg out_state, output reg out_result);
+  enum [1:0] {S0, S1, S2} state;
+  reg result;
 
-  <h2>RISC-V Architecture</h2>
+  always @(posedge clk or posedge reset) begin
+    if (reset) begin
+      state <= S0;
+      result <= 0;
+    end else begin
+      case (state)
+        S0: begin
+          if (start) begin
+            state <= S1;
+            result <= 0;
+          end
+        end
+        S1: begin
+          state <= S2;
+          result <= 1;
+        end
+        S2: begin
+          state <= S0;
+          result <= 0;
+        end
+        default: state <= S0;
+      endcase
+    end
+  end
 
-  <table>
-    <tr>
-      <th>Feature</th>
-      <th>Description</th>
-    </tr>
-    <tr>
-      <td>Load-Store Architecture</td>
-      <td>All data processing operations are done on registers; memory access is through explicit load and store instructions. This design choice improves orthogonality, making the instruction set cleaner and easier to implement.</td>
-    </tr>
-    <tr>
-      <td>Base Integer ISA</td>
-      <td>The base integer ISA supports two primary variants: RV32I (32-bit) and RV64I (64-bit). It includes a minimal set of instructions for basic arithmetic, logical, and memory operations, providing a solid foundation for general-purpose computing.</td>
-    </tr>
-    <tr>
-      <td>Standard Extensions</td>
-      <td>RISC-V supports optional standard extensions, which are sets of additional instructions that cater to specific application domains. Some of the standard extensions include floating-point arithmetic (F), vector processing (V), atomic operations (A), and more. These extensions allow customization of the processor to cater to diverse workloads and applications.</td>
-    </tr>
-    <tr>
-      <td>Openness and Extensibility</td>
-      <td>RISC-V's open-source nature encourages innovation and allows researchers and developers to create custom extensions and accelerators for specialized tasks. Your project's introduction of an additional instruction set for matrix multiplication exemplifies the extensibility of RISC-V, showcasing how the architecture can be tailored to meet specific performance demands.</td>
-    </tr>
-  </table>
+  assign out_state = state;
+  assign out_result = result;
+endmodule
+  </pre>
+
+  <h2>Example 4: Synchronous Counter</h2>
+  <pre>
+module SyncCounter(input clk, input rst, output reg [2:0] count);
+  always @(posedge clk) begin
+    if (rst)
+      count <= 0;
+    else
+      count <= count + 1;
+  end
+endmodule
+  </pre>
+
+  <h2>Example 5: Shift Register</h2>
+  <pre>
+module ShiftRegister(input clk, input rst, input [3:0] in_data, output reg [3:0] out_data);
+  always @(posedge clk) begin
+    if (rst)
+      out_data <= 4'b0000;
+    else
+      out_data <= {out_data[2:0], in_data[0]};
+  end
+endmodule
+  </pre>
+
+  <h2>Example 6: Memory (RAM)</h2>
+  <pre>
+module RAM(input [1:0] address, input [7:0] data_in, input write_enable,
+           output reg [7:0] data_out);
+  reg [7:0] mem [3:0];
+
+  always @(address) begin
+    data_out <= mem[address];
+  end
+
+  always @(posedge clk) begin
+    if (write_enable)
+      mem[address] <= data_in;
+  end
+endmodule
+  </pre>
+
+  <h2>Example 7: Multiplier</h2>
+  <pre>
+module Multiplier(input [3:0] A, input [3:0] B, output reg [7:0] Product);
+  always @* begin
+    Product = A * B;
+  end
+endmodule
+  </pre>
 
 </body>
 </html>
+
+
 
 
 ##### By [Mahnoor Maleeka](https://www.linkedin.com/in/mahnoor-maleeka/)
