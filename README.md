@@ -47,11 +47,12 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 | Verilog in 2 Hours    | Understanding of Verilog, how to Write it and How to use it | [Link 1](https://youtu.be/nblGw37Fv8A) 
 | RISC-V Single Cycle Core Implementation    | Verilog implementation of MERL Architecture, in ENGLISH & Urdu, Quiete good for understanding modules Like ALU, CU etc  | [Link 2](https://youtube.com/playlist?list=PL5AmAh9QoSK7Fwk9vOJu-3VqBng_HjGFc) |
 |RISC-V Pipeline Implementation|MERL Architecture Pipeline Implementation In Urdu & English |[Link 3](https://youtu.be/9_l6vWEZ5uE)|
-| Introduction to FPGA    | Understand of FPGA and Verilogue and how to use them together. | [Link 4](https://youtu.be/lLg1AgA2Xoo) |
-| RISC-V Core | A 32-bit RISC-V core written in Verilog and an instruction set simulator supporting RV32IM. | [Link 5](https://github.com/ultraembedded/riscv)
-| RISC-V Pipelined Core | Pipeline version of the above core. | [Link 6](https://github.com/ultraembedded/biriscv)
-| RISC-V Matrix Extension Specification | This is a matrix extension proposal for AI applications under RISC-V architecture. The extension has the following features. | [Link 7](https://github.com/T-head-Semi/riscv-matrix-extension-spec) |
-| Tiny Matrix Extension using RISC-V Custom Instructions | a processor that accelerates matrix multiplication using RISC-V custom instructions, implemented it on an FPGA board and evaluated its performance. | [Link 8](https://www.luffca.com/2022/09/tiny-matrix-extension/)
+|RISC-V Online Course| A complete and a perfect course for understanging the RISC-V architecture and its implementaition. week-3 to week-10 preferred.|[link 4](https://inst.eecs.berkeley.edu/~cs61c/fa20/)|
+| Introduction to FPGA    | Understand of FPGA and Verilogue and how to use them together. | [Link 5](https://youtu.be/lLg1AgA2Xoo) |
+| RISC-V Core | A 32-bit RISC-V core written in Verilog and an instruction set simulator supporting RV32IM. | [Link 6](https://github.com/ultraembedded/riscv)
+| RISC-V Pipelined Core | Pipeline version of the above core. | [Link 7](https://github.com/ultraembedded/biriscv)
+| RISC-V Matrix Extension Specification | This is a matrix extension proposal for AI applications under RISC-V architecture. The extension has the following features. | [Link 8](https://github.com/T-head-Semi/riscv-matrix-extension-spec) |
+| Tiny Matrix Extension using RISC-V Custom Instructions | a processor that accelerates matrix multiplication using RISC-V custom instructions, implemented it on an FPGA board and evaluated its performance. | [Link 9](https://www.luffca.com/2022/09/tiny-matrix-extension/)
 
 ## Objectives
 
