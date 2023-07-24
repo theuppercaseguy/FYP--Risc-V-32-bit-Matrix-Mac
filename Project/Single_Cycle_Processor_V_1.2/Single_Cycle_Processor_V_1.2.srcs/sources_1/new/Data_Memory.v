@@ -21,17 +21,15 @@
 
 
 module Data_Memory(
+    input  rst,
     input [31:0] A,//address in memory
     input [31:0] WD,//data to store in memory or read it from memory
     input clk,WE,//write enable
     
     output [31:0] RD//read the address A data onto RD, read wxisting data basically
     );
-
-    reg [31:0] Data_Memory_Registers [1023:0];
-
-    //read
-    assign RD = ( WE == 1'b0 ) ? Data_Memory_Registers[A] : 32'h00000000;//read data at address A if we is low
+    
+    reg [31:0] Data_Memory_Registers [1028:0];
 
     always @(posedge clk)
     begin
@@ -42,6 +40,14 @@ module Data_Memory(
     
     end
 
+    //read
+    //assign RD = ( WE == 1'b0 ) ? Data_Memory_Registers[A] : 32'h00000000;//read data at address A if we is low
+    assign RD = (~rst) ? 32'd0 : Data_Memory_Registers[A];
+
+    initial begin
+        Data_Memory_Registers[28] = 32'h00000020;
+    end
+    
 
 
 

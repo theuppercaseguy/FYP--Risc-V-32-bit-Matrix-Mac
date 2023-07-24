@@ -28,8 +28,7 @@ ALU test_unit(
     .CarryOut(CarryOut),        // Carry Out Flag
     .Zero(Zero),                // Zero Flag
     .Negative(Negative),        // Negative Flag
-    .Overflow(Overflow),        // Overflow Flag
-    .ZeroExt(ZeroExt)
+    .Overflow(Overflow)        // Overflow Flag
 );
 
 initial begin

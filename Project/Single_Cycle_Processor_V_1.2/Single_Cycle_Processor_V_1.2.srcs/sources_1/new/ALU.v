@@ -26,8 +26,7 @@ module ALU(
     output CarryOut,         // Carry Out Flag
     output Zero,             // Zero Flag
     output Negative,         // Negative Flag
-    output Overflow,          // Overflow Flag
-    output [31:0] ZeroExt    // Zero Extension Output
+    output Overflow          // Overflow Flag
 );
     reg [31:0] ALU_Result;
     wire [32:0] tmp;
@@ -35,7 +34,8 @@ module ALU(
     assign ALU_Out = ALU_Result; // ALU out
     assign tmp = {1'b0, A} + {1'b0, B};
     assign CarryOut = tmp[32];   // Carryout flag
-    assign ZeroExt = {32'b0, ALU_Result};
+    
+   
     
     always @(*)
     begin
@@ -73,8 +73,8 @@ module ALU(
             5'b01111: // Equal comparison   
                 ALU_Result = (A == B) ? 32'd1 : 32'd0;
             5'b10000:
-                ALU_Result = ZeroExt;
-            default: ALU_Result = A + B; 
+                ALU_Result = {32'b0, ALU_Result};
+            default: ALU_Result = {33{1'b0}};
         endcase
     end
       // Flag assignments

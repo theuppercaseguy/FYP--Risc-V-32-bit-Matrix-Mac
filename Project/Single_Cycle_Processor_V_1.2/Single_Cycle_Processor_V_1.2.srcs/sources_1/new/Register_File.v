@@ -28,7 +28,7 @@ module Register_File(
     input clk,rst,WE3,
     
     output [31:0] RD1,
-    output [31:0] RD1
+    output [31:0] RD2
     );
     
     //register file memory
@@ -45,13 +45,12 @@ module Register_File(
         begin
             Registers[A3] <= WD3;
         
-        end
-    
-    
-    
+        end    
     end
 
-
+    initial begin
+        Registers[9] = 32'h0000020;
+    end
 
 
 

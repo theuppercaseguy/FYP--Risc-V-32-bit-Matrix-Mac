@@ -1,0 +1,130 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 07/19/2023 05:31:02 PM
+// Design Name: 
+// Module Name: Single_Cycle_Top
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+`include "Program_Counter.v"
+`include "Instruction_Memory.v"
+`include "Register_File.v"
+`include "Sign_Extend.v"
+`include "ALU.v"
+`include "Control_Unit_Top.v"
+`include "Data_Memory.v"
+`include "PC_Adder.v"
+
+
+ 
+module Single_Cycle_Top(
+    input clk,rst    
+    );
+    
+    wire [31:0] PC_Top;//connecting PC with A(address register) of memory
+    wire [31:0] RD_Instr;//connecting Instruction memory output(RD) with register file input A1
+    wire [31:0] RD1_Top;
+    wire [31:0] Imm_Ext_Top;
+    wire [5:0] ALUControl_Top;
+    wire [31:0] ALU_Result, ReadData, PCPlus4;
+    wire RegWrite;  
+    
+    Program_Counter PC( //instentiating Program Counter
+        .clk(clk),
+        .rst(rst),
+        .PC(PC_Top),
+        .PC_Next(PCPlus4)
+    );
+    
+    Instruction_Memory  Instruction_Memory(
+        .rst(rst),
+        .A(PC_Top),
+        .RD(RD_Instr)
+    );
+    
+    Register_File Register_File(
+        .clk(clk),
+        .rst(rst),
+        .WE3(RegWrite),
+        .WD3(ReadData),
+        .A1(RD_Instr[19:15]),
+        .A2(),
+        .A3(RD_Instr[11:7]),
+        .RD1(RD1_Top),
+        .RD2()
+    
+    );
+    
+    Sign_Extend Sign_Extend(
+    .In(RD_Instr),
+    .Imm_Ext(Imm_Ext_Top)
+    );
+    
+    ALU ALU(
+       .A(RD1_Top), 
+       .B(Imm_Ext_Top),       // ALU 32-bit Inputs                 
+       .ALU_Sel(ALUControl_Top),        // ALU Selection
+       .ALU_Out(ALU_Result),            // ALU 32-bit Output
+       .CarryOut(),           // Carry Out Flag
+       .Zero(),               // Zero Flag
+       .Negative(),           // Negative Flag
+       .Overflow()            // Overflow Flag
+    );
+    
+    Control_Unit_Top Control_Unit_Top(
+        .Op(RD_Instr[6:0]),
+        .RegWrite(RegWrite),
+        .ImmSrc(),
+        .ALUSrc(),
+        .MemWrite(),
+        .ResultSrc(),
+        .Branch(),
+        .funct3(RD_Instr[14:12]),
+        .funct7(),
+        .ALUControl(ALUControl_Top)
+     );
+
+    Data_Memory Data_Memory(
+        .clk(clk),
+        .rst(rst),
+        .WD(),        //data to store in memory or read it from memory
+        .A(ALU_Result),
+        .WE(),       //write enable
+        .RD(ReadData)        //read the address A data onto RD, read wxisting data basically
+
+    );
+    
+    PC_Adder PC_Adder(
+        .a(PC_Top),
+        .b(32'd4),
+        .c(PCPlus4)
+        
+    );
+    
+    
+endmodule
+
+
+
+
+
+
+
+
+
+
+
