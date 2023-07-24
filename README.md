@@ -13,7 +13,7 @@ This project aims to develop a hardware-based acceleration solution for matrix m
 
 - [Saad Khan](https://www.linkedin.com/in/saad-k-7aba04138/)
 - [Zaeem Shakir](https://www.linkedin.com/in/syed-zaeem-shakir-85b82125b/)
-- [Mahnoor Maleeka](https://www.linkedin.com/in/mahnoor-maleeka/)
+- [Mahnoor Maleeka](https://www.linkedin.com/in/mahnoormaleeka/)
 
 
 ## Coordinators
@@ -48,7 +48,7 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 | RISC-V Single Cycle Core Implementation    | Verilog implementation of MERL Architecture, in ENGLISH & Urdu, Quiete good for understanding modules Like ALU, CU etc  | [Link 2](https://youtube.com/playlist?list=PL5AmAh9QoSK7Fwk9vOJu-3VqBng_HjGFc) |
 |RISC-V Pipeline Implementation|MERL Architecture Pipeline Implementation In Urdu & English |[Link 3](https://youtu.be/9_l6vWEZ5uE)|
 |RISC-V Online Course| A complete and a perfect course for understanging the RISC-V architecture and its implementaition. week-3 to week-10 preferred.|[link 4](https://inst.eecs.berkeley.edu/~cs61c/fa20/)|
-| Introduction to FPGA    | Understand of FPGA and Verilogue and how to use them together. | [Link 5](https://youtu.be/lLg1AgA2Xoo) |
+| Introduction to FPGA    | Understand of FPGA and Verilog and how to use them together. | [Link 5](https://youtu.be/lLg1AgA2Xoo) |
 | RISC-V Core | A 32-bit RISC-V core written in Verilog and an instruction set simulator supporting RV32IM. | [Link 6](https://github.com/ultraembedded/riscv)
 | RISC-V Pipelined Core | Pipeline version of the above core. | [Link 7](https://github.com/ultraembedded/biriscv)
 | RISC-V Matrix Extension Specification | This is a matrix extension proposal for AI applications under RISC-V architecture. The extension has the following features. | [Link 8](https://github.com/T-head-Semi/riscv-matrix-extension-spec) |
@@ -57,13 +57,13 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 ## Objectives
 
 
-| Objectives | Date Started | Date Completed | Achived? |
-|-------------------|------|------|------|
-| Single Cycle Processor    | 1/July/2023 | pending... | False |
-| 5 stages Piplined Processor    | Pending... | pending... | False |
-| 10 Stages Piplined Processor    | Pending... | pending... | False |
-|MAC Instructions | Pending... | pending... | False |
-|FPGA Implementation| Pending... | pending... | False |
+| Objectives | Date Started | Date Completed | Achived? | Version |
+|-------------------|------|------|------|-----|
+| Single Cycle Processor    | 1/July/2023 | pending... | False | 1.2 |
+| 5 stages Piplined Processor    | Pending... | pending... | False | 0.0 |
+| 10 Stages Piplined Processor    | Pending... | pending... | False | 0.0 |
+|MAC Instructions | Pending... | pending... | False | 0.0 |
+|FPGA Implementation| Pending... | pending... | False | 0.0 |
 
 ### RISC-V Essential Registers
 
@@ -302,7 +302,7 @@ endmodule
 
 
 
-##### By [Mahnoor Maleeka](https://www.linkedin.com/in/mahnoor-maleeka/)
+##### By [Mahnoor Maleeka](https://www.linkedin.com/in/mahnoormaleeka/)
 
 | S. No | Note |
 |--------|----------------------------------|
