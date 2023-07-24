@@ -212,28 +212,24 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 
 ##### By [Zaeem Shakir](https://www.linkedin.com/in/syed-zaeem-shakir-85b82125b/)
 
-<table>
 
-  <thead>
-    <tr>
-      <th>S.No</th>
-      <th>Note</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>
-      <h4><b>Verilog Basic Code Examples</b></h4>
-      <ol>
+
+<table>
+  <tr>
+    <th>S. No</th>
+    <th>Note</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>
+        <h4><b>Verilog Basic Code Examples</b></h4>
+        <ol>
         <li>
-              <pre>
-module ANDGate(input a, input b, output y);
-  assign y = a & b;
-endmodule
-        </pre>
+            <pre>module ANDGate(input a, input b, output y);
+assign y = a & b;
+endmodule</pre>
         </li>
-        <li>
+    <li>
         <pre>
 module ORGate(input a, input b, output y);
   assign y = a | b;
@@ -261,7 +257,7 @@ module RippleCarryAdder(input [3:0] A, input [3:0] B, output [3:0] Sum, output C
 endmodule
         </pre>
         </li>
-        <li>
+         <li>
           <pre>
 module SyncCounter(input clk, input rst, output reg [2:0] count);
   always @(posedge clk) begin
@@ -290,12 +286,17 @@ module RAM(input [1:0] address, input [7:0] data_in, input write_enable,
 endmodule
   </pre>
   </li>
-      </ol>
-      </td>
-    </tr>
-
-  </tbody>
+        </ol>
+    </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>.</td>
+  </tr>
 </table>
+
+
+
 
 
 
