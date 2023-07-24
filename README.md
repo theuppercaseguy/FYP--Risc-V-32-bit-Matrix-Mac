@@ -211,51 +211,44 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 
 
 ##### By [Zaeem Shakir](https://www.linkedin.com/in/syed-zaeem-shakir-85b82125b/)
-<!DOCTYPE html>
-<html>
-<body>
-  <h1>Verilog Basic Code Examples</h1>
 
-  <h2>Example 1: Basic Logic Gates</h2>
-  <table>
+<table>
+
+  <thead>
     <tr>
-      <th>Module</th>
-      <th>Verilog Code</th>
+      <th>S.No</th>
+      <th>Note</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
-      <td>ANDGate</td>
+      <td>1</td>
       <td>
-        <pre>
+      <h4><b>Verilog Basic Code Examples</b></h4>
+      <ol>
+        <li>
+              <pre>
 module ANDGate(input a, input b, output y);
   assign y = a & b;
 endmodule
         </pre>
-      </td>
-    </tr>
-    <tr>
-      <td>ORGate</td>
-      <td>
+        </li>
+        <li>
         <pre>
 module ORGate(input a, input b, output y);
   assign y = a | b;
 endmodule
         </pre>
-      </td>
-    </tr>
-    <tr>
-      <td>NOTGate</td>
-      <td>
+        </li>
+        <li>
         <pre>
 module NOTGate(input a, output y);
   assign y = ~a;
 endmodule
         </pre>
-      </td>
-    </tr>
-  </table>
-
-  <h2>Example 2: Ripple Carry Adder (RCA)</h2>
-  <pre>
+        </li>
+        <li>
+        <pre>
 module RippleCarryAdder(input [3:0] A, input [3:0] B, output [3:0] Sum, output Carry);
   assign Carry = 0;
   genvar i;
@@ -266,46 +259,10 @@ module RippleCarryAdder(input [3:0] A, input [3:0] B, output [3:0] Sum, output C
     end
   endgenerate
 endmodule
-  </pre>
-
-  <h2>Example 3: Finite State Machine (FSM)</h2>
-  <pre>
-module MealyFSM(input clk, input reset, input start, output reg out_state, output reg out_result);
-  enum [1:0] {S0, S1, S2} state;
-  reg result;
-
-  always @(posedge clk or posedge reset) begin
-    if (reset) begin
-      state <= S0;
-      result <= 0;
-    end else begin
-      case (state)
-        S0: begin
-          if (start) begin
-            state <= S1;
-            result <= 0;
-          end
-        end
-        S1: begin
-          state <= S2;
-          result <= 1;
-        end
-        S2: begin
-          state <= S0;
-          result <= 0;
-        end
-        default: state <= S0;
-      endcase
-    end
-  end
-
-  assign out_state = state;
-  assign out_result = result;
-endmodule
-  </pre>
-
-  <h2>Example 4: Synchronous Counter</h2>
-  <pre>
+        </pre>
+        </li>
+        <li>
+          <pre>
 module SyncCounter(input clk, input rst, output reg [2:0] count);
   always @(posedge clk) begin
     if (rst)
@@ -315,21 +272,9 @@ module SyncCounter(input clk, input rst, output reg [2:0] count);
   end
 endmodule
   </pre>
-
-  <h2>Example 5: Shift Register</h2>
-  <pre>
-module ShiftRegister(input clk, input rst, input [3:0] in_data, output reg [3:0] out_data);
-  always @(posedge clk) begin
-    if (rst)
-      out_data <= 4'b0000;
-    else
-      out_data <= {out_data[2:0], in_data[0]};
-  end
-endmodule
-  </pre>
-
-  <h2>Example 6: Memory (RAM)</h2>
-  <pre>
+        </li>
+        <li>
+        <pre>
 module RAM(input [1:0] address, input [7:0] data_in, input write_enable,
            output reg [7:0] data_out);
   reg [7:0] mem [3:0];
@@ -344,18 +289,13 @@ module RAM(input [1:0] address, input [7:0] data_in, input write_enable,
   end
 endmodule
   </pre>
+  </li>
+      </ol>
+      </td>
+    </tr>
 
-  <h2>Example 7: Multiplier</h2>
-  <pre>
-module Multiplier(input [3:0] A, input [3:0] B, output reg [7:0] Product);
-  always @* begin
-    Product = A * B;
-  end
-endmodule
-  </pre>
-
-</body>
-</html>
+  </tbody>
+</table>
 
 
 
