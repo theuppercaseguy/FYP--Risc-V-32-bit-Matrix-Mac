@@ -44,6 +44,7 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 
 | Source Name | Description | Link |
 |-------------|-------------|------|
+|RISC-V Online Simulator| use it to write code and test it alongside with our processor |[link 0](https://venus.cs61c.org/) |
 | Verilog in 2 Hours    | Understanding of Verilog, how to Write it and How to use it | [Link 1](https://youtu.be/nblGw37Fv8A) 
 | RISC-V Single Cycle Core Implementation    | Verilog implementation of MERL Architecture, in ENGLISH & Urdu, Quiete good for understanding modules Like ALU, CU etc  | [Link 2](https://youtube.com/playlist?list=PL5AmAh9QoSK7Fwk9vOJu-3VqBng_HjGFc) |
 |RISC-V Pipeline Implementation|MERL Architecture Pipeline Implementation In Urdu & English |[Link 3](https://youtu.be/9_l6vWEZ5uE)|
