@@ -304,8 +304,29 @@ endmodule
 
 ##### By [Mahnoor Maleeka](https://www.linkedin.com/in/mahnoormaleeka/)
 
-| S. No | Note |
-|--------|----------------------------------|
+<table>
+  <tr>
+    <th>S. No</th>
+    <th>Note</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>
+      <h4>SystemVerilog VS Traditional Verilog</h4>
+      <ul>
+        <li><b>Data Types:</b> SystemVerilog introduces additional data types like:</br>logic, bit, byte, int, shortint, longint, enum, struct, union, real, and time. </br>These new data types provide more flexibility in representing and handling different types of data</li>
+
+        <li><b>Interfaces:</b> SystemVerilog introduces interfaces, which are collections of signals and methods. </li>
+
+        <li><b>Constraints and Randomization:</b> SystemVerilog provides upgraded randomization abilities with the rand keyword and constraint blocks. These features enable generating random test boosts for verification purposes. </li>
+
+        <li><b>Assertions:</b> SystemVerilog incorporates support for assertions using the 'assert', 'assume', 'cover', and 'restrict' keywords. These develops enable designers to specify properties and requirements on signals and variables to check the correctness of the design during simulation. </li>
+      </ul>
+    </td>
+
+  </tr>
+
+</table>
 
 
 
