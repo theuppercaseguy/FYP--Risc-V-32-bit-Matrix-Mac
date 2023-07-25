@@ -19,6 +19,35 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+module ALU(A,B,ALU_Out,ALU_Sel,Overflow,CarryOut,Zero,Negative);
+
+    input [31:0]A,B;
+    input [2:0]ALU_Sel;
+    output CarryOut,Overflow,Zero,Negative;
+    output [31:0]ALU_Out;
+
+    wire Cout;
+    wire [31:0]Sum;
+
+    assign Sum = (ALU_Sel[0] == 1'b0) ? A + B :
+                                          (A + ((~B)+1)) ;
+    assign {CarryOut,ALU_Out} = (ALU_Sel == 3'b000) ? Sum :
+                           (ALU_Sel == 3'b001) ? Sum :
+                           (ALU_Sel == 3'b010) ? A & B :
+                           (ALU_Sel == 3'b011) ? A | B :
+                           (ALU_Sel == 3'b101) ? {{32{1'b0}},(Sum[31])} :
+                           {33{1'b0}};
+    assign Overflow = ((Sum[31] ^ A[31]) & 
+                      (~(ALU_Sel[0] ^ B[31] ^ A[31])) &
+                      (~ALU_Sel[1]));
+    assign CarryOut = ((~ALU_Sel[1]) & Cout);
+    assign Zero = &(~ALU_Out);
+    assign Negative = ALU_Out[31];
+
+endmodule
+
+/*
+
 module ALU(
     input [31:0] A, B,       // ALU 32-bit Inputs                 
     input [5:0] ALU_Sel,     // ALU Selection
@@ -86,3 +115,4 @@ module ALU(
     
     
 endmodule
+*/

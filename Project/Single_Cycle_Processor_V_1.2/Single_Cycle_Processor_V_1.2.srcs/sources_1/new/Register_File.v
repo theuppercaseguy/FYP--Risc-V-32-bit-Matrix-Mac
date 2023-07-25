@@ -49,6 +49,7 @@ module Register_File(
     end
 
     initial begin
+        //test-1
         Registers[9] = 32'h0000020;
     end
 

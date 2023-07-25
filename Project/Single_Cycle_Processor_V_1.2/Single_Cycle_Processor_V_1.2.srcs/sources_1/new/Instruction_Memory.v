@@ -37,7 +37,30 @@ module Instruction_Memory(
     
 
     initial begin
-        Memory[0] = 32'hFFC4A303;    
+    //test 1
+    //    testing the load word instruction
+    //    rs1, im(rd) =      im          rs1  f3   rd     op      hexa
+    //    lw x6, -4(x9)  = 11111111100  01001 010 00110 0000011 = FFC4A303 
+          
+    //    x9 = hex 20, dec 32. from register files.
+    //    32 - 4 = 28, memory[28] = 20 hex, 32 dec stored already
+    
+    //    x6 = 20 hex, 32 dec => from memory
+    
+          Memory[0] = 32'hFFC4A303;     
+    
+    //test 2
+    // loading word from data memory
+    
+    //     lw  x7, 0x8(x6)   // actual instruction to execute
+    //     x6 = 20 hex, 32 dec from previous instr.
+    //     32 + 8 = 40 dec => memory[40] = 02 hex saved already
+    
+    //     x7 = 02 hex
+     
+           Memory[1] = 32'h00832383;
+    
+    
     end
 
 

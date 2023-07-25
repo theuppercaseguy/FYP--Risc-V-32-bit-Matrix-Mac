@@ -45,7 +45,10 @@ module Data_Memory(
     assign RD = (~rst) ? 32'd0 : Data_Memory_Registers[A];
 
     initial begin
+        //test-1
         Data_Memory_Registers[28] = 32'h00000020;
+        //test-2
+        Data_Memory_Registers[40] = 32'h00000002;
     end
     
 
