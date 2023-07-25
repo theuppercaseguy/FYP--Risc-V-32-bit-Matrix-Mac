@@ -5,6 +5,7 @@ verilog xil_defaultlib  \
 "../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Control_Unit_Top.v" \
 "../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Data_Memory.v" \
 "../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Instruction_Memory.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/MUX_2_by_1.v" \
 "../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Main_Decoder.v" \
 "../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/PC_Adder.v" \
 "../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Program_Counter.v" \

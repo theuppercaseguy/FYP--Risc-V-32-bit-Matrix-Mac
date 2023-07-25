@@ -18,11 +18,13 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-/* ALU 1
+
+
+// ALU 1
 module ALU(A,B,ALU_Out,ALU_Sel,Overflow,CarryOut,Zero,Negative);
 
     input [31:0]A,B;
-    input [2:0]ALU_Sel;
+    input [5:0]ALU_Sel;
     output CarryOut,Overflow,Zero,Negative;
     output [31:0]ALU_Out;
 
@@ -31,11 +33,11 @@ module ALU(A,B,ALU_Out,ALU_Sel,Overflow,CarryOut,Zero,Negative);
 
     assign Sum = (ALU_Sel[0] == 1'b0) ? A + B :
                                           (A + ((~B)+1)) ;
-    assign {CarryOut,ALU_Out} = (ALU_Sel == 3'b000) ? Sum :
-                           (ALU_Sel == 3'b001) ? Sum :
-                           (ALU_Sel == 3'b010) ? A & B :
-                           (ALU_Sel == 3'b011) ? A | B :
-                           (ALU_Sel == 3'b101) ? {{32{1'b0}},(Sum[31])} :
+    assign {CarryOut,ALU_Out} = (ALU_Sel == 5'b00000) ? Sum :
+                           (ALU_Sel == 5'b00001) ? Sum :
+                           (ALU_Sel == 5'b00010) ? A & B :
+                           (ALU_Sel == 5'b00011) ? A | B :
+                           (ALU_Sel == 5'b00101) ? {{32{1'b0}},(Sum[31])} :
                            {33{1'b0}};
     assign Overflow = ((Sum[31] ^ A[31]) & 
                       (~(ALU_Sel[0] ^ B[31] ^ A[31])) &
@@ -45,8 +47,8 @@ module ALU(A,B,ALU_Out,ALU_Sel,Overflow,CarryOut,Zero,Negative);
     assign Negative = ALU_Out[31];
 
 endmodule
-*/
 
+/*
 
 //ALU 2
 module ALU(
@@ -77,7 +79,8 @@ module ALU(
             5'b00010: // Multiplication
                 ALU_Result = A * B;
             5'b00011: // Division
-                ALU_Result = A / B;
+                ALU_Result = A | B;
+             // ALU_Result = A / B;
             5'b00100: // Logical shift left
                 ALU_Result = A << 1;
             5'b00101: // Logical shift right
@@ -89,7 +92,8 @@ module ALU(
             5'b01000: // Logical and 
                 ALU_Result = A & B;
             5'b01001: // Logical or
-                ALU_Result = A | B;
+           //   ALU_Result = A | B;
+                ALU_Result = A / B;
             5'b01010: // Logical xor 
                 ALU_Result = A ^ B;
             5'b01011: // Logical nor
@@ -116,4 +120,4 @@ module ALU(
     
     
 endmodule
-
+*/

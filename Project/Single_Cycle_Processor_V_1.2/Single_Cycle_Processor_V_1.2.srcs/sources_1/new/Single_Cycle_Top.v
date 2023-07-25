@@ -28,7 +28,7 @@
 `include "Control_Unit_Top.v"
 `include "Data_Memory.v"
 `include "PC_Adder.v"
-
+`include "MUX_2_by_1.v"
 
  
 module Single_Cycle_Top(
@@ -40,8 +40,8 @@ module Single_Cycle_Top(
     wire [31:0] RD1_Top,RD2_Top;
     wire [31:0] Imm_Ext_Top;
     wire [5:0] ALUControl_Top;
-    wire [31:0] ALU_Result, ReadData, PCPlus4;
-    wire RegWrite,MEM_Write;  
+    wire [31:0] ALU_Result, ReadData, PCPlus4, Src_B, Result;
+    wire RegWrite, MEM_Write, ALU_Src, ResultSrc;  
     wire [1:0] ImmSrc_Top;
     
     Program_Counter PC( //instentiating Program Counter
@@ -68,7 +68,7 @@ module Single_Cycle_Top(
         .clk(clk),
         .rst(rst),
         .WE3(RegWrite),
-        .WD3(ReadData),
+        .WD3(Result),
         .A1(RD_Instr[19:15]),
         .A2(RD_Instr[24:20]),
         .A3(RD_Instr[11:7]),
@@ -78,14 +78,21 @@ module Single_Cycle_Top(
     );
     
     Sign_Extend Sign_Extend(
-    .In(RD_Instr),
-    .ImmSrc(ImmSrc_Top[0]),
-    .Imm_Ext(Imm_Ext_Top)
+        .In(RD_Instr),
+        .ImmSrc(ImmSrc_Top[0]),
+        .Imm_Ext(Imm_Ext_Top)
+    );
+    
+    MUX_2_by_1 Mux_RegisterFile_to_ALU(
+        .a(RD2_Top),
+        .b(Imm_Ext_Top),
+        .s(ALU_Src),
+        .c(Src_B)
     );
     
     ALU ALU(
        .A(RD1_Top), 
-       .B(Imm_Ext_Top),       // ALU 32-bit Inputs                 
+       .B(Src_B),       // ALU 32-bit Inputs                 
        .ALU_Sel(ALUControl_Top),        // ALU Selection
        .ALU_Out(ALU_Result),            // ALU 32-bit Output
        .CarryOut(),           // Carry Out Flag
@@ -98,12 +105,12 @@ module Single_Cycle_Top(
         .Op(RD_Instr[6:0]),
         .RegWrite(RegWrite),
         .ImmSrc(ImmSrc_Top),
-        .ALUSrc(),
-        .MemWrite(),
-        .ResultSrc(),
+        .ALUSrc(ALU_Src),
+        .MemWrite(MEM_Write),
+        .ResultSrc(ResultSrc),
         .Branch(),
         .funct3(RD_Instr[14:12]),
-        .funct7(),
+        .funct7(RD_Instr[6:0]),
         .ALUControl(ALUControl_Top)
      );
 
@@ -117,7 +124,12 @@ module Single_Cycle_Top(
 
     );
     
-
+    MUX_2_by_1 Mux_Data_Memory_to_RegisterFile(
+           .a(ALU_Result),
+           .b(ReadData),
+           .s(ResultSrc),
+           .c(Result)
+       );
     
 endmodule
 
