@@ -71,12 +71,12 @@ module Instruction_Memory(
    //      x11 = 0x28  = 40 dec , stored in data memory manually
    //      x12 = 0x30  = 48 dec, stored in data memory manually
    
-         Memory[1] = 32'h00B62423;
+    //     Memory[1] = 32'h00B62423;
    
    //test-5
    //R-Type instruction       
            
-    //       Memory[0] = 32'h0062E233;
+           Memory[0] = 32'h0062E233;
             
     end
 
