@@ -37,17 +37,25 @@ module Single_Cycle_Top(
     
     wire [31:0] PC_Top;//connecting PC with A(address register) of memory
     wire [31:0] RD_Instr;//connecting Instruction memory output(RD) with register file input A1
-    wire [31:0] RD1_Top;
+    wire [31:0] RD1_Top,RD2_Top;
     wire [31:0] Imm_Ext_Top;
     wire [5:0] ALUControl_Top;
     wire [31:0] ALU_Result, ReadData, PCPlus4;
-    wire RegWrite;  
+    wire RegWrite,MEM_Write;  
+    wire [1:0] ImmSrc_Top;
     
     Program_Counter PC( //instentiating Program Counter
         .clk(clk),
         .rst(rst),
         .PC(PC_Top),
         .PC_Next(PCPlus4)
+    );
+    
+    PC_Adder PC_Adder(
+        .a(PC_Top),
+        .b(32'd4),
+        .c(PCPlus4)
+        
     );
     
     Instruction_Memory  Instruction_Memory(
@@ -62,15 +70,16 @@ module Single_Cycle_Top(
         .WE3(RegWrite),
         .WD3(ReadData),
         .A1(RD_Instr[19:15]),
-        .A2(),
+        .A2(RD_Instr[24:20]),
         .A3(RD_Instr[11:7]),
         .RD1(RD1_Top),
-        .RD2()
+        .RD2(RD2_Top)
     
     );
     
     Sign_Extend Sign_Extend(
     .In(RD_Instr),
+    .ImmSrc(ImmSrc_Top[0]),
     .Imm_Ext(Imm_Ext_Top)
     );
     
@@ -88,7 +97,7 @@ module Single_Cycle_Top(
     Control_Unit_Top Control_Unit_Top(
         .Op(RD_Instr[6:0]),
         .RegWrite(RegWrite),
-        .ImmSrc(),
+        .ImmSrc(ImmSrc_Top),
         .ALUSrc(),
         .MemWrite(),
         .ResultSrc(),
@@ -101,20 +110,14 @@ module Single_Cycle_Top(
     Data_Memory Data_Memory(
         .clk(clk),
         .rst(rst),
-        .WD(),        //data to store in memory or read it from memory
+        .WD(RD2_Top),        //data to store in memory or read it from memory
         .A(ALU_Result),
-        .WE(),       //write enable
+        .WE(MEM_Write),      //write enable
         .RD(ReadData)        //read the address A data onto RD, read wxisting data basically
 
     );
     
-    PC_Adder PC_Adder(
-        .a(PC_Top),
-        .b(32'd4),
-        .c(PCPlus4)
-        
-    );
-    
+
     
 endmodule
 

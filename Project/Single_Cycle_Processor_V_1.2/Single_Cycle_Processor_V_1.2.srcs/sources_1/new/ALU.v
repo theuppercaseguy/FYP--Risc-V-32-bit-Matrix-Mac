@@ -18,7 +18,7 @@
 // Additional Comments:
 // 
 //////////////////////////////////////////////////////////////////////////////////
-
+/* ALU 1
 module ALU(A,B,ALU_Out,ALU_Sel,Overflow,CarryOut,Zero,Negative);
 
     input [31:0]A,B;
@@ -45,9 +45,10 @@ module ALU(A,B,ALU_Out,ALU_Sel,Overflow,CarryOut,Zero,Negative);
     assign Negative = ALU_Out[31];
 
 endmodule
+*/
 
-/*
 
+//ALU 2
 module ALU(
     input [31:0] A, B,       // ALU 32-bit Inputs                 
     input [5:0] ALU_Sel,     // ALU Selection
@@ -115,4 +116,4 @@ module ALU(
     
     
 endmodule
-*/
+

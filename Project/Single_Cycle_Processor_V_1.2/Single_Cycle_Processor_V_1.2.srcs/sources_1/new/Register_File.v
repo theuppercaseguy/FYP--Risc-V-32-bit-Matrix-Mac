@@ -51,6 +51,14 @@ module Register_File(
     initial begin
         //test-1
         Registers[9] = 32'h0000020;
+        
+        //test-3
+        Registers[6] = 32'h0000040;
+        
+        //test-4
+        Registers[11] = 32'h0000028;
+        Registers[12] = 32'h0000030;
+      
     end
 
 

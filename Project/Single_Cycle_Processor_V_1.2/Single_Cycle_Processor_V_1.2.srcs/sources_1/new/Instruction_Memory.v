@@ -47,7 +47,7 @@ module Instruction_Memory(
     
     //    x6 = 20 hex, 32 dec => from memory
     
-          Memory[0] = 32'hFFC4A303;     
+    //      Memory[0] = 32'hFFC4A303;     
     
     //test 2
     // loading word from data memory
@@ -58,9 +58,22 @@ module Instruction_Memory(
     
     //     x7 = 02 hex
      
-           Memory[1] = 32'h00832383;
+    //       Memory[1] = 32'h00832383;
     
-    
+   //test-3
+   //Store word instruction
+           Memory[0] = 32'h0064A423;
+           
+           
+   //test-4 
+   //store word in memory
+   //      sw x11, 8(x12) => store the value thats in register x11 to address in (x12)hex + (8)dec in memory
+   //      x11 = 0x28  = 40 dec , stored in data memory manually
+   //      x12 = 0x30  = 48 dec, stored in data memory manually
+   
+           Memory[1] = 32'h00B62423;
+            
+            
     end
 
 

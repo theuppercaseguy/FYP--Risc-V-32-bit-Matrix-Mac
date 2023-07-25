@@ -29,7 +29,7 @@ module Data_Memory(
     output [31:0] RD//read the address A data onto RD, read wxisting data basically
     );
     
-    reg [31:0] Data_Memory_Registers [1028:0];
+    reg [31:0] Data_Memory_Registers [512:0];
 
     always @(posedge clk)
     begin
