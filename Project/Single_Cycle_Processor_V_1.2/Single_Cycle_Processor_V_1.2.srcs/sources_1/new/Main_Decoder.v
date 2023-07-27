@@ -25,6 +25,7 @@ module Main_Decoder(Op,RegWrite,ImmSrc,ALUSrc,MemWrite,ResultSrc,Branch,ALUOp);
     
     input [6:0]Op;
     
+    
     output RegWrite,ALUSrc,MemWrite,ResultSrc,Branch;
     output [1:0]ImmSrc,ALUOp;
     
@@ -46,7 +47,7 @@ module Main_Decoder(Op,RegWrite,ImmSrc,ALUSrc,MemWrite,ResultSrc,Branch,ALUOp);
     assign ImmSrc       = ( Op == S_sw_op ) ? 2'b01 : ( Op == B_op_basic ) ? 2'b10 : 2'b00;    
     assign ALUSrc       = ( Op == I_lw_op | Op == S_sw_op | Op == I_ADDI_op) ? 1'b1 : 1'b0;
     assign MemWrite     = ( Op ==  S_sw_op )   ? 1'b1 : 1'b0 ;
-    assign ResultSrc    = ( Op == I_lw_op | Op == I_ADDI_op )   ? 1'b1 : 1'b0 ;
+    assign ResultSrc    = ( Op == I_lw_op  )   ? 1'b1 : 1'b0 ;
     assign Branch       = ( Op == B_op_basic ) ? 1'b1 : 1'b0 ;
     assign ALUOp        = ( Op == R_op_basic ) ? 2'b10: ( Op == B_op_basic ) ? 2'b01 : 2'b00 ;
     

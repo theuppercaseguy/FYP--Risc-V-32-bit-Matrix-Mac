@@ -22,18 +22,18 @@ module Single_Cycle_Top_Testbench();
         
     always
     begin
+
         clk = ~clk;
         #50;
     end
 
     initial
-    begin
-           rst = 1'b0;
-           #100;
-           
-           rst = 1'b1;
-           #300;
-           $finish; 
+   begin
+          rst = 1'b0;
+          #100;
+          rst = 1'b1;
+          #2000;
+          //  $finish; 
     end
 
 

@@ -12,8 +12,8 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="261706784fs"></ZoomEndTime>
-      <Cursor1Time time="64333000fs"></Cursor1Time>
+      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
+      <Cursor1Time time="390661000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="152"></NameColumnWidth>
@@ -75,7 +75,6 @@
    <wvobject fp_name="group92" type="group">
       <obj_property name="label">Sign Extend</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/Sign_Extend/In" type="array">
          <obj_property name="ElementShortName">In[31:0]</obj_property>
          <obj_property name="ObjectShortName">In[31:0]</obj_property>
@@ -88,7 +87,6 @@
    <wvobject fp_name="group82" type="group">
       <obj_property name="label">Register File</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/Register_File/A1" type="array">
          <obj_property name="ElementShortName">A1[4:0]</obj_property>
          <obj_property name="ObjectShortName">A1[4:0]</obj_property>
@@ -146,6 +144,7 @@
    <wvobject fp_name="group102" type="group">
       <obj_property name="label">Control Unit</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/Control_Unit_Top/RegWrite" type="logic">
          <obj_property name="ElementShortName">RegWrite</obj_property>
          <obj_property name="ObjectShortName">RegWrite</obj_property>
@@ -161,6 +160,10 @@
       <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/Control_Unit_Top/Op" type="array">
          <obj_property name="ElementShortName">Op[6:0]</obj_property>
          <obj_property name="ObjectShortName">Op[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/Control_Unit_Top/funct7" type="array">
+         <obj_property name="ElementShortName">funct7[6:0]</obj_property>
+         <obj_property name="ObjectShortName">funct7[6:0]</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group107" type="group">

@@ -31,9 +31,13 @@ module Control_Unit_Top(Op,RegWrite,ImmSrc,ALUSrc,MemWrite,ResultSrc,Branch,func
     output RegWrite, ALUSrc, MemWrite, ResultSrc, Branch;
     output [1:0]ImmSrc;
     output [5:0]ALUControl;
+    
+     parameter R_ADD_op = 7'b0110011;   //ADD  => OP => 0110011 => R-TYPE
 
     wire [1:0]ALUOp;
-
+    wire [6:0]tmp;
+    //assign tmp = ( Op == R_ADD_op  ) ? funct7 : 7'b0000000;
+    
     Main_Decoder Main_Decoder(
                 .Op(Op),
                 .RegWrite(RegWrite),
@@ -46,11 +50,11 @@ module Control_Unit_Top(Op,RegWrite,ImmSrc,ALUSrc,MemWrite,ResultSrc,Branch,func
     );
 
     ALU_Decoder ALU_Decoder(
-                            .ALUOp(ALUOp),
-                            .funct3(funct3),
-                            .funct7(funct7),
-                            .op(Op),
-                            .ALUControl(ALUControl)
+                 .ALUOp(ALUOp),
+                 .funct3(funct3),
+                 .funct7(funct7),
+                 .op(Op),
+                 .ALUControl(ALUControl)
     );
 
 

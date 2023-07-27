@@ -30,15 +30,15 @@ module ALU_Decoder(ALUOp,funct3,funct7,op,ALUControl);
     output [5:0]ALUControl;
 
     // Method 2
-    assign ALUControl = (ALUOp == 2'b00) ? 5'b00000 ://lw, sw
-                        (ALUOp == 2'b01) ? 5'b00001 :// beq, branch if equal
-                        ((ALUOp == 2'b10) & (funct3 == 3'b000) & ({op[5],funct7[5]} == 2'b11)) ? 5'b00001 ://arithmetic subtraction 
+    assign ALUControl = (ALUOp == 2'b00) ? 5'b00000 :    //lw, sw
+                        (ALUOp == 2'b01) ? 5'b00001 :   // beq, branch if equal
+                        ((ALUOp == 2'b10) & (funct3 == 3'b000) & op == 7'b0010011 ) ? 5'b00110 :           // ADDI instruction
+                        ((ALUOp == 2'b10) & (funct3 == 3'b000) & ({op[5],funct7[5]} == 2'b11)) ? 5'b00001 : //arithmetic subtraction 
                         ((ALUOp == 2'b10) & (funct3 == 3'b000) & ({op[5],funct7[5]} != 2'b11)) ? 5'b00000 : //arithmetic addition
-                        ((ALUOp == 2'b10) & (funct3 == 3'b000) & op == 7'b0010011 ) ? 5'b00110 : // ADDI instruction
-                        ((ALUOp == 2'b10) & (funct3 == 3'b010)) ? 5'b00101 ://slt 
+                        ((ALUOp == 2'b10) & (funct3 == 3'b010)) ? 5'b00101 : //slt 
                         ((ALUOp == 2'b10) & (funct3 == 3'b110)) ? 5'b00011 : //or
                         ((ALUOp == 2'b10) & (funct3 == 3'b111)) ? 5'b00010 : //and
-                                                                   5'b00000 ;//lw,sw
+                                                                  5'b00000 ; //lw,sw
     
 
 

@@ -42,7 +42,7 @@ module Single_Cycle_Top(
     wire [5:0] ALUControl_Top;
     wire [31:0] ALU_Result, ReadData, PCPlus4, Src_B, Result;
     wire RegWrite, MEM_Write, ALU_Src, ResultSrc;  
-    wire [1:0] ImmSrc_Top;
+    wire [1:0] ImmSrc_Top ;
     
     Program_Counter PC( //instentiating Program Counter
         .clk(clk),
@@ -68,7 +68,7 @@ module Single_Cycle_Top(
         .clk(clk),
         .rst(rst),
         .WE3(RegWrite),
-        .WD3(MEM_Write ? Result : ALU_Result),
+        .WD3(Result),
         .A1(RD_Instr[19:15]),
         .A2(RD_Instr[24:20]),
         .A3(RD_Instr[11:7]),
@@ -101,7 +101,7 @@ module Single_Cycle_Top(
        .Overflow()            // Overflow Flag
     );
     
-    Control_Unit_Top Control_Unit_Top(
+     Control_Unit_Top Control_Unit_Top(
         .Op(RD_Instr[6:0]),
         .RegWrite(RegWrite),
         .ImmSrc(ImmSrc_Top),
@@ -110,7 +110,7 @@ module Single_Cycle_Top(
         .ResultSrc(ResultSrc),
         .Branch(),
         .funct3(RD_Instr[14:12]),
-        .funct7(RD_Instr[6:0]),
+        .funct7(RD_Instr[31:25]),//masla here
         .ALUControl(ALUControl_Top)
      );
 
@@ -125,10 +125,10 @@ module Single_Cycle_Top(
     );
     
     MUX_2_by_1 Mux_Data_Memory_to_RegisterFile(
-           .a(ALU_Result),
-           .b(ReadData),
-           .s(ResultSrc),
-           .c(Result)
+         .a(ALU_Result),
+         .b(ReadData),
+         .s(ResultSrc),
+         .c(Result)
        );
     
 endmodule
