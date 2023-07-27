@@ -10,17 +10,17 @@ In this section, you'll find the details of the Single Cycle Processor implement
 
 | Instruction | ALU Control | Opcode | Funct3 | Funct7 | Type   | Tested | Test Cases                   |
 |-------------|--------|--------|--------|--------|--------|--------|-------------------------------    |
-| ADD         | 00000 | 0110011 | 000    | 0000000| R-type | No     | add x3,x1,x2                      |
-| SUB         | 00001 | 0110011 | 000    | 0100000| R-type | No     | sub x4,x1,x2 <br>sub x5,x2,x1     |
-| AND         | 00010 | 0110011 | 111    | 0000000| R-type | No     | and x6,x1,x2                      |
+| ADD         | 00000 | 0110011 | 000    | 0000000| R-type | YES    | add x3,x1,x2                      |
+| SUB         | 00001 | 0110011 | 000    | 0100000| R-type | YES    | sub x4,x1,x2 <br>sub x5,x2,x1     |
+| AND         | 00010 | 0110011 | 111    | 0000000| R-type | YES    | and x6,x1,x2                      |
 | XOR         | N/A   | 0110011 | 100    | 0000000| R-type | No     | N/A                               |
-| OR          | 00011 | 0110011 | 110    | 0000000| R-type | No     | or x7,x1,x2                       |
+| OR          | 00011 | 0110011 | 110    | 0000000| R-type | YES    | or x7,x1,x2                       |
 | SLT         | 00101 | 0110011 | 010    | 0000000| R-type | No     | N/A                               |
 | LI          |  N/A  | 0010011 | 000    | N/A    | I-type | Yes    | li x2, 10 <br>li x10, 400         |
 | ADDi        |  N/A  | 0010011 | 000    | N/A    | I-type | Yes    | addi x1, x0, 15                   |
 | LW          |  N/A  | 0000011 | 010    | N/A    | I-type | Yes    | lw x11,  4(x10)<br>lw x12,  8(x10)|
 | SW          |  N/A  | 0100011 | 010    | N/A    | S-type | Yes    | sw x3,  4(x10)<br>sw x4,  8(x10)  |
-| BEQ         |  N/A  | 1100011 | 000    | N/A    | B-type | Yes    | N/A                               |
+| BEQ         |  N/A  | 1100011 | 000    | N/A    | B-type | NO     | N/A                               |
 | ...         |  ...  | ...     | ...    | ...    | ...    | ...    | N/A                               |
 
 
