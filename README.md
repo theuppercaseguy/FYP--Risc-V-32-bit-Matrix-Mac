@@ -58,13 +58,13 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 ## Objectives
 
 
-| Objectives | Date Started | Date Completed | Achived? | Version |
-|-------------------|------|------|------|-----|
-| Single Cycle Processor    | 1/July/2023 | pending... | False | 1.2 |
-| 5 stages Piplined Processor    | Pending... | pending... | False | 0.0 |
-| 10 Stages Piplined Processor    | Pending... | pending... | False | 0.0 |
-|MAC Instructions | Pending... | pending... | False | 0.0 |
-|FPGA Implementation| Pending... | pending... | False | 0.0 |
+| Objectives | Date Started | Date Completed | Achived? | Version | Test's |
+|-------------------|------|------|------|-----|-----|
+| Single Cycle Processor    | 1/July/2023 | True | False | 1.2 | [Tests-1](docs/github_readmes/Single_Cycle_tests.md) |
+| 5 stages Piplined Processor    | Pending... | pending... | False | 0.0 | |
+| 10 Stages Piplined Processor    | Pending... | pending... | False | 0.0 ||
+|MAC Instructions | Pending... | pending... | False | 0.0 ||
+|FPGA Implementation| Pending... | pending... | False | 0.0 ||
 
 ### RISC-V Essential Registers
 
