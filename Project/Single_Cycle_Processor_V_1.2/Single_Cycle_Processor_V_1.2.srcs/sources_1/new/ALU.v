@@ -21,30 +21,55 @@
 
 
 // ALU 1
-module ALU(A,B,ALU_Out,ALU_Sel,Overflow,CarryOut,Zero,Negative);
-
-    input [31:0]A,B;
-    input [5:0]ALU_Sel;
-    output CarryOut,Overflow,Zero,Negative;
-    output [31:0]ALU_Out;
-
-    wire Cout;
+module ALU(
+    input [31:0] A, B,       // ALU 32-bit Inputs                 
+    input [5:0] ALU_Sel,     // ALU Selection
+    
+    output reg [31:0] ALU_Out,   // ALU 32-bit Output
+    output reg CarryOut,         // Carry Out Flag
+    output reg Zero,             // Zero Flag
+    output reg Negative,         // Negative Flag
+    output reg Overflow          // Overflow Flag
+);
+    reg Cout;
     wire [31:0]Sum;
+    wire [31:0] immediate;  // Input for the immediate value
 
-    assign Sum = (ALU_Sel[0] == 1'b0) ? A + B :
-                                          (A + ((~B)+1)) ;
-    assign {CarryOut,ALU_Out} = (ALU_Sel == 5'b00000) ? Sum :
-                           (ALU_Sel == 5'b00001) ? Sum :
-                           (ALU_Sel == 5'b00010) ? A & B :
-                           (ALU_Sel == 5'b00011) ? A | B :
-                           (ALU_Sel == 5'b00101) ? {{32{1'b0}},(Sum[31])} :
-                           {33{1'b0}};
-    assign Overflow = ((Sum[31] ^ A[31]) & 
-                      (~(ALU_Sel[0] ^ B[31] ^ A[31])) &
-                      (~ALU_Sel[1]));
-    assign CarryOut = ((~ALU_Sel[1]) & Cout);
-    assign Zero = &(~ALU_Out);
-    assign Negative = ALU_Out[31];
+    assign Sum = (ALU_Sel[0] == 1'b0) ? A + B : //ARITHMETIC ADITION
+                               (A + ((~B)+1)) ; //ARITHMETIC SUBTRACTION using 2's compliment
+    
+    
+    // I-Type instruction: ADDI (funct3 = 3'b000, ALUOp = 2'b10)
+    assign immediate = { {20{B[31]}}, B[11:0] }; // Sign-extend the immediate value
+
+    always @(*)
+    begin
+        case ( ALU_Sel )
+            5'b00000: 
+                ALU_Out <=  Sum ; //ARITHMETIC ADITION
+            5'b00001: 
+                ALU_Out <=  Sum ; //ARITHMETIC SUBTRACTION using 2's compliment
+            5'b00010: 
+                ALU_Out <= A & B ;    // bitwise and  
+            5'b00011: 
+                ALU_Out <= A | B ;    // bitwise or
+            //5'b00100: not implementd yet, leaving empty for future use
+            //  
+            5'b00101:
+               { Cout, ALU_Out } <= {{32{1'b0}},(Sum[31])} ;  //slt, set less then
+            5'b00110:
+               ALU_Out <= A + immediate; // ADDI, add immediate
+            default: 
+                {Cout, ALU_Out} <= {33{1'b0}};                            
+        
+        endcase
+        Overflow = ((Sum[31] ^ A[31]) & (~(ALU_Sel[0] ^ B[31] ^ A[31])) & (~ALU_Sel[1]));
+        
+        CarryOut = ((~ALU_Sel[1]) & Cout);
+        Zero = ~|ALU_Out;
+        Negative = ALU_Out[31];
+     end                 
+
 
 endmodule
 

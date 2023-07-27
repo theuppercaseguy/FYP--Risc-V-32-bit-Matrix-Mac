@@ -3,7 +3,6 @@ Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
 Running: E:/softwares/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 684780e1d04046d1a6a7c0f65e7f3d2e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot ALU_Testbench_behav xil_defaultlib.ALU_Testbench xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-278] actual bit length 1 differs from formal bit length 32 for port ZeroExt [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/Single_Cycle_Processor_V_1.2.srcs/ALU_SimSet/new/ALU_TB.v:32]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

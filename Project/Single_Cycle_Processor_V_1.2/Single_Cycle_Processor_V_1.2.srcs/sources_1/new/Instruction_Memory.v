@@ -76,10 +76,45 @@ module Instruction_Memory(
    //test-5
    //R-Type instruction       
            
-           Memory[0] = 32'h0062E233;
-            
+    //     Memory[0] = 32'h0062E233;
+           
+           
+    //test-6 
+    //running code from a hex file
+    /*  memfile.hex =>
+        
+        @00000000
+        0062E3B3
+        0062F433    
+    */
+
+   //test-7
+   //checking ADDI instruction
+    /*    
+          memfile.hex =>
+          
+          @00000000
+          00500293 // addi x6, x0, 5 
+    */
+
+    //test-8
+   //checking ADDI instruction
+    /*  memfile.hex =>
+          
+          @00000000
+          02000493 //addi x9 x0 32
+          0094A023 //sw x9 0(x9)
+          0004A303 //lw x6 0(x9)
+
+    */
+
+
+    $readmemh("E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/memfile.hex",Memory);   
+   
+   
     end
 
+   
 
 
 

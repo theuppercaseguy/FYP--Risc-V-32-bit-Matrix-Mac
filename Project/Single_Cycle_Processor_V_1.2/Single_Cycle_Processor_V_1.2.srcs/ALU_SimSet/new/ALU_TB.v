@@ -32,6 +32,14 @@ ALU test_unit(
 );
 
 initial begin
+    
+    //testing negative subtraction => 10 - 14
+    
+    A=32'd10;
+    B=32'd14;
+    ALU_Sel = 5'd1;
+    #10;
+
     // hold reset state for 100 ns.
     A = 32'h0A;
     B = 4'h02;
@@ -51,7 +59,7 @@ initial begin
     
     //negative flag testing
     A = 32'd10;
-    B = 32'd20;
+    B = 32'h20;
     ALU_Sel = 5'b00001;
     #10;
     

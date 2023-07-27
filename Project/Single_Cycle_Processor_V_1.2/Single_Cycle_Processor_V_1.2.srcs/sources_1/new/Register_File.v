@@ -33,6 +33,7 @@ module Register_File(
     
     //register file memory
     reg [31:0] Registers [31:0];//32 registers of 32 bits each
+   
     
     //read functionality from the register file
     assign RD1 =  ( !rst ) ? 32'h00000000 : Registers[A1] ;
@@ -49,20 +50,26 @@ module Register_File(
     end
 
     initial begin
+         Registers[0] = 32'h00000000;// x0 is always zero
+    
         //test-1
-        Registers[9] = 32'h0000020;
+   //     Registers[9] = 32'h0000020;
         
         //test-3
-        Registers[6] = 32'h0000040;
+        //Registers[6] = 32'h0000040;
         
         //test-4
-        Registers[11] = 32'h0000028;
-        Registers[12] = 32'h0000030;
+ //       Registers[11] = 32'h0000028;
+ //       Registers[12] = 32'h0000030;
+        
         //test-5
-        Registers[5] = 32'h00000006;
-        Registers[6] = 32'h0000000A;
+        //Registers[5] = 32'h00000006;
+        //Registers[6] = 32'h0000000A;
+        
+        //test-6
+ //       Registers[5] = 32'h00000005;
+ //       Registers[6] = 32'h00000004;
                 
-      
     end
 
 

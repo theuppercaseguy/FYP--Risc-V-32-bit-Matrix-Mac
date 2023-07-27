@@ -26,22 +26,29 @@ module Main_Decoder(Op,RegWrite,ImmSrc,ALUSrc,MemWrite,ResultSrc,Branch,ALUOp);
     input [6:0]Op;
     output RegWrite,ALUSrc,MemWrite,ResultSrc,Branch;
     output [1:0]ImmSrc,ALUOp;
+    
+    //I-TYPE INSTRUCTIONS:
+     parameter I_lw_op = 7'b0000011;     //LW    => OP => 0000011 => I-TYPE
+     parameter I_ADDI_op = 7'b0010011;   //ADDI  => OP => 0010011 => I-TYPE
+                                         
+    // R-type Instructions: => ADD, SUB, AND, OR, XOR, SLL, SRL, SLT => SAME OPCODE => 0110011
+     parameter R_op_basic = 7'b0110011;  
+                                         
+    //S-TYPE INSTRUCTIONS                
+     parameter S_sw_op = 7'b0100011;     //SW    => OP => 0100011 => S-TYPE
+     
+    //B-TYPE INSTRUCTIONS
+     parameter B_op_basic = 7'b1100011;  //BEQ = BNE = BLT = BGE => OP => 1100011 SAME OP CODE
+            
 
-    assign RegWrite = (Op == 7'b0000011 | Op == 7'b0110011) ? 1'b1 :
-                                                              1'b0 ;
-    assign ImmSrc = (Op == 7'b0100011) ? 2'b01 : 
-                    (Op == 7'b1100011) ? 2'b10 :    
-                                         2'b00 ;
-    assign ALUSrc = (Op == 7'b0000011 | Op == 7'b0100011) ? 1'b1 :
-                                                            1'b0 ;
-    assign MemWrite = (Op == 7'b0100011) ? 1'b1 :
-                                           1'b0 ;
-    assign ResultSrc = (Op == 7'b0000011) ? 1'b1 :
-                                            1'b0 ;
-    assign Branch = (Op == 7'b1100011) ? 1'b1 :
-                                         1'b0 ;
-    assign ALUOp = (Op == 7'b0110011) ? 2'b10 :
-                   (Op == 7'b1100011) ? 2'b01 :
-                                        2'b00 ;
+    assign RegWrite     = ( Op == R_op_basic | Op == I_lw_op | Op == I_ADDI_op ) ? 1'b1 : 1'b0;
+    assign ImmSrc       = ( Op == S_sw_op ) ? 2'b01 : ( Op == B_op_basic ) ? 2'b10 : 2'b00;    
+    assign ALUSrc       = ( Op == I_lw_op | Op == S_sw_op  ) ? 1'b1 : 1'b0;
+    assign MemWrite     = ( Op ==  S_sw_op )   ? 1'b1 : 1'b0 ;
+    assign ResultSrc    = ( Op == I_lw_op  )   ? 1'b1 : 1'b0 ;
+    assign Branch       = ( Op == B_op_basic ) ? 1'b1 : 1'b0;
+    assign ALUOp        = ( Op == R_op_basic ) ? 2'b10: ( Op == B_op_basic ) ? 2'b01 : 2'b00 ;
+    
+
 
 endmodule
