@@ -68,7 +68,7 @@ module Single_Cycle_Top(
         .clk(clk),
         .rst(rst),
         .WE3(RegWrite),
-        .WD3(Result),
+        .WD3(MEM_Write ? Result : ALU_Result),
         .A1(RD_Instr[19:15]),
         .A2(RD_Instr[24:20]),
         .A3(RD_Instr[11:7]),
