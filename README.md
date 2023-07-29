@@ -4,10 +4,8 @@
 
 Hardware-Based Acceleration of Matrix MAC on an FPGA
 
-<div align="center">  
-<a href="https://github.com/theuppercaseguy/FYP--Risc-V-32-bit-Matrix-Mac/stargazers"><img src="https://img.shields.io/github/stars/elangosundar/awesome-README-templates" alt="Stars Badge"/></a>
-<a href="https://github.com/theuppercaseguy/FYP--Risc-V-32-bit-Matrix-Mac/pulls"><img src="https://img.shields.io/github/issues-pr/elangosundar/awesome-README-templates" alt="Pull Requests Badge"/>
-<a href="https://github.com/theuppercaseguy/FYP--Risc-V-32-bit-Matrix-Mac/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/elangosundar/awesome-README-templates?color=2b9348"></a>
+<div align="left">  
+
 <a href="https://github.com/theuppercaseguy/FYP--Risc-V-32-bit-Matrix-Mac/master/LICENSE"><img src="https://img.shields.io/github/license/elangosundar/awesome-README-templates?color=2b9348" alt="License Badge"/></a></div>
 
 ## Project Description
