@@ -1,9 +1,14 @@
 
 
-
 # RISC-V 32-bit MATRIX MAC Processor
 
 Hardware-Based Acceleration of Matrix MAC on an FPGA
+
+<div align="center">  
+<a href="https://github.com/theuppercaseguy/FYP--Risc-V-32-bit-Matrix-Mac/stargazers"><img src="https://img.shields.io/github/stars/elangosundar/awesome-README-templates" alt="Stars Badge"/></a>
+<a href="https://github.com/theuppercaseguy/FYP--Risc-V-32-bit-Matrix-Mac/pulls"><img src="https://img.shields.io/github/issues-pr/elangosundar/awesome-README-templates" alt="Pull Requests Badge"/>
+<a href="https://github.com/theuppercaseguy/FYP--Risc-V-32-bit-Matrix-Mac/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/elangosundar/awesome-README-templates?color=2b9348"></a>
+<a href="https://github.com/theuppercaseguy/FYP--Risc-V-32-bit-Matrix-Mac/master/LICENSE"><img src="https://img.shields.io/github/license/elangosundar/awesome-README-templates?color=2b9348" alt="License Badge"/></a></div>
 
 ## Project Description
 
@@ -80,8 +85,17 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 
 ## [Notes](docs/github_readmes/Notes.md)
 
-<br>
+<br><br>
 
+## :pencil: License
+
+This project is licensed under [MIT](https://opensource.org/licenses/MIT) license.
+
+## :man_astronaut: Show your support
+
+Give a ⭐️ if this project helped you!
+
+<p align="center"><i>Loved the project? Please visit our <a href="https://portfolio-saadkhan.vercel.app/">Website</a></i></p>
 
 
 
