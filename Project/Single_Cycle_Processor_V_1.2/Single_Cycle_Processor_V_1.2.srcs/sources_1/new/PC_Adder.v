@@ -20,12 +20,17 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module PC_Adder(a,b,c);
-    input [31:0]a, b;
-    output [31:0] c;
+module PC_Adder(
+    input [31:0] curr_address, offset, ALU_Out,
+    input branch,
+   
+    output [31:0] next_address
+    );
+    wire [31:0] two_comp_offset = (~offset) + 2;
     
+    //               branch flag high & condition satisfies & offset is positive then add current address + offset else subtract current address - offset 
+    assign next_address = ( branch & ALU_Out == 32'd1) ? ( (offset[31] != 1'b1) ? ( curr_address + offset ) : ( curr_address - two_comp_offset ) ) : curr_address + 32'd4 ;
     
-    assign c = a + b;
 endmodule
 
 

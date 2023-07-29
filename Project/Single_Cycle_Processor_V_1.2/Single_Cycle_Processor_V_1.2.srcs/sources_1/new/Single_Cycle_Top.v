@@ -37,11 +37,11 @@ module Single_Cycle_Top(
     
     wire [31:0] PC_Top;//connecting PC with A(address register) of memory
     wire [31:0] RD_Instr;//connecting Instruction memory output(RD) with register file input A1
-    wire [31:0] RD1_Top,RD2_Top;
+    wire [31:0] RD1_Top, RD2_Top;
     wire [31:0] Imm_Ext_Top;
     wire [5:0] ALUControl_Top;
     wire [31:0] ALU_Result, ReadData, PCPlus4, Src_B, Result;
-    wire RegWrite, MEM_Write, ALU_Src, ResultSrc;  
+    wire RegWrite, MEM_Write, ALU_Src, ResultSrc, Branch_Top;  
     wire [1:0] ImmSrc_Top ;
     
     Program_Counter PC( //instentiating Program Counter
@@ -52,9 +52,11 @@ module Single_Cycle_Top(
     );
     
     PC_Adder PC_Adder(
-        .a(PC_Top),
-        .b(32'd4),
-        .c(PCPlus4)
+        .curr_address(PC_Top),
+        .branch(Branch_Top),
+        .ALU_Out(ALU_Result),
+        .offset(Imm_Ext_Top),
+        .next_address(PCPlus4)
         
     );
     
@@ -79,7 +81,7 @@ module Single_Cycle_Top(
     
     Sign_Extend Sign_Extend(
         .In(RD_Instr),
-        .ImmSrc(ImmSrc_Top[0]),
+        .ImmSrc(ImmSrc_Top),
         .Imm_Ext(Imm_Ext_Top)
     );
     
@@ -108,7 +110,7 @@ module Single_Cycle_Top(
         .ALUSrc(ALU_Src),
         .MemWrite(MEM_Write),
         .ResultSrc(ResultSrc),
-        .Branch(),
+        .Branch(Branch_Top),
         .funct3(RD_Instr[14:12]),
         .funct7(RD_Instr[31:25]),//masla here
         .ALUControl(ALUControl_Top)

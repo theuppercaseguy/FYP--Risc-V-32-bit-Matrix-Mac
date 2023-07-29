@@ -11,13 +11,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
-      <Cursor1Time time="390661000fs"></Cursor1Time>
+      <ZoomStartTime time="500000000fs"></ZoomStartTime>
+      <ZoomEndTime time="5000000001fs"></ZoomEndTime>
+      <Cursor1Time time="4150000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="152"></NameColumnWidth>
-      <ValueColumnWidth column_width="93"></ValueColumnWidth>
+      <ValueColumnWidth column_width="81"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="11" />
    <wvobject fp_name="/Single_Cycle_Top_Testbench/clk" type="logic">
@@ -39,6 +39,10 @@
          <obj_property name="ElementShortName">PC[31:0]</obj_property>
          <obj_property name="ObjectShortName">PC[31:0]</obj_property>
       </wvobject>
+      <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/PC_Adder/two_comp_offset" type="array">
+         <obj_property name="ElementShortName">two_comp_offset[31:0]</obj_property>
+         <obj_property name="ObjectShortName">two_comp_offset[31:0]</obj_property>
+      </wvobject>
    </wvobject>
    <wvobject fp_name="group85" type="group">
       <obj_property name="label">Instruction memory</obj_property>
@@ -59,17 +63,26 @@
    <wvobject fp_name="group89" type="group">
       <obj_property name="label">PC Adder</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/PC_Adder/a" type="array">
-         <obj_property name="ElementShortName">a[31:0]</obj_property>
-         <obj_property name="ObjectShortName">a[31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/PC_Adder/curr_address" type="array">
+         <obj_property name="ElementShortName">curr_address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">curr_address[31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/PC_Adder/b" type="array">
-         <obj_property name="ElementShortName">b[31:0]</obj_property>
-         <obj_property name="ObjectShortName">b[31:0]</obj_property>
+      <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/PC_Adder/offset" type="array">
+         <obj_property name="ElementShortName">offset[31:0]</obj_property>
+         <obj_property name="ObjectShortName">offset[31:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/PC_Adder/c" type="array">
-         <obj_property name="ElementShortName">c[31:0]</obj_property>
-         <obj_property name="ObjectShortName">c[31:0]</obj_property>
+      <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/PC_Adder/ALU_Out" type="array">
+         <obj_property name="ElementShortName">ALU_Out[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_Out[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/PC_Adder/branch" type="logic">
+         <obj_property name="ElementShortName">branch</obj_property>
+         <obj_property name="ObjectShortName">branch</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/PC_Adder/next_address" type="array">
+         <obj_property name="ElementShortName">next_address[31:0]</obj_property>
+         <obj_property name="ObjectShortName">next_address[31:0]</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group92" type="group">
@@ -123,7 +136,6 @@
    <wvobject fp_name="group97" type="group">
       <obj_property name="label">ALU</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/ALU/ALU_Out" type="array">
          <obj_property name="ElementShortName">ALU_Out[31:0]</obj_property>
          <obj_property name="ObjectShortName">ALU_Out[31:0]</obj_property>
@@ -144,7 +156,6 @@
    <wvobject fp_name="group102" type="group">
       <obj_property name="label">Control Unit</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/Control_Unit_Top/RegWrite" type="logic">
          <obj_property name="ElementShortName">RegWrite</obj_property>
          <obj_property name="ObjectShortName">RegWrite</obj_property>
@@ -189,7 +200,6 @@
    <wvobject fp_name="group1610" type="group">
       <obj_property name="label">Main Decoder</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/Control_Unit_Top/Main_Decoder/Op" type="array">
          <obj_property name="ElementShortName">Op[6:0]</obj_property>
          <obj_property name="ObjectShortName">Op[6:0]</obj_property>

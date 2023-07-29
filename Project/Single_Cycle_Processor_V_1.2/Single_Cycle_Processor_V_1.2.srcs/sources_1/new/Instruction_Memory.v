@@ -109,9 +109,10 @@ module Instruction_Memory(
     */
 
 
-    $readmemh("E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/memfile.hex",Memory);   
+    //$readmemh("E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/memfile.hex",Memory);   
    
-   
+    $readmemh("E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/ALL_Instr_Test.hex",Memory);   //change path according to your directory
+       
     end
 endmodule
 

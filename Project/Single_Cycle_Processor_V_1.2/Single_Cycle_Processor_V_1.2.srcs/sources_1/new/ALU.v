@@ -46,21 +46,35 @@ module ALU(
     begin
         case ( ALU_Sel )
             5'b00000: 
-                ALU_Out <=  Sum ; //ARITHMETIC ADITION
+                ALU_Out <=  Sum ;                            //ARITHMETIC ADITION
             5'b00001: 
-                ALU_Out <=  Sum ; //ARITHMETIC SUBTRACTION using 2's compliment
+                ALU_Out <=  Sum ;                            //ARITHMETIC SUBTRACTION using 2's compliment
             5'b00010: 
-                ALU_Out <= A & B ;    // bitwise and  
+                ALU_Out <=  A * B;                            //ARITHMETIC Multiplication
             5'b00011: 
-                ALU_Out <= A | B ;    // bitwise or
-            //5'b00100: not implementd yet, leaving empty for future use
-            //  
-            5'b00101:
-               { Cout, ALU_Out } <= {{32{1'b0}},(Sum[31])} ;  //slt, set less then
+                ALU_Out <= A & B ;                           // bitwise and  
+            5'b00100: 
+                ALU_Out <= A | B ;                           // bitwise or
+            5'b00101: 
+                ALU_Out <= A ^ B ;                           // bitwise XOR
             5'b00110:
-               ALU_Out <= A + immediate; // ADDI, add immediate
+                ALU_Out <= A >> B ;                          // Logical shift right B times
+            5'b00111:
+                ALU_Out <= A << B ;                          // Logical shift right B times
+            5'b01000: 
+                ALU_Out = (A >= B) ? 32'd1 : 32'd0;          // Greater equal comparison
+            5'b01001: 
+                ALU_Out = (A == B) ? 32'd1 : 32'd0;         // Equal comparison
+            5'b01010: 
+                ALU_Out = (A != B) ? 32'd1 : 32'd0;         // Not Equal comparison
+            5'b01011: 
+                ALU_Out = (A < B) ? 32'd1 : 32'd0;          // Less Then comparison
+            5'b01100:
+               { Cout, ALU_Out } <= (A < B) ? 32'd1 : 32'd0; //slt, set less then
+            5'b11111:
+               { Cout, ALU_Out } <= {{33{1'b0}}} ;          //Ecall = Ebreak = end
             default: 
-                {Cout, ALU_Out} <= {33{1'b0}};                            
+                {Cout, ALU_Out} <= {33{1'b0}};                //Nothing            
         
         endcase
         Overflow = ((Sum[31] ^ A[31]) & (~(ALU_Sel[0] ^ B[31] ^ A[31])) & (~ALU_Sel[1]));
