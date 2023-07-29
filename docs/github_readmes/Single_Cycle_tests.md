@@ -38,7 +38,7 @@ In this section, you'll find the details of the Single Cycle Processor implement
     cd "Project/Single_Cycle_Processor_V_1.2/"
     code memfile.hex</li>
 <li>    //write code in hex file,  at the top write "@00000000".
-    ex://start of hex file
+    ex://start of the hex file
         @00000000
         00F00093
         00A00113
@@ -47,13 +47,13 @@ In this section, you'll find the details of the Single Cycle Processor implement
         40208233 </li>
 <li>    In Simultaion Sources, Make "Single_Cycle_Top_SimSet" Active!!!</li>
 <li>    Run behavioriual Simulation</li>
-<li>    In TCL Console, Type "run 3500". To increese timeline and to execute the remaining instructions.</li></ol>
+<li>    In TCL Console, Type "run 3500". To increase the timeline and to execute the remaining instructions.</li></ol>
     
 
     
 </pre>
 
-## [hex file]() : (Successfully) Tested Code
+## [hex file](../../Project/Single_Cycle_Processor_V_1.2/ALL_Instr_Test.hex) : (Successfully) Tested Code
 | ASSEMBLY-CODE | HEX-CODE |
 |------------------------|-----------|
 |addi x1, x0, -20       |   FEC00093 |
