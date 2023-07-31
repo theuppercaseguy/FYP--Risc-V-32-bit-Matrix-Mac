@@ -22,7 +22,7 @@
 
 module MUX_2_by_1(
     input [31:0] a,b,
-    input s,immload,
+    input s,
     output [31:0] c
 );
     

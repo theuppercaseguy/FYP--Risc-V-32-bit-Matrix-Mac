@@ -35,8 +35,6 @@ module Control_Unit_Top(Op,RegWrite,ImmSrc,ALUSrc,MemWrite,ResultSrc,Branch,func
      parameter R_ADD_op = 7'b0110011;   //ADD  => OP => 0110011 => R-TYPE
 
     wire [1:0]ALUOp;
-    wire [6:0]tmp;
-    //assign tmp = ( Op == R_ADD_op  ) ? funct7 : 7'b0000000;
     
     Main_Decoder Main_Decoder(
                 .Op(Op),
