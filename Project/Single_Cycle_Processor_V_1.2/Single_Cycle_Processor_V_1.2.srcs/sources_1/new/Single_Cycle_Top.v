@@ -32,7 +32,10 @@
 
  
 module Single_Cycle_Top(
-    input clk,rst    
+    input clk,rst,
+//    input [31:0] memoryinstr,
+    output reg [31:0] OUT,
+    output carry, zero, overflow, negative
     );
     
     wire [31:0] PC_Top;//connecting PC with A(address register) of memory
@@ -97,10 +100,10 @@ module Single_Cycle_Top(
        .B(Src_B),       // ALU 32-bit Inputs                 
        .ALU_Sel(ALUControl_Top),        // ALU Selection
        .ALU_Out(ALU_Result),            // ALU 32-bit Output
-       .CarryOut(),           // Carry Out Flag
-       .Zero(),               // Zero Flag
-       .Negative(),           // Negative Flag
-       .Overflow()            // Overflow Flag
+       .CarryOut(carry),           // Carry Out Flag
+       .Zero(zero),               // Zero Flag
+       .Negative(negative),           // Negative Flag
+       .Overflow(overflow)            // Overflow Flag
     );
     
      Control_Unit_Top Control_Unit_Top(
@@ -132,6 +135,12 @@ module Single_Cycle_Top(
          .s(ResultSrc),
          .c(Result)
        );
+       
+    always @(*)
+    begin
+        OUT = ALU_Result ;
+    end
+    //assign memoryinstr = RD_Instr;
     
 endmodule
 
