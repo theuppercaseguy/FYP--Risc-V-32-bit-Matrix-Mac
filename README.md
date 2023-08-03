@@ -87,45 +87,45 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 <table border="">
         <tr>
             <th>FETCH_CYCLE</th>
-            <th>Decode_CYCLE</th>
+            <th>DECODE_CYCLE</th>
             <th>EXECUTE_CYCLE</th>
-            <th>Column 4</th>
-            <th>Column 5</th>
+            <th>MEMORY_CYCLE</th>
+            <th>WRITEBACK_CYCLE</th>
         </tr>
         <tr>
             <td>PC Mux</td>
             <td>Control Unit</td>
             <td>AND GATE</td>
-            <td>Row 1, Cell 4</td>
-            <td>Row 1, Cell 5</td>
+            <td>Data Memory</td>
+            <td>MUX</td>
         </tr>
         <tr>
             <td>Program Counter</td>
             <td>Register File</td>
             <td>MUX</td>
-            <td></td>
-            <td></td>
+            <td>Memory Stage Registers  </td>
+            <td>-</td>
         </tr>
         <tr> 
             <td>Adder</td>
             <td>Extender</td>
             <td>PC ADDER</td>
-            <td>Row 3, Cell 4</td>
-            <td>Row 3, Cell 5</td>
+            <td>-</td>
+            <td>-</td>
         </tr>
         <tr>
             <td>Instruction Memory</td>
             <td>Deocde Stage Registers</td>
             <td>ALU</td>
-            <td>Row 4, Cell 4</td>
-            <td>Row 4, Cell 5</td>
+            <td>-</td>
+            <td>-</td>
         </tr>
         <tr>
-            <td></td>
+            <td>-</td>
             <td>Row 5, Cell 2</td>
             <td>Execute Stage Registers</td>
-            <td>Row 5, Cell 4</td>
-            <td>Row 5, Cell 5</td>
+            <td>-</td>
+            <td>-</td>
         </tr>
     </table>
 
