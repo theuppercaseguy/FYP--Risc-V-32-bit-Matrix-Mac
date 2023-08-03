@@ -105,7 +105,6 @@ Although the exact edition doesn't matters, just use the as latest as possible.
             <td>MUX</td>
             <td></td>
             <td></td>
-            <td></td>
         </tr>
         <tr> 
             <td>Adder</td>
