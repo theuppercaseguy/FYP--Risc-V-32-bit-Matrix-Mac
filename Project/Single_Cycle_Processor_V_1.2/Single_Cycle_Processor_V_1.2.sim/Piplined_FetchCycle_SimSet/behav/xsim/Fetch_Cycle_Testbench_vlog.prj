@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Fetch_Cycle.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Instruction_Memory.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/MUX_2_by_1.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/PC_Adder.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Program_Counter.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/Piplined_FetchCycle_SimSet/new/Fetch_Cycle_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

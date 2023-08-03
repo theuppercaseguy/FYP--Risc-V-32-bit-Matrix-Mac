@@ -1,0 +1,7 @@
+Running: xsim.dir/Five_Stage_Pipline_Top_behav/xsimk.exe -simmode gui -wdb Five_Stage_Pipline_Top_behav.wdb -simrunnum 0 -socket 64180
+Design successfully loaded
+Design Loading Memory Usage: 5952 KB (Peak: 5952 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 6736 KB (Peak: 6736 KB)
+Simulation CPU Usage: 15 ms

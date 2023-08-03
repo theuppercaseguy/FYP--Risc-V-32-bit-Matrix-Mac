@@ -11,22 +11,51 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="500000000fs"></ZoomStartTime>
-      <ZoomEndTime time="5000000001fs"></ZoomEndTime>
-      <Cursor1Time time="4150000000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="4000000000fs"></ZoomEndTime>
+      <Cursor1Time time="4000000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="152"></NameColumnWidth>
-      <ValueColumnWidth column_width="81"></ValueColumnWidth>
+      <ValueColumnWidth column_width="77"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="11" />
-   <wvobject fp_name="/Single_Cycle_Top_Testbench/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Single_Cycle_Top_Testbench/rst" type="logic">
-      <obj_property name="ElementShortName">rst</obj_property>
-      <obj_property name="ObjectShortName">rst</obj_property>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="group54" type="group">
+      <obj_property name="label">TOP</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/memoryinstr" type="array">
+         <obj_property name="ElementShortName">memoryinstr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">memoryinstr[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/OUT" type="array">
+         <obj_property name="ElementShortName">OUT[31:0]</obj_property>
+         <obj_property name="ObjectShortName">OUT[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/carry" type="logic">
+         <obj_property name="ElementShortName">carry</obj_property>
+         <obj_property name="ObjectShortName">carry</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/zero" type="logic">
+         <obj_property name="ElementShortName">zero</obj_property>
+         <obj_property name="ObjectShortName">zero</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/overflow" type="logic">
+         <obj_property name="ElementShortName">overflow</obj_property>
+         <obj_property name="ObjectShortName">overflow</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/negative" type="logic">
+         <obj_property name="ElementShortName">negative</obj_property>
+         <obj_property name="ObjectShortName">negative</obj_property>
+      </wvobject>
    </wvobject>
    <wvobject fp_name="group81" type="group">
       <obj_property name="label">PC</obj_property>
@@ -63,7 +92,6 @@
    <wvobject fp_name="group89" type="group">
       <obj_property name="label">PC Adder</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/Single_Cycle_Top_Testbench/uut/PC_Adder/curr_address" type="array">
          <obj_property name="ElementShortName">curr_address[31:0]</obj_property>
          <obj_property name="ObjectShortName">curr_address[31:0]</obj_property>

@@ -26,7 +26,7 @@
 module Execute_Cycle(
     input clk,rst,
     input  RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, BranchE,
-    input  [2:0]  ALUControlE,
+    input  [5:0]  ALUControlE,
     input  [31:0] RD1_E, RD2_E, Imm_Ext_E,
     input  [4:0]  RS1_E, RS2_E, RD_E,
     input  [31:0] PCE, PCPlus4E,
@@ -67,8 +67,8 @@ module Execute_Cycle(
       
        PC_Adder Branch_Adder(
              .curr_address(PCE),
-             .branch(1'b1),
-             .ALU_Out(32'd1),
+             .branch(BranchE),
+             .ALU_Out(ResultE),
              .offset(Imm_Ext_E),
              .next_address(PCTargetE)
              
@@ -103,7 +103,7 @@ module Execute_Cycle(
     
     
     //output assignments
-    assign PCSrcE           = ZeroE & BranchE;
+    assign PCSrcE           = ( rst == 1'b0) ? 1'b0 : ZeroE & BranchE;
     assign RegWriteM        = RegWriteE;
     assign MemWriteM        = MemWriteE;
     assign ResultSrcM       = ResultSrcE;

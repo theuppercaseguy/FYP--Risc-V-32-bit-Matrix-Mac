@@ -6,7 +6,9 @@ module Single_Cycle_Top_Testbench();
     
     Single_Cycle_Top uut(
         .clk(clk),
-        .rst(rst)
+        .rst(rst),
+        .OUT()
+        //.memoryinstr()
     );
     
     

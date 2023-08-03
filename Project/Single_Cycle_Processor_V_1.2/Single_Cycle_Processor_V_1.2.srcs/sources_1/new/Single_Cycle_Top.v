@@ -57,7 +57,7 @@ module Single_Cycle_Top(
     PC_Adder PC_Adder(
         .curr_address(PC_Top),
         .branch(Branch_Top),
-        .ALU_Out(ALU_Result),
+        .ALU_Out(Result),
         .offset(Imm_Ext_Top),
         .next_address(PCPlus4)
         
@@ -106,6 +106,16 @@ module Single_Cycle_Top(
        .Overflow(overflow)            // Overflow Flag
     );
     
+    // Updating the architecture by my own logic
+    // adding a demuc that checks if its a branch instruction,
+    // transfer the alu out/result to the PC adder, else transfer it to data memory
+    
+    
+    
+    
+    //
+    
+    
      Control_Unit_Top Control_Unit_Top(
         .Op(RD_Instr[6:0]),
         .RegWrite(RegWrite),
@@ -129,18 +139,18 @@ module Single_Cycle_Top(
 
     );
     
-    MUX_2_by_1 Mux_Data_Memory_to_RegisterFile(
-         .a(ALU_Result),
-         .b(ReadData),
-         .s(ResultSrc),
-         .c(Result)
-       );
-       
-    always @(*)
-    begin
-        OUT = ALU_Result ;
-    end
-    //assign memoryinstr = RD_Instr;
+        MUX_2_by_1 Mux_Data_Memory_to_RegisterFile(
+             .a(ALU_Result),
+             .b(ReadData),
+             .s(ResultSrc),
+             .c(Result)
+         );
+           
+        always @(*)
+        begin
+            OUT = ALU_Result ;
+        end
+        //assign memoryinstr = RD_Instr;
     
 endmodule
 

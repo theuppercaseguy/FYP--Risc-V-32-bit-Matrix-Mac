@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/ALU.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/ALU_Decoder.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Control_Unit_Top.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Data_Memory.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Instruction_Memory.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/MUX_2_by_1.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Main_Decoder.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/PC_Adder.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Program_Counter.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Register_File.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Sign_Extend.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Single_Cycle_Top.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

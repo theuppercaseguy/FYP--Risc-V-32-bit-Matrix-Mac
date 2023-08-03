@@ -26,13 +26,13 @@
 `include "Instruction_Memory.v"
 
 
-module Fetch_Cycle(clk, rst, Branch,ALU_Out, Offset,PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D );
+module Fetch_Cycle(clk, rst /*, Branch*/ ,ALU_Out, /*Offset,*/PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D );
     
         
        // Declare input & outputs
        input clk, rst;
-       input PCSrcE, Branch;
-       input [31:0] PCTargetE, ALU_Out, Offset;
+       input PCSrcE/*, Branch*/;
+       input [31:0] PCTargetE, ALU_Out/*, Offset*/;
        output [31:0] InstrD;
        output [31:0] PCD, PCPlus4D;
     
@@ -92,9 +92,9 @@ module Fetch_Cycle(clk, rst, Branch,ALU_Out, Offset,PCSrcE, PCTargetE, InstrD, P
     
     PC_Adder PC_Adder(
         .curr_address(PCF), 
-        .offset(Offset), 
+        .offset(32'd4), 
         .ALU_Out(ALU_Out),
-        .branch(Branch),
+        .branch(1'b1),
         .next_address(PCPlus4F)
     );
     

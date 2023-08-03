@@ -29,7 +29,7 @@ module Decode_Cycle(
     input [31:0] InstrD, PCD, PCPlus4D, ResultW,
     
     output RegWriteE,ALUSrcE,MemWriteE,ResultSrcE,BranchE,
-    output [2:0] ALUControlE,
+    output [5:0] ALUControlE,
     output [31:0] RD1_E, RD2_E, Imm_Ext_E,
     output [4:0] RS1_E, RS2_E, RD_E,
     output [31:0] PCE, PCPlus4E

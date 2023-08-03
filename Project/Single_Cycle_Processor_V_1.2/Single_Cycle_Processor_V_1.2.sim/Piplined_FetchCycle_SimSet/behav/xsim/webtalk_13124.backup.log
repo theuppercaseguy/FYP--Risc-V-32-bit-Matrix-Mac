@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Aug  2 16:53:59 2023
+# Process ID: 13124
+# Current directory: E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/Single_Cycle_Processor_V_1.2.sim/Piplined_FetchCycle_SimSet/behav/xsim
+# Command line: wbtcv.exe -mode batch -source E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/Single_Cycle_Processor_V_1.2.sim/Piplined_FetchCycle_SimSet/behav/xsim/xsim.dir/Single_Cycle_Top_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/Single_Cycle_Processor_V_1.2.sim/Piplined_FetchCycle_SimSet/behav/xsim/webtalk.log
+# Journal file: E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/Single_Cycle_Processor_V_1.2.sim/Piplined_FetchCycle_SimSet/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/Single_Cycle_Processor_V_1.2.sim/Piplined_FetchCycle_SimSet/behav/xsim/xsim.dir/Single_Cycle_Top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Aug  2 16:53:59 2023...
