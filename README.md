@@ -64,7 +64,7 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 | Objectives | Date Started | Date Completed | Achived? | Version | Test's |
 |-------------------|------|------|------|-----|-----|
 | Single Cycle Processor    | 1/July/2023 | 27/July/2023 | True | 1.2 | [Tests-1](docs/github_readmes/Single_Cycle_tests.md) |
-| 5 stages Pipelined Processor    | Pending... | pending... | False | 0.0 | |
+| 5 stages Pipelined Processor    | 30/July/2023 | pending... | False | 1.0 | |
 | 10 Stages Pipelined Processor    | Pending... | pending... | False | 0.0 ||
 |MAC Instructions | Pending... | pending... | False | 0.0 ||
 |FPGA Implementation| Pending... | pending... | False | 0.0 ||
