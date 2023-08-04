@@ -87,7 +87,7 @@
     <td>4</td>
     <td>
       <ul>
-        <li>B) <b>Data Hazard</b>: When data needed to execute an instruction is not yet available, use bypassing/forwarding to fix this.</li>
+        <li>B) <b>Data Hazard</b>: When data needed to execute an instruction is not yet available, use bypassing/forwarding or Nops(Stalling) to fix this.</li>
       </ul>
     </td>
   </tr>
