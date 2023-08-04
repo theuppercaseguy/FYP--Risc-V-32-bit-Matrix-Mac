@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
-      <Cursor1Time time="1000000000fs"></Cursor1Time>
+      <ZoomEndTime time="1200000001fs"></ZoomEndTime>
+      <Cursor1Time time="614296000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="162"></NameColumnWidth>
       <ValueColumnWidth column_width="91"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="8" />
    <wvobject fp_name="/Pipelined_Top_Testbench/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -107,7 +107,6 @@
    <wvobject fp_name="group60" type="group">
       <obj_property name="label">Execute</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="group916" type="group">
          <obj_property name="label">interm PC Adder</obj_property>
          <obj_property name="DisplayName">label</obj_property>
@@ -192,6 +191,7 @@
    <wvobject fp_name="group61" type="group">
       <obj_property name="label">Memory</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/Pipelined_Top_Testbench/dut/PCPlus4W" type="array">
          <obj_property name="ElementShortName">PCPlus4W[31:0]</obj_property>
          <obj_property name="ObjectShortName">PCPlus4W[31:0]</obj_property>
@@ -212,6 +212,7 @@
    <wvobject fp_name="group85" type="group">
       <obj_property name="label">Reg Writeback</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/Pipelined_Top_Testbench/dut/RegWriteW" type="logic">
          <obj_property name="ElementShortName">RegWriteW</obj_property>
          <obj_property name="ObjectShortName">RegWriteW</obj_property>
@@ -223,6 +224,43 @@
       <wvobject fp_name="/Pipelined_Top_Testbench/dut/ResultW" type="array">
          <obj_property name="ElementShortName">ResultW[31:0]</obj_property>
          <obj_property name="ObjectShortName">ResultW[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group963" type="group">
+      <obj_property name="label">Forwarding Group</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Forwarding_Block/RegWriteM" type="logic">
+         <obj_property name="ElementShortName">RegWriteM</obj_property>
+         <obj_property name="ObjectShortName">RegWriteM</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Forwarding_Block/RegWriteW" type="logic">
+         <obj_property name="ElementShortName">RegWriteW</obj_property>
+         <obj_property name="ObjectShortName">RegWriteW</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Forwarding_Block/RD_M" type="array">
+         <obj_property name="ElementShortName">RD_M[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RD_M[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Forwarding_Block/RD_W" type="array">
+         <obj_property name="ElementShortName">RD_W[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RD_W[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Forwarding_Block/RS1_E" type="array">
+         <obj_property name="ElementShortName">RS1_E[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RS1_E[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Forwarding_Block/RS2_E" type="array">
+         <obj_property name="ElementShortName">RS2_E[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RS2_E[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Forwarding_Block/ForwardAE" type="array">
+         <obj_property name="ElementShortName">ForwardAE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ForwardAE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Forwarding_Block/ForwardBE" type="array">
+         <obj_property name="ElementShortName">ForwardBE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ForwardBE[1:0]</obj_property>
       </wvobject>
    </wvobject>
 </wave_config>
