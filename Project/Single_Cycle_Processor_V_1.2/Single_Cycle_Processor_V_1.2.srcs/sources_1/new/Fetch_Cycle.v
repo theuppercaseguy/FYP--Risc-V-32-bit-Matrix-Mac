@@ -43,46 +43,26 @@ module Fetch_Cycle(clk, rst /*, Branch*/ ,ALU_Out, /*Offset,*/PCSrcE, PCTargetE,
        // Declaration of Register
        reg [31:0] InstrF_reg;
        reg [31:0] PCF_reg, PCPlus4F_reg;
-    
-    
-    
-    
-    
-   /* input clk,rst;
-    input PCSrcE, Branch;
-    input [31:0] PCTargetE, Offset, ALU_Out;
-    
-    output [31:0] InstrD;
-    output [31:0] PCD, PCPlus4D;
-    
-    
-    //declerations of registers for fetch cycle
-    reg [31:0] InstrF_reg;
-    reg [31:0] PCF_reg;
-    reg [31:0] PCPlus4F_reg;*/
-    
-    
-    //wires
-    /*wire [31:0] PC_F, PCF, PCPlus4F, InstrF;*/
-    
+
+     
     //initiating modules
     
-    MUX_2_by_1 PC_MUX(
+     MUX_2_by_1 PC_MUX(
         .a(PCPlus4F),
         .b(PCTargetE),
         .s(PCSrcE),
         .c(PC_F)
-    );
+     );
     
-  Program_Counter Program_Counter(
+     Program_Counter Program_Counter(
         .clk(clk),
         .rst(rst),
         .PC(PCF),
         .PC_Next(PC_F)
-    );
+     );
     
     
-   Instruction_Memory I_MEM(
+     Instruction_Memory I_MEM(
        .rst(rst),
        .A(PCF), 
        .RD(InstrF)

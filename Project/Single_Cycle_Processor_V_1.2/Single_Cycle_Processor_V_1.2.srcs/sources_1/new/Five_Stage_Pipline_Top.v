@@ -50,7 +50,8 @@ module Five_Stage_Pipline_Top(
     wire [5:0]  ALUControlE;
     wire [31:0] PCTargetE, InstrD, PCD, PCPlus4D, ResultW, RD1_E, RD2_E,Imm_Ext_E, PCE, PCPlus4E, PCPlus4M, WriteDataM, ALU_ResultM      ;
     wire [31:0] PCPlus4W, ALUResultW, ReadDataW ;
-    
+    wire [4:0] RS1_E, RS2_E; 
+    wire [1:0] ForwardBE, ForwardAE;
     
     //Module Instentiation
     
@@ -91,8 +92,8 @@ module Five_Stage_Pipline_Top(
           .RD1_E(RD1_E), 
           .RD2_E(RD2_E), 
           .Imm_Ext_E(Imm_Ext_E),
-          .RS1_E(), 
-          .RS2_E(), 
+          .RS1_E(RS1_E), 
+          .RS2_E(RS2_E), 
           .RD_E(RD_E),
           .PCE(PCE), 
           .PCPlus4E(PCPlus4E)
@@ -117,6 +118,10 @@ module Five_Stage_Pipline_Top(
           .RD_E(RD_E),
           .PCE(PCE), 
           .PCPlus4E(PCPlus4E),
+          .ResultW(ResultW),
+          .ForwardA_E(ForwardAE),
+          .ForwardB_E(ForwardBE),
+          
           .PCSrcE(PCSrcE), 
           .MemWriteM(MemWriteM), 
           .RegWriteM(RegWriteM), 
@@ -146,7 +151,7 @@ module Five_Stage_Pipline_Top(
             .RD_W(RDW),
             .PCPlus4W(PCPlus4W), 
             .ALUResultW(ALUResultW), 
-            .ReadDataW(ReadDataW)    
+            .ReadDataW(ReadDataW)
     );
     
     WriteBack_Cycle WriteBack(
@@ -160,7 +165,21 @@ module Five_Stage_Pipline_Top(
         .ResultW(ResultW)
         );
 
-
+    //hazard unit
+    Hazard_Unit Forwarding_Block(
+        .clk(clk), 
+        .rst(rst), 
+        .RegWriteM(RegWriteM), 
+        .RegWriteW(RegWriteW), 
+        .RD_M(RD_M), 
+        .RD_W(RDW), 
+        .RS1_E(RS1_E), 
+        .RS2_E(RS2_E),
+        
+        .ForwardAE(ForwardAE), 
+        .ForwardBE(ForwardBE)
+        
+        );
 
 
 endmodule

@@ -12,12 +12,12 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="3413fs"></ZoomEndTime>
+      <ZoomEndTime time="1000000001fs"></ZoomEndTime>
       <Cursor1Time time="1000000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="219"></NameColumnWidth>
-      <ValueColumnWidth column_width="165"></ValueColumnWidth>
+      <NameColumnWidth column_width="162"></NameColumnWidth>
+      <ValueColumnWidth column_width="91"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="7" />
    <wvobject fp_name="/Pipelined_Top_Testbench/clk" type="logic">
@@ -107,6 +107,35 @@
    <wvobject fp_name="group60" type="group">
       <obj_property name="label">Execute</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="group916" type="group">
+         <obj_property name="label">interm PC Adder</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/Branch_Adder/curr_address" type="array">
+            <obj_property name="ElementShortName">curr_address[31:0]</obj_property>
+            <obj_property name="ObjectShortName">curr_address[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/Branch_Adder/offset" type="array">
+            <obj_property name="ElementShortName">offset[31:0]</obj_property>
+            <obj_property name="ObjectShortName">offset[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/Branch_Adder/ALU_Out" type="array">
+            <obj_property name="ElementShortName">ALU_Out[31:0]</obj_property>
+            <obj_property name="ObjectShortName">ALU_Out[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/Branch_Adder/branch" type="logic">
+            <obj_property name="ElementShortName">branch</obj_property>
+            <obj_property name="ObjectShortName">branch</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/Branch_Adder/next_address" type="array">
+            <obj_property name="ElementShortName">next_address[31:0]</obj_property>
+            <obj_property name="ObjectShortName">next_address[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/Branch_Adder/two_comp_offset" type="array">
+            <obj_property name="ElementShortName">two_comp_offset[31:0]</obj_property>
+            <obj_property name="ObjectShortName">two_comp_offset[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
       <wvobject fp_name="/Pipelined_Top_Testbench/dut/PCPlus4M" type="array">
          <obj_property name="ElementShortName">PCPlus4M[31:0]</obj_property>
          <obj_property name="ObjectShortName">PCPlus4M[31:0]</obj_property>
@@ -127,6 +156,26 @@
          <obj_property name="ElementShortName">ResultSrcM</obj_property>
          <obj_property name="ObjectShortName">ResultSrcM</obj_property>
       </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ForwardA_E" type="array">
+         <obj_property name="ElementShortName">ForwardA_E[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ForwardA_E[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/Src_A" type="array">
+         <obj_property name="ElementShortName">Src_A[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Src_A[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ForwardB_E" type="array">
+         <obj_property name="ElementShortName">ForwardB_E[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ForwardB_E[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/Src_B" type="array">
+         <obj_property name="ElementShortName">Src_B[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Src_B[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ResultE" type="array">
+         <obj_property name="ElementShortName">ResultE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ResultE[31:0]</obj_property>
+      </wvobject>
       <wvobject fp_name="/Pipelined_Top_Testbench/dut/ALU_ResultM" type="array">
          <obj_property name="ElementShortName">ALU_ResultM[31:0]</obj_property>
          <obj_property name="ObjectShortName">ALU_ResultM[31:0]</obj_property>
@@ -134,6 +183,10 @@
       <wvobject fp_name="/Pipelined_Top_Testbench/dut/WriteDataM" type="array">
          <obj_property name="ElementShortName">WriteDataM[31:0]</obj_property>
          <obj_property name="ObjectShortName">WriteDataM[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/PCTargetE" type="array">
+         <obj_property name="ElementShortName">PCTargetE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCTargetE[31:0]</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group61" type="group">
@@ -159,7 +212,6 @@
    <wvobject fp_name="group85" type="group">
       <obj_property name="label">Reg Writeback</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/Pipelined_Top_Testbench/dut/RegWriteW" type="logic">
          <obj_property name="ElementShortName">RegWriteW</obj_property>
          <obj_property name="ObjectShortName">RegWriteW</obj_property>

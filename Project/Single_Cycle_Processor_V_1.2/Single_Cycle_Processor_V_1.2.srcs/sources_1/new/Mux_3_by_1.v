@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 08/03/2023 08:20:32 PM
+// Create Date: 08/04/2023 05:18:48 PM
 // Design Name: 
-// Module Name: Demux_1_by_2
+// Module Name: Mux_3_by_1
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,11 +20,16 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Demux_1_by_2(
-    input [31:0] A,B,
-    input S,
-    output [31:0] Y
+module Mux_3_by_1(
+    input [31:0] a,b,c,
+    input [1:0] s,
+    output [31:0] y
     );
-    assign Y = ( S == 1'b1 ) ? B : A;
+    
+    assign y = ( s == 2'b00 ) ? a : 
+               ( s == 2'b01 ) ? b : 
+               ( s == 2'b10 ) ? c : 32'h00000000;
+    
+    
     
 endmodule

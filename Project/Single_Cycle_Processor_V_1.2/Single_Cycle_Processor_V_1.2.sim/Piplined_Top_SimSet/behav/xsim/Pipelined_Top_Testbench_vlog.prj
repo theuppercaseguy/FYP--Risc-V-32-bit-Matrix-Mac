@@ -8,10 +8,12 @@ verilog xil_defaultlib  \
 "../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Execute_Cycle.v" \
 "../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Fetch_Cycle.v" \
 "../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Five_Stage_Pipline_Top.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Hazard_Unit.v" \
 "../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Instruction_Memory.v" \
 "../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/MUX_2_by_1.v" \
 "../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Main_Decoder.v" \
 "../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Memory_Cycle.v" \
+"../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Mux_3_by_1.v" \
 "../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/PC_Adder.v" \
 "../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Program_Counter.v" \
 "../../../../Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Register_File.v" \

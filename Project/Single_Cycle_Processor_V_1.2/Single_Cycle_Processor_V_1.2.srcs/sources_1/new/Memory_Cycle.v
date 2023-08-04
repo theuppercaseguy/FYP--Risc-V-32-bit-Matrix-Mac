@@ -81,12 +81,12 @@ module Memory_Cycle(
     end 
     
     //declaring outputs
-    assign RegWriteW        = RegWriteM_r; 
-    assign ResultSrcW       = ResultSrcM_r;
-    assign RD_W             = RD_M_r;
-    assign PCPlus4W         = PCPlus4M_r;
-    assign ALUResultW       = ALU_ResultM_r;
-    assign ReadDataW        = ReadDataM_r;   
+        assign RegWriteW        = RegWriteM_r; 
+        assign ResultSrcW       = ResultSrcM_r;
+        assign RD_W             = RD_M_r;
+        assign PCPlus4W         = PCPlus4M_r;
+        assign ALUResultW       = ALU_ResultM_r;
+        assign ReadDataW        = ReadDataM_r;   
     
     
     

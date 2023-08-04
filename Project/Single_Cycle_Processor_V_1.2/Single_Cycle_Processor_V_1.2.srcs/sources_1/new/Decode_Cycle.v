@@ -62,19 +62,17 @@ module Decode_Cycle(
                 .ALUControl(ALUControlD)
        );
     
-    
-    
       Register_File Register_File(
-           .clk(clk),
-           .rst(rst),
-           .A1(InstrD[19:15]),
-           .A2(InstrD[24:20]),
-           .A3(RDW),
-           .WD3(ResultW),
-           .WE3(RegWriteW),
-           
-           .RD1(RD1_D),
-           .RD2(RD2_D)
+               .clk(clk),
+               .rst(rst),
+               .A1(InstrD[19:15]),
+               .A2(InstrD[24:20]),
+               .A3(RDW),
+               .WD3(ResultW),
+               .WE3(RegWriteW),
+               
+               .RD1(RD1_D),
+               .RD2(RD2_D)
        );
        
        
@@ -121,20 +119,20 @@ module Decode_Cycle(
     end
     
         // Output asssign statements
-        assign RegWriteE = RegWriteD_r;
-        assign ALUSrcE = ALUSrcD_r;
-        assign MemWriteE = MemWriteD_r;
-        assign ResultSrcE = ResultSrcD_r;
-        assign BranchE = BranchD_r;
-        assign ALUControlE = ALUControlD_r;
-        assign RD1_E = RD1_D_r;
-        assign RD2_E = RD2_D_r;
-        assign Imm_Ext_E = Imm_Ext_D_r;
-        assign RD_E = RD_D_r;
-        assign PCE = PCD_r;
-        assign PCPlus4E = PCPlus4D_r;
-        assign RS1_E = RS1_D_r;
-        assign RS2_E = RS2_D_r;
+        assign RegWriteE        = RegWriteD_r;
+        assign ALUSrcE          = ALUSrcD_r;
+        assign MemWriteE        = MemWriteD_r;
+        assign ResultSrcE       = ResultSrcD_r;
+        assign BranchE          = BranchD_r;
+        assign ALUControlE      = ALUControlD_r;
+        assign RD1_E            = RD1_D_r;
+        assign RD2_E            = RD2_D_r;
+        assign Imm_Ext_E        = Imm_Ext_D_r;
+        assign RD_E             = RD_D_r;
+        assign PCE              = PCD_r;
+        assign PCPlus4E         = PCPlus4D_r;
+        assign RS1_E            = RS1_D_r;
+        assign RS2_E            = RS2_D_r;
 
 
 

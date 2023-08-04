@@ -18,11 +18,13 @@ Compiling module xil_defaultlib.Control_Unit_Top
 Compiling module xil_defaultlib.Register_File
 Compiling module xil_defaultlib.Sign_Extend
 Compiling module xil_defaultlib.Decode_Cycle
+Compiling module xil_defaultlib.Mux_3_by_1
 Compiling module xil_defaultlib.ALU
 Compiling module xil_defaultlib.Execute_Cycle
 Compiling module xil_defaultlib.Data_Memory
 Compiling module xil_defaultlib.Memory_Cycle
 Compiling module xil_defaultlib.WriteBack_Cycle
+Compiling module xil_defaultlib.Hazard_Unit
 Compiling module xil_defaultlib.Five_Stage_Pipline_Top
 Compiling module xil_defaultlib.Pipelined_Top_Testbench
 Compiling module xil_defaultlib.glbl

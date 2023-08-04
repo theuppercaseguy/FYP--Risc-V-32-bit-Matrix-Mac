@@ -28,8 +28,7 @@ module WriteBack_Cycle(
     
     output [31:0] ResultW
     );
-    
-    
+
     MUX_2_by_1 ResultMux(
         .a(ALU_ResultW),
         .b(ReadDataW),
