@@ -72,12 +72,12 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 ### RISC-V Essential Registers
 
 <p float="left">
-  <img src="/docs/Media/RISC-V-Essential-Registers.png" width="500" />
+  <img src="/docs/Media/Results/SingleCycle/RISC-V-Essential-Registers.png" width="500" />
 </p>
 
 ### RISC-V Register File / Instruction Types
 <p float="left">
-  <img src="/docs/Media/RISC-V-Intruction-Types.png" width="500" />
+  <img src="docs/Media/Results/SingleCycle/RISC-V-Intruction-Types.png" width="500" />
 </p>
 
 
