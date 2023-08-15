@@ -1,0 +1,115 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/ALU_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Control_Unit_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+WARNING: [VRFC 10-2845] overwriting previous definition of module ALU_Decoder [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/ALU_Decoder.v:24]
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+INFO: [VRFC 10-311] analyzing module Control_Unit_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Decode_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+WARNING: [VRFC 10-2845] overwriting previous definition of module Main_Decoder [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Main_Decoder.v:24]
+INFO: [VRFC 10-311] analyzing module Control_Unit_Top
+WARNING: [VRFC 10-2845] overwriting previous definition of module Control_Unit_Top [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Control_Unit_Top.v:26]
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-311] analyzing module Sign_Extend
+INFO: [VRFC 10-311] analyzing module Adder
+WARNING: [VRFC 10-2845] overwriting previous definition of module Adder [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Adder.v:23]
+INFO: [VRFC 10-311] analyzing module Decode_Cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Execute_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-2845] overwriting previous definition of module ALU [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/ALU.v:23]
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module Mux_3_by_1
+INFO: [VRFC 10-311] analyzing module PC_Adder
+INFO: [VRFC 10-311] analyzing module Execute_Cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Fetch_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-311] analyzing module PC_Adder
+WARNING: [VRFC 10-2845] overwriting previous definition of module PC_Adder [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/PC_Adder.v:23]
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+WARNING: [VRFC 10-2845] overwriting previous definition of module MUX_2_by_1 [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/MUX_2_by_1.v:23]
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module Fetch_Cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Five_Stage_Pipline_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+WARNING: [VRFC 10-2845] overwriting previous definition of module Program_Counter [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Program_Counter.v:23]
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+WARNING: [VRFC 10-2845] overwriting previous definition of module Instruction_Memory [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Instruction_Memory.v:23]
+INFO: [VRFC 10-311] analyzing module Register_File
+WARNING: [VRFC 10-2845] overwriting previous definition of module Register_File [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Register_File.v:23]
+INFO: [VRFC 10-311] analyzing module Sign_Extend
+WARNING: [VRFC 10-2845] overwriting previous definition of module Sign_Extend [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Sign_Extend.v:23]
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+INFO: [VRFC 10-311] analyzing module Control_Unit_Top
+INFO: [VRFC 10-311] analyzing module Data_Memory
+WARNING: [VRFC 10-2845] overwriting previous definition of module Data_Memory [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Data_Memory.v:23]
+INFO: [VRFC 10-311] analyzing module PC_Adder
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-311] analyzing module PC_Adder
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module Fetch_Cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module Fetch_Cycle [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Fetch_Cycle.v:30]
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+INFO: [VRFC 10-311] analyzing module Control_Unit_Top
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-311] analyzing module Sign_Extend
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module Decode_Cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module Decode_Cycle [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Decode_Cycle.v:26]
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module Mux_3_by_1
+WARNING: [VRFC 10-2845] overwriting previous definition of module Mux_3_by_1 [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/MUX_3_by_1.v:23]
+INFO: [VRFC 10-311] analyzing module PC_Adder
+INFO: [VRFC 10-311] analyzing module Execute_Cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module Execute_Cycle [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Execute_Cycle.v:27]
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module Memory_Cycle
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module WriteBack_Cycle
+INFO: [VRFC 10-311] analyzing module Five_Stage_Pipline_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Hazard_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hazard_Unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/MUX_2_by_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/MUX_3_by_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_3_by_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Main_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Memory_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module Memory_Cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module Memory_Cycle [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Memory_Cycle.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/PC_Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Register_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/Sign_Extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sign_Extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/WriteBack_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module WriteBack_Cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module WriteBack_Cycle [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/sources_1/new/WriteBack_Cycle.v:25]
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.srcs/Piplined_Top_SimSet/new/Pipelined_Top_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipelined_Top_Testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_5_stage_Processor_V_1.5/Pipline_5_stage_Processor_V_1.5.sim/Pipline_Top/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

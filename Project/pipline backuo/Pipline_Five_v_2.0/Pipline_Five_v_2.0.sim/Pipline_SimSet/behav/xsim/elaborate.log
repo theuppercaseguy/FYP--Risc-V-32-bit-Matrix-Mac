@@ -1,0 +1,10 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/softwares/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d7db5fcf5cd1488f898c64c162ede197 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Pipelined_Top_Testbench_behav xil_defaultlib.Pipelined_Top_Testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port a [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v:94]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port b [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v:95]
+WARNING: [VRFC 10-278] actual bit length 5 differs from formal bit length 32 for port c [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v:97]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

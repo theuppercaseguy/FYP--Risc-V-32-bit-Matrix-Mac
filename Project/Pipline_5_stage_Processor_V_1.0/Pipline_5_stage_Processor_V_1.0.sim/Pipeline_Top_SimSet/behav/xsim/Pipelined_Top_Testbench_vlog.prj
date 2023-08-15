@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../Pipline_5_stage_Processor_V_1.0.srcs/sources_1/imports/Single_Cycle_Processor_V_1.2/Single_Cycle_Processor_V_1.2.srcs/sources_1/new" \
+"../../../../Pipline_5_stage_Processor_V_1.0.srcs/sources_1/imports/Single_Cycle_Processor_V_1.2/Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Five_Stage_Pipline_Top.v" \
+"../../../../Pipline_5_stage_Processor_V_1.0.srcs/sources_1/imports/Single_Cycle_Processor_V_1.2/Single_Cycle_Processor_V_1.2.srcs/sources_1/new/Hazard_Unit.v" \
+"../../../../Pipline_5_stage_Processor_V_1.0.srcs/Pipeline_Top_SimSet/imports/new/Pipelined_Top_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,19 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/softwares/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d7db5fcf5cd1488f898c64c162ede197 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Pipelined_Top_Testbench_behav xil_defaultlib.Pipelined_Top_Testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port PCD on this module [../../../../Pipline_Five_v_2.0.srcs/sources_1/imports/files/Five_Stage_Pipline_Top.v:70]
+ERROR: [VRFC 10-426] cannot find port PCTargetE on this module [../../../../Pipline_Five_v_2.0.srcs/sources_1/imports/files/Five_Stage_Pipline_Top.v:68]
+ERROR: [VRFC 10-426] cannot find port PCSrcE on this module [../../../../Pipline_Five_v_2.0.srcs/sources_1/imports/files/Five_Stage_Pipline_Top.v:67]
+ERROR: [VRFC 10-426] cannot find port ALU_Out on this module [../../../../Pipline_Five_v_2.0.srcs/sources_1/imports/files/Five_Stage_Pipline_Top.v:64]
+ERROR: [VRFC 10-2063] Module <MUX_2_by_1> not found while processing module instance <PC_MUX> [../../../../Pipline_Five_v_2.0.srcs/sources_1/imports/files/Fetch_Cycle.v:52]
+ERROR: [VRFC 10-2063] Module <Program_Counter> not found while processing module instance <Program_Counter> [../../../../Pipline_Five_v_2.0.srcs/sources_1/imports/files/Fetch_Cycle.v:59]
+ERROR: [VRFC 10-2063] Module <Instruction_Memory> not found while processing module instance <I_MEM> [../../../../Pipline_Five_v_2.0.srcs/sources_1/imports/files/Fetch_Cycle.v:67]
+ERROR: [VRFC 10-2063] Module <Adder> not found while processing module instance <PC_Fetch_Adder> [../../../../Pipline_Five_v_2.0.srcs/sources_1/imports/files/Fetch_Cycle.v:74]
+ERROR: [VRFC 10-2063] Module <Decode_Cycle> not found while processing module instance <Decode> [../../../../Pipline_Five_v_2.0.srcs/sources_1/imports/files/Five_Stage_Pipline_Top.v:76]
+ERROR: [VRFC 10-2063] Module <Execute_Cycle> not found while processing module instance <Execute> [../../../../Pipline_Five_v_2.0.srcs/sources_1/imports/files/Five_Stage_Pipline_Top.v:103]
+ERROR: [VRFC 10-2063] Module <Memory_Cycle> not found while processing module instance <Memory> [../../../../Pipline_Five_v_2.0.srcs/sources_1/imports/files/Five_Stage_Pipline_Top.v:137]
+ERROR: [VRFC 10-2063] Module <WriteBack_Cycle> not found while processing module instance <WriteBack> [../../../../Pipline_Five_v_2.0.srcs/sources_1/imports/files/Five_Stage_Pipline_Top.v:157]
+ERROR: [VRFC 10-2063] Module <Hazard_Unit> not found while processing module instance <Forwarding_Block> [../../../../Pipline_Five_v_2.0.srcs/sources_1/imports/files/Five_Stage_Pipline_Top.v:169]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

@@ -1,0 +1,7 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/softwares/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d7db5fcf5cd1488f898c64c162ede197 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Pipelined_Top_Testbench_behav xil_defaultlib.Pipelined_Top_Testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2063] Module <Five_Stage_Pipline_Top> not found while processing module instance <dut> [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/Pipe_Top_TB/new/PIPE_TB.v:8]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

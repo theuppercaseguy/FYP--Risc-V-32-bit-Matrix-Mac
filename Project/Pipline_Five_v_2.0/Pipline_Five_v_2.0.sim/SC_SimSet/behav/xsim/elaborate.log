@@ -1,0 +1,31 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/softwares/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d7db5fcf5cd1488f898c64c162ede197 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Pipeline_top_behav xil_defaultlib.Pipeline_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 3 differs from formal bit length 6 for port ALUControlE [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v:87]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX_2_by_1
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.fetch_cycle
+Compiling module xil_defaultlib.Main_Decoder
+Compiling module xil_defaultlib.ALU_Decoder
+Compiling module xil_defaultlib.Control_Unit_Top
+Compiling module xil_defaultlib.Register_File
+Compiling module xil_defaultlib.Sign_Extend
+Compiling module xil_defaultlib.decode_cycle
+Compiling module xil_defaultlib.Mux_3_by_1
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.execute_cycle
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.memory_cycle
+Compiling module xil_defaultlib.writeback_cycle
+Compiling module xil_defaultlib.hazard_unit
+Compiling module xil_defaultlib.Pipeline_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Pipeline_top_behav
