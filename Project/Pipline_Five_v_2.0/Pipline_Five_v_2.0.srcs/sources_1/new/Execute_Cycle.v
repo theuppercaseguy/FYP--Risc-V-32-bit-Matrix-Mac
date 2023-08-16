@@ -19,11 +19,11 @@
 
 
 
-module execute_cycle(clk, rst, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, BranchE, ALUControlE, 
+module execute_cycle(clk, rst, CLR, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, BranchE, ALUControlE, 
     RD1_E, RD2_E, Imm_Ext_E, RD_E, PCE, PCPlus4E, PCSrcE, PCTargetE, RegWriteM, MemWriteM, ResultSrcM, RD_M, PCPlus4M, WriteDataM, ALU_ResultM, ResultW, ForwardA_E, ForwardB_E);
 
     // Declaration I/Os
-    input clk, rst, RegWriteE,ALUSrcE,MemWriteE,ResultSrcE,BranchE;
+    input clk, rst, CLR, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, BranchE;
     input [5:0] ALUControlE;
     input [31:0] RD1_E, RD2_E, Imm_Ext_E;
     input [4:0] RD_E;
@@ -31,7 +31,8 @@ module execute_cycle(clk, rst, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, Branch
     input [31:0] ResultW;
     input [1:0] ForwardA_E, ForwardB_E;
 
-    output PCSrcE, RegWriteM, MemWriteM, ResultSrcM;
+    output PCSrcE;
+    output RegWriteM, MemWriteM, ResultSrcM;
     output [4:0] RD_M; 
     output [31:0] PCPlus4M, WriteDataM, ALU_ResultM;
     output [31:0] PCTargetE;
@@ -80,7 +81,7 @@ module execute_cycle(clk, rst, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, Branch
             .ALU_Sel(ALUControlE),
             .Overflow(),
             .CarryOut(),
-            .Zero(ZeroE),
+            .Zero(ZeroE),  //maybe assign ZeroE = ResultE[0]
             .Negative()
             );
 
@@ -94,33 +95,46 @@ module execute_cycle(clk, rst, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, Branch
     // Register Logic
     always @(posedge clk or negedge rst) begin
         if(rst == 1'b0) begin
-            RegWriteE_r <= 1'b0; 
-            MemWriteE_r <= 1'b0; 
-            ResultSrcE_r <= 1'b0;
-            RD_E_r <= 5'h00;
-            PCPlus4E_r <= 32'h00000000; 
-            RD2_E_r <= 32'h00000000; 
-            ResultE_r <= 32'h00000000;
+            RegWriteE_r         <= 1'b0; 
+            MemWriteE_r         <= 1'b0; 
+            ResultSrcE_r        <= 1'b0;
+            RD_E_r              <= 5'h00;
+            PCPlus4E_r          <= 32'h00000000; 
+            RD2_E_r             <= 32'h00000000; 
+            ResultE_r           <= 32'h00000000;
+            
+        end
+        else if(CLR == 1'b1) begin
+            RegWriteE_r         <= 1'b0; 
+            MemWriteE_r         <= 1'b0; 
+            ResultSrcE_r        <= 1'b0;
+            RD_E_r              <= 5'h00;
+            PCPlus4E_r          <= 32'h00000000; 
+            RD2_E_r             <= 32'h00000000; 
+            ResultE_r           <= 32'h00000000;        
+                 
         end
         else begin
-            RegWriteE_r <= RegWriteE; 
-            MemWriteE_r <= MemWriteE; 
-            ResultSrcE_r <= ResultSrcE;
-            RD_E_r <= RD_E;
-            PCPlus4E_r <= PCPlus4E; 
-            RD2_E_r <= Src_B_interim; 
-            ResultE_r <= ResultE;
+            RegWriteE_r         <= RegWriteE; 
+            MemWriteE_r         <= MemWriteE; 
+            ResultSrcE_r        <= ResultSrcE;
+            RD_E_r              <= RD_E;
+            PCPlus4E_r          <= PCPlus4E; 
+            RD2_E_r             <= Src_B_interim; 
+            ResultE_r           <= ResultE;
+             
         end
+           
     end
 
     // Output Assignments
-    assign PCSrcE = ZeroE &  BranchE;
-    assign RegWriteM = RegWriteE_r;
-    assign MemWriteM = MemWriteE_r;
-    assign ResultSrcM = ResultSrcE_r;
-    assign RD_M = RD_E_r;
-    assign PCPlus4M = PCPlus4E_r;
-    assign WriteDataM = RD2_E_r;
-    assign ALU_ResultM = ResultE_r;
+    assign PCSrcE =         ZeroE &  BranchE;
+    assign RegWriteM =      RegWriteE_r;
+    assign MemWriteM =      MemWriteE_r;
+    assign ResultSrcM =     ResultSrcE_r;
+    assign RD_M =           RD_E_r;
+    assign PCPlus4M =       PCPlus4E_r;
+    assign WriteDataM =     RD2_E_r;
+    assign ALU_ResultM =    ResultE_r;
 
 endmodule

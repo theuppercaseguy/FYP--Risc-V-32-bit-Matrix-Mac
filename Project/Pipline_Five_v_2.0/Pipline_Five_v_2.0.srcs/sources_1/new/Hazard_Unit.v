@@ -1,30 +1,69 @@
-// Copyright 2023 MERL-DSU
+`timescale 1ns/1ns
 
-//    Licensed under the Apache License, Version 2.0 (the "License");
-//    you may not use this file except in compliance with the License.
-//    You may obtain a copy of the License at
-
-//        http://www.apache.org/licenses/LICENSE-2.0
-
-//    Unless required by applicable law or agreed to in writing, software
-//    distributed under the License is distributed on an "AS IS" BASIS,
-//    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-//    See the License for the specific language governing permissions and
-//    limitations under the License.
-
-module hazard_unit(rst, RegWriteM, RegWriteW, RD_M, RD_W, Rs1_E, Rs2_E, ForwardAE, ForwardBE);
-
-    // Declaration of I/Os
-    input rst, RegWriteM, RegWriteW;
-    input [4:0] RD_M, RD_W, Rs1_E, Rs2_E;
-    output [1:0] ForwardAE, ForwardBE;
+module hazard_unit (
+    input clk, rst,
+    input      [4:0] Rs1_E,
+    input      [4:0] Rs2_E,
+    input      [4:0] RD_M,
+    input      [4:0] RD_W,
+    input      [4:0] RS1_D,
+    input      [4:0] RS2_D,
+    input      [4:0] RdE,
+    input      ResultSrcE,
+    input            RegWriteM,
+    input            RegWriteW,
+    input            PCSrcE,
     
-    assign ForwardAE = (rst == 1'b0) ? 2'b00 : 
-                       ((RegWriteM == 1'b1) & (RD_M != 5'h00) & (RD_M == Rs1_E)) ? 2'b10 :
-                       ((RegWriteW == 1'b1) & (RD_W != 5'h00) & (RD_W == Rs1_E)) ? 2'b01 : 2'b00;
-                       
-    assign ForwardBE = (rst == 1'b0) ? 2'b00 : 
-                       ((RegWriteM == 1'b1) & (RD_M != 5'h00) & (RD_M == Rs2_E)) ? 2'b10 :
-                       ((RegWriteW == 1'b1) & (RD_W != 5'h00) & (RD_W == Rs2_E)) ? 2'b01 : 2'b00;
+    output reg       StallF,
+    output reg       StallD,
+    output reg       FlushE,
+    output reg       FlushD,
+    output reg [1:0] ForwardAE,
+    output reg [1:0] ForwardBE
+//    output reg  ForwardAE,
+//    output reg  ForwardBE
+);
+    reg lwStall;
+
+    always @(*) begin
+        if (((Rs1_E == RD_M) & RegWriteM) & (Rs1_E != 0) ) begin
+            ForwardAE = 2'b10;
+        end
+        else if ( ((Rs1_E == RD_W) & RegWriteW) & (Rs1_E != 0) ) begin
+            ForwardAE = 2'b01;
+        end
+        else if(lwStall & (RS1_D == RdE))begin
+             ForwardAE = 2'b10; // Forward from the memory stage if required
+        end
+        else begin
+            ForwardAE = 2'b00;
+        end
+        
+    end
+
+    always @ (*) begin
+        if (((Rs2_E == RD_M) & RegWriteM) & (Rs2_E != 0) ) begin
+            ForwardBE = 2'b10;
+        end
+        else if ( ((Rs2_E == RD_W) & RegWriteW) & (Rs2_E != 0) ) begin
+            ForwardBE = 2'b01;
+        end
+        else if (lwStall & (RS2_D == RdE)) begin
+                   ForwardBE = 2'b10; // Forward from the memory stage if required
+        end
+        else begin
+            ForwardBE = 2'b00;
+        end
+        
+    end
+    
+
+    always @ (* ) begin
+        lwStall = (ResultSrcE & ((RS1_D == RdE) | (RS2_D == RdE)));
+        StallD  = lwStall;
+        StallF  = lwStall | (PCSrcE != 1'b0);
+        FlushE  = lwStall ; 
+        FlushD  = PCSrcE != 1'b0;
+    end
 
 endmodule

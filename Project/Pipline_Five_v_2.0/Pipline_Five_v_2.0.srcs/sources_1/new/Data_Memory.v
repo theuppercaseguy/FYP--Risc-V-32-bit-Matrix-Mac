@@ -41,8 +41,8 @@ module Data_Memory(
     end
 
     //read
-    //assign RD = ( WE == 1'b0 ) ? Data_Memory_Registers[A] : 32'h00000000;//read data at address A if we is low
-    assign RD = (~rst) ? 32'd0 : Data_Memory_Registers[A];
+    assign RD = ( WE == 1'b0 ) ? Data_Memory_Registers[A] : 32'h00000000;//read data at address A if we is low
+//    assign RD = (rst) ? 32'd0 : Data_Memory_Registers[A];
 
     initial begin
         //test-1

@@ -22,6 +22,10 @@
 `include "Hazard_unit.v"
 
 
+
+
+
+
 module Pipeline_top(clk, rst);
 
     // Declaration of I/O
@@ -33,15 +37,16 @@ module Pipeline_top(clk, rst);
     wire [4:0] RD_E, RD_M, RDW;
     wire [31:0] PCTargetE, InstrD, PCD, PCPlus4D, ResultW, RD1_E, RD2_E, Imm_Ext_E, PCE, PCPlus4E, PCPlus4M, WriteDataM, ALU_ResultM;
     wire [31:0] PCPlus4W, ALU_ResultW, ReadDataW;
-    wire [4:0] RS1_E, RS2_E;
+    wire [4:0] RS1_E, RS2_E, RS1_D, RS2_D;
     wire [1:0] ForwardBE, ForwardAE;
-    
+    wire StallF, StallD, FlushE, FlushD;
 
     // Module Initiation
     // Fetch Stage
     fetch_cycle Fetch (
                         .clk(clk), 
                         .rst(rst), 
+                        .EN(~StallF),
                         .PCSrcE(PCSrcE), 
                         .PCTargetE(PCTargetE), 
                         .InstrD(InstrD), 
@@ -53,6 +58,9 @@ module Pipeline_top(clk, rst);
     decode_cycle Decode (
                         .clk(clk), 
                         .rst(rst), 
+                        .EN(~StallD),
+                        .CLR(FlushD),
+                        
                         .InstrD(InstrD), 
                         .PCD(PCD), 
                         .PCPlus4D(PCPlus4D), 
@@ -66,11 +74,13 @@ module Pipeline_top(clk, rst);
                         .BranchE(BranchE),  
                         .ALUControlE(ALUControlE), 
                         .RD1_E(RD1_E), 
-                        .RD2_E(RD2_E), 
+                        .RD2_E(RD2_E),
                         .Imm_Ext_E(Imm_Ext_E), 
                         .RD_E(RD_E), 
                         .PCE(PCE), 
                         .PCPlus4E(PCPlus4E),
+                        .RS1_D(RS1_D),
+                        .RS2_D(RS2_D),
                         .RS1_E(RS1_E),
                         .RS2_E(RS2_E)
                     );
@@ -79,6 +89,7 @@ module Pipeline_top(clk, rst);
     execute_cycle Execute (
                         .clk(clk), 
                         .rst(rst), 
+                        .CLR(FlushE),
                         .RegWriteE(RegWriteE), 
                         .ALUSrcE(ALUSrcE), 
                         .MemWriteE(MemWriteE), 
@@ -95,7 +106,8 @@ module Pipeline_top(clk, rst);
                         .PCTargetE(PCTargetE), 
                         .RegWriteM(RegWriteM), 
                         .MemWriteM(MemWriteM), 
-                        .ResultSrcM(ResultSrcM), 
+                        .ResultSrcM(ResultSrcM),
+                         
                         .RD_M(RD_M), 
                         .PCPlus4M(PCPlus4M), 
                         .WriteDataM(WriteDataM), 
@@ -140,11 +152,21 @@ module Pipeline_top(clk, rst);
                         .rst(rst), 
                         .RegWriteM(RegWriteM), 
                         .RegWriteW(RegWriteW), 
+                        .RdE(RD_E),
                         .RD_M(RD_M), 
                         .RD_W(RDW), 
+                        .RS1_D(RS1_D),
+                        .RS2_D(RS2_D),
                         .Rs1_E(RS1_E), 
-                        .Rs2_E(RS2_E), 
+                        .Rs2_E(RS2_E),
+                        .ResultSrcE(ResultSrcE),
+                        .PCSrcE(PCSrcE),
+                         
                         .ForwardAE(ForwardAE), 
-                        .ForwardBE(ForwardBE)
+                        .ForwardBE(ForwardBE),
+                        .StallD(StallD),
+                        .StallF(StallF),
+                        .FlushE(FlushE),
+                        .FlushD(FlushD)
                         );
 endmodule

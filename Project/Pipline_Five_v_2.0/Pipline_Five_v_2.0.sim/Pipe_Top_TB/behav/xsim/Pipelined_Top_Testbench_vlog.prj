@@ -21,6 +21,8 @@ verilog xil_defaultlib  --include "../../../../Pipline_Five_v_2.0.srcs/sources_1
 "../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v" \
 "../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Single_Cycle_Top.v" \
 "../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Hazard_Unit.v" \
+"../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Data_Path.v" \
+"../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Controller.v" \
 "../../../../Pipline_Five_v_2.0.srcs/Pipe_Top_TB/new/PIPE_TB.v" \
 
 # compile glbl module

@@ -1,16 +1,3 @@
-// Copyright 2023 MERL-DSU
-
-//    Licensed under the Apache License, Version 2.0 (the "License");
-//    you may not use this file except in compliance with the License.
-//    You may obtain a copy of the License at
-
-//        http://www.apache.org/licenses/LICENSE-2.0
-
-//    Unless required by applicable law or agreed to in writing, software
-//    distributed under the License is distributed on an "AS IS" BASIS,
-//    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-//    See the License for the specific language governing permissions and
-//    limitations under the License.
 
 `include "Program_Counter.v"
 `include "PC_Adder.v"
@@ -18,12 +5,13 @@
 `include "Instruction_Memory.v"
 `include "Adder.v"
 
-module fetch_cycle(clk, rst, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
+module fetch_cycle(clk, rst,EN, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
 
     // Declare input & outputs
-    input clk, rst;
+    input clk, rst, EN;
     input PCSrcE;
     input [31:0] PCTargetE;
+
     output [31:0] InstrD;
     output [31:0] PCD, PCPlus4D;
 
@@ -38,7 +26,8 @@ module fetch_cycle(clk, rst, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
 
     // Initiation of Modules
     // Declare PC Mux
-     MUX_2_by_1 PC_MUX(.a(PCPlus4F),
+     MUX_2_by_1 PC_MUX(
+                .a(PCPlus4F),
                 .b(PCTargetE),
                 .s(PCSrcE),
                 .c(PC_F)
@@ -70,21 +59,24 @@ module fetch_cycle(clk, rst, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
     // Fetch Cycle Register Logic
     always @(posedge clk or negedge rst) begin
         if(rst == 1'b0) begin
-            InstrF_reg <= 32'h00000000;
-            PCF_reg <= 32'h00000000;
-            PCPlus4F_reg <= 32'h00000000;
+            InstrF_reg              <= 32'h00000000;
+            PCF_reg                 <= 32'h00000000;
+            PCPlus4F_reg            <= 32'h00000000;
+              
         end
         else begin
-            InstrF_reg <= InstrF;
-            PCF_reg <= PCF;
-            PCPlus4F_reg <= PCPlus4F;
+            if(EN ==1'b1)begin
+                InstrF_reg          <= InstrF;
+                PCF_reg             <= PCF;
+                PCPlus4F_reg        <= PCPlus4F;
+            end
         end
     end
 
 
     // Assigning Registers Value to the Output port
-    assign  InstrD = (rst == 1'b0) ? 32'h00000000 : InstrF_reg;
-    assign  PCD = (rst == 1'b0) ? 32'h00000000 : PCF_reg;
+    assign  InstrD   = (rst == 1'b0) ? 32'h00000000 : InstrF_reg;
+    assign  PCD      = (rst == 1'b0) ? 32'h00000000 : PCF_reg;
     assign  PCPlus4D = (rst == 1'b0) ? 32'h00000000 : PCPlus4F_reg;
 
 

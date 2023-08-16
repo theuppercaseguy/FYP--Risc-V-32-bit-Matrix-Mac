@@ -26,7 +26,7 @@ module MUX_2_by_1(
     output [31:0] c
 );
     
-    assign c = (~s) ? a : b;
+    assign c = (s == 1'b0) ? a : b;
     //s = 0 => c = a
     //s = 1 => c = b;
 

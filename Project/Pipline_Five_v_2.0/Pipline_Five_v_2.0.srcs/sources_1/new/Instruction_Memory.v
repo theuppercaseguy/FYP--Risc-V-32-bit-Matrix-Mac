@@ -33,8 +33,16 @@ module Instruction_Memory(
     
     //             if reset low, access memry start, else access address from memomory 
     assign RD =  ( rst == 1'b0 )? 32'h00000000 : Memory[A[31:2]] ;
-
     
+/*    always @(*)begin
+        if (rst == 1'b1)begin
+            RD  = Memory[A[31:2]];
+        end
+        else begin
+            RD  = 32'h00000000;
+        end
+    end
+*/    
 
     initial begin
     //test 1

@@ -1,31 +1,18 @@
-// Copyright 2023 MERL-DSU
-
-//    Licensed under the Apache License, Version 2.0 (the "License");
-//    you may not use this file except in compliance with the License.
-//    You may obtain a copy of the License at
-
-//        http://www.apache.org/licenses/LICENSE-2.0
-
-//    Unless required by applicable law or agreed to in writing, software
-//    distributed under the License is distributed on an "AS IS" BASIS,
-//    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-//    See the License for the specific language governing permissions and
-//    limitations under the License.
 
 
-module decode_cycle(clk, rst, InstrD, PCD, PCPlus4D, RegWriteW, RDW, ResultW, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE,
-    BranchE,  ALUControlE, RD1_E, RD2_E, Imm_Ext_E, RD_E, PCE, PCPlus4E, RS1_E, RS2_E);
+module decode_cycle(clk, rst, EN, CLR, InstrD, PCD, PCPlus4D, RegWriteW, RDW, ResultW, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE,
+    BranchE,  ALUControlE, RD1_E, RD2_E, Imm_Ext_E, RD_E, PCE, PCPlus4E, RS1_D, RS2_D, RS1_E, RS2_E);
 
     // Declaring I/O
-    input clk, rst, RegWriteW;
+    input clk, rst,EN, CLR, RegWriteW;
     input [4:0] RDW;
     input [31:0] InstrD, PCD, PCPlus4D, ResultW;
 
-    output RegWriteE,ALUSrcE,MemWriteE,ResultSrcE,BranchE;
+    output RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, BranchE;
     output [5:0] ALUControlE;
     output [31:0] RD1_E, RD2_E, Imm_Ext_E;
-    output [4:0] RS1_E, RS2_E, RD_E;
-    output [31:0] PCE, PCPlus4E;
+    output  [4:0] RS1_D, RS2_D, RS1_E, RS2_E, RD_E;
+    output  [31:0] PCE, PCPlus4E;
 
     // Declare Interim Wires
     wire RegWriteD,ALUSrcD,MemWriteD,ResultSrcD,BranchD;
@@ -81,53 +68,79 @@ module decode_cycle(clk, rst, InstrD, PCD, PCPlus4D, RegWriteW, RDW, ResultW, Re
     // Declaring Register Logic
     always @(posedge clk or negedge rst) begin
         if(rst == 1'b0) begin
-            RegWriteD_r <= 1'b0;
-            ALUSrcD_r <= 1'b0;
-            MemWriteD_r <= 1'b0;
-            ResultSrcD_r <= 1'b0;
-            BranchD_r <= 1'b0;
-            ALUControlD_r <= 3'b000;
-            RD1_D_r <= 32'h00000000; 
-            RD2_D_r <= 32'h00000000; 
-            Imm_Ext_D_r <= 32'h00000000;
-            RD_D_r <= 5'h00;
-            PCD_r <= 32'h00000000; 
-            PCPlus4D_r <= 32'h00000000;
-            RS1_D_r <= 5'h00;
-            RS2_D_r <= 5'h00;
+                    RegWriteD_r     <= 1'b0;
+                    ALUSrcD_r       <= 1'b0;
+                    MemWriteD_r     <= 1'b0;
+                    ResultSrcD_r    <= 1'b0;
+                    BranchD_r       <= 1'b0;
+                    ALUControlD_r   <= 3'b000;
+                    RD1_D_r         <= 32'h00000000; 
+                    RD2_D_r         <= 32'h00000000; 
+                    Imm_Ext_D_r     <= 32'h00000000;
+                    RD_D_r          <= 5'h00;
+                    PCD_r           <= 32'h00000000; 
+                    PCPlus4D_r      <= 32'h00000000;
+                    RS1_D_r         <= 5'h00;
+                    RS2_D_r         <= 5'h00;
+           
+            
+            
         end
         else begin
-            RegWriteD_r <= RegWriteD;
-            ALUSrcD_r <= ALUSrcD;
-            MemWriteD_r <= MemWriteD;
-            ResultSrcD_r <= ResultSrcD;
-            BranchD_r <= BranchD;
-            ALUControlD_r <= ALUControlD;
-            RD1_D_r <= RD1_D; 
-            RD2_D_r <= RD2_D; 
-            Imm_Ext_D_r <= Imm_Ext_D;
-            RD_D_r <= InstrD[11:7];
-            PCD_r <= PCD; 
-            PCPlus4D_r <= PCPlus4D;
-            RS1_D_r <= InstrD[19:15];
-            RS2_D_r <= InstrD[24:20];
+            if (EN ==1'b1)begin
+                if (CLR == 1'b1)begin
+                
+                    RegWriteD_r     <= 1'b0;
+                    ALUSrcD_r       <= 1'b0;
+                    MemWriteD_r     <= 1'b0;
+                    ResultSrcD_r    <= 1'b0;
+                    BranchD_r       <= 1'b0;
+                    ALUControlD_r   <= 3'b000;
+                    RD1_D_r         <= 32'h00000000; 
+                    RD2_D_r         <= 32'h00000000; 
+                    Imm_Ext_D_r     <= 32'h00000000;
+                    RD_D_r          <= 5'h00;
+                    PCD_r           <= 32'h00000000; 
+                    PCPlus4D_r      <= 32'h00000000;
+                    RS1_D_r         <= 5'h00;
+                    RS2_D_r         <= 5'h00;             
+                end
+                else
+                     RegWriteD_r    <= RegWriteD;
+                     ALUSrcD_r      <= ALUSrcD;
+                     MemWriteD_r    <= MemWriteD;
+                     ResultSrcD_r   <= ResultSrcD;
+                     BranchD_r      <= BranchD;
+                     ALUControlD_r  <= ALUControlD;
+                     RD1_D_r        <= RD1_D; 
+                     RD2_D_r        <= RD2_D; 
+                     Imm_Ext_D_r    <= Imm_Ext_D;
+                     RD_D_r         <= InstrD[11:7];
+                     PCD_r          <= PCD; 
+                     PCPlus4D_r     <= PCPlus4D;
+                     RS1_D_r        <= InstrD[19:15];
+                     RS2_D_r        <= InstrD[24:20];
+                     end
+            end           
         end
-    end
 
     // Output asssign statements
-    assign RegWriteE = RegWriteD_r;
-    assign ALUSrcE = ALUSrcD_r;
-    assign MemWriteE = MemWriteD_r;
-    assign ResultSrcE = ResultSrcD_r;
-    assign BranchE = BranchD_r;
-    assign ALUControlE = ALUControlD_r;
-    assign RD1_E = RD1_D_r;
-    assign RD2_E = RD2_D_r;
-    assign Imm_Ext_E = Imm_Ext_D_r;
-    assign RD_E = RD_D_r;
-    assign PCE = PCD_r;
-    assign PCPlus4E = PCPlus4D_r;
-    assign RS1_E = RS1_D_r;
-    assign RS2_E = RS2_D_r;
+    assign RegWriteE =      RegWriteD_r;
+    assign ALUSrcE =        ALUSrcD_r;
+    assign MemWriteE =      MemWriteD_r;
+    assign ResultSrcE =     ResultSrcD_r;
+    assign BranchE =        BranchD_r;
+    assign ALUControlE =    ALUControlD_r;
+    assign RD1_E =          RD1_D_r;
+    assign RD2_E =          RD2_D_r;
+    assign Imm_Ext_E =      Imm_Ext_D_r;
+    assign RD_E =           RD_D_r;
+    assign PCE =            PCD_r;
+    assign PCPlus4E =       PCPlus4D_r;
+    assign RS1_E =          RS1_D_r;
+    assign RS2_E =          RS2_D_r;
+    
+    assign RS1_D =          InstrD[19:15];
+    assign RS2_D =          InstrD[24:20];
 
 endmodule
