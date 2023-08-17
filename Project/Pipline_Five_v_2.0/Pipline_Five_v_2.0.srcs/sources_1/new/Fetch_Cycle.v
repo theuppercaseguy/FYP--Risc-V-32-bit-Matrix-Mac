@@ -16,8 +16,8 @@ module fetch_cycle(clk, rst,EN, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
     output [31:0] PCD, PCPlus4D;
 
     // Declaring interim wires
-    wire [31:0] PC_F, PCF, PCPlus4F;
-    wire [31:0] InstrF;
+    wire [31:0]  PCPlus4F, PC_F, PCF;
+    wire [31:0] InstrF, PC_F_temp;
 
     // Declaration of Register
     reg [31:0] InstrF_reg;
@@ -30,34 +30,47 @@ module fetch_cycle(clk, rst,EN, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
                 .a(PCPlus4F),
                 .b(PCTargetE),
                 .s(PCSrcE),
-                .c(PC_F)
-                );
+                
+                .c(PC_F) ////////////////////////
+    );
+    Adder PC_adder (
+                 .A(PCF),
+                 .B(32'h00000004),
+                    
+                 .Sum(PCPlus4F),////////////////////////
+    //           .Sum(PCPlus4F_temp),
+                 .Carry_Out()
+        );
+        
+     Program_Counter Program_Counter (
+                    .clk(clk),
+                    .rst(rst),
+                    .EN(EN),                
+                    .PC_Next(PC_F),
+                    
+    //              .PC(PC_F_temp)
+                    .PC(PCF)                
+        );
+        
 
-    // Declare PC Counter
-    Program_Counter Program_Counter (
-                .clk(clk),
-                .rst(rst),
-                .PC(PCF),
-                .PC_Next(PC_F)
-                );
-
+     
+//    MUX_2_by_1 xyz (
+//            .a(PCF),
+//            .b(PC_F_temp),
+//            .s(EN),
+            
+//            .c(PCF)
+//    );
+    
     // Declare Instruction Memory
     Instruction_Memory IMEM (
                 .rst(rst),
                 .A(PCF),
                 .RD(InstrF)
-                );
-
-    // Declare PC adder
-    Adder PC_adder (
-                .A(PCF),
-                .B(32'h00000004),
-                .Sum(PCPlus4F),
-                .Carry_Out()
-                );
-
+    );
+        
     // Fetch Cycle Register Logic
-    always @(posedge clk or negedge rst) begin
+    always @(posedge clk or negedge rst   ) begin
         if(rst == 1'b0) begin
             InstrF_reg              <= 32'h00000000;
             PCF_reg                 <= 32'h00000000;
@@ -69,15 +82,21 @@ module fetch_cycle(clk, rst,EN, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
                 InstrF_reg          <= InstrF;
                 PCF_reg             <= PCF;
                 PCPlus4F_reg        <= PCPlus4F;
+//                PCPlus4F_reg        <= PC_F_temp;
             end
+/*            else begin                
+                InstrF_reg          <= InstrF_reg;
+                PCF_reg             <= PCF_reg;       // No change
+                PCPlus4F_reg        <= PCPlus4F_reg;  // No change
+
+            end*/
         end
     end
-
-
+    
     // Assigning Registers Value to the Output port
-    assign  InstrD   = (rst == 1'b0) ? 32'h00000000 : InstrF_reg;
-    assign  PCD      = (rst == 1'b0) ? 32'h00000000 : PCF_reg;
-    assign  PCPlus4D = (rst == 1'b0) ? 32'h00000000 : PCPlus4F_reg;
+    assign  InstrD   = (rst == 1'b0) ? 32'h00000000 : InstrF_reg /*InstrF*/;
+    assign  PCD      = (rst == 1'b0) ? 32'h00000000 : PCF_reg/*PCF*/;
+    assign  PCPlus4D = (rst == 1'b0) ? 32'h00000000 : PCPlus4F_reg/* PCPlus4F*/;
 
 
 endmodule

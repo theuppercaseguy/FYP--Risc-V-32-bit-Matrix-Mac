@@ -8,9 +8,9 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.MUX_2_by_1
+Compiling module xil_defaultlib.Adder
 Compiling module xil_defaultlib.Program_Counter
 Compiling module xil_defaultlib.Instruction_Memory
-Compiling module xil_defaultlib.Adder
 Compiling module xil_defaultlib.fetch_cycle
 Compiling module xil_defaultlib.Main_Decoder
 Compiling module xil_defaultlib.ALU_Decoder

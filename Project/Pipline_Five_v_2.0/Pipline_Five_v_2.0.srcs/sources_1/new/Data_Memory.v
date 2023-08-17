@@ -50,7 +50,7 @@ module Data_Memory(
         //test-2
     //    Data_Memory_Registers[40] = 32'h00000002;
     Data_Memory_Registers[0] = 32'h00000000;
-
+    Data_Memory_Registers[512] = 32'h00000123;
     end
     
 

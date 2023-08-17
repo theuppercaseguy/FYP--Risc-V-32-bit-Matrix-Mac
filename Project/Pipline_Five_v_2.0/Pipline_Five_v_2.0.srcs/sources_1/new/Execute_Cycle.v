@@ -105,13 +105,13 @@ module execute_cycle(clk, rst, CLR, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, B
             
         end
         else if(CLR == 1'b1) begin
-            RegWriteE_r         <= 1'b0; 
+            RegWriteE_r         <= RegWriteE /*1'b0*/; 
             MemWriteE_r         <= 1'b0; 
-            ResultSrcE_r        <= 1'b0;
-            RD_E_r              <= 5'h00;
+            ResultSrcE_r        <= ResultSrcE/* 0*/;
+            RD_E_r              <= RD_E  /*0*/;
             PCPlus4E_r          <= 32'h00000000; 
             RD2_E_r             <= 32'h00000000; 
-            ResultE_r           <= 32'h00000000;        
+            ResultE_r           <= ResultE;        
                  
         end
         else begin

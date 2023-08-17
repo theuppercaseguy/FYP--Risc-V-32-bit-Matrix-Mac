@@ -22,7 +22,7 @@
 
 module Program_Counter(
     input [31:0] PC_Next,
-    input clk,rst,//using active low reset(inverted)
+    input clk,rst,EN,//using active low reset(inverted)
     
     output reg [31:0] PC
 );
@@ -33,13 +33,15 @@ begin
         begin
             PC <= 32'h00000000;//blocking statement
         end 
-    else // reset high => access the next instruction value
+     // reset high => access the next instruction value
+    else if(EN==1'b1) 
         begin
             PC <= PC_Next;
         end
-    
-
-
+    else begin
+            PC <= PC;
+         end
+   
 end
 
 

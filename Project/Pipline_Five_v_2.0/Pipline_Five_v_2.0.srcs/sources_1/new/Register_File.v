@@ -27,8 +27,8 @@ module Register_File(
     input [31:0] WD3,
     input clk,rst,WE3,
     
-    output reg [31:0] RD1,
-    output reg [31:0] RD2
+    output [31:0] RD1,
+    output [31:0] RD2
     );
     
     //register file memory
@@ -36,22 +36,22 @@ module Register_File(
    
     
     //read functionality from the register file
-    always @(posedge clk)begin
-        if(rst ==1'b0)begin
-                RD1 <=  32'h00000000;
-                RD2 <=  32'h00000000;
-        end
-        else begin
-                RD1 <= Registers[A1];        
-                RD2 <= Registers[A2];
-        end
-    end
+//    always @(posedge clk)begin
+//        if(rst ==1'b0)begin
+//                RD1 <=  32'h00000000;
+//                RD2 <=  32'h00000000;
+//        end
+//        else begin
+//                RD1 <= Registers[A1];        
+//                RD2 <= Registers[A2];
+//        end
+//    end
 
-//    assign RD1 =  ( rst == 1'b0 ) ? 32'h00000000 : Registers[A1] ;
-//    assign RD2 =  ( rst == 1'b0 ) ? 32'h00000000 : Registers[A2] ;
+    assign RD1 =  ( rst == 1'b0 ) ? 32'h00000000 : Registers[A1] ;
+    assign RD2 =  ( rst == 1'b0 ) ? 32'h00000000 : Registers[A2] ;
 
     //write functionality
-    always @(posedge clk)
+    always @(negedge clk)
     begin
         if(WE3 & ( A3 != 5'h00 ) )
         begin

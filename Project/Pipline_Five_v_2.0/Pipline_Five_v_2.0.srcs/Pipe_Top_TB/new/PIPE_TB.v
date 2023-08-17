@@ -13,15 +13,15 @@ module Pipelined_Top_Testbench();
        
        always begin
            clk = ~clk;
-           #50;
+           #5;
        end
    
        initial begin
            rst <= 1'b0;
-           #200;
+           #20;
            rst <= 1'b1;
-           #1000;
-//           $finish;    
+           #180;
+           $finish;    
        end
 
 
