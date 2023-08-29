@@ -25,8 +25,14 @@ module Adder(
         output [31:0] Sum,
         output Carry_Out
     );
+     wire [31:0] two_comp_offset = (~B) + 2;
+       
+       //               branch flag high & condition satisfies & offset is positive then add current address + offset else subtract current address - offset 
+//       assign next_address = ( branch & ALU_Out == 32'd1) ? ( (offset[31] != 1'b1) ? ( curr_address + offset ) : ( curr_address - two_comp_offset ) ) : curr_address + 32'd4 ;
+       
+    assign {Carry_Out, Sum } = ( B[31] == 1 )  ? (A - two_comp_offset) : (A + B);
     
-    assign {Carry_Out, Sum } = A + B;
+    
     
 endmodule
 

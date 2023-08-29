@@ -45,7 +45,8 @@ module Pipeline_top(clk, rst);
     // Fetch Stage
     fetch_cycle Fetch (
                         .clk(clk), 
-                        .rst(rst), 
+                        .rst(rst),
+                        .CLR(FlushD), 
                         .EN(~StallF),
                         .PCSrcE(PCSrcE), 
                         .PCTargetE(PCTargetE), 
@@ -59,7 +60,7 @@ module Pipeline_top(clk, rst);
                         .clk(clk), 
                         .rst(rst), 
                         .EN(~StallD),
-                        .CLR(FlushD),
+                        .CLR(FlushE),
                         
                         .InstrD(InstrD), 
                         .PCD(PCD), 
@@ -89,7 +90,7 @@ module Pipeline_top(clk, rst);
     execute_cycle Execute (
                         .clk(clk), 
                         .rst(rst), 
-                        .CLR(FlushE),
+                        .CLR(/*FlushE*/1'b0),
                         .RegWriteE(RegWriteE), 
                         .ALUSrcE(ALUSrcE), 
                         .MemWriteE(MemWriteE), 
@@ -148,8 +149,10 @@ module Pipeline_top(clk, rst);
                     );
 
     // Hazard Unit
-    hazard_unit Forwarding_block (
+    hazard_unit hazard_unit(
                         .rst(rst), 
+                        .clk(clk),
+                        .RegWriteE(RegWriteE),
                         .RegWriteM(RegWriteM), 
                         .RegWriteW(RegWriteW), 
                         .RdE(RD_E),
@@ -160,13 +163,31 @@ module Pipeline_top(clk, rst);
                         .Rs1_E(RS1_E), 
                         .Rs2_E(RS2_E),
                         .ResultSrcE(ResultSrcE),
+                        .ResultSrcM(ResultSrcM),
                         .PCSrcE(PCSrcE),
+                        .BranchE(BranchE),
                          
                         .ForwardAE(ForwardAE), 
                         .ForwardBE(ForwardBE),
-                        .StallD(StallD),
                         .StallF(StallF),
-                        .FlushE(FlushE),
-                        .FlushD(FlushD)
+                        .StallD(StallD),
+                        .FlushD(FlushD),
+                        .FlushE(FlushE)
+
                         );
+                        
+                        
 endmodule
+
+
+
+
+
+
+
+
+
+
+
+
+

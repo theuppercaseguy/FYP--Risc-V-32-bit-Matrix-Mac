@@ -9,70 +9,110 @@ module hazard_unit (
     input      [4:0] RS1_D,
     input      [4:0] RS2_D,
     input      [4:0] RdE,
+    input            BranchE,
     
-    input      ResultSrcE,
+    input            ResultSrcE,
+    input            ResultSrcM,
+    input            RegWriteE,
     input            RegWriteM,
     input            RegWriteW,
     input            PCSrcE,
     
-    output        StallF,
-    output        StallD,
+    output /*reg*/       StallF,
+    output /*reg*/       StallD,
     output        FlushE,
     output        FlushD,
     output reg [1:0] ForwardAE,
     output reg [1:0] ForwardBE
-//    output reg  ForwardAE,
-//    output reg  ForwardBE
-);
-    wire lwStall;
+    );
+    wire lwStall, branchStall;
+    
+    reg [1:0] stallCount;
 
 //        always @ (*) begin
-//              if ( (RS1_D | RS2_D) == RD_W) begin
+//              if ( (RS1_D | RS2_D) == (RD_W | RD_M) ) begin
 //                    lwStall = 1'b0;
 //              end
 //              else begin
 //                    lwStall <= (ResultSrcE & ((RS1_D == RdE) | (RS2_D == RdE))) ? 1'b1 : 1'b0;
 //              end
 //              StallD  <= lwStall;
-//              StallF  <= lwStall | (PCSrcE != 1'b0);
-//              FlushE  <= lwStall ; 
-//              FlushD  <= PCSrcE != 1'b0;
+//              StallF  <= lwStall;
+//              FlushE  <= lwStall  | (PCSrcE == 1'b1) ; 
+//              FlushD  <= PCSrcE == 1'b1;
 //        end
-    assign lwStall  = ( (RS1_D | RS2_D) == ( RD_W | RD_M)) ? 1'b0 : (ResultSrcE & ((RS1_D == RdE) | (RS2_D == RdE))) ? 1'b1 : 1'b0 ;
-    assign StallD = lwStall;
+    
+    
+    assign branchStall = BranchE &( ( RegWriteE & ( RdE == RS1_D | RdE == RS2_D ) ) |
+                                    ( ResultSrcM & ( RD_M == RS1_D | RD_M == RS2_D ) ) );
+    
+    assign lwStall  = ( ((RS1_D | RS2_D) == ( RD_W | RD_M) ) ) ? 1'b0 : (ResultSrcE & ((RS1_D == RdE) | (RS2_D == RdE))) ? 1'b1 : 1'b0 ;
+    
+/*   always @(posedge clk or negedge rst) begin
+        if (rst == 1'b0) begin
+            FlushD <= 0;
+            FlushE <= 0;
+            stallCount <= 0;
+        end
+        // Check for branch condition in execute stage
+        else begin 
+            if (PCSrcE == 1'b1) begin
+                // Branch condition detected
+                // Stall fetch and decode stages for two cycles
+                FlushD <= 1;
+                FlushE <= 1;
+                stallCount <= 2;
+            end 
+            else if (PCSrcE == 1'b0 | stallCount > 0) begin
+                // No branch condition detected or still stalling
+                // Resume normal operation
+                FlushD <= stallCount > 0 ? 1 : 0;
+                FlushE <= stallCount > 0 ? 1 : 0;
+            end            
+            if (stallCount > 0) begin
+                stallCount <= stallCount - 1;
+            end
+        end
+    end*/
+    
+    
     assign StallF = lwStall;
-    assign FlushE = lwStall;
-    assign FlushD = lwStall;
+    assign StallD = lwStall;
+    assign FlushD = /*lwStall*/ PCSrcE;    
+    assign FlushE = lwStall | PCSrcE;
+
     
     
     
     always @(*) begin
         if ( ( ((Rs1_E == RD_W) & RegWriteW) & (Rs1_E != 0) ) /*| lwStall == 1'b1 */) begin
                 ForwardAE = 2'b01;
-    //            lwStall <= 1'b0;
         end
         else if ( (((Rs1_E == RD_M) & RegWriteM) & (Rs1_E != 0) ) /*& lwStall == 1'b1*/ ) begin
             ForwardAE = 2'b10;
         end
-        
         else begin
             ForwardAE = 2'b00;
         end        
-    end
-
-    always @ (*) begin
+        
         if ( ((Rs2_E == RD_W) & RegWriteW) & (Rs2_E != 0) ) begin
-                ForwardBE = 2'b01;
+                        ForwardBE = 2'b01;
         end
         else if (((Rs2_E == RD_M) & RegWriteM) & (Rs2_E != 0) ) begin
-            ForwardBE = 2'b10;
+                    ForwardBE = 2'b10;
         end
-        
-
         else begin
-            ForwardBE = 2'b00;
-        end
+                    ForwardBE = 2'b00;
+         end
     end
+
+/*    always @ (*) begin
+        
+    end
+*/    
+    
+    
+    
     
 
 endmodule

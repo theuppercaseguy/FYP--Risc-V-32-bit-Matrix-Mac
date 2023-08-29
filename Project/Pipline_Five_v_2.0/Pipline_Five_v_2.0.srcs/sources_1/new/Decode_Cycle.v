@@ -22,7 +22,7 @@ module decode_cycle(clk, rst, EN, CLR, InstrD, PCD, PCPlus4D, RegWriteW, RDW, Re
 
     // Declaration of Interim Register
     reg RegWriteD_r,ALUSrcD_r,MemWriteD_r,ResultSrcD_r,BranchD_r;
-    reg [2:0] ALUControlD_r;
+    reg [5:0] ALUControlD_r;
     reg [31:0] RD1_D_r, RD2_D_r, Imm_Ext_D_r;
     reg [4:0] RS1_D_r, RS2_D_r;
     reg [5:0] RD_D_r;
@@ -82,52 +82,45 @@ module decode_cycle(clk, rst, EN, CLR, InstrD, PCD, PCPlus4D, RegWriteW, RDW, Re
                     PCD_r           <= 32'h00000000; 
                     PCPlus4D_r      <= 32'h00000000;
                     RS1_D_r         <= 5'h00;
-                    RS2_D_r         <= 5'h00;
-           
-            
-            
+                    RS2_D_r         <= 5'h00;   
         end
-        else begin
-            if (EN ==1'b1)begin
-                if (CLR == 1'b1)begin
-                
-                    RegWriteD_r     <= 1'b0;
-                    ALUSrcD_r       <= 1'b0;
-                    MemWriteD_r     <= 1'b0;
-                    ResultSrcD_r    <= 1'b0;
-                    BranchD_r       <= 1'b0;
-                    ALUControlD_r   <= 3'b000;
-                    RD1_D_r         <= 32'h00000000; 
-                    RD2_D_r         <= 32'h00000000; 
-                    Imm_Ext_D_r     <= 32'h00000000;
-                    RD_D_r          <= 5'h00;
-                    PCD_r           <= 32'h00000000; 
-                    PCPlus4D_r      <= 32'h00000000;
-                    RS1_D_r         <= 5'h00;
-                    RS2_D_r         <= 5'h00;             
+        else if (EN == 1'b1) begin
+                 if (CLR == 1'b1) begin
+                        RegWriteD_r     <= 1'b0;
+                        ALUSrcD_r       <= 1'b0;
+                        MemWriteD_r     <= 1'b0;
+                        ResultSrcD_r    <= 1'b0;
+                        BranchD_r       <= 1'b0;
+                        ALUControlD_r   <= 3'b000;
+                        RD1_D_r         <= 32'h00000000; 
+                        RD2_D_r         <= 32'h00000000; 
+                        Imm_Ext_D_r     <= 32'h00000000;
+                        RD_D_r          <= 5'h00;
+                        PCD_r           <= 32'h00000000; 
+                        PCPlus4D_r      <= 32'h00000000;
+                        RS1_D_r         <= 5'h00;
+                        RS2_D_r         <= 5'h00;             
                 end
-                else
-                     RegWriteD_r    <= RegWriteD;
-                     ALUSrcD_r      <= ALUSrcD;
-                     MemWriteD_r    <= MemWriteD;
-                     ResultSrcD_r   <= ResultSrcD;
-                     BranchD_r      <= BranchD;
-                     ALUControlD_r  <= ALUControlD;
-                     RD1_D_r        <= RD1_D; 
-                     RD2_D_r        <= RD2_D; 
-                     Imm_Ext_D_r    <= Imm_Ext_D;
-                     RD_D_r         <= InstrD[11:7];
-                     PCD_r          <= PCD; 
-                     PCPlus4D_r     <= PCPlus4D;
-                     RS1_D_r        <= InstrD[19:15];
-                     RS2_D_r        <= InstrD[24:20];
-                     
-//                     RS1_D        <= InstrD[19:15];
-//                     RS2_D        <= InstrD[24:20];
-                     end
-            end           
+                else if (CLR == 1'b0) begin
+                        RegWriteD_r    <= RegWriteD;
+                        ALUSrcD_r      <= ALUSrcD;
+                        MemWriteD_r    <= MemWriteD;
+                        ResultSrcD_r   <= ResultSrcD;
+                        BranchD_r      <= BranchD;
+                        ALUControlD_r  <= ALUControlD;
+                        RD1_D_r        <= RD1_D; 
+                        RD2_D_r        <= RD2_D; 
+                        Imm_Ext_D_r    <= Imm_Ext_D;
+                        RD_D_r         <= InstrD[11:7];
+                        PCD_r          <= PCD; 
+                        PCPlus4D_r     <= PCPlus4D;
+                        RS1_D_r        <= InstrD[19:15];
+                        RS2_D_r        <= InstrD[24:20];
+               end
+            end         
         end
-
+    
+    
     // Output asssign statements
     assign RegWriteE =      RegWriteD_r;
     assign ALUSrcE =        ALUSrcD_r;

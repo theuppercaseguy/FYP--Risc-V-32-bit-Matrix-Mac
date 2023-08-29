@@ -5,10 +5,10 @@
 `include "Instruction_Memory.v"
 `include "Adder.v"
 
-module fetch_cycle(clk, rst,EN, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
+module fetch_cycle(clk, rst,EN,CLR, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
 
     // Declare input & outputs
-    input clk, rst, EN;
+    input clk, rst, EN, CLR;
     input PCSrcE;
     input [31:0] PCTargetE;
 
@@ -77,20 +77,20 @@ module fetch_cycle(clk, rst,EN, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
             PCPlus4F_reg            <= 32'h00000000;
               
         end
-        else begin
-            if(EN ==1'b1)begin
-                InstrF_reg          <= InstrF;
-                PCF_reg             <= PCF;
-                PCPlus4F_reg        <= PCPlus4F;
-//                PCPlus4F_reg        <= PC_F_temp;
-            end
-/*            else begin                
-                InstrF_reg          <= InstrF_reg;
-                PCF_reg             <= PCF_reg;       // No change
-                PCPlus4F_reg        <= PCPlus4F_reg;  // No change
-
-            end*/
-        end
+        else if(EN ==1'b1)begin
+                if(CLR == 1'b0) begin
+                    InstrF_reg          <= InstrF;
+                    PCF_reg             <= PCF;
+                    PCPlus4F_reg        <= PCPlus4F;
+    //                PCPlus4F_reg        <= PC_F_temp;
+                end
+                else if(CLR == 1'b1) begin
+                    InstrF_reg              <= 32'h00000000;
+                    PCF_reg                 <= 32'h00000000;
+                    PCPlus4F_reg            <= 32'h00000000;                
+                
+                end
+       end
     end
     
     // Assigning Registers Value to the Output port

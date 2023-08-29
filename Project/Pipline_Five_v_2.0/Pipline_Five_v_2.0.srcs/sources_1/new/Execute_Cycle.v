@@ -43,7 +43,7 @@ module execute_cycle(clk, rst, CLR, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, B
     wire ZeroE;
 
     // Declaration of Register
-    reg RegWriteE_r, MemWriteE_r, ResultSrcE_r;
+    reg RegWriteE_r, MemWriteE_r, ResultSrcE_r, ZeroE_r;
     reg [4:0] RD_E_r;
     reg [31:0] PCPlus4E_r, RD2_E_r, ResultE_r;
 
@@ -81,10 +81,11 @@ module execute_cycle(clk, rst, CLR, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, B
             .ALU_Sel(ALUControlE),
             .Overflow(),
             .CarryOut(),
-            .Zero(ZeroE),  //maybe assign ZeroE = ResultE[0]
+            .Zero(/*ZeroE*/),  //maybe assign ZeroE = ResultE[0] // I was right
             .Negative()
             );
-
+    
+    
     // Adder
     Adder branch_adder (
             .A(PCE),
@@ -111,7 +112,8 @@ module execute_cycle(clk, rst, CLR, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, B
             RD_E_r              <= RD_E  /*0*/;
             PCPlus4E_r          <= 32'h00000000; 
             RD2_E_r             <= 32'h00000000; 
-            ResultE_r           <= ResultE;        
+            ResultE_r           <= ResultE;
+            ZeroE_r             <= 1'b0 /*ResultE[0]*/;        
                  
         end
         else begin
@@ -122,13 +124,14 @@ module execute_cycle(clk, rst, CLR, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, B
             PCPlus4E_r          <= PCPlus4E; 
             RD2_E_r             <= Src_B_interim; 
             ResultE_r           <= ResultE;
-             
+            ZeroE_r             <= ResultE[0];
         end
            
     end
 
     // Output Assignments
-    assign PCSrcE =         ZeroE &  BranchE;
+    assign ZeroE =          ResultE[0];
+    assign PCSrcE =         /*ZeroE*/ ResultE[0] &  BranchE;
     assign RegWriteM =      RegWriteE_r;
     assign MemWriteM =      MemWriteE_r;
     assign ResultSrcM =     ResultSrcE_r;
@@ -136,5 +139,6 @@ module execute_cycle(clk, rst, CLR, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, B
     assign PCPlus4M =       PCPlus4E_r;
     assign WriteDataM =     RD2_E_r;
     assign ALU_ResultM =    ResultE_r;
-
+//    assign ZeroE          = ZeroE_r;
+    
 endmodule

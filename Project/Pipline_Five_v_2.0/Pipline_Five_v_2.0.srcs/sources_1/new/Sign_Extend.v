@@ -23,6 +23,7 @@
 module Sign_Extend( //our imm values are of 12 bits, we are sign extending it to 32 bits
         input [31:0] In,//inputs bits
         input [1:0] ImmSrc,
+        
         output [31:0] Imm_Ext// output bits 
     );
     
