@@ -6,6 +6,19 @@ This repository contains the implementation and testing of RISC-V Single Cycle P
 
 In this section, you'll find the details of the Single Cycle Processor implementation and its instruction set architecture (ISA).
 
+### Results
+![Image](../Media/SingleCycle/Results/Rigorous-SSP-Testing.png)
+
+
+<p >
+  <img src="../Media/SingleCycle/Results/CLK_Timings.png"  width="500" height= "400"/>
+  <img src="../Media/SingleCycle/Results/Power_Analysis.png"  width="500" height= "400"/> 
+</p>
+
+### Schematics
+<img src="../Media/SingleCycle/Schematics/Single Cycle Processor Schema.png"/>
+
+
 ### Instruction Set Architecture (ISA)
 
 | Instruction | ALU Control | Opcode | Funct3 | Funct7 | Type   | Tested | Test Cases                   |
