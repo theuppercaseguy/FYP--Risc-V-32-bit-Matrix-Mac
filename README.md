@@ -33,7 +33,7 @@ This project aims to develop a hardware-based acceleration solution for matrix m
 | (The Morgan Kaufmann Series in Computer Architecture and Design) - Computer Organization and Design RISC-V Edition.     |  David A. Patterson, John L. Hennessy | [Link 1](https://libgen.is/book/index.php?md5=373C67B0C5E22C9B92B1D8FACDC47E68) | [Link 1](https://youtube.com/playlist?list=PLOVoOfrWyZkek19Z0KoK0TBRdN2cy92ER) |
 | Digital Design and Computer Architecture, Second Edition (2012, Morgan Kaufmann).     | David Harris, Sarah Harris -  | [Link 1](https://libgen.is/book/index.php?md5=A0759FE57A183C40967F5C563082581D) | None Found Yet |
 
-Although the exact edition doesn't matters, just use the as latest as possible.
+Although the exact edition doesn't matter, just use the latest as possible.
 
 
 ### Softwares
@@ -48,15 +48,15 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 
 | Source Name | Description | Link |
 |-------------|-------------|------|
-| Verilog in 2 Hours    | Understanding of Verilog, how to Write it and How to use it | [Link 1](https://youtu.be/nblGw37Fv8A) 
-| RISC-V Single Cycle Core Implementation    | Verilog implementation of MERL Architecture, in ENGLISH & Urdu, Quiete good for understanding modules Like ALU, CU etc  | [Link 2](https://youtube.com/playlist?list=PL5AmAh9QoSK7Fwk9vOJu-3VqBng_HjGFc) |
+| Verilog in 2 Hours    | Understanding of Verilog, How to Write it and How to Use It | [Link 1](https://youtu.be/nblGw37Fv8A) 
+| RISC-V Single Cycle Core Implementation    | Verilog implementation of MERL Architecture, in ENGLISH & Urdu, Quiete good for understanding modules Like ALU, CU, etc  | [Link 2](https://youtube.com/playlist?list=PL5AmAh9QoSK7Fwk9vOJu-3VqBng_HjGFc) |
 |RISC-V Pipeline Implementation|MERL Architecture Pipeline Implementation In Urdu & English |[Link 3](https://youtu.be/9_l6vWEZ5uE)|
-|RISC-V Online Course| A complete and a perfect course for understanging the RISC-V architecture and its implementaition. week-3 to week-10 preferred.|[link 4](https://inst.eecs.berkeley.edu/~cs61c/fa20/)|
+|RISC-V Online Course| A complete and perfect course for understanding the RISC-V architecture and its implementation. week-3 to week-10 preferred.|[link 4](https://inst.eecs.berkeley.edu/~cs61c/fa20/)|
 | Introduction to FPGA    | Understand of FPGA and Verilog and how to use them together. | [Link 5](https://youtu.be/lLg1AgA2Xoo) |
 | RISC-V Core | A 32-bit RISC-V core written in Verilog and an instruction set simulator supporting RV32IM. | [Link 6](https://github.com/ultraembedded/riscv)
 | RISC-V Pipelined Core | Pipeline version of the above core. | [Link 7](https://github.com/ultraembedded/biriscv)
 | RISC-V Matrix Extension Specification | This is a matrix extension proposal for AI applications under RISC-V architecture. The extension has the following features. | [Link 8](https://github.com/T-head-Semi/riscv-matrix-extension-spec) |
-| Tiny Matrix Extension using RISC-V Custom Instructions | a processor that accelerates matrix multiplication using RISC-V custom instructions, implemented it on an FPGA board and evaluated its performance. | [Link 9](https://www.luffca.com/2022/09/tiny-matrix-extension/)
+| Tiny Matrix Extension using RISC-V Custom Instructions | a processor that accelerates matrix multiplication using RISC-V custom instructions, implements it on an FPGA board and evaluates its performance. | [Link 9](https://www.luffca.com/2022/09/tiny-matrix-extension/)
 
 ## Objectives
 
@@ -65,6 +65,7 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 |-------------------|------|------|------|-----|-----|
 | Single Cycle Processor    | 1/July/2023 | 27/July/2023 | True | 1.2 | [Test-1](docs/github_readmes/Single_Cycle_tests.md) |
 | 5 stages Pipelined Processor    | 30/July/2023 | 29/Aug/2023 | True | 2.0 | [Test-2](docs/github_readmes/Pipline_tests.md)|
+|Convert the Whole Project into System Verloge | Pending... | pending... | False | 0.0 ||
 |MAC Instructions | Pending... | pending... | False | 0.0 ||
 |FPGA Implementation| Pending... | pending... | False | 0.0 ||
 
@@ -80,7 +81,7 @@ Although the exact edition doesn't matters, just use the as latest as possible.
 </p>
 
 
-## Current 5 Stage Pipline Blocks/DataPath:
+## Current 5 Stage Pipeline Blocks/DataPath:
 
 ### 
 <table border="">
@@ -121,18 +122,18 @@ Although the exact edition doesn't matters, just use the as latest as possible.
         </tr>
         <tr>
             <td>-</td>
-            <td>Row 5, Cell 2</td>
+            <td>-</td>
             <td>Execute Stage Registers</td>
             <td>-</td>
             <td>-</td>
         </tr>
     </table>
 
-
-## [Notes](docs/github_readmes/Notes.md)
-
 <br><br>
-
+## [Notes](docs/github_readmes/Notes.md)
+<br><br>
+## [Issues](docs/github_readmes/Issues.md)
+<br><br>
 ## :pencil: License
 
 This project is licensed under [MIT](https://opensource.org/licenses/MIT) license.
