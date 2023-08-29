@@ -1,10 +1,10 @@
 # RISC-V Project
 
-This repository contains the implementation and testing of RISC-V Single Cycle Processor:
+This repository contains the implementation and testing of RISC-V 32 Bit I, 5 stage Pipline Processor. With all type of Hazards Resolved:
 
-## Single Cycle Processor
+## 5 Staged Piplined Processor
 
-In this section, you'll find the details of the Single Cycle Processor implementation and its instruction set architecture (ISA).
+In this section, you'll find the details of the 5 Staged Piplined Processor implementation and its instruction set architecture (ISA).
 
 ### Instruction Set Architecture (ISA)
 
@@ -32,10 +32,9 @@ In this section, you'll find the details of the Single Cycle Processor implement
 ### Instructions on how to Use the Processor:
 
 
-<pre>
-    <ol>
+<pre><ol>
 <li>    git clone "https://github.com/theuppercaseguy/FYP--Risc-V-32-bit-Matrix-Mac"
-    cd "Project/Single_Cycle_Processor_V_1.2/"
+    cd "Project/Pipline_Five_v_2.0/"
     code memfile.hex</li>
 <li>    //write code in hex file,  at the top write "@00000000".
     ex://start of the hex file
@@ -45,59 +44,46 @@ In this section, you'll find the details of the Single Cycle Processor implement
         19000513
         002081B3
         40208233 </li>
-<li>    In Simultaion Sources, Make "Single_Cycle_Top_SimSet" Active!!!</li>
-<li>    Run behavioriual Simulation</li>
-<li>    In TCL Console, Type "run 3500". To increase the timeline and to execute the remaining instructions.</li></ol>
+<li>    In Simultaion Sources, Make "Pipe_Top_TB" Active!!!</li>
+<li>    Run behavioriual Simulation</li></ol>
     
 
     
 </pre>
 
-## [hex file](../../Project/Single_Cycle_Processor_V_1.2/ALL_Instr_Test.hex) : (Successfully) Tested Code
+## [hex file](../../Project/Project/Pipline_Five_v_2.0/memfile.hex) : (Successfully) Tested Code
 | ASSEMBLY-CODE | HEX-CODE |
 |------------------------|-----------|
-|addi x1, x0, -20       |   FEC00093 |
-|li x2,  -2             |FFE00113    |
-|li x31, 512            |20000F93    |
-|add     x3,x1,x2       |002081B3    |
-|sub     x4,x1,x2       |40208233    |
-|sub     x5,x2,x1       |401102B3    |
-|mul     x6,x1,x2       |02208333    |
-|mul     x7,x5,x2       |022283B3    |
-|and     x8,x1,x2       |0020F433    |
-|or      x9,x1,x2       |0020E4B3    |
-|xor     x10, x1,x2     |0020C533    |
-|slt     x11,x2,x1      |001125B3    |
-|slli    x12, x1, 3     |00309613    |
-|srli    x13, x2, 3     |00315693    |
-|sw      x3,   0(x31)   |003FA023    |
-|sw      x4,  -1(x31)   |FE4FAFA3    |
-|sw      x5,  -2(x31)   |FE5FAF23    |
-|sw       x6,  -3(x31)  |FE6FAEA3    |
-|sw       x7,  -4(x31)  |FE7FAE23    |
-|sw       x8,  -5(x31)  |FE8FADA3    |
-|sw       x9,  -6(x31)  |FE9FAD23    |
-|sw       x10, -7(x31)  |FEAFACA3    |
-|sw       x11, -8(x31)  |FEBFAC23    |
-|sw       x12, -9(x31)  |FECFABA3    |
-|sw       x13, -10(x31) |FEDFAB23    |
-|beq       x1,x1 test1  |02108C63    |
-|test2: lw x14,  0(x31) |000FA703    |
-|lw       x15, -1(x31)  |FFFFA783    |
-|lw       x16, -2(x31)  |FFEFA803    |
-|lw       x17, -3(x31)  |FFDFA883    |
-|lw       x18, -4(x31)  |FFCFA903    |
-|lw       x19, -5(x31)  |FFBFA983    |
-|lw       x20, -6(x31)  |FFAFAA03    |
-|lw       x21, -7(x31)  |FF9FAA83    |
-|lw       x22, -8(x31)  |FF8FAB03    |
-|lw       x23, -9(x31)  |FF7FAB83    |
-|lw       x24, -10(x31) |FF6FAC03    |
-|lw       x25, -11(x31) |FF5FAC83    |
-|bne      x2,x1, end    |00111663    |
-|test1: lw x30,  0(x31) |000FAF03    |
-|bge      x2, x1, test2 |FC1154E3    |
-|end: ecall             |00000073    |
+|addi x1, x0, 0xB       |00B00093
+|li x2, 0xC             |00C00113
+|addi x31, x0, 0x123    |12300F93
+|addi x3, x0, 10        |00A00193
+|addi x4, x0, 0         |00000213
+|li x5, 0               |00000293
+|sw x31, 512(x0)        |21F02023
+|for:                   |Loc: 0x1c
+|bge x4, x3, Done       |00325A63
+|add x5, x5, x4         |004282B3
+|addi x4, x4, 1         |00120213
+|addi x30, x0, 1        |00100F13
+|bne x3, x4, for        |FE4198E3
+|Done:                  |Loc: 0x30
+|add x3, x2, x1         |001101B3
+|add x4, x3, x2         |00218233
+|add x5, x2, x3         |003102B3
+|and x6, x4, x3         |00327333
+|or x7, x1, x6          |0060E3B3
+|slt x8, x6, x1         |00132433
+|sw x8, 516(x0)         |20802223
+|lw x9, 512(x0)         |20002483
+|add x10, x9, x1        |00148533
+|sub x11, x10, x1       |401505B3
+|sub x12, x10, x11      |40B50633
+|lw x13, 512(x0)        |20002683
+|add x14, x1, x13       |00D08733
+|slli x15, x13, 3       |00369793
+|srli x16, x15, 3       |0037D813
+
 
 
 
