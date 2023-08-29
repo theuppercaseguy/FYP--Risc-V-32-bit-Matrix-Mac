@@ -1,5 +1,5 @@
 
-##### By [Saad Khan](https://www.linkedin.com/in/saad-k-7aba04138/)
+### By [Saad Khan](https://www.linkedin.com/in/saad-k-7aba04138/)
 
 <table>
   <tr>
@@ -131,7 +131,7 @@
 
 
 
-##### By [Zaeem Shakir](https://www.linkedin.com/in/syed-zaeem-shakir-85b82125b/)
+### By [Zaeem Shakir](https://www.linkedin.com/in/syed-zaeem-shakir-85b82125b/)
 
 
 
@@ -222,7 +222,7 @@ endmodule
 
 
 
-##### By [Mahnoor Maleeka](https://www.linkedin.com/in/mahnoormaleeka/)
+### By [Mahnoor Maleeka](https://www.linkedin.com/in/mahnoormaleeka/)
 
 <table>
   <tr>
