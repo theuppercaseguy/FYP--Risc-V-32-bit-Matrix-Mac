@@ -43,7 +43,7 @@ module execute_cycle(clk, rst, CLR, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, B
     wire ZeroE;
 
     // Declaration of Register
-    reg RegWriteE_r, MemWriteE_r, ResultSrcE_r, ZeroE_r;
+    reg RegWriteE_r, MemWriteE_r, ResultSrcE_r/*, ZeroE_r*/;
     reg [4:0] RD_E_r;
     reg [31:0] PCPlus4E_r, RD2_E_r, ResultE_r;
 
@@ -113,7 +113,7 @@ module execute_cycle(clk, rst, CLR, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, B
             PCPlus4E_r          <= 32'h00000000; 
             RD2_E_r             <= 32'h00000000; 
             ResultE_r           <= ResultE;
-            ZeroE_r             <= 1'b0 /*ResultE[0]*/;        
+//            ZeroE_r             <= 1'b0 /*ResultE[0]*/;        
                  
         end
         else begin
@@ -124,7 +124,7 @@ module execute_cycle(clk, rst, CLR, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, B
             PCPlus4E_r          <= PCPlus4E; 
             RD2_E_r             <= Src_B_interim; 
             ResultE_r           <= ResultE;
-            ZeroE_r             <= ResultE[0];
+//            ZeroE_r             <= ResultE[0];
         end
            
     end
@@ -132,6 +132,7 @@ module execute_cycle(clk, rst, CLR, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, B
     // Output Assignments
     assign ZeroE =          ResultE[0];
     assign PCSrcE =         /*ZeroE*/ ResultE[0] &  BranchE;
+
     assign RegWriteM =      RegWriteE_r;
     assign MemWriteM =      MemWriteE_r;
     assign ResultSrcM =     ResultSrcE_r;

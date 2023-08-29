@@ -48,34 +48,6 @@ module hazard_unit (
     
     assign lwStall  = ( ((RS1_D | RS2_D) == ( RD_W | RD_M) ) ) ? 1'b0 : (ResultSrcE & ((RS1_D == RdE) | (RS2_D == RdE))) ? 1'b1 : 1'b0 ;
     
-/*   always @(posedge clk or negedge rst) begin
-        if (rst == 1'b0) begin
-            FlushD <= 0;
-            FlushE <= 0;
-            stallCount <= 0;
-        end
-        // Check for branch condition in execute stage
-        else begin 
-            if (PCSrcE == 1'b1) begin
-                // Branch condition detected
-                // Stall fetch and decode stages for two cycles
-                FlushD <= 1;
-                FlushE <= 1;
-                stallCount <= 2;
-            end 
-            else if (PCSrcE == 1'b0 | stallCount > 0) begin
-                // No branch condition detected or still stalling
-                // Resume normal operation
-                FlushD <= stallCount > 0 ? 1 : 0;
-                FlushE <= stallCount > 0 ? 1 : 0;
-            end            
-            if (stallCount > 0) begin
-                stallCount <= stallCount - 1;
-            end
-        end
-    end*/
-    
-    
     assign StallF = lwStall;
     assign StallD = lwStall;
     assign FlushD = /*lwStall*/ PCSrcE;    
@@ -104,15 +76,7 @@ module hazard_unit (
         else begin
                     ForwardBE = 2'b00;
          end
-    end
-
-/*    always @ (*) begin
-        
-    end
-*/    
-    
-    
-    
+    end    
     
 
 endmodule

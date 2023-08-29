@@ -20,7 +20,7 @@ module Pipelined_Top_Testbench();
            rst <= 1'b0;
            #20;
            rst <= 1'b1;
-           #820;                                                                       
+           #1000;                                                                       
            $finish;    
        end
 

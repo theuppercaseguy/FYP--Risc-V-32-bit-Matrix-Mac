@@ -125,7 +125,10 @@ module Instruction_Memory(
        
    //Comprehensive Test for Pipelined Processor
 //     $readmemh("E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/Piplined_Test.hex",Memory);   //change path according to your directory
-     $readmemh("E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Backups/files/Piplined_Test.hex",Memory);
+//     $readmemh("E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Backups/files/Piplined_Test.hex",Memory);
+
+
+        $readmemh("E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/memfile.hex",Memory);
 
     end
 endmodule
