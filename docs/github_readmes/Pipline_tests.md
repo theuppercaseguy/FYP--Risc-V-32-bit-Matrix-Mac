@@ -9,6 +9,10 @@ In this section, you'll find the details of the 5 Staged Pipelined Processor imp
 ### Results
 ![Image](../Media/FiveStagePiplined/Results/Data_Hazards_Compleltly_Solve.png)
 
+### Schematics
+![Image](../Media/FiveStagePiplined/Schematic/Schema-1.png)
+
+
 ### Instruction Set Architecture (ISA)
 
 | Instruction | ALU Control | Opcode | Funct3 | Funct7 | Type   | Tested | Test Cases                   |
