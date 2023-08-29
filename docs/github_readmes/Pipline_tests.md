@@ -54,7 +54,7 @@ In this section, you'll find the details of the 5 Staged Pipelined Processor imp
     
 </pre>
 
-## [hex file](../../Project/Project/Pipline_Five_v_2.0/memfile.hex) : (Successfully) Tested Code
+## [hex file](../../Project/Pipline_Five_v_2.0/memfile.hex) : (Successfully) Tested Code
 | ASSEMBLY-CODE | HEX-CODE |
 |------------------------|-----------|
 |addi x1, x0, 0xB       |00B00093
