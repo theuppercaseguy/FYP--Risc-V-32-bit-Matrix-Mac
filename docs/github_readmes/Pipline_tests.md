@@ -1,10 +1,13 @@
 # RISC-V Project
 
-This repository contains the implementation and testing of RISC-V 32 Bit I, 5 stage Pipline Processor. With all type of Hazards Resolved:
+This repository contains the implementation and testing of RISC-V 32 Bit I, 5-stage Pipeline Processor. With all types of Hazards Resolved:
 
-## 5 Staged Piplined Processor
+## 5 Staged Pipelined Processor
 
-In this section, you'll find the details of the 5 Staged Piplined Processor implementation and its instruction set architecture (ISA).
+In this section, you'll find the details of the 5 Staged Pipelined Processor implementation and its instruction set architecture (ISA).
+
+### Results
+![Image](../Media/FiveStagePiplined/Results/Data_Hazards_Compleltly_Solve.png)
 
 ### Instruction Set Architecture (ISA)
 
