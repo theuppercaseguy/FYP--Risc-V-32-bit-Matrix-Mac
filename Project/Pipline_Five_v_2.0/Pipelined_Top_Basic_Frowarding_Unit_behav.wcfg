@@ -11,9 +11,9 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="696280000fs"></ZoomStartTime>
-      <ZoomEndTime time="793980001fs"></ZoomEndTime>
-      <Cursor1Time time="786380000fs"></Cursor1Time>
+      <ZoomStartTime time="404500000fs"></ZoomStartTime>
+      <ZoomEndTime time="923500001fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="167"></NameColumnWidth>
@@ -64,6 +64,7 @@
    <wvobject fp_name="group122" type="group">
       <obj_property name="label">Decode</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/CLR" type="logic">
          <obj_property name="ElementShortName">CLR</obj_property>
          <obj_property name="ObjectShortName">CLR</obj_property>
@@ -123,6 +124,7 @@
       <wvobject fp_name="group210" type="group">
          <obj_property name="label">Register File</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/Register_File/A1" type="array">
             <obj_property name="ElementShortName">A1[4:0]</obj_property>
             <obj_property name="ObjectShortName">A1[4:0]</obj_property>
@@ -154,6 +156,7 @@
          <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/Register_File/Registers" type="array">
             <obj_property name="ElementShortName">Registers[31:0][31:0]</obj_property>
             <obj_property name="ObjectShortName">Registers[31:0][31:0]</obj_property>
+            <obj_property name="isExpanded"></obj_property>
          </wvobject>
       </wvobject>
       <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/RD1_D" type="array">
@@ -320,7 +323,6 @@
    <wvobject fp_name="group159" type="group">
       <obj_property name="label">Execute</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/CLR" type="logic">
          <obj_property name="ElementShortName">CLR</obj_property>
          <obj_property name="ObjectShortName">CLR</obj_property>
@@ -328,6 +330,7 @@
       <wvobject fp_name="group1530" type="group">
          <obj_property name="label">ALU</obj_property>
          <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
          <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU/A" type="array">
             <obj_property name="ElementShortName">A[31:0]</obj_property>
             <obj_property name="ObjectShortName">A[31:0]</obj_property>
@@ -597,7 +600,6 @@
    <wvobject fp_name="group195" type="group">
       <obj_property name="label">hazard Unit</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/Rs1_E" type="array">
          <obj_property name="ElementShortName">Rs1_E[4:0]</obj_property>
          <obj_property name="ObjectShortName">Rs1_E[4:0]</obj_property>

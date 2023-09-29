@@ -2,3 +2,6 @@ Running: xsim.dir/Pipelined_Top_Testbench_behav/xsimk.exe -simmode gui -wdb Pipe
 Design successfully loaded
 Design Loading Memory Usage: 5932 KB (Peak: 5932 KB)
 Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 6884 KB (Peak: 6884 KB)
+Simulation CPU Usage: 15 ms
