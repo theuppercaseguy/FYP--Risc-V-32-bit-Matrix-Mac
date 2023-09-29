@@ -44,6 +44,7 @@ Although the exact edition doesn't matter, just use the latest as possible.
 | RISC-V Online Simulator| RISC-V Simulation |Use it to write RISC_V Assembly code and easly convert it to hex and test it alongside our/your processor |[link 1](https://venus.cs61c.org/) |
 |DigitalUS Online| Generating Schematics |To generate and simulate Schematics for modules online through Verilog code directly|[link 1](https://digitaljs.tilk.eu/)|
 |MarkDown Editor|Live Readme Files Editor| used to create and edit Readme Files. | [link 1](https://markdownlivepreview.com/) |
+|Jira|Software Development| Used for agile software development, Tasks division, and a complete Backlog|[link 1](https://www.atlassian.com/software/jira)|
 
 ### Online Learning Sources
 
