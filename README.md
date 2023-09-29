@@ -132,6 +132,8 @@ Although the exact edition doesn't matter, just use the latest as possible.
 <br><br>
 ## [Notes](docs/github_readmes/Notes.md)
 <br><br>
+## [Meetings Schedule](docs/github_readmes/MeetingsSchedulre.md)
+<br><br>
 ## [Issues](docs/github_readmes/Issues.md)
 <br><br>
 ## :pencil: License
