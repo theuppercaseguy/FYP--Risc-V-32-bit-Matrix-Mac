@@ -1,0 +1,992 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Nov 26 03:42:01 2023
+# Process ID: 22056
+# Current directory: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/synth_1
+# Command line: vivado.exe -log Pipeline_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Pipeline_top.tcl
+# Log file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/synth_1/Pipeline_top.vds
+# Journal file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Pipeline_top.tcl -notrace
+Command: synth_design -top Pipeline_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9956 
+WARNING: [Synth 8-2490] overwriting previous definition of module Data_Memory [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module ALU [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:24]
+WARNING: [Synth 8-2490] overwriting previous definition of module Main_Decoder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Main_Decoder.v:24]
+WARNING: [Synth 8-2490] overwriting previous definition of module ALU_Decoder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU_Decoder.v:24]
+WARNING: [Synth 8-2490] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_2_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Program_Counter [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module PC_Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/PC_Adder.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/MUX_2_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Instruction_Memory [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Mux_3_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_3_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/MUX_2_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Program_Counter [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module PC_Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/PC_Adder.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/MUX_2_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Instruction_Memory [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module fetch_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Fetch_Cycle.v:8]
+WARNING: [Synth 8-2490] overwriting previous definition of module decode_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Decode_Cycle.v:3]
+WARNING: [Synth 8-2490] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_2_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Mux_3_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_3_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module ALU [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:24]
+WARNING: [Synth 8-2490] overwriting previous definition of module execute_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v:22]
+WARNING: [Synth 8-2490] overwriting previous definition of module Data_Memory [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module memory_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Memory_Cycle.v:5]
+WARNING: [Synth 8-2490] overwriting previous definition of module writeback_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Writeback_Cycle.v:16]
+WARNING: [Synth 8-2490] overwriting previous definition of module hazard_unit [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Hazard_Unit.v:3]
+WARNING: [Synth 8-2490] overwriting previous definition of module Clock_slowed [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Slow_Clock.v:23]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 421.855 ; gain = 109.805
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_top' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v:29]
+INFO: [Synth 8-6157] synthesizing module 'Clock_slowed' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Slow_Clock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_slowed' (1#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Slow_Clock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Multplex_Reg_Disp' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Multplex_Reg_Disp.v:23]
+INFO: [Synth 8-226] default block is never used [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Multplex_Reg_Disp.v:47]
+INFO: [Synth 8-226] default block is never used [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Multplex_Reg_Disp.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'Multplex_Reg_Disp' (2#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Multplex_Reg_Disp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fetch_cycle' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Fetch_Cycle.v:8]
+INFO: [Synth 8-6157] synthesizing module 'MUX_2_by_1' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/MUX_2_by_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX_2_by_1' (3#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/MUX_2_by_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (4#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Program_Counter' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Program_Counter' (5#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:23]
+WARNING: [Synth 8-3848] Net Memory[1023] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1022] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1021] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1020] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1019] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1018] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1017] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1016] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1015] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1014] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1013] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1012] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1011] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1010] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1009] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1008] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1007] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1006] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1005] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1004] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1003] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1002] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1001] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1000] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[999] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[998] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[997] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[996] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[995] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[994] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[993] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[992] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[991] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[990] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[989] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[988] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[987] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[986] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[985] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[984] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[983] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[982] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[981] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[980] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[979] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[978] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[977] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[976] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[975] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[974] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[973] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[972] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[971] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[970] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[969] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[968] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[967] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[966] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[965] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[964] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[963] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[962] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[961] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[960] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[959] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[958] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[957] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[956] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[955] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[954] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[953] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[952] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[951] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[950] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[949] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[948] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[947] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[946] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[945] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[944] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[943] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[942] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[941] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[940] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[939] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[938] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[937] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[936] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[935] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[934] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[933] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[932] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[931] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[930] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[929] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[928] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[927] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[926] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[925] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[924] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (6#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fetch_cycle' (7#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Fetch_Cycle.v:8]
+INFO: [Synth 8-6157] synthesizing module 'decode_cycle' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Decode_Cycle.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Control_Unit_Top' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Control_Unit_Top.v:26]
+	Parameter R_ADD_op bound to: 7'b0110011 
+INFO: [Synth 8-6157] synthesizing module 'Main_Decoder' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Main_Decoder.v:24]
+	Parameter I_op_basic bound to: 7'b0010011 
+	Parameter I_lw_op bound to: 7'b0000011 
+	Parameter R_op_basic bound to: 7'b0110011 
+	Parameter S_sw_op bound to: 7'b0100011 
+	Parameter B_op_basic bound to: 7'b1100011 
+INFO: [Synth 8-6155] done synthesizing module 'Main_Decoder' (8#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Main_Decoder.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Decoder' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU_Decoder.v:24]
+	Parameter I_op_basic bound to: 7'b0010011 
+	Parameter R_op_basic bound to: 7'b0110011 
+	Parameter B_op_basic bound to: 7'b1100011 
+	Parameter ECALL bound to: 7'b1110011 
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Decoder' (9#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU_Decoder.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Control_Unit_Top' (10#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Control_Unit_Top.v:26]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Register_File' (11#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Sign_Extend' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Sign_Extend.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Sign_Extend' (12#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Sign_Extend.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'decode_cycle' (13#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Decode_Cycle.v:3]
+INFO: [Synth 8-6157] synthesizing module 'execute_cycle' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Mux_3_by_1' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_3_by_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_3_by_1' (14#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_3_by_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (15#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:24]
+WARNING: [Synth 8-350] instance 'branch_adder' of module 'Adder' requires 4 connections, but only 3 given [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'execute_cycle' (16#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v:22]
+INFO: [Synth 8-6157] synthesizing module 'memory_cycle' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Memory_Cycle.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (17#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'memory_cycle' (18#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Memory_Cycle.v:5]
+INFO: [Synth 8-6157] synthesizing module 'writeback_cycle' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Writeback_Cycle.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'writeback_cycle' (19#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Writeback_Cycle.v:16]
+INFO: [Synth 8-6157] synthesizing module 'hazard_unit' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Hazard_Unit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'hazard_unit' (20#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Hazard_Unit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_top' (21#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v:29]
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port clk
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port rst
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port BranchE
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port ResultSrcM
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port RegWriteE
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port clk
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port rst
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[31]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[30]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[29]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[28]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[27]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[26]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[25]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[24]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[23]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[22]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[21]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[20]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[19]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[18]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[17]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[16]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[15]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[14]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[13]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[12]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[11]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[10]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[9]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[8]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[7]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[6]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[5]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[4]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[3]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[2]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[1]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[0]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port rst
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[31]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[30]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[29]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[28]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[27]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[26]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[25]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[24]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[23]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[22]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[21]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[20]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[19]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[18]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[17]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[16]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[15]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[14]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[13]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[12]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[11]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[10]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[19]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[18]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[17]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[16]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[15]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[14]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[13]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[12]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[6]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[5]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[4]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[3]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[2]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[1]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[0]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[31]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[30]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[29]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[28]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[27]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[26]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[25]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[24]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[23]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[22]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[21]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[20]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[19]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[18]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[17]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[16]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[15]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[14]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[13]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[12]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[1]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.609 ; gain = 159.559
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.609 ; gain = 159.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.609 ; gain = 159.559
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Pipeline_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Pipeline_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 812.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 812.906 ; gain = 500.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 812.906 ; gain = 500.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 812.906 ; gain = 500.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clk_1msec" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:33]
+INFO: [Synth 8-5546] ROM "MemWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ResultSrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUControl13" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:38]
+INFO: [Synth 8-5546] ROM "Cout" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'Cout_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:71]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 812.906 ; gain = 500.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 23    
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+	                1 Bit    Registers := 13    
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 22    
+	   4 Input     32 Bit        Muxes := 2     
+	  12 Input     32 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 12    
+	   2 Input      5 Bit        Muxes := 3     
+	  15 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	  15 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Pipeline_top 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Clock_slowed 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Multplex_Reg_Disp 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module MUX_2_by_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 1     
+Module Program_Counter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module Instruction_Memory 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module fetch_cycle 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+Module Main_Decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 3     
+Module ALU_Decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 11    
+Module Register_File 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module Sign_Extend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module decode_cycle 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 5     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+Module Mux_3_by_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 1     
++---Multipliers : 
+	                32x32  Multipliers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	  12 Input     32 Bit        Muxes := 1     
+	  15 Input      4 Bit        Muxes := 1     
+	  15 Input      1 Bit        Muxes := 1     
+Module execute_cycle 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module Data_Memory 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module memory_cycle 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module hazard_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "Sign_Extend/Imm_Ext00" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "control/Main_Decoder/MemWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "control/Main_Decoder/ResultSrc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "control/Main_Decoder/Branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "out00" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:49]
+DSP Report: Generating DSP ALU/ALU_Out0, operation Mode is: A*B.
+DSP Report: operator ALU/ALU_Out0 is absorbed into DSP ALU/ALU_Out0.
+DSP Report: operator ALU/ALU_Out0 is absorbed into DSP ALU/ALU_Out0.
+DSP Report: Generating DSP ALU/ALU_Out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator ALU/ALU_Out0 is absorbed into DSP ALU/ALU_Out0.
+DSP Report: operator ALU/ALU_Out0 is absorbed into DSP ALU/ALU_Out0.
+DSP Report: Generating DSP ALU/ALU_Out0, operation Mode is: A*B.
+DSP Report: operator ALU/ALU_Out0 is absorbed into DSP ALU/ALU_Out0.
+DSP Report: operator ALU/ALU_Out0 is absorbed into DSP ALU/ALU_Out0.
+DSP Report: Generating DSP ALU/ALU_Out0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator ALU/ALU_Out0 is absorbed into DSP ALU/ALU_Out0.
+DSP Report: operator ALU/ALU_Out0 is absorbed into DSP ALU/ALU_Out0.
+WARNING: [Synth 8-6014] Unused sequential element clk_slow_inst/clk_1msec_reg was removed.  [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Slow_Clock.v:37]
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port clk
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][11]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][11]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][11]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[4][11]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][11]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][11]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][11]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][11]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][7]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][7]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][7]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[4][7]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][7]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][7]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][7]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][7]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][8]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][8]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][8]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[4][8]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][8]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][8]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][8]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][8]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][9]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][9]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][9]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[4][9]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][9]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][9]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][9]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][9]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][10]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][10]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][10]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[4][10]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][10]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][10]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][10]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][10]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][30]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][30]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][30]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[4][30]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][30]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][30]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][30]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][30]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][25]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][25]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][25]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[4][25]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][25]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][25]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][25]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][25]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][31]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][31]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][31]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[4][31]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][31]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][31]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][31]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][31]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][29]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][29]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][29]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[4][29]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][29]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][29]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][29]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][29]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][28]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][28]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][28]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[4][28]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][28]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][28]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][28]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][28]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][27]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][27]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][27]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[4][27]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][27]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][27]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][27]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][27]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][26]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][26]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][26]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[4][26]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][26]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][26]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][26]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][26]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][3]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][3]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][3]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[4][3]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Fetch/IMEM /\Memory_reg[4][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Fetch/IMEM /\Memory_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Decode/BranchD_r_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Decode/ResultSrcD_r_reg )
+WARNING: [Synth 8-3332] Sequential element (Memory_reg[4][17]) is unused and will be removed from module Instruction_Memory.
+WARNING: [Synth 8-3332] Sequential element (Memory_reg[0][22]) is unused and will be removed from module Instruction_Memory.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[31]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[30]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[29]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[28]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[27]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[26]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[25]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[24]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[23]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[22]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[21]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[20]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[19]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[18]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[17]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[16]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[15]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[14]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[13]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[12]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[0]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[31]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[30]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[29]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[28]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[27]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[26]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[25]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[24]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[23]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[22]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[21]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[20]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[19]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[18]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[17]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[16]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[15]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[14]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[13]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[12]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[11]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[10]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[9]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[8]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[7]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[6]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[5]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[4]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[3]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[2]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCF_reg_reg[1]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[31]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[30]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[29]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[28]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[27]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[26]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[25]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[24]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[23]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[22]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[21]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[20]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[19]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[18]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[17]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[16]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[15]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[14]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[13]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[12]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[11]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[10]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[9]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[8]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[7]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[6]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[5]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[4]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[3]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[2]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[1]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Fetch/PCPlus4F_reg_reg[0]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Decode/MemWriteD_r_reg) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Decode/PCD_r_reg[31]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Decode/PCD_r_reg[30]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Decode/PCD_r_reg[29]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Decode/PCD_r_reg[28]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Decode/PCD_r_reg[27]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Decode/PCD_r_reg[26]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Decode/PCD_r_reg[25]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Decode/PCD_r_reg[24]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Decode/PCD_r_reg[23]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Decode/PCD_r_reg[22]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Decode/PCD_r_reg[21]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Decode/PCD_r_reg[20]) is unused and will be removed from module Pipeline_top.
+WARNING: [Synth 8-3332] Sequential element (Decode/PCD_r_reg[19]) is unused and will be removed from module Pipeline_top.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Decode/Imm_Ext_D_r_reg[3] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 812.906 ; gain = 500.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-------------+------------------------------------+-----------+----------------------+---------------+
+|Module Name  | RTL Object                         | Inference | Size (Depth x Width) | Primitives    | 
++-------------+------------------------------------+-----------+----------------------+---------------+
+|Pipeline_top | Decode/Register_File/Registers_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++-------------+------------------------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++--------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name   | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++--------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|execute_cycle | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|execute_cycle | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|execute_cycle | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|execute_cycle | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++--------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 825.641 ; gain = 513.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 826.164 ; gain = 514.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++-------------+------------------------------------+-----------+----------------------+---------------+
+|Module Name  | RTL Object                         | Inference | Size (Depth x Width) | Primitives    | 
++-------------+------------------------------------+-----------+----------------------+---------------+
+|Pipeline_top | Decode/Register_File/Registers_reg | Implied   | 32 x 32              | RAM32M x 12   | 
++-------------+------------------------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 845.691 ; gain = 533.641
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 845.691 ; gain = 533.641
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 845.691 ; gain = 533.641
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 845.691 ; gain = 533.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 845.691 ; gain = 533.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 845.691 ; gain = 533.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 845.691 ; gain = 533.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    23|
+|3     |LUT1   |     6|
+|4     |LUT2   |    78|
+|5     |LUT3   |    48|
+|6     |LUT4   |    49|
+|7     |LUT5   |     5|
+|8     |LUT6   |   143|
+|9     |MUXF7  |     4|
+|10    |RAM32M |    12|
+|11    |FDCE   |   203|
+|12    |FDPE   |     1|
+|13    |FDRE   |    11|
+|14    |IBUF   |     2|
+|15    |OBUF   |    17|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------------+-------------------+------+
+|      |Instance            |Module             |Cells |
++------+--------------------+-------------------+------+
+|1     |top                 |                   |   604|
+|2     |  Decode            |decode_cycle       |   194|
+|3     |    Register_File   |Register_File      |    76|
+|4     |  Execute           |execute_cycle      |    96|
+|5     |  Fetch             |fetch_cycle        |    46|
+|6     |    IMEM            |Instruction_Memory |    11|
+|7     |    PC_adder        |Adder              |     4|
+|8     |    Program_Counter |Program_Counter    |    11|
+|9     |  Memory            |memory_cycle       |   170|
+|10    |  clk_slow_inst     |Clock_slowed       |    42|
+|11    |  displaying_ALU    |Multplex_Reg_Disp  |    32|
++------+--------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 845.691 ; gain = 533.641
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 319 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 845.691 ; gain = 192.344
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 845.691 ; gain = 533.641
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 12 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+180 Infos, 334 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 852.777 ; gain = 553.566
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/synth_1/Pipeline_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Pipeline_top_utilization_synth.rpt -pb Pipeline_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 852.777 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 26 03:42:40 2023...

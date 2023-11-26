@@ -24,27 +24,33 @@ module Instruction_Memory(
     input [31:0] A, //input address of the instruction in the instruction memory
     input rst, //reset
     
-    output [31:0] RD//instruction to output from instruction memory// accessing memory
+    output [31:0] RD,//instruction to output from instruction memory// accessing memory
+    output [31:0] temp
     );
 
-    reg [31:0] Memory [1023:0];  //register memory containing, 1024 seperate registers of 32 bits each
-    
-    
+    reg [31:0] Memory [1023:0];  //register memory containing, 1024 seperate registers of 32 bits each  
     
     //             if reset low, access memry start, else access address from memomory 
     assign RD =  ( rst == 1'b0 )? 32'h00000000 : Memory[A[31:2]] ;
     
-/*    always @(*)begin
-        if (rst == 1'b1)begin
-            RD  = Memory[A[31:2]];
-        end
-        else begin
-            RD  = 32'h00000000;
+    always@(negedge rst)
+    begin
+        if(rst == 0)
+        begin
+            Memory[0]   <= 32'h00200093;
+            Memory[1]   <= 32'h00300113;           
+            Memory[2]   <= 32'h002081B3;
+            Memory[3]   <= 32'h00218233;
+            Memory[4]   <= 32'h002202B3;
+            Memory[5]   <= 32'h00228333;
+            Memory[6]   <= 32'h002303B3;
+            Memory[7]   <= 32'h00238433;
         end
     end
-*/    
+    assign temp = Memory[2];
+  
 
-    initial begin
+//    initial begin
     //test 1
     //    testing the load word instruction
     //    rs1, im(rd) =      im          rs1  f3   rd     op      hexa
@@ -126,11 +132,11 @@ module Instruction_Memory(
    //Comprehensive Test for Pipelined Processor
 //     $readmemh("E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/Piplined_Test.hex",Memory);   //change path according to your directory
 //     $readmemh("E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Backups/files/Piplined_Test.hex",Memory);
+//        $readmemh("D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/memfile.hex",Memory);
+
+//    end
 
 
-        $readmemh("E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/memfile.hex",Memory);
-
-    end
 endmodule
 
 

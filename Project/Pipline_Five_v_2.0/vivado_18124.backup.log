@@ -1,0 +1,838 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Nov 25 21:03:14 2023
+# Process ID: 18124
+# Current directory: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15080 D:\UNI\FYP\FYP--Risc-V-32-bit-Matrix-Mac\Project\Pipline_Five_v_2.0\Pipline_Five_v_2.0.xpr
+# Log file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/vivado.log
+# Journal file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.xpr
+INFO: [Project 1-313] Project file moved from 'E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 857.336 ; gain = 87.672
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EBEBA
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property part xc7a100tcsg324-1 [current_project]
+update_ip_catalog
+close_hw
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: Pipeline_top
+WARNING: [Synth 8-2490] overwriting previous definition of module Data_Memory [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module ALU [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:24]
+WARNING: [Synth 8-2490] overwriting previous definition of module Main_Decoder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Main_Decoder.v:24]
+WARNING: [Synth 8-2490] overwriting previous definition of module ALU_Decoder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU_Decoder.v:24]
+WARNING: [Synth 8-2490] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_2_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Program_Counter [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module PC_Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/PC_Adder.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/MUX_2_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Instruction_Memory [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Mux_3_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_3_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/MUX_2_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Program_Counter [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module PC_Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/PC_Adder.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/MUX_2_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Instruction_Memory [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module fetch_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Fetch_Cycle.v:8]
+WARNING: [Synth 8-2490] overwriting previous definition of module decode_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Decode_Cycle.v:3]
+WARNING: [Synth 8-2490] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_2_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Mux_3_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_3_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module ALU [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:24]
+WARNING: [Synth 8-2490] overwriting previous definition of module execute_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v:22]
+WARNING: [Synth 8-2490] overwriting previous definition of module Data_Memory [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module memory_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Memory_Cycle.v:5]
+WARNING: [Synth 8-2490] overwriting previous definition of module writeback_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Writeback_Cycle.v:16]
+WARNING: [Synth 8-2490] overwriting previous definition of module Program_Counter [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Instruction_Memory [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Register_File [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Register_File.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Sign_Extend [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Sign_Extend.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module ALU [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:24]
+WARNING: [Synth 8-2490] overwriting previous definition of module ALU_Decoder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU_Decoder.v:24]
+WARNING: [Synth 8-2490] overwriting previous definition of module Main_Decoder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Main_Decoder.v:24]
+WARNING: [Synth 8-2490] overwriting previous definition of module Control_Unit_Top [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Control_Unit_Top.v:26]
+WARNING: [Synth 8-2490] overwriting previous definition of module Data_Memory [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module PC_Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/PC_Adder.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/MUX_2_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module hazard_unit [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Hazard_Unit.v:3]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1771.590 ; gain = 131.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_top' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v:29]
+INFO: [Synth 8-6157] synthesizing module 'fetch_cycle' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Fetch_Cycle.v:8]
+INFO: [Synth 8-6157] synthesizing module 'MUX_2_by_1' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/MUX_2_by_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX_2_by_1' (1#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/MUX_2_by_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (2#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Program_Counter' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Program_Counter' (3#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:23]
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/memfile.hex'; please make sure the file is added to project and has read permission, ignoring [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:131]
+
+Warning: Trying to implement RAM in registers. Block RAM or DRAM implementation is not possible for one or more of the following reasons :
+	1: Unable to determine number of words or word size in RAM. 
+	2: No valid read/write found for RAM. 
+RAM dissolved into registers
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+WARNING: [Synth 8-3848] Net Memory in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:30]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (4#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fetch_cycle' (5#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Fetch_Cycle.v:8]
+INFO: [Synth 8-6157] synthesizing module 'decode_cycle' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Decode_Cycle.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Control_Unit_Top' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Control_Unit_Top.v:26]
+	Parameter R_ADD_op bound to: 7'b0110011 
+INFO: [Synth 8-6157] synthesizing module 'Main_Decoder' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Main_Decoder.v:24]
+	Parameter I_op_basic bound to: 7'b0010011 
+	Parameter I_lw_op bound to: 7'b0000011 
+	Parameter R_op_basic bound to: 7'b0110011 
+	Parameter S_sw_op bound to: 7'b0100011 
+	Parameter B_op_basic bound to: 7'b1100011 
+INFO: [Synth 8-6155] done synthesizing module 'Main_Decoder' (6#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Main_Decoder.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Decoder' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU_Decoder.v:24]
+	Parameter I_op_basic bound to: 7'b0010011 
+	Parameter R_op_basic bound to: 7'b0110011 
+	Parameter B_op_basic bound to: 7'b1100011 
+	Parameter ECALL bound to: 7'b1110011 
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Decoder' (7#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU_Decoder.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Control_Unit_Top' (8#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Control_Unit_Top.v:26]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Register_File' (9#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Sign_Extend' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Sign_Extend.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Sign_Extend' (10#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Sign_Extend.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'decode_cycle' (11#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Decode_Cycle.v:3]
+INFO: [Synth 8-6157] synthesizing module 'execute_cycle' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Mux_3_by_1' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_3_by_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_3_by_1' (12#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_3_by_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (13#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:24]
+WARNING: [Synth 8-350] instance 'branch_adder' of module 'Adder' requires 4 connections, but only 3 given [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'execute_cycle' (14#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v:22]
+INFO: [Synth 8-6157] synthesizing module 'memory_cycle' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Memory_Cycle.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (15#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'memory_cycle' (16#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Memory_Cycle.v:5]
+INFO: [Synth 8-6157] synthesizing module 'writeback_cycle' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Writeback_Cycle.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'writeback_cycle' (17#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Writeback_Cycle.v:16]
+INFO: [Synth 8-6157] synthesizing module 'hazard_unit' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Hazard_Unit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'hazard_unit' (18#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Hazard_Unit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_top' (19#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v:29]
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port clk
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port rst
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port BranchE
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port ResultSrcM
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port RegWriteE
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port clk
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port rst
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[31]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[30]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[29]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[28]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[27]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[26]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[25]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[24]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[23]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[22]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[21]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[20]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[19]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[18]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[17]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[16]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[15]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[14]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[13]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[12]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[11]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[10]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[9]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[8]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[7]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[6]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[5]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[4]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[3]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[2]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[1]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[0]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port rst
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[31]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[30]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[29]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[28]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[27]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[26]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[25]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[24]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[23]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[22]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[21]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[20]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[19]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[18]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[17]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[16]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[15]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[14]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[13]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[12]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[11]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[10]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[19]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[18]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[17]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[16]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[15]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[14]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[13]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[12]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[6]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[5]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[4]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[3]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[2]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[1]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[0]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[31]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[30]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[29]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[28]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[27]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[26]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[25]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[24]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[23]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[22]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[21]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[20]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[19]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[18]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[17]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[16]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[15]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[14]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[13]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[12]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[1]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1815.395 ; gain = 174.883
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1815.414 ; gain = 174.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1815.414 ; gain = 174.902
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2189.336 ; gain = 548.824
+43 Infos, 239 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:21 . Memory (MB): peak = 2189.336 ; gain = 548.824
+place_ports clk E3
+place_ports rst J15
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
+file mkdir D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new
+close [ open D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc w ]
+add_files -fileset constrs_1 D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc
+set_property target_constrs_file D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc [current_fileset -constrset]
+save_constraints -force
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov 25 21:07:59 2023] Launched synth_1...
+Run output will be captured here: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/synth_1/runme.log
+[Sat Nov 25 21:07:59 2023] Launched impl_1...
+Run output will be captured here: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov 25 21:11:59 2023] Launched synth_1...
+Run output will be captured here: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/synth_1/runme.log
+[Sat Nov 25 21:11:59 2023] Launched impl_1...
+Run output will be captured here: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Sat Nov 25 21:13:43 2023] Launched synth_1...
+Run output will be captured here: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/synth_1/runme.log
+[Sat Nov 25 21:13:43 2023] Launched impl_1...
+Run output will be captured here: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/impl_1/runme.log
+close_design
+launch_simulation -simset Pipe_Top_TB
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.sim/Pipe_Top_TB/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'Pipe_Top_TB'
+INFO: [SIM-utils-54] Inspecting design source files for 'Pipelined_Top_Testbench' in fileset 'Pipe_Top_TB'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'Pipe_Top_TB'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.sim/Pipe_Top_TB/behav/xsim'
+"xvlog --incr --relax -prj Pipelined_Top_Testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Main_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Register_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Memory_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+WARNING: [VRFC 10-2845] overwriting previous definition of module Data_Memory [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v:23]
+INFO: [VRFC 10-311] analyzing module memory_cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Sign_Extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sign_Extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module Mux_3_by_1
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-2845] overwriting previous definition of module ALU [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:24]
+INFO: [VRFC 10-311] analyzing module execute_cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Control_Unit_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+WARNING: [VRFC 10-2845] overwriting previous definition of module Main_Decoder [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Main_Decoder.v:24]
+INFO: [VRFC 10-311] analyzing module Control_Unit_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+WARNING: [VRFC 10-2845] overwriting previous definition of module ALU_Decoder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU_Decoder.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/PC_Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_2_by_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+WARNING: [VRFC 10-2845] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_2_by_1.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Fetch_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+WARNING: [VRFC 10-2845] overwriting previous definition of module Program_Counter [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v:23]
+INFO: [VRFC 10-311] analyzing module PC_Adder
+WARNING: [VRFC 10-2845] overwriting previous definition of module PC_Adder [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/PC_Adder.v:23]
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+WARNING: [VRFC 10-2845] overwriting previous definition of module Instruction_Memory [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:23]
+INFO: [VRFC 10-311] analyzing module Adder
+WARNING: [VRFC 10-2845] overwriting previous definition of module Adder [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:23]
+INFO: [VRFC 10-311] analyzing module fetch_cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Decode_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_3_by_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_3_by_1
+WARNING: [VRFC 10-2845] overwriting previous definition of module Mux_3_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_3_by_1.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/WriteBack_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module writeback_cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-311] analyzing module PC_Adder
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module fetch_cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module fetch_cycle [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Fetch_Cycle.v:8]
+INFO: [VRFC 10-311] analyzing module decode_cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module decode_cycle [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Decode_Cycle.v:3]
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module Mux_3_by_1
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module execute_cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module execute_cycle [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v:22]
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module memory_cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module memory_cycle [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Memory_Cycle.v:5]
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module writeback_cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module writeback_cycle [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Writeback_Cycle.v:16]
+INFO: [VRFC 10-311] analyzing module hazard_unit
+INFO: [VRFC 10-311] analyzing module Pipeline_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Single_Cycle_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Register_File
+WARNING: [VRFC 10-2845] overwriting previous definition of module Register_File [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Register_File.v:23]
+INFO: [VRFC 10-311] analyzing module Sign_Extend
+WARNING: [VRFC 10-2845] overwriting previous definition of module Sign_Extend [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Sign_Extend.v:23]
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+INFO: [VRFC 10-311] analyzing module Control_Unit_Top
+WARNING: [VRFC 10-2845] overwriting previous definition of module Control_Unit_Top [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Control_Unit_Top.v:26]
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module PC_Adder
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Hazard_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard_unit
+WARNING: [VRFC 10-2845] overwriting previous definition of module hazard_unit [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Hazard_Unit.v:3]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-311] analyzing module mux_SrcAE
+INFO: [VRFC 10-311] analyzing module mux_SrcBE1
+INFO: [VRFC 10-311] analyzing module mux_SrcBE2
+INFO: [VRFC 10-311] analyzing module Instruction_Fetch
+INFO: [VRFC 10-311] analyzing module pc_mux
+INFO: [VRFC 10-311] analyzing module PCPlus4_adder
+INFO: [VRFC 10-311] analyzing module PCTarget_adder
+INFO: [VRFC 10-311] analyzing module reglayer_four
+INFO: [VRFC 10-311] analyzing module reglayer_three
+INFO: [VRFC 10-311] analyzing module result_mux
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module reglayer_one
+INFO: [VRFC 10-311] analyzing module Adress_Generator
+INFO: [VRFC 10-311] analyzing module sign_ext
+INFO: [VRFC 10-311] analyzing module reglayer_two
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/Pipe_Top_TB/new/PIPE_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipelined_Top_Testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.sim/Pipe_Top_TB/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2218.664 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.sim/Pipe_Top_TB/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d7db5fcf5cd1488f898c64c162ede197 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Pipelined_Top_Testbench_behav xil_defaultlib.Pipelined_Top_Testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX_2_by_1
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.fetch_cycle
+Compiling module xil_defaultlib.Main_Decoder
+Compiling module xil_defaultlib.ALU_Decoder
+Compiling module xil_defaultlib.Control_Unit_Top
+Compiling module xil_defaultlib.Register_File
+Compiling module xil_defaultlib.Sign_Extend
+Compiling module xil_defaultlib.decode_cycle
+Compiling module xil_defaultlib.Mux_3_by_1
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.execute_cycle
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.memory_cycle
+Compiling module xil_defaultlib.writeback_cycle
+Compiling module xil_defaultlib.hazard_unit
+Compiling module xil_defaultlib.Pipeline_top
+Compiling module xil_defaultlib.Pipelined_Top_Testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Pipelined_Top_Testbench_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.sim/Pipe_Top_TB/behav/xsim/xsim.dir/Pipelined_Top_Testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Nov 25 21:15:50 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2218.664 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.sim/Pipe_Top_TB/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Pipelined_Top_Testbench_behav -key {Behavioral:Pipe_Top_TB:Functional:Pipelined_Top_Testbench} -tclbatch {Pipelined_Top_Testbench.tcl} -view {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg
+source Pipelined_Top_Testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Pipelined_Top_Testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:14 . Memory (MB): peak = 2218.664 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.sim/Pipe_Top_TB/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'Pipe_Top_TB'
+INFO: [SIM-utils-54] Inspecting design source files for 'Pipelined_Top_Testbench' in fileset 'Pipe_Top_TB'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'Pipe_Top_TB'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.sim/Pipe_Top_TB/behav/xsim'
+"xvlog --incr --relax -prj Pipelined_Top_Testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Main_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+ERROR: [VRFC 10-1412] syntax error near endmodule [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:134]
+ERROR: [VRFC 10-2790] Verilog 2000 keyword endmodule used in incorrect context [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:134]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.sim/Pipe_Top_TB/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.sim/Pipe_Top_TB/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.sim/Pipe_Top_TB/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'Pipe_Top_TB'
+INFO: [SIM-utils-54] Inspecting design source files for 'Pipelined_Top_Testbench' in fileset 'Pipe_Top_TB'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'Pipe_Top_TB'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.sim/Pipe_Top_TB/behav/xsim'
+"xvlog --incr --relax -prj Pipelined_Top_Testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Main_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Register_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Memory_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+WARNING: [VRFC 10-2845] overwriting previous definition of module Data_Memory [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v:23]
+INFO: [VRFC 10-311] analyzing module memory_cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Sign_Extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sign_Extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module Mux_3_by_1
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-2845] overwriting previous definition of module ALU [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:24]
+INFO: [VRFC 10-311] analyzing module execute_cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Control_Unit_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+WARNING: [VRFC 10-2845] overwriting previous definition of module Main_Decoder [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Main_Decoder.v:24]
+INFO: [VRFC 10-311] analyzing module Control_Unit_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+WARNING: [VRFC 10-2845] overwriting previous definition of module ALU_Decoder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU_Decoder.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/PC_Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_2_by_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+WARNING: [VRFC 10-2845] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_2_by_1.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Fetch_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+WARNING: [VRFC 10-2845] overwriting previous definition of module Program_Counter [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v:23]
+INFO: [VRFC 10-311] analyzing module PC_Adder
+WARNING: [VRFC 10-2845] overwriting previous definition of module PC_Adder [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/PC_Adder.v:23]
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+WARNING: [VRFC 10-2845] overwriting previous definition of module Instruction_Memory [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:23]
+INFO: [VRFC 10-311] analyzing module Adder
+WARNING: [VRFC 10-2845] overwriting previous definition of module Adder [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:23]
+INFO: [VRFC 10-311] analyzing module fetch_cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Decode_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_3_by_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_3_by_1
+WARNING: [VRFC 10-2845] overwriting previous definition of module Mux_3_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_3_by_1.v:23]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/WriteBack_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module writeback_cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-311] analyzing module PC_Adder
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module fetch_cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module fetch_cycle [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Fetch_Cycle.v:8]
+INFO: [VRFC 10-311] analyzing module decode_cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module decode_cycle [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Decode_Cycle.v:3]
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module Mux_3_by_1
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module execute_cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module execute_cycle [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v:22]
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module memory_cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module memory_cycle [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Memory_Cycle.v:5]
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module writeback_cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module writeback_cycle [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Writeback_Cycle.v:16]
+INFO: [VRFC 10-311] analyzing module hazard_unit
+INFO: [VRFC 10-311] analyzing module Pipeline_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Single_Cycle_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Register_File
+WARNING: [VRFC 10-2845] overwriting previous definition of module Register_File [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Register_File.v:23]
+INFO: [VRFC 10-311] analyzing module Sign_Extend
+WARNING: [VRFC 10-2845] overwriting previous definition of module Sign_Extend [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Sign_Extend.v:23]
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+INFO: [VRFC 10-311] analyzing module Control_Unit_Top
+WARNING: [VRFC 10-2845] overwriting previous definition of module Control_Unit_Top [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Control_Unit_Top.v:26]
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module PC_Adder
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Hazard_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard_unit
+WARNING: [VRFC 10-2845] overwriting previous definition of module hazard_unit [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Hazard_Unit.v:3]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Path.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-311] analyzing module mux_SrcAE
+INFO: [VRFC 10-311] analyzing module mux_SrcBE1
+INFO: [VRFC 10-311] analyzing module mux_SrcBE2
+INFO: [VRFC 10-311] analyzing module Instruction_Fetch
+INFO: [VRFC 10-311] analyzing module pc_mux
+INFO: [VRFC 10-311] analyzing module PCPlus4_adder
+INFO: [VRFC 10-311] analyzing module PCTarget_adder
+INFO: [VRFC 10-311] analyzing module reglayer_four
+INFO: [VRFC 10-311] analyzing module reglayer_three
+INFO: [VRFC 10-311] analyzing module result_mux
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-311] analyzing module reglayer_one
+INFO: [VRFC 10-311] analyzing module Adress_Generator
+INFO: [VRFC 10-311] analyzing module sign_ext
+INFO: [VRFC 10-311] analyzing module reglayer_two
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/Pipe_Top_TB/new/PIPE_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipelined_Top_Testbench
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.sim/Pipe_Top_TB/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.sim/Pipe_Top_TB/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d7db5fcf5cd1488f898c64c162ede197 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Pipelined_Top_Testbench_behav xil_defaultlib.Pipelined_Top_Testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MUX_2_by_1
+Compiling module xil_defaultlib.Adder
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.fetch_cycle
+Compiling module xil_defaultlib.Main_Decoder
+Compiling module xil_defaultlib.ALU_Decoder
+Compiling module xil_defaultlib.Control_Unit_Top
+Compiling module xil_defaultlib.Register_File
+Compiling module xil_defaultlib.Sign_Extend
+Compiling module xil_defaultlib.decode_cycle
+Compiling module xil_defaultlib.Mux_3_by_1
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.execute_cycle
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.memory_cycle
+Compiling module xil_defaultlib.writeback_cycle
+Compiling module xil_defaultlib.hazard_unit
+Compiling module xil_defaultlib.Pipeline_top
+Compiling module xil_defaultlib.Pipelined_Top_Testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Pipelined_Top_Testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+WARNING: File E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/memfile.hex referenced on D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v at line 129 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2218.664 ; gain = 0.000
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.sim/Pipe_Top_TB/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'Pipe_Top_TB'
+INFO: [SIM-utils-54] Inspecting design source files for 'Pipelined_Top_Testbench' in fileset 'Pipe_Top_TB'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'Pipe_Top_TB'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.sim/Pipe_Top_TB/behav/xsim'
+"xvlog --incr --relax -prj Pipelined_Top_Testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.sim/Pipe_Top_TB/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.sim/Pipe_Top_TB/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d7db5fcf5cd1488f898c64c162ede197 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Pipelined_Top_Testbench_behav xil_defaultlib.Pipelined_Top_Testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+WARNING: File E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/memfile.hex referenced on D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v at line 129 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 25 21:19:28 2023...

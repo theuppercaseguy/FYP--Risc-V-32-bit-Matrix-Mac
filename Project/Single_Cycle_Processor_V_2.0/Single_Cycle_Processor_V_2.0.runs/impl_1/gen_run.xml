@@ -1,69 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1691495176">
-  <File Type="BITSTR-BMM" Name="Single_Cycle_Top_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="Single_Cycle_Top_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="Single_Cycle_Top_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="Single_Cycle_Top_power_routed.rpt"/>
   <File Type="PA-TCL" Name="Single_Cycle_Top.tcl"/>
-  <File Type="OPT-TIMING" Name="Single_Cycle_Top_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="Single_Cycle_Top_opt.dcp"/>
+  <File Type="BITSTR-BMM" Name="Single_Cycle_Top_bd.bmm"/>
   <File Type="ROUTE-PWR-SUM" Name="Single_Cycle_Top_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="Single_Cycle_Top_reports.tcl"/>
+  <File Type="OPT-DCP" Name="Single_Cycle_Top_opt.dcp"/>
   <File Type="OPT-DRC" Name="Single_Cycle_Top_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="Single_Cycle_Top.hwdef"/>
   <File Type="PWROPT-DCP" Name="Single_Cycle_Top_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="Single_Cycle_Top_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="Single_Cycle_Top_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="Single_Cycle_Top_placed.dcp"/>
   <File Type="PLACE-IO" Name="Single_Cycle_Top_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="Single_Cycle_Top_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="Single_Cycle_Top_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="Single_Cycle_Top_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="Single_Cycle_Top_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="Single_Cycle_Top_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="Single_Cycle_Top_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="Single_Cycle_Top.bgn"/>
-  <File Type="PLACE-TIMING" Name="Single_Cycle_Top_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="Single_Cycle_Top_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="Single_Cycle_Top.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="Single_Cycle_Top_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="Single_Cycle_Top_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="Single_Cycle_Top_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="Single_Cycle_Top.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="Single_Cycle_Top_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="Single_Cycle_Top_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="Single_Cycle_Top_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="Single_Cycle_Top_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="Single_Cycle_Top_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="Single_Cycle_Top_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="Single_Cycle_Top.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="Single_Cycle_Top_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="Single_Cycle_Top.mmi"/>
+  <File Type="BITSTR-LTX" Name="Single_Cycle_Top.ltx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="Single_Cycle_Top_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="Single_Cycle_Top.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Single_Cycle_Top_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="Single_Cycle_Top.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Single_Cycle_Top_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="Single_Cycle_Top.sysdef"/>
   <File Type="ROUTE-PWR-RPX" Name="Single_Cycle_Top_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="Single_Cycle_Top_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="Single_Cycle_Top_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="Single_Cycle_Top_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="Single_Cycle_Top_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="Single_Cycle_Top_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="Single_Cycle_Top_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="Single_Cycle_Top_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="Single_Cycle_Top_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="Single_Cycle_Top_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="Single_Cycle_Top_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="Single_Cycle_Top_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Single_Cycle_Top_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Single_Cycle_Top_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Single_Cycle_Top_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Single_Cycle_Top_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Single_Cycle_Top_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Single_Cycle_Top_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="Single_Cycle_Top.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Single_Cycle_Top_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="Single_Cycle_Top.rbt"/>
   <File Type="BITSTR-NKY" Name="Single_Cycle_Top.nky"/>
   <File Type="BG-DRC" Name="Single_Cycle_Top.drc"/>
@@ -187,9 +168,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-      <Desc>Default settings for Implementation.</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
     <Step Id="init_design"/>
     <Step Id="opt_design"/>
     <Step Id="power_opt_design"/>

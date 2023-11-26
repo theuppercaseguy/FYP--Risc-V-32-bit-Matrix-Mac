@@ -17,7 +17,7 @@
 `include "Execute_Cycle.v"
 `include "Memory_Cycle.v"
 `include "Writeback_Cycle.v"    
-
+`include "Slow_Clock.v"
 
 `include "Hazard_unit.v"
 
@@ -26,11 +26,14 @@
 
 
 
-module Pipeline_top(clk, rst);
+module Pipeline_top(clk_100mhz, rst, Data_Mem_display_reg, anode, SSD);
 
     // Declaration of I/O
-    input clk, rst;
-
+    input clk_100mhz, rst;
+    output  /*[31:0]*/ reg Data_Mem_display_reg;
+    output [7:0] anode;
+    output [7:0] SSD;
+    
     // Declaration of Interim Wires
     wire PCSrcE, RegWriteW, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, BranchE, RegWriteM, MemWriteM, ResultSrcM, ResultSrcW;
     wire [5:0] ALUControlE;
@@ -40,9 +43,36 @@ module Pipeline_top(clk, rst);
     wire [4:0] RS1_E, RS2_E, RS1_D, RS2_D;
     wire [1:0] ForwardBE, ForwardAE;
     wire StallF, StallD, FlushE, FlushD;
-
+    
+    wire clk, clk_1msec;
+    wire [31:0]temp;
+    
+    Clock_slowed clk_slow_inst(
+        .clk_100mhz(clk_100mhz), 
+        .rst(rst),
+        .clk_1sec(clk),
+        .clk_1msec(clk_1msec)
+    );
+    
+    Multplex_Reg_Disp displaying_ALU(
+        .clk(clk_100mhz), 
+        .rst(rst),
+        .inp_reg(ALU_ResultM),
+        .Anode(anode),
+        .SSD_out(SSD)
+    );
+    always@(posedge clk or posedge rst)
+    begin
+        if(rst == 0) Data_Mem_display_reg    <= 1;
+        else 
+        begin
+            Data_Mem_display_reg             <= ~Data_Mem_display_reg;
+        end
+    end
+        
     // Module Initiation
     // Fetch Stage
+
     fetch_cycle Fetch (
                         .clk(clk), 
                         .rst(rst),
@@ -50,9 +80,11 @@ module Pipeline_top(clk, rst);
                         .EN(~StallF),
                         .PCSrcE(PCSrcE), 
                         .PCTargetE(PCTargetE), 
+
                         .InstrD(InstrD), 
                         .PCD(PCD), 
-                        .PCPlus4D(PCPlus4D)
+                        .PCPlus4D(PCPlus4D),
+                        .temp(temp)
                     );
 
     // Decode Stage
@@ -117,7 +149,7 @@ module Pipeline_top(clk, rst);
                         .ForwardA_E(ForwardAE),
                         .ForwardB_E(ForwardBE)
                     );
-    
+
     // Memory Stage
     memory_cycle Memory (
                         .clk(clk), 
@@ -175,6 +207,7 @@ module Pipeline_top(clk, rst);
                         .FlushE(FlushE)
 
                         );
+                       
                         
                         
 endmodule

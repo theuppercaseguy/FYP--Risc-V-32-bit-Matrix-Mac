@@ -5,7 +5,7 @@
 `include "Instruction_Memory.v"
 `include "Adder.v"
 
-module fetch_cycle(clk, rst,EN,CLR, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
+module fetch_cycle(clk, rst,EN,CLR, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D, temp);
 
     // Declare input & outputs
     input clk, rst, EN, CLR;
@@ -14,6 +14,7 @@ module fetch_cycle(clk, rst,EN,CLR, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
 
     output [31:0] InstrD;
     output [31:0] PCD, PCPlus4D;
+    output [31:0] temp;
 
     // Declaring interim wires
     wire [31:0]  PCPlus4F, PC_F, PCF;
@@ -66,7 +67,8 @@ module fetch_cycle(clk, rst,EN,CLR, PCSrcE, PCTargetE, InstrD, PCD, PCPlus4D);
     Instruction_Memory IMEM (
                 .rst(rst),
                 .A(PCF),
-                .RD(InstrF)
+                .RD(InstrF),
+                .temp(temp)
     );
         
     // Fetch Cycle Register Logic

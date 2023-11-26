@@ -5,10 +5,18 @@ module Pipelined_Top_Testbench();
    
    reg clk=0, rst;
     
-    Pipeline_top dut(
-        .clk(clk),
-        .rst(rst)
+    Pipeline_top uut(
+        .clk_100mhz(clk), 
+        .rst(rst), 
+        .Data_Mem_display_reg(), 
+        .anode(), 
+        .SSD()
     );
+    
+//    Pipeline_top dut(
+//        .clk(clk),
+//        .rst(rst)
+//    );
         
        
        always begin
