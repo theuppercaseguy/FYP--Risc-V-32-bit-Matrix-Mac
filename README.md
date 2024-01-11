@@ -24,6 +24,13 @@ This project aims to develop a hardware-based acceleration solution for matrix m
 - [Dr. Fahad Bin Muslim](https://www.linkedin.com/in/fahadbinmuslim/)
 - [Dr. Taj Muhammad](https://www.linkedin.com/in/taj-muhammad-khan-6a1833281/)
 
+## Poster
+<p float="left">
+  <img src="docs/Media/RISC-V 32bit Matrix MAC Processor Poster.png" width="300" height="450" /> 
+  <img src="docs/Media/FYP_poster_.png" width="300" height="450" />
+</p>
+
+
 ## Resources
 
 ### Books
