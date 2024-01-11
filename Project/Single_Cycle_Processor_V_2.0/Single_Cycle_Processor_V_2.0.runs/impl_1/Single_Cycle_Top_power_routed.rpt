@@ -1,11 +1,11 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Tue Aug  8 16:49:48 2023
-| Host             : DESKTOP-55V5AO4 running 64-bit major release  (build 9200)
+| Date             : Wed Dec 20 08:08:20 2023
+| Host             : Lucifer-Morning-Star running 64-bit major release  (build 9200)
 | Command          : report_power -file Single_Cycle_Top_power_routed.rpt -pb Single_Cycle_Top_power_summary_routed.pb -rpx Single_Cycle_Top_power_routed.rpx
 | Design           : Single_Cycle_Top
-| Device           : xc7k70tfbv676-1
+| Device           : xc7a100tcsg324-1
 | Design State     : routed
 | Grade            : commercial
 | Process          : typical
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.156        |
+| Total On-Chip Power (W)  | 0.174        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.074        |
-| Device Static (W)        | 0.081        |
-| Effective TJA (C/W)      | 1.9          |
-| Max Ambient (C)          | 84.7         |
-| Junction Temperature (C) | 25.3         |
+| Dynamic (W)              | 0.082        |
+| Device Static (W)        | 0.091        |
+| Effective TJA (C/W)      | 4.6          |
+| Max Ambient (C)          | 84.2         |
+| Junction Temperature (C) | 25.8         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,20 +52,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.001 |        3 |       --- |             --- |
-| Slice Logic              |     0.011 |     1400 |       --- |             --- |
-|   LUT as Logic           |     0.008 |      713 |     41000 |            1.74 |
-|   LUT as Distributed RAM |     0.003 |      336 |     13400 |            2.51 |
-|   F7/F8 Muxes            |    <0.001 |      204 |     41000 |            0.50 |
-|   CARRY4                 |    <0.001 |       28 |     10250 |            0.27 |
-|   Register               |    <0.001 |        8 |     82000 |           <0.01 |
-|   Others                 |     0.000 |       11 |       --- |             --- |
-| Signals                  |     0.024 |     1008 |       --- |             --- |
-| Block RAM                |     0.002 |      0.5 |       135 |            0.37 |
-| DSPs                     |     0.003 |        3 |       240 |            1.25 |
-| I/O                      |     0.032 |       38 |       300 |           12.67 |
-| Static Power             |     0.081 |          |           |                 |
-| Total                    |     0.156 |          |           |                 |
+| Clocks                   |     0.003 |        3 |       --- |             --- |
+| Slice Logic              |     0.002 |      178 |       --- |             --- |
+|   LUT as Distributed RAM |     0.001 |       48 |     19000 |            0.25 |
+|   LUT as Logic           |     0.001 |       41 |     63400 |            0.06 |
+|   CARRY4                 |    <0.001 |        8 |     15850 |            0.05 |
+|   Others                 |     0.000 |        3 |       --- |             --- |
+| Signals                  |     0.003 |      113 |       --- |             --- |
+| I/O                      |     0.075 |       38 |       210 |           18.10 |
+| Static Power             |     0.091 |          |           |                 |
+| Total                    |     0.174 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,19 +71,18 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.064 |       0.042 |      0.022 |
-| Vccaux    |       1.800 |     0.015 |       0.003 |      0.012 |
+| Vccint    |       1.000 |     0.023 |       0.008 |      0.015 |
+| Vccaux    |       1.800 |     0.024 |       0.006 |      0.018 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
-| Vcco18    |       1.800 |     0.016 |       0.015 |      0.001 |
+| Vcco18    |       1.800 |     0.039 |       0.035 |      0.004 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.001 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
-| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
 +-----------+-------------+-----------+-------------+------------+
 
@@ -116,10 +111,10 @@ Table of Contents
 
 +-----------------------+--------------------------+
 | Ambient Temp (C)      | 25.0                     |
-| ThetaJA (C/W)         | 1.9                      |
+| ThetaJA (C/W)         | 4.6                      |
 | Airflow (LFM)         | 250                      |
 | Heat Sink             | medium (Medium Profile)  |
-| ThetaSA (C/W)         | 3.4                      |
+| ThetaSA (C/W)         | 4.6                      |
 | Board Selection       | medium (10"x10")         |
 | # of Board Layers     | 12to15 (12 to 15 Layers) |
 | Board Temperature (C) | 25.0                     |
@@ -132,7 +127,7 @@ Table of Contents
 +-------+--------+-----------------+
 | Clock | Domain | Constraint (ns) |
 +-------+--------+-----------------+
-| clk   | clk    |            10.0 |
+| clk   | clk    |             3.1 |
 +-------+--------+-----------------+
 
 
@@ -142,123 +137,24 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+---------------------------------------------+-----------+
-| Name                                        | Power (W) |
-+---------------------------------------------+-----------+
-| Single_Cycle_Top                            |     0.074 |
-|   ALU                                       |     0.005 |
-|   Data_Memory                               |     0.006 |
-|     Data_Memory_Registers_reg_0_15_0_0      |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__0   |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__1   |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__10  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__11  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__12  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__13  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__14  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__15  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__16  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__17  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__18  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__19  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__2   |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__20  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__21  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__22  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__23  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__24  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__25  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__26  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__27  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__28  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__29  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__3   |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__30  |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__4   |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__5   |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__6   |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__7   |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__8   |    <0.001 |
-|     Data_Memory_Registers_reg_0_15_0_0__9   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_0_0     |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_10_10   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_11_11   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_12_12   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_13_13   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_14_14   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_15_15   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_16_16   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_17_17   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_18_18   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_19_19   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_1_1     |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_20_20   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_21_21   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_22_22   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_23_23   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_24_24   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_25_25   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_26_26   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_27_27   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_28_28   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_29_29   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_2_2     |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_30_30   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_31_31   |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_3_3     |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_4_4     |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_5_5     |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_6_6     |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_7_7     |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_8_8     |    <0.001 |
-|     Data_Memory_Registers_reg_0_255_9_9     |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_0_0   |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_10_10 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_11_11 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_12_12 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_13_13 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_14_14 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_15_15 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_16_16 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_17_17 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_18_18 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_19_19 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_1_1   |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_20_20 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_21_21 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_22_22 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_23_23 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_24_24 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_25_25 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_26_26 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_27_27 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_28_28 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_29_29 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_2_2   |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_30_30 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_31_31 |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_3_3   |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_4_4   |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_5_5   |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_6_6   |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_7_7   |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_8_8   |    <0.001 |
-|     Data_Memory_Registers_reg_256_511_9_9   |    <0.001 |
-|   PC                                        |    <0.001 |
-|   PC_Adder                                  |    <0.001 |
-|   Register_File                             |     0.028 |
-|     Registers_reg_r1_0_31_0_5               |    <0.001 |
-|     Registers_reg_r1_0_31_12_17             |    <0.001 |
-|     Registers_reg_r1_0_31_18_23             |    <0.001 |
-|     Registers_reg_r1_0_31_24_29             |    <0.001 |
-|     Registers_reg_r1_0_31_30_31             |    <0.001 |
-|     Registers_reg_r1_0_31_6_11              |    <0.001 |
-|     Registers_reg_r2_0_31_0_5               |    <0.001 |
-|     Registers_reg_r2_0_31_12_17             |    <0.001 |
-|     Registers_reg_r2_0_31_18_23             |    <0.001 |
-|     Registers_reg_r2_0_31_24_29             |    <0.001 |
-|     Registers_reg_r2_0_31_30_31             |    <0.001 |
-|     Registers_reg_r2_0_31_6_11              |    <0.001 |
-+---------------------------------------------+-----------+
++---------------------------------+-----------+
+| Name                            | Power (W) |
++---------------------------------+-----------+
+| Single_Cycle_Top                |     0.082 |
+|   ALU                           |     0.003 |
+|   Register_File                 |     0.005 |
+|     Registers_reg_r1_0_31_0_5   |    <0.001 |
+|     Registers_reg_r1_0_31_12_17 |    <0.001 |
+|     Registers_reg_r1_0_31_18_23 |    <0.001 |
+|     Registers_reg_r1_0_31_24_29 |    <0.001 |
+|     Registers_reg_r1_0_31_30_31 |    <0.001 |
+|     Registers_reg_r1_0_31_6_11  |    <0.001 |
+|     Registers_reg_r2_0_31_0_5   |    <0.001 |
+|     Registers_reg_r2_0_31_12_17 |    <0.001 |
+|     Registers_reg_r2_0_31_18_23 |    <0.001 |
+|     Registers_reg_r2_0_31_24_29 |    <0.001 |
+|     Registers_reg_r2_0_31_30_31 |    <0.001 |
+|     Registers_reg_r2_0_31_6_11  |    <0.001 |
++---------------------------------+-----------+
 
 

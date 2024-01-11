@@ -1,0 +1,111 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Nov 25 21:19:38 2023
+# Process ID: 15536
+# Current directory: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4500 D:\UNI\FYP\FYP--Risc-V-32-bit-Matrix-Mac\Project\Single_Cycle_Processor_V_2.0\Single_Cycle_Processor_V_2.0.xpr
+# Log file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/vivado.log
+# Journal file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.xpr
+INFO: [Project 1-313] Project file moved from 'E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 966.824 ; gain = 223.262
+update_compile_order -fileset sources_1
+launch_simulation -simset Single_Cycle_Top_SimSet
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.sim/Single_Cycle_Top_SimSet/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'Single_Cycle_Top_SimSet'
+INFO: [SIM-utils-54] Inspecting design source files for 'Single_Cycle_Top_Testbench' in fileset 'Single_Cycle_Top_SimSet'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'Single_Cycle_Top_SimSet'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.sim/Single_Cycle_Top_SimSet/behav/xsim'
+"xvlog --incr --relax -prj Single_Cycle_Top_Testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Single_Cycle_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-311] analyzing module Sign_Extend
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+INFO: [VRFC 10-311] analyzing module Control_Unit_Top
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module PC_Adder
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/Single_Cycle_Top_SimSet/imports/new/Single_Cycle_Top_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Single_Cycle_Top_Testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.sim/Single_Cycle_Top_SimSet/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.sim/Single_Cycle_Top_SimSet/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto f00332bd5ad44bdba4da3eceb15f11f2 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Single_Cycle_Top_Testbench_behav xil_defaultlib.Single_Cycle_Top_Testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Program_Counter
+Compiling module xil_defaultlib.PC_Adder
+Compiling module xil_defaultlib.Instruction_Memory
+Compiling module xil_defaultlib.Register_File
+Compiling module xil_defaultlib.Sign_Extend
+Compiling module xil_defaultlib.MUX_2_by_1
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.Main_Decoder
+Compiling module xil_defaultlib.ALU_Decoder
+Compiling module xil_defaultlib.Control_Unit_Top
+Compiling module xil_defaultlib.Data_Memory
+Compiling module xil_defaultlib.Single_Cycle_Top
+Compiling module xil_defaultlib.Single_Cycle_Top_Testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Single_Cycle_Top_Testbench_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.sim/Single_Cycle_Top_SimSet/behav/xsim/xsim.dir/Single_Cycle_Top_Testbench_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Nov 25 21:20:22 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.sim/Single_Cycle_Top_SimSet/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Single_Cycle_Top_Testbench_behav -key {Behavioral:Single_Cycle_Top_SimSet:Functional:Single_Cycle_Top_Testbench} -tclbatch {Single_Cycle_Top_Testbench.tcl} -view {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/Single_Cycle_Top_SimSet/imports/Single_Cycle_Processor_V_1.2/Single_Cycle_Top_Testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+open_wave_config D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/Single_Cycle_Top_SimSet/imports/Single_Cycle_Processor_V_1.2/Single_Cycle_Top_Testbench_behav.wcfg
+WARNING: Simulation object /Single_Cycle_Top_Testbench/uut/memoryinstr was not found in the design.
+source Single_Cycle_Top_Testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: File E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_1.2/ALL_Instr_Test.hex referenced on D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Instruction_Memory.v at line 116 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Single_Cycle_Top_Testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 997.074 ; gain = 14.891
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 25 22:59:17 2023...

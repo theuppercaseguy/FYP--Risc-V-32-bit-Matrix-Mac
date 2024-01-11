@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Dec 17 05:51:27 2023
+# Process ID: 14648
+# Current directory: E:/FYP--Risc-V-32-bit-Matrix-Mac-main/Project/Debouncer_Clock/Debouncer_Clock.runs/impl_1
+# Command line: vivado.exe -log Debounce_Project_Top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Debounce_Project_Top.tcl -notrace
+# Log file: E:/FYP--Risc-V-32-bit-Matrix-Mac-main/Project/Debouncer_Clock/Debouncer_Clock.runs/impl_1/Debounce_Project_Top.vdi
+# Journal file: E:/FYP--Risc-V-32-bit-Matrix-Mac-main/Project/Debouncer_Clock/Debouncer_Clock.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Debounce_Project_Top.tcl -notrace

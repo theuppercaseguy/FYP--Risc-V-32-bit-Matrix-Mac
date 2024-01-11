@@ -18,21 +18,17 @@
 `include "Memory_Cycle.v"
 `include "Writeback_Cycle.v"    
 `include "Slow_Clock.v"
-
 `include "Hazard_unit.v"
-
-
-
-
-
 
 module Pipeline_top(clk_100mhz, rst, Data_Mem_display_reg, anode, SSD);
 
     // Declaration of I/O
     input clk_100mhz, rst;
-    output  /*[31:0]*/ reg Data_Mem_display_reg;
+    output reg Data_Mem_display_reg;
     output [7:0] anode;
     output [7:0] SSD;
+
+    
     
     // Declaration of Interim Wires
     wire PCSrcE, RegWriteW, RegWriteE, ALUSrcE, MemWriteE, ResultSrcE, BranchE, RegWriteM, MemWriteM, ResultSrcM, ResultSrcW;
@@ -44,14 +40,16 @@ module Pipeline_top(clk_100mhz, rst, Data_Mem_display_reg, anode, SSD);
     wire [1:0] ForwardBE, ForwardAE;
     wire StallF, StallD, FlushE, FlushD;
     
-    wire clk, clk_1msec;
+    wire clk, clk_1msec, clk_25mhz;
     wire [31:0]temp;
     
+    /*####################################  peripherals interfacing - start point###################################################*/
     Clock_slowed clk_slow_inst(
         .clk_100mhz(clk_100mhz), 
         .rst(rst),
         .clk_1sec(clk),
-        .clk_1msec(clk_1msec)
+        .clk_1msec(clk_1msec),
+        .clk_25mhz(clk_25mhz)
     );
     
     Multplex_Reg_Disp displaying_ALU(
@@ -61,6 +59,7 @@ module Pipeline_top(clk_100mhz, rst, Data_Mem_display_reg, anode, SSD);
         .Anode(anode),
         .SSD_out(SSD)
     );
+    
     always@(posedge clk or posedge rst)
     begin
         if(rst == 0) Data_Mem_display_reg    <= 1;
@@ -70,6 +69,10 @@ module Pipeline_top(clk_100mhz, rst, Data_Mem_display_reg, anode, SSD);
         end
     end
         
+    
+    /*####################################  peripherals interfacing - start point###################################################*/
+        
+    
     // Module Initiation
     // Fetch Stage
 
@@ -208,19 +211,5 @@ module Pipeline_top(clk_100mhz, rst, Data_Mem_display_reg, anode, SSD);
 
                         );
                        
-                        
-                        
+                                    
 endmodule
-
-
-
-
-
-
-
-
-
-
-
-
-

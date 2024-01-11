@@ -17,45 +17,42 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Users/Lucifer/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-11684-DESKTOP-55V5AO4/incrSyn
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
-create_project -in_memory -part xc7k70tfbv676-1
+create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.cache/wt [current_project]
-set_property parent.project_path E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.xpr [current_project]
+set_property webtalk.parent_dir D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.cache/wt [current_project]
+set_property parent.project_path D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo e:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.cache/ip [current_project]
+set_property ip_output_repo d:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog {
-  E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/ALU.v
-  E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/ALU_Decoder.v
-  E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Main_Decoder.v
-  E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Control_Unit_Top.v
-  E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Data_Memory.v
-  E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Instruction_Memory.v
-  E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/MUX_2_by_1.v
-  E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/PC_Adder.v
-  E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Program_Counter.v
-  E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Register_File.v
-  E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Sign_Extend.v
+  D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/ALU.v
+  D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/ALU_Decoder.v
+  D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Main_Decoder.v
+  D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Control_Unit_Top.v
+  D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Data_Memory.v
+  D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Instruction_Memory.v
+  D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/MUX_2_by_1.v
+  D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/PC_Adder.v
+  D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Program_Counter.v
+  D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Register_File.v
+  D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Sign_Extend.v
 }
-set_property file_type "Verilog Header" [get_files E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/ALU.v]
-set_property file_type "Verilog Header" [get_files E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/ALU_Decoder.v]
-set_property file_type "Verilog Header" [get_files E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Main_Decoder.v]
-set_property file_type "Verilog Header" [get_files E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Control_Unit_Top.v]
-set_property file_type "Verilog Header" [get_files E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Data_Memory.v]
-set_property file_type "Verilog Header" [get_files E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Instruction_Memory.v]
-set_property file_type "Verilog Header" [get_files E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/MUX_2_by_1.v]
-set_property file_type "Verilog Header" [get_files E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/PC_Adder.v]
-set_property file_type "Verilog Header" [get_files E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Program_Counter.v]
-set_property file_type "Verilog Header" [get_files E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Register_File.v]
-set_property file_type "Verilog Header" [get_files E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Sign_Extend.v]
-read_verilog -library xil_defaultlib E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Single_Cycle_Top.v
+set_property file_type "Verilog Header" [get_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/ALU.v]
+set_property file_type "Verilog Header" [get_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/ALU_Decoder.v]
+set_property file_type "Verilog Header" [get_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Main_Decoder.v]
+set_property file_type "Verilog Header" [get_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Control_Unit_Top.v]
+set_property file_type "Verilog Header" [get_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Data_Memory.v]
+set_property file_type "Verilog Header" [get_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Instruction_Memory.v]
+set_property file_type "Verilog Header" [get_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/MUX_2_by_1.v]
+set_property file_type "Verilog Header" [get_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/PC_Adder.v]
+set_property file_type "Verilog Header" [get_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Program_Counter.v]
+set_property file_type "Verilog Header" [get_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Register_File.v]
+set_property file_type "Verilog Header" [get_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Sign_Extend.v]
+read_verilog -library xil_defaultlib D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/sources_1/imports/new/Single_Cycle_Top.v
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -64,13 +61,13 @@ read_verilog -library xil_defaultlib E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Pr
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/constrs_1/new/Timing_Constraint.xdc
-set_property used_in_implementation false [get_files E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/constrs_1/new/Timing_Constraint.xdc]
+read_xdc D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/constrs_1/new/Timing_Constraint.xdc
+set_property used_in_implementation false [get_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/constrs_1/new/Timing_Constraint.xdc]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
 
-synth_design -top Single_Cycle_Top -part xc7k70tfbv676-1
+synth_design -top Single_Cycle_Top -part xc7a100tcsg324-1
 
 
 # disable binary constraint mode for synth run checkpoints

@@ -1,0 +1,1334 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Dec  9 22:34:50 2023
+# Process ID: 12444
+# Current directory: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18924 D:\UNI\FYP\FYP--Risc-V-32-bit-Matrix-Mac\Project\Pipline_Five_v_2.0\Pipline_Five_v_2.0.xpr
+# Log file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/vivado.log
+# Journal file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 938.602 ; gain = 169.367
+close [ open D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/vertical_counter.v w ]
+add_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/vertical_counter.v
+close [ open D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Top_Display.v w ]
+add_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Top_Display.v
+close [ open D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/horizontal_counter.v w ]
+add_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/horizontal_counter.v
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+[Sat Dec  9 23:00:34 2023] Launched synth_1...
+Run output will be captured here: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sat Dec  9 23:02:35 2023] Launched synth_1...
+Run output will be captured here: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/synth_1/runme.log
+[Sat Dec  9 23:02:35 2023] Launched impl_1...
+Run output will be captured here: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 1872.398 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 1872.398 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
+open_run: Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 1940.309 ; gain = 921.203
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EBEBA
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: Pipeline_top
+WARNING: [Synth 8-2490] overwriting previous definition of module Data_Memory [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module ALU [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:24]
+WARNING: [Synth 8-2490] overwriting previous definition of module Main_Decoder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Main_Decoder.v:24]
+WARNING: [Synth 8-2490] overwriting previous definition of module ALU_Decoder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU_Decoder.v:24]
+WARNING: [Synth 8-2490] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_2_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Program_Counter [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module PC_Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/PC_Adder.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/MUX_2_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Instruction_Memory [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Mux_3_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_3_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/MUX_2_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Program_Counter [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module PC_Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/PC_Adder.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/MUX_2_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Instruction_Memory [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module fetch_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Fetch_Cycle.v:8]
+WARNING: [Synth 8-2490] overwriting previous definition of module decode_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Decode_Cycle.v:3]
+WARNING: [Synth 8-2490] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_2_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module Mux_3_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_3_by_1.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module ALU [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:24]
+WARNING: [Synth 8-2490] overwriting previous definition of module execute_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v:22]
+WARNING: [Synth 8-2490] overwriting previous definition of module Data_Memory [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v:23]
+WARNING: [Synth 8-2490] overwriting previous definition of module memory_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Memory_Cycle.v:5]
+WARNING: [Synth 8-2490] overwriting previous definition of module writeback_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Writeback_Cycle.v:16]
+WARNING: [Synth 8-2490] overwriting previous definition of module hazard_unit [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Hazard_Unit.v:3]
+WARNING: [Synth 8-2490] overwriting previous definition of module Clock_slowed [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Slow_Clock.v:23]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2625.383 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_top' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Clock_slowed' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Slow_Clock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Clock_slowed' (1#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Slow_Clock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Top_Display' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Top_Display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'horizontal_counter' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/horizontal_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'horizontal_counter' (2#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/horizontal_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vertical_counter' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/vertical_counter.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'vertical_counter' (3#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/vertical_counter.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Display' (4#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Top_Display.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Multplex_Reg_Disp' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Multplex_Reg_Disp.v:23]
+INFO: [Synth 8-226] default block is never used [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Multplex_Reg_Disp.v:47]
+INFO: [Synth 8-226] default block is never used [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Multplex_Reg_Disp.v:99]
+INFO: [Synth 8-6155] done synthesizing module 'Multplex_Reg_Disp' (5#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Multplex_Reg_Disp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'fetch_cycle' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Fetch_Cycle.v:8]
+INFO: [Synth 8-6157] synthesizing module 'MUX_2_by_1' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/MUX_2_by_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'MUX_2_by_1' (6#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/MUX_2_by_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (7#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Program_Counter' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Program_Counter' (8#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Instruction_Memory' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:23]
+WARNING: [Synth 8-3848] Net Memory[1023] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1022] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1021] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1020] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1019] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1018] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1017] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1016] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1015] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1014] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1013] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1012] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1011] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1010] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1009] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1008] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1007] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1006] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1005] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1004] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1003] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1002] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1001] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[1000] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[999] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[998] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[997] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[996] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[995] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[994] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[993] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[992] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[991] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[990] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[989] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[988] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[987] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[986] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[985] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[984] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[983] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[982] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[981] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[980] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[979] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[978] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[977] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[976] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[975] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[974] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[973] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[972] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[971] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[970] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[969] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[968] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[967] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[966] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[965] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[964] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[963] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[962] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[961] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[960] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[959] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[958] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[957] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[956] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[955] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[954] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[953] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[952] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[951] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[950] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[949] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[948] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[947] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[946] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[945] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[944] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[943] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[942] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[941] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[940] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[939] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[938] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[937] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[936] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[935] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[934] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[933] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[932] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[931] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[930] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[929] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[928] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[927] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[926] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[925] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+WARNING: [Synth 8-3848] Net Memory[924] in module/entity Instruction_Memory does not have driver. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:31]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'Instruction_Memory' (9#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'fetch_cycle' (10#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Fetch_Cycle.v:8]
+INFO: [Synth 8-6157] synthesizing module 'decode_cycle' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Decode_Cycle.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Control_Unit_Top' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Control_Unit_Top.v:26]
+	Parameter R_ADD_op bound to: 7'b0110011 
+INFO: [Synth 8-6157] synthesizing module 'Main_Decoder' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Main_Decoder.v:24]
+	Parameter I_op_basic bound to: 7'b0010011 
+	Parameter I_lw_op bound to: 7'b0000011 
+	Parameter R_op_basic bound to: 7'b0110011 
+	Parameter S_sw_op bound to: 7'b0100011 
+	Parameter B_op_basic bound to: 7'b1100011 
+INFO: [Synth 8-6155] done synthesizing module 'Main_Decoder' (11#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Main_Decoder.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ALU_Decoder' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU_Decoder.v:24]
+	Parameter I_op_basic bound to: 7'b0010011 
+	Parameter R_op_basic bound to: 7'b0110011 
+	Parameter B_op_basic bound to: 7'b1100011 
+	Parameter ECALL bound to: 7'b1110011 
+INFO: [Synth 8-6155] done synthesizing module 'ALU_Decoder' (12#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU_Decoder.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'Control_Unit_Top' (13#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Control_Unit_Top.v:26]
+INFO: [Synth 8-6157] synthesizing module 'Register_File' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Register_File' (14#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Register_File.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Sign_Extend' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Sign_Extend.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Sign_Extend' (15#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Sign_Extend.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'decode_cycle' (16#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Decode_Cycle.v:3]
+INFO: [Synth 8-6157] synthesizing module 'execute_cycle' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v:22]
+INFO: [Synth 8-6157] synthesizing module 'Mux_3_by_1' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_3_by_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mux_3_by_1' (17#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_3_by_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (18#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:24]
+WARNING: [Synth 8-350] instance 'branch_adder' of module 'Adder' requires 4 connections, but only 3 given [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v:90]
+INFO: [Synth 8-6155] done synthesizing module 'execute_cycle' (19#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v:22]
+INFO: [Synth 8-6157] synthesizing module 'memory_cycle' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Memory_Cycle.v:5]
+INFO: [Synth 8-6157] synthesizing module 'Data_Memory' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Data_Memory' (20#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'memory_cycle' (21#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Memory_Cycle.v:5]
+INFO: [Synth 8-6157] synthesizing module 'writeback_cycle' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Writeback_Cycle.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'writeback_cycle' (22#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Writeback_Cycle.v:16]
+INFO: [Synth 8-6157] synthesizing module 'hazard_unit' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Hazard_Unit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'hazard_unit' (23#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Hazard_Unit.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_top' (24#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v:23]
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port clk
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port rst
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port BranchE
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port ResultSrcM
+WARNING: [Synth 8-3331] design hazard_unit has unconnected port RegWriteE
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port clk
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port rst
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[31]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[30]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[29]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[28]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[27]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[26]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[25]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[24]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[23]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[22]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[21]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[20]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[19]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[18]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[17]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[16]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[15]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[14]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[13]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[12]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[11]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[10]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[9]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[8]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[7]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[6]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[5]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[4]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[3]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[2]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[1]
+WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[0]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port rst
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[31]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[30]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[29]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[28]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[27]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[26]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[25]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[24]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[23]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[22]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[21]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[20]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[19]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[18]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[17]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[16]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[15]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[14]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[13]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[12]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[11]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port A[10]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[19]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[18]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[17]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[16]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[15]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[14]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[13]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[12]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[6]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[5]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[4]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[3]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[2]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[1]
+WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[0]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[31]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[30]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[29]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[28]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[27]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[26]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[25]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[24]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[23]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[22]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[21]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[20]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[19]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[18]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[17]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[16]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[15]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[14]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[13]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[12]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[1]
+WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2625.383 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2625.383 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2625.383 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 2736.656 ; gain = 111.273
+54 Infos, 231 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2736.656 ; gain = 111.273
+create_project lcd_interfacing {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing} -part xc7a100ticsg324-1L
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new}
+close [ open {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/top_lcd.v} w ]
+add_files {{D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/top_lcd.v}}
+close [ open {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/hori_counter.v} w ]
+add_files {{D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/hori_counter.v}}
+close [ open {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/verti_counter.v} w ]
+add_files {{D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/verti_counter.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v} w ]
+add_files {{D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v}}
+update_compile_order -fileset sources_1
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1
+file mkdir {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new}
+close [ open {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc} w ]
+add_files -fileset constrs_1 {{D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc}}
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100ticsg324-1L
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2787.031 ; gain = 32.164
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/top_lcd.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v:23]
+WARNING: [Synth 8-6014] Unused sequential element delay_reg was removed.  [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'horizontal_counter' [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/hori_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'horizontal_counter' (2#1) [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/hori_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vertical_counter' [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/verti_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vertical_counter' (3#1) [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/verti_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (4#1) [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/top_lcd.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2823.285 ; gain = 68.418
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2823.285 ; gain = 68.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2823.285 ; gain = 68.418
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100ticsg324-1L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc]
+Finished Parsing XDC File [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2974.562 ; gain = 219.695
+12 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2974.562 ; gain = 219.695
+place_ports clk E3
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
+place_ports rst J15
+set_property target_constrs_file {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc} [current_fileset -constrset]
+save_constraints -force
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sat Dec  9 23:27:39 2023] Launched synth_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/synth_1/runme.log
+[Sat Dec  9 23:27:39 2023] Launched impl_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EBEBA
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 3547.445 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 3547.445 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 3599.262 ; gain = 624.699
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_hw
+close_design
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EBEBA
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sat Dec  9 23:32:20 2023] Launched synth_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/synth_1/runme.log
+[Sat Dec  9 23:32:20 2023] Launched impl_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.031 . Memory (MB): peak = 3602.070 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.031 . Memory (MB): peak = 3602.070 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+close_design
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100ticsg324-1L
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3616.828 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/top_lcd.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v:23]
+WARNING: [Synth 8-6014] Unused sequential element delay_reg was removed.  [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v:23]
+WARNING: [Synth 8-350] instance 'VGA_Clock_gen' of module 'clock_divider' requires 4 connections, but only 3 given [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/top_lcd.v:37]
+INFO: [Synth 8-6157] synthesizing module 'horizontal_counter' [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/hori_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'horizontal_counter' (2#1) [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/hori_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vertical_counter' [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/verti_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vertical_counter' (3#1) [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/verti_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (4#1) [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/top_lcd.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3616.828 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3616.828 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3616.828 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc]
+Finished Parsing XDC File [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 3654.477 ; gain = 37.648
+11 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100ticsg324-1L
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3654.477 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/top_lcd.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v:23]
+WARNING: [Synth 8-6014] Unused sequential element delay_reg was removed.  [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v:23]
+WARNING: [Synth 8-6104] Input port 'light' has an internal driver [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/top_lcd.v:37]
+INFO: [Synth 8-6157] synthesizing module 'horizontal_counter' [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/hori_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'horizontal_counter' (2#1) [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/hori_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vertical_counter' [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/verti_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vertical_counter' (3#1) [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/verti_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (4#1) [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/top_lcd.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3654.477 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3654.477 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 3654.477 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc]
+Finished Parsing XDC File [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 3656.820 ; gain = 2.344
+11 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+set_property IOSTANDARD LVCMOS33 [get_ports [list light]]
+place_ports light H17
+open_hw
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sat Dec  9 23:39:44 2023] Launched synth_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/synth_1/runme.log
+[Sat Dec  9 23:39:44 2023] Launched impl_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/runme.log
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EBEBA
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+open_run impl_1
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 3814.965 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 3814.965 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+close_hw
+close_design
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100ticsg324-1L
+Top: top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3834.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/top_lcd.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v:23]
+WARNING: [Synth 8-6014] Unused sequential element delay_reg was removed.  [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v:23]
+WARNING: [Synth 8-6104] Input port 'light' has an internal driver [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/top_lcd.v:37]
+INFO: [Synth 8-6157] synthesizing module 'horizontal_counter' [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/hori_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'horizontal_counter' (2#1) [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/hori_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'vertical_counter' [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/verti_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'vertical_counter' (3#1) [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/verti_counter.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'top' (4#1) [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/top_lcd.v:22]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3834.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3834.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3834.812 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc]
+Finished Parsing XDC File [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3873.066 ; gain = 38.254
+11 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+place_ports light L16
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3 -scripts_only
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EBEBA
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sat Dec  9 23:46:12 2023] Launched impl_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292A6EBEBA
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EBEBA
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sat Dec  9 23:49:55 2023] Launched synth_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/synth_1/runme.log
+[Sat Dec  9 23:49:55 2023] Launched impl_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EBEBA
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3 -scripts_only
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sat Dec  9 23:53:43 2023] Launched synth_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/synth_1/runme.log
+[Sat Dec  9 23:53:43 2023] Launched impl_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sat Dec  9 23:56:24 2023] Launched synth_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/synth_1/runme.log
+[Sat Dec  9 23:56:24 2023] Launched impl_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+set_property top clock_divider [current_fileset]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a100ticsg324-1L
+Top: clock_divider
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3873.066 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v:23]
+WARNING: [Synth 8-6014] Unused sequential element delay_reg was removed.  [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3873.066 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3873.066 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 3873.066 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc]
+WARNING: [Vivado 12-584] No ports matched 'Red[0]'. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Red[1]'. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Red[2]'. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Red[3]'. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Green[0]'. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Green[1]'. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Green[2]'. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Green[3]'. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Blue[0]'. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Blue[1]'. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Blue[2]'. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Blue[3]'. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Hsynq'. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'Vsynq'. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3873.066 ; gain = 0.000
+5 Infos, 17 Warnings, 16 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk_25mhz]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk_100mhz]]
+place_ports clk_100mhz E3
+place_ports clk_25mhz K15
+place_ports light H17
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sun Dec 10 00:01:18 2023] Launched synth_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/synth_1/runme.log
+[Sun Dec 10 00:01:18 2023] Launched impl_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EBEBA
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/clock_divider.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sun Dec 10 00:05:09 2023] Launched synth_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/synth_1/runme.log
+[Sun Dec 10 00:05:09 2023] Launched impl_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/clock_divider.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sun Dec 10 00:08:30 2023] Launched synth_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/synth_1/runme.log
+[Sun Dec 10 00:08:30 2023] Launched impl_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/clock_divider.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/clock_divider.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+set_property top top [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sun Dec 10 00:12:19 2023] Launched synth_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/synth_1/runme.log
+[Sun Dec 10 00:12:19 2023] Launched impl_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EBEBA
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+current_project Pipline_Five_v_2.0
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Blue[1]}]]
+current_project lcd_interfacing
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sun Dec 10 00:24:00 2023] Launched synth_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/synth_1/runme.log
+[Sun Dec 10 00:24:00 2023] Launched impl_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sun Dec 10 00:35:48 2023] Launched synth_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/synth_1/runme.log
+[Sun Dec 10 00:35:48 2023] Launched impl_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sun Dec 10 00:45:04 2023] Launched synth_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/synth_1/runme.log
+[Sun Dec 10 00:45:04 2023] Launched impl_1...
+Run output will be captured here: D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292A6EBEBA
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw

@@ -1,11 +1,11 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Tue Aug  8 16:48:16 2023
-| Host         : DESKTOP-55V5AO4 running 64-bit major release  (build 9200)
+| Date         : Wed Dec 20 08:07:49 2023
+| Host         : Lucifer-Morning-Star running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Single_Cycle_Top_control_sets_placed.rpt
 | Design       : Single_Cycle_Top
-| Device       : xc7k70t
+| Device       : xc7a100t
 ---------------------------------------------------------------------------------------------
 
 Control Set Information
@@ -23,7 +23,7 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     5 |
+| Number of unique control sets                            |     1 |
 | Unused register locations in slices containing registers |     0 |
 +----------------------------------------------------------+-------+
 
@@ -34,7 +34,7 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|    16+ |            5 |
+|    16+ |            1 |
 +--------+--------------+
 
 
@@ -46,7 +46,7 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               0 |            0 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              16 |            4 |
+| No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
@@ -56,14 +56,10 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+------------------------------+------------------+------------------+----------------+
-|  Clock Signal  |         Enable Signal        | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+----------------+------------------------------+------------------+------------------+----------------+
-|  clk_IBUF_BUFG |                              | PC/PC[7]_i_1_n_0 |                4 |             16 |
-|  clk_IBUF_BUFG | Register_File/ALU_Out0_35    |                  |               10 |             64 |
-|  clk_IBUF_BUFG | Register_File/RegWrite       |                  |               12 |            192 |
-|  clk_IBUF_BUFG | Register_File/ALU_Out0__1_38 |                  |               32 |            256 |
-|  clk_IBUF_BUFG | Register_File/ALU_Out0__1_39 |                  |               32 |            256 |
-+----------------+------------------------------+------------------+------------------+----------------+
++----------------+---------------+------------------+------------------+----------------+
+|  Clock Signal  | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+---------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG |               |                  |               12 |            192 |
++----------------+---------------+------------------+------------------+----------------+
 
 

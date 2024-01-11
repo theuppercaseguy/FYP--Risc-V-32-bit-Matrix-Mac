@@ -37,14 +37,15 @@ module Instruction_Memory(
     begin
         if(rst == 0)
         begin
-            Memory[0]   <= 32'h00200093;
-            Memory[1]   <= 32'h00300113;           
-            Memory[2]   <= 32'h002081B3;
+            Memory[0]   <= 32'h12C00093;
+            Memory[1]   <= 32'h1F400113;           
+            Memory[2]   <= 32'h002081B3;  
             Memory[3]   <= 32'h00218233;
             Memory[4]   <= 32'h002202B3;
             Memory[5]   <= 32'h00228333;
             Memory[6]   <= 32'h002303B3;
             Memory[7]   <= 32'h00238433;
+            Memory[8]   <= 32'h022084B3;
         end
     end
     assign temp = Memory[2];

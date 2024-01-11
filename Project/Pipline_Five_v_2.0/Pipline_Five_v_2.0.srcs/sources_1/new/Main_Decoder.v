@@ -43,6 +43,9 @@ module Main_Decoder( Op, RegWrite, ImmSrc, ALUSrc, MemWrite, ResultSrc,Branch, A
      
     //B-TYPE INSTRUCTIONS
      parameter B_op_basic = 7'b1100011;  //BEQ = BNE = BLT = BGE => OP => 1100011 SAME OP CODE
+     
+     //M-Type Instructions
+     parameter M_op_basic =7'b1110111; //MACLA, MACLB, MACSTR, 
             
 
     assign RegWrite     = ( Op == R_op_basic | Op == I_lw_op | Op == I_op_basic ) ? 1'b1 : 1'b0;

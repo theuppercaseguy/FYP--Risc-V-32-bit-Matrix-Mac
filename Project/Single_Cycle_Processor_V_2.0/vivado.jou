@@ -2,17 +2,35 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sat Nov 25 21:19:38 2023
-# Process ID: 15536
+# Start of session at: Tue Dec 19 08:11:02 2023
+# Process ID: 25004
 # Current directory: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4500 D:\UNI\FYP\FYP--Risc-V-32-bit-Matrix-Mac\Project\Single_Cycle_Processor_V_2.0\Single_Cycle_Processor_V_2.0.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23900 D:\UNI\FYP\FYP--Risc-V-32-bit-Matrix-Mac\Project\Single_Cycle_Processor_V_2.0\Single_Cycle_Processor_V_2.0.xpr
 # Log file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/vivado.log
 # Journal file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.xpr
 update_compile_order -fileset sources_1
-launch_simulation -simset Single_Cycle_Top_SimSet
-open_wave_config D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.srcs/Single_Cycle_Top_SimSet/imports/Single_Cycle_Processor_V_1.2/Single_Cycle_Top_Testbench_behav.wcfg
-source Single_Cycle_Top_Testbench.tcl
-close_sim
+open_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+report_utilization -name utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+refresh_design
+report_utilization -name utilization_1
+reset_run impl_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+report_utilization -name utilization_2
+report_power -name {power_1}
+set_property part xc7a100tcsg324-1 [current_project]
+reset_run synth_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_1

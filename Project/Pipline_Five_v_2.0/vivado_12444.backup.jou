@@ -1,0 +1,318 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Dec  9 22:34:50 2023
+# Process ID: 12444
+# Current directory: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18924 D:\UNI\FYP\FYP--Risc-V-32-bit-Matrix-Mac\Project\Pipline_Five_v_2.0\Pipline_Five_v_2.0.xpr
+# Log file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/vivado.log
+# Journal file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.xpr
+close [ open D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/vertical_counter.v w ]
+add_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/vertical_counter.v
+close [ open D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Top_Display.v w ]
+add_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Top_Display.v
+close [ open D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/horizontal_counter.v w ]
+add_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/horizontal_counter.v
+reset_run synth_1
+launch_runs synth_1 -jobs 3
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+close_design
+synth_design -rtl -name rtl_1
+create_project lcd_interfacing {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing} -part xc7a100ticsg324-1L
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new
+file mkdir {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new}
+close [ open {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/top_lcd.v} w ]
+add_files {{D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/top_lcd.v}}
+close [ open {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/hori_counter.v} w ]
+add_files {{D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/hori_counter.v}}
+close [ open {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/verti_counter.v} w ]
+add_files {{D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/verti_counter.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v} w ]
+add_files {{D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/sources_1/new/clock_divider.v}}
+update_compile_order -fileset sources_1
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new
+file mkdir D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1
+file mkdir {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new}
+close [ open {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc} w ]
+add_files -fileset constrs_1 {{D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc}}
+synth_design -rtl -name rtl_1
+place_ports clk E3
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
+place_ports rst J15
+set_property target_constrs_file {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.srcs/constrs_1/new/keys.xdc} [current_fileset -constrset]
+save_constraints -force
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+open_run impl_1
+close_hw
+close_design
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+close_design
+close_design
+synth_design -rtl -name rtl_1
+close_design
+synth_design -rtl -name rtl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list light]]
+place_ports light H17
+open_hw
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+open_run impl_1
+close_hw
+close_design
+close_design
+synth_design -rtl -name rtl_1
+place_ports light L16
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3 -scripts_only
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+close_hw
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3 -scripts_only
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top clock_divider [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk_25mhz]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk_100mhz]]
+place_ports clk_100mhz E3
+place_ports clk_25mhz K15
+place_ports light H17
+save_constraints
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/clock_divider.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/clock_divider.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/clock_divider.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/clock_divider.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+current_project Pipline_Five_v_2.0
+set_property IOSTANDARD LVCMOS33 [get_ports [list {Blue[1]}]]
+current_project lcd_interfacing
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/studies/sem 7/DSD Lab/lcd_interfacing/lcd_interfacing.runs/impl_1/top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw

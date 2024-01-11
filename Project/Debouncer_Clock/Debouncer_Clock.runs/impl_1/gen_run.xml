@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1702774139">
+  <File Type="BITSTR-BMM" Name="Debounce_Project_Top_bd.bmm"/>
+  <File Type="ROUTE-PWR" Name="Debounce_Project_Top_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Debounce_Project_Top.tcl"/>
+  <File Type="OPT-DCP" Name="Debounce_Project_Top_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="Debounce_Project_Top_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Debounce_Project_Top_reports.tcl"/>
+  <File Type="OPT-DRC" Name="Debounce_Project_Top_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Debounce_Project_Top.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Debounce_Project_Top_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="Debounce_Project_Top_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Debounce_Project_Top_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Debounce_Project_Top_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Debounce_Project_Top_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Debounce_Project_Top_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Debounce_Project_Top_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="Debounce_Project_Top.bgn"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Debounce_Project_Top_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="Debounce_Project_Top.bin"/>
+  <File Type="PHYSOPT-DCP" Name="Debounce_Project_Top_physopt.dcp"/>
+  <File Type="BITSTR-MSK" Name="Debounce_Project_Top.msk"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Debounce_Project_Top_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Debounce_Project_Top_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Debounce_Project_Top_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Debounce_Project_Top_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Debounce_Project_Top_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="Debounce_Project_Top.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="Debounce_Project_Top_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="Debounce_Project_Top.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Debounce_Project_Top_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Debounce_Project_Top_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="Debounce_Project_Top.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Debounce_Project_Top_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Debounce_Project_Top_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Debounce_Project_Top_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Debounce_Project_Top_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Debounce_Project_Top_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Debounce_Project_Top_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Debounce_Project_Top_timing_summary_routed.rpx"/>
+  <File Type="RDI-RDI" Name="Debounce_Project_Top.vdi"/>
+  <File Type="ROUTE-CLK" Name="Debounce_Project_Top_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Debounce_Project_Top_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Debounce_Project_Top_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Debounce_Project_Top_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Debounce_Project_Top_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Debounce_Project_Top_postroute_physopt_bb.dcp"/>
+  <File Type="BG-BIT" Name="Debounce_Project_Top.bit"/>
+  <File Type="BITSTR-RBT" Name="Debounce_Project_Top.rbt"/>
+  <File Type="BITSTR-NKY" Name="Debounce_Project_Top.nky"/>
+  <File Type="BG-DRC" Name="Debounce_Project_Top.drc"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/debouncer_code.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Debouncer.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Debounce_Project_Top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constraints_LED.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/constraints_LED.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

@@ -25,8 +25,10 @@ module Data_Memory(
     input [31:0] A,//address in memory
     input [31:0] WD,//data to store in memory or read it from memory
     input clk,WE,//write enable
-    
+    //input MAC
+    //input MAC_B
     output [31:0] RD//read the address A data onto RD, read wxisting data basically
+    
     );
     
     reg [31:0] Data_Memory_Registers [512:0];

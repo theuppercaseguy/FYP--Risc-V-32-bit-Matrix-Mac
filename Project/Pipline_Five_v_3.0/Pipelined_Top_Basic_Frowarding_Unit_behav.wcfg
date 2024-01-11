@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Pipelined_Top_Testbench_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="Pipelined_Top_Testbench" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="404500000fs"></ZoomStartTime>
+      <ZoomEndTime time="923500001fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="167"></NameColumnWidth>
+      <ValueColumnWidth column_width="79"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/Pipelined_Top_Testbench/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Pipelined_Top_Testbench/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="group77" type="group">
+      <obj_property name="label">Fetch</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Fetch/EN" type="logic">
+         <obj_property name="ElementShortName">EN</obj_property>
+         <obj_property name="ObjectShortName">EN</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Fetch/PCPlus4F" type="array">
+         <obj_property name="ElementShortName">PCPlus4F[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCPlus4F[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Fetch/PCF" type="array">
+         <obj_property name="ElementShortName">PCF[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCF[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Fetch/InstrF" type="array">
+         <obj_property name="ElementShortName">InstrF[31:0]</obj_property>
+         <obj_property name="ObjectShortName">InstrF[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Fetch/PCPlus4D" type="array">
+         <obj_property name="ElementShortName">PCPlus4D[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCPlus4D[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Fetch/PCD" type="array">
+         <obj_property name="ElementShortName">PCD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Fetch/InstrD" type="array">
+         <obj_property name="ElementShortName">InstrD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">InstrD[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group122" type="group">
+      <obj_property name="label">Decode</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/CLR" type="logic">
+         <obj_property name="ElementShortName">CLR</obj_property>
+         <obj_property name="ObjectShortName">CLR</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/EN" type="logic">
+         <obj_property name="ElementShortName">EN</obj_property>
+         <obj_property name="ObjectShortName">EN</obj_property>
+      </wvobject>
+      <wvobject fp_name="group2117" type="group">
+         <obj_property name="label">Control Unit</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/control/Op" type="array">
+            <obj_property name="ElementShortName">Op[6:0]</obj_property>
+            <obj_property name="ObjectShortName">Op[6:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/control/funct7" type="array">
+            <obj_property name="ElementShortName">funct7[6:0]</obj_property>
+            <obj_property name="ObjectShortName">funct7[6:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/control/funct3" type="array">
+            <obj_property name="ElementShortName">funct3[2:0]</obj_property>
+            <obj_property name="ObjectShortName">funct3[2:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/control/RegWrite" type="logic">
+            <obj_property name="ElementShortName">RegWrite</obj_property>
+            <obj_property name="ObjectShortName">RegWrite</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/control/ALUSrc" type="logic">
+            <obj_property name="ElementShortName">ALUSrc</obj_property>
+            <obj_property name="ObjectShortName">ALUSrc</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/control/MemWrite" type="logic">
+            <obj_property name="ElementShortName">MemWrite</obj_property>
+            <obj_property name="ObjectShortName">MemWrite</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/control/ResultSrc" type="logic">
+            <obj_property name="ElementShortName">ResultSrc</obj_property>
+            <obj_property name="ObjectShortName">ResultSrc</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/control/Branch" type="logic">
+            <obj_property name="ElementShortName">Branch</obj_property>
+            <obj_property name="ObjectShortName">Branch</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/control/ImmSrc" type="array">
+            <obj_property name="ElementShortName">ImmSrc[1:0]</obj_property>
+            <obj_property name="ObjectShortName">ImmSrc[1:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/control/ALUControl" type="array">
+            <obj_property name="ElementShortName">ALUControl[5:0]</obj_property>
+            <obj_property name="ObjectShortName">ALUControl[5:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/control/ALUOp" type="array">
+            <obj_property name="ElementShortName">ALUOp[1:0]</obj_property>
+            <obj_property name="ObjectShortName">ALUOp[1:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group210" type="group">
+         <obj_property name="label">Register File</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/Register_File/A1" type="array">
+            <obj_property name="ElementShortName">A1[4:0]</obj_property>
+            <obj_property name="ObjectShortName">A1[4:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/Register_File/A2" type="array">
+            <obj_property name="ElementShortName">A2[4:0]</obj_property>
+            <obj_property name="ObjectShortName">A2[4:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/Register_File/A3" type="array">
+            <obj_property name="ElementShortName">A3[4:0]</obj_property>
+            <obj_property name="ObjectShortName">A3[4:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/Register_File/WD3" type="array">
+            <obj_property name="ElementShortName">WD3[31:0]</obj_property>
+            <obj_property name="ObjectShortName">WD3[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/Register_File/WE3" type="logic">
+            <obj_property name="ElementShortName">WE3</obj_property>
+            <obj_property name="ObjectShortName">WE3</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/Register_File/RD1" type="array">
+            <obj_property name="ElementShortName">RD1[31:0]</obj_property>
+            <obj_property name="ObjectShortName">RD1[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/Register_File/RD2" type="array">
+            <obj_property name="ElementShortName">RD2[31:0]</obj_property>
+            <obj_property name="ObjectShortName">RD2[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/Register_File/Registers" type="array">
+            <obj_property name="ElementShortName">Registers[31:0][31:0]</obj_property>
+            <obj_property name="ObjectShortName">Registers[31:0][31:0]</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/RD1_D" type="array">
+         <obj_property name="ElementShortName">RD1_D[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RD1_D[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/RD2_D" type="array">
+         <obj_property name="ElementShortName">RD2_D[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RD2_D[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/RD1_E" type="array">
+         <obj_property name="ElementShortName">RD1_E[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RD1_E[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/RD2_E" type="array">
+         <obj_property name="ElementShortName">RD2_E[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RD2_E[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/RD_E" type="array">
+         <obj_property name="ElementShortName">RD_E[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RD_E[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/ALUControlD" type="array">
+         <obj_property name="ElementShortName">ALUControlD[5:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUControlD[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/ALUControlD_r" type="array">
+         <obj_property name="ElementShortName">ALUControlD_r[5:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUControlD_r[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/ALUControlE" type="array">
+         <obj_property name="ElementShortName">ALUControlE[5:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUControlE[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="group196" type="group">
+         <obj_property name="label">ALU</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU/A" type="array">
+            <obj_property name="ElementShortName">A[31:0]</obj_property>
+            <obj_property name="ObjectShortName">A[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU/B" type="array">
+            <obj_property name="ElementShortName">B[31:0]</obj_property>
+            <obj_property name="ObjectShortName">B[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU/ALU_Sel" type="array">
+            <obj_property name="ElementShortName">ALU_Sel[5:0]</obj_property>
+            <obj_property name="ObjectShortName">ALU_Sel[5:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU/ALU_Out" type="array">
+            <obj_property name="ElementShortName">ALU_Out[31:0]</obj_property>
+            <obj_property name="ObjectShortName">ALU_Out[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU/Overflow" type="logic">
+            <obj_property name="ElementShortName">Overflow</obj_property>
+            <obj_property name="ObjectShortName">Overflow</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU/Zero" type="logic">
+            <obj_property name="ElementShortName">Zero</obj_property>
+            <obj_property name="ObjectShortName">Zero</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/RegWriteD" type="logic">
+         <obj_property name="ElementShortName">RegWriteD</obj_property>
+         <obj_property name="ObjectShortName">RegWriteD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/RegWriteE" type="logic">
+         <obj_property name="ElementShortName">RegWriteE</obj_property>
+         <obj_property name="ObjectShortName">RegWriteE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/RegWriteW" type="logic">
+         <obj_property name="ElementShortName">RegWriteW</obj_property>
+         <obj_property name="ObjectShortName">RegWriteW</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU_ResultM" type="array">
+         <obj_property name="ElementShortName">ALU_ResultM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_ResultM[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/ALUSrcD" type="logic">
+         <obj_property name="ElementShortName">ALUSrcD</obj_property>
+         <obj_property name="ObjectShortName">ALUSrcD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/ALUSrcE" type="logic">
+         <obj_property name="ElementShortName">ALUSrcE</obj_property>
+         <obj_property name="ObjectShortName">ALUSrcE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/BranchD" type="logic">
+         <obj_property name="ElementShortName">BranchD</obj_property>
+         <obj_property name="ObjectShortName">BranchD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/BranchE" type="logic">
+         <obj_property name="ElementShortName">BranchE</obj_property>
+         <obj_property name="ObjectShortName">BranchE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/ImmSrcD" type="array">
+         <obj_property name="ElementShortName">ImmSrcD[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ImmSrcD[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/Imm_Ext_E" type="array">
+         <obj_property name="ElementShortName">Imm_Ext_E[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Imm_Ext_E[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/InstrD" type="array">
+         <obj_property name="ElementShortName">InstrD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">InstrD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/MemWriteD" type="logic">
+         <obj_property name="ElementShortName">MemWriteD</obj_property>
+         <obj_property name="ObjectShortName">MemWriteD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/MemWriteE" type="logic">
+         <obj_property name="ElementShortName">MemWriteE</obj_property>
+         <obj_property name="ObjectShortName">MemWriteE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/PCD" type="array">
+         <obj_property name="ElementShortName">PCD[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCD[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/PCE" type="array">
+         <obj_property name="ElementShortName">PCE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/PCPlus4D" type="array">
+         <obj_property name="ElementShortName">PCPlus4D[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCPlus4D[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/PCPlus4E" type="array">
+         <obj_property name="ElementShortName">PCPlus4E[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCPlus4E[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/RDW" type="array">
+         <obj_property name="ElementShortName">RDW[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RDW[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/RS1_D" type="array">
+         <obj_property name="ElementShortName">RS1_D[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RS1_D[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/RS2_D" type="array">
+         <obj_property name="ElementShortName">RS2_D[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RS2_D[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/RS1_E" type="array">
+         <obj_property name="ElementShortName">RS1_E[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RS1_E[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/RS2_E" type="array">
+         <obj_property name="ElementShortName">RS2_E[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RS2_E[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/ResultSrcD" type="logic">
+         <obj_property name="ElementShortName">ResultSrcD</obj_property>
+         <obj_property name="ObjectShortName">ResultSrcD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/ResultSrcE" type="logic">
+         <obj_property name="ElementShortName">ResultSrcE</obj_property>
+         <obj_property name="ObjectShortName">ResultSrcE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/ResultW" type="array">
+         <obj_property name="ElementShortName">ResultW[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ResultW[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group159" type="group">
+      <obj_property name="label">Execute</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/CLR" type="logic">
+         <obj_property name="ElementShortName">CLR</obj_property>
+         <obj_property name="ObjectShortName">CLR</obj_property>
+      </wvobject>
+      <wvobject fp_name="group1530" type="group">
+         <obj_property name="label">ALU</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU/A" type="array">
+            <obj_property name="ElementShortName">A[31:0]</obj_property>
+            <obj_property name="ObjectShortName">A[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU/B" type="array">
+            <obj_property name="ElementShortName">B[31:0]</obj_property>
+            <obj_property name="ObjectShortName">B[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU/ALU_Sel" type="array">
+            <obj_property name="ElementShortName">ALU_Sel[5:0]</obj_property>
+            <obj_property name="ObjectShortName">ALU_Sel[5:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU/ALU_Out" type="array">
+            <obj_property name="ElementShortName">ALU_Out[31:0]</obj_property>
+            <obj_property name="ObjectShortName">ALU_Out[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU/CarryOut" type="logic">
+            <obj_property name="ElementShortName">CarryOut</obj_property>
+            <obj_property name="ObjectShortName">CarryOut</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU/Zero" type="logic">
+            <obj_property name="ElementShortName">Zero</obj_property>
+            <obj_property name="ObjectShortName">Zero</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU/Negative" type="logic">
+            <obj_property name="ElementShortName">Negative</obj_property>
+            <obj_property name="ObjectShortName">Negative</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU/Overflow" type="logic">
+            <obj_property name="ElementShortName">Overflow</obj_property>
+            <obj_property name="ObjectShortName">Overflow</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU/Cout" type="logic">
+            <obj_property name="ElementShortName">Cout</obj_property>
+            <obj_property name="ObjectShortName">Cout</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU/Sum" type="array">
+            <obj_property name="ElementShortName">Sum[31:0]</obj_property>
+            <obj_property name="ObjectShortName">Sum[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/Src_A" type="array">
+         <obj_property name="ElementShortName">Src_A[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Src_A[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/Src_B" type="array">
+         <obj_property name="ElementShortName">Src_B[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Src_B[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ResultE" type="array">
+         <obj_property name="ElementShortName">ResultE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ResultE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALU_ResultM" type="array">
+         <obj_property name="ElementShortName">ALU_ResultM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_ResultM[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ResultW" type="array">
+         <obj_property name="ElementShortName">ResultW[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ResultW[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/RD_E" type="array">
+         <obj_property name="ElementShortName">RD_E[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RD_E[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/RD_M" type="array">
+         <obj_property name="ElementShortName">RD_M[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RD_M[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/RD2_E_r" type="array">
+         <obj_property name="ElementShortName">RD2_E_r[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RD2_E_r[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/RD1_E" type="array">
+         <obj_property name="ElementShortName">RD1_E[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RD1_E[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/RD2_E" type="array">
+         <obj_property name="ElementShortName">RD2_E[31:0]</obj_property>
+         <obj_property name="ObjectShortName">RD2_E[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ResultSrcE" type="logic">
+         <obj_property name="ElementShortName">ResultSrcE</obj_property>
+         <obj_property name="ObjectShortName">ResultSrcE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ResultSrcM" type="logic">
+         <obj_property name="ElementShortName">ResultSrcM</obj_property>
+         <obj_property name="ObjectShortName">ResultSrcM</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/RegWriteE" type="logic">
+         <obj_property name="ElementShortName">RegWriteE</obj_property>
+         <obj_property name="ObjectShortName">RegWriteE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/RegWriteM" type="logic">
+         <obj_property name="ElementShortName">RegWriteM</obj_property>
+         <obj_property name="ObjectShortName">RegWriteM</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ZeroE" type="logic">
+         <obj_property name="ElementShortName">ZeroE</obj_property>
+         <obj_property name="ObjectShortName">ZeroE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/PCSrcE" type="logic">
+         <obj_property name="ElementShortName">PCSrcE</obj_property>
+         <obj_property name="ObjectShortName">PCSrcE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/PCPlus4M" type="array">
+         <obj_property name="ElementShortName">PCPlus4M[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCPlus4M[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/PCPlus4E" type="array">
+         <obj_property name="ElementShortName">PCPlus4E[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCPlus4E[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/ImmSrcD" type="array">
+         <obj_property name="ElementShortName">ImmSrcD[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ImmSrcD[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/PCE" type="array">
+         <obj_property name="ElementShortName">PCE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Decode/Imm_Ext_D" type="array">
+         <obj_property name="ElementShortName">Imm_Ext_D[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Imm_Ext_D[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/Imm_Ext_E" type="array">
+         <obj_property name="ElementShortName">Imm_Ext_E[31:0]</obj_property>
+         <obj_property name="ObjectShortName">Imm_Ext_E[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/PCTargetE" type="array">
+         <obj_property name="ElementShortName">PCTargetE[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCTargetE[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ForwardB_E" type="array">
+         <obj_property name="ElementShortName">ForwardB_E[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ForwardB_E[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ForwardA_E" type="array">
+         <obj_property name="ElementShortName">ForwardA_E[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ForwardA_E[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/BranchE" type="logic">
+         <obj_property name="ElementShortName">BranchE</obj_property>
+         <obj_property name="ObjectShortName">BranchE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALUSrcE" type="logic">
+         <obj_property name="ElementShortName">ALUSrcE</obj_property>
+         <obj_property name="ObjectShortName">ALUSrcE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Execute/ALUControlE" type="array">
+         <obj_property name="ElementShortName">ALUControlE[5:0]</obj_property>
+         <obj_property name="ObjectShortName">ALUControlE[5:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group180" type="group">
+      <obj_property name="label">Memory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group2120" type="group">
+         <obj_property name="label">DataMemory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/Data_Memory/A" type="array">
+            <obj_property name="ElementShortName">A[31:0]</obj_property>
+            <obj_property name="ObjectShortName">A[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/Data_Memory/Data_Memory_Registers" type="array">
+            <obj_property name="ElementShortName">Data_Memory_Registers[512:0][31:0]</obj_property>
+            <obj_property name="ObjectShortName">Data_Memory_Registers[512:0][31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/Data_Memory/RD" type="array">
+            <obj_property name="ElementShortName">RD[31:0]</obj_property>
+            <obj_property name="ObjectShortName">RD[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/Data_Memory/WD" type="array">
+            <obj_property name="ElementShortName">WD[31:0]</obj_property>
+            <obj_property name="ObjectShortName">WD[31:0]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/Data_Memory/WE" type="logic">
+            <obj_property name="ElementShortName">WE</obj_property>
+            <obj_property name="ObjectShortName">WE</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/RegWriteM" type="logic">
+         <obj_property name="ElementShortName">RegWriteM</obj_property>
+         <obj_property name="ObjectShortName">RegWriteM</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/RegWriteW" type="logic">
+         <obj_property name="ElementShortName">RegWriteW</obj_property>
+         <obj_property name="ObjectShortName">RegWriteW</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/MemWriteM" type="logic">
+         <obj_property name="ElementShortName">MemWriteM</obj_property>
+         <obj_property name="ObjectShortName">MemWriteM</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/ResultSrcM" type="logic">
+         <obj_property name="ElementShortName">ResultSrcM</obj_property>
+         <obj_property name="ObjectShortName">ResultSrcM</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/PCPlus4M" type="array">
+         <obj_property name="ElementShortName">PCPlus4M[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCPlus4M[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/WriteDataM" type="array">
+         <obj_property name="ElementShortName">WriteDataM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WriteDataM[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/ALU_ResultM" type="array">
+         <obj_property name="ElementShortName">ALU_ResultM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_ResultM[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/ResultSrcW" type="logic">
+         <obj_property name="ElementShortName">ResultSrcW</obj_property>
+         <obj_property name="ObjectShortName">ResultSrcW</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/RD_M" type="array">
+         <obj_property name="ElementShortName">RD_M[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RD_M[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/RD_W" type="array">
+         <obj_property name="ElementShortName">RD_W[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RD_W[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/PCPlus4W" type="array">
+         <obj_property name="ElementShortName">PCPlus4W[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCPlus4W[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/ALU_ResultW" type="array">
+         <obj_property name="ElementShortName">ALU_ResultW[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_ResultW[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/ReadDataM" type="array">
+         <obj_property name="ElementShortName">ReadDataM[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ReadDataM[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/ReadDataW" type="array">
+         <obj_property name="ElementShortName">ReadDataW[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ReadDataW[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group186" type="group">
+      <obj_property name="label">Writeback</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/WriteBack/ResultSrcW" type="logic">
+         <obj_property name="ElementShortName">ResultSrcW</obj_property>
+         <obj_property name="ObjectShortName">ResultSrcW</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/WriteBack/PCPlus4W" type="array">
+         <obj_property name="ElementShortName">PCPlus4W[31:0]</obj_property>
+         <obj_property name="ObjectShortName">PCPlus4W[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/WriteBack/ALU_ResultW" type="array">
+         <obj_property name="ElementShortName">ALU_ResultW[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ALU_ResultW[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/WriteBack/ReadDataW" type="array">
+         <obj_property name="ElementShortName">ReadDataW[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ReadDataW[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/WriteBack/ResultW" type="array">
+         <obj_property name="ElementShortName">ResultW[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ResultW[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/Memory/Data_Memory/Data_Memory_Registers" type="array">
+         <obj_property name="ElementShortName">Data_Memory_Registers[512:0][31:0]</obj_property>
+         <obj_property name="ObjectShortName">Data_Memory_Registers[512:0][31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group195" type="group">
+      <obj_property name="label">hazard Unit</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/Rs1_E" type="array">
+         <obj_property name="ElementShortName">Rs1_E[4:0]</obj_property>
+         <obj_property name="ObjectShortName">Rs1_E[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/Rs2_E" type="array">
+         <obj_property name="ElementShortName">Rs2_E[4:0]</obj_property>
+         <obj_property name="ObjectShortName">Rs2_E[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/RS1_D" type="array">
+         <obj_property name="ElementShortName">RS1_D[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RS1_D[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/RS2_D" type="array">
+         <obj_property name="ElementShortName">RS2_D[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RS2_D[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/RdE" type="array">
+         <obj_property name="ElementShortName">RdE[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RdE[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/RD_M" type="array">
+         <obj_property name="ElementShortName">RD_M[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RD_M[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/RD_W" type="array">
+         <obj_property name="ElementShortName">RD_W[4:0]</obj_property>
+         <obj_property name="ObjectShortName">RD_W[4:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/BranchE" type="logic">
+         <obj_property name="ElementShortName">BranchE</obj_property>
+         <obj_property name="ObjectShortName">BranchE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/ResultSrcE" type="logic">
+         <obj_property name="ElementShortName">ResultSrcE</obj_property>
+         <obj_property name="ObjectShortName">ResultSrcE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/ResultSrcM" type="logic">
+         <obj_property name="ElementShortName">ResultSrcM</obj_property>
+         <obj_property name="ObjectShortName">ResultSrcM</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/RegWriteE" type="logic">
+         <obj_property name="ElementShortName">RegWriteE</obj_property>
+         <obj_property name="ObjectShortName">RegWriteE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/RegWriteM" type="logic">
+         <obj_property name="ElementShortName">RegWriteM</obj_property>
+         <obj_property name="ObjectShortName">RegWriteM</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/RegWriteW" type="logic">
+         <obj_property name="ElementShortName">RegWriteW</obj_property>
+         <obj_property name="ObjectShortName">RegWriteW</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/PCSrcE" type="logic">
+         <obj_property name="ElementShortName">PCSrcE</obj_property>
+         <obj_property name="ObjectShortName">PCSrcE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/StallF" type="logic">
+         <obj_property name="ElementShortName">StallF</obj_property>
+         <obj_property name="ObjectShortName">StallF</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/StallD" type="logic">
+         <obj_property name="ElementShortName">StallD</obj_property>
+         <obj_property name="ObjectShortName">StallD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/stallCount" type="array">
+         <obj_property name="ElementShortName">stallCount[1:0]</obj_property>
+         <obj_property name="ObjectShortName">stallCount[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/FlushE" type="logic">
+         <obj_property name="ElementShortName">FlushE</obj_property>
+         <obj_property name="ObjectShortName">FlushE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/FlushD" type="logic">
+         <obj_property name="ElementShortName">FlushD</obj_property>
+         <obj_property name="ObjectShortName">FlushD</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/ForwardAE" type="array">
+         <obj_property name="ElementShortName">ForwardAE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ForwardAE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/ForwardBE" type="array">
+         <obj_property name="ElementShortName">ForwardBE[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ForwardBE[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/lwStall" type="logic">
+         <obj_property name="ElementShortName">lwStall</obj_property>
+         <obj_property name="ObjectShortName">lwStall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Pipelined_Top_Testbench/dut/hazard_unit/branchStall" type="logic">
+         <obj_property name="ElementShortName">branchStall</obj_property>
+         <obj_property name="ObjectShortName">branchStall</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

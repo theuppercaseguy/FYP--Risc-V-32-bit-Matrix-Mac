@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=E:/softwares/Vivado/SDK/2018.2/bin;E:/softwares/Vivado/Vivado/2018.2/ids_lite/ISE/bin/nt64;E:/softwares/Vivado/Vivado/2018.2/ids_lite/ISE/lib/nt64:E:/softwares/Vivado/Vivado/2018.2/bin
+  PATH=C:/Xilinx/SDK/2018.2/bin;C:/Xilinx/Vivado/2018.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2018.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2018.2/bin
 else
-  PATH=E:/softwares/Vivado/SDK/2018.2/bin;E:/softwares/Vivado/Vivado/2018.2/ids_lite/ISE/bin/nt64;E:/softwares/Vivado/Vivado/2018.2/ids_lite/ISE/lib/nt64:E:/softwares/Vivado/Vivado/2018.2/bin:$PATH
+  PATH=C:/Xilinx/SDK/2018.2/bin;C:/Xilinx/Vivado/2018.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2018.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2018.2/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.runs/impl_1'
+HD_PWD='D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

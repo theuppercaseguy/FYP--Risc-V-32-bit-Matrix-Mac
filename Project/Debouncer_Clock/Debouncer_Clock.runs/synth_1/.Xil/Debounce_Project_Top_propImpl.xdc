@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:E:/FYP--Risc-V-32-bit-Matrix-Mac-main/Project/Debouncer_Clock/Debouncer_Clock.srcs/constrs_1/new/constraints_LED.xdc rfile:../../../Debouncer_Clock.srcs/constrs_1/new/constraints_LED.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:1 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN E3 [get_ports i_Clk]
+set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN M18 [get_ports i_Switch_1]
+set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN H17 [get_ports led]

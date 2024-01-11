@@ -1,0 +1,15 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: E:/softwares/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto d7db5fcf5cd1488f898c64c162ede197 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Pipelined_Top_Testbench_behav xil_defaultlib.Pipelined_Top_Testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-426] cannot find port RegDst on this module [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Decode_Cycle.v:75]
+ERROR: [VRFC 10-2063] Module <Main_Decoder> not found while processing module instance <Main_Decoder> [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Control_Unit_Top.v:40]
+ERROR: [VRFC 10-2063] Module <ALU_Decoder> not found while processing module instance <ALU_Decoder> [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Control_Unit_Top.v:52]
+ERROR: [VRFC 10-2063] Module <Register_File> not found while processing module instance <Register_File> [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Decode_Cycle.v:78]
+ERROR: [VRFC 10-2063] Module <Sign_Extend> not found while processing module instance <Sign_Extend> [../../../../Pipline_Five_v_2.0.srcs/sources_1/new/Decode_Cycle.v:93]
+ERROR: [VRFC 10-2063] Module <Execute_Cycle> not found while processing module instance <Execute> [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v:107]
+ERROR: [VRFC 10-2063] Module <Memory_Cycle> not found while processing module instance <Memory> [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v:137]
+ERROR: [VRFC 10-2063] Module <WriteBack_Cycle> not found while processing module instance <WriteBack> [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v:155]
+ERROR: [VRFC 10-2063] Module <Hazard_Unit> not found while processing module instance <Forwarding_Block> [E:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v:167]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

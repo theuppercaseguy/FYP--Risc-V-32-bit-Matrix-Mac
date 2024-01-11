@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Sun Nov 26 03:43:17 2023
+| Date         : Wed Dec 20 08:01:46 2023
 | Host         : Lucifer-Morning-Star running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Pipeline_top_control_sets_placed.rpt
 | Design       : Pipeline_top
@@ -45,7 +45,7 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               0 |            0 |
-| No           | No                    | Yes                    |             408 |           63 |
+| No           | No                    | Yes                    |             424 |           61 |
 | No           | Yes                   | No                     |              22 |            3 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
@@ -56,12 +56,12 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+-----------------------+------------------+-------------------------+------------------+----------------+
-|      Clock Signal     |   Enable Signal  |     Set/Reset Signal    | Slice Load Count | Bel Load Count |
-+-----------------------+------------------+-------------------------+------------------+----------------+
-|  clk_100mhz_IBUF_BUFG |                  | Decode/RD1_D_r_reg[0]_0 |               13 |             90 |
-| ~clk_BUFG             | Memory/p_0_in__0 |                         |               12 |            192 |
-|  clk_BUFG             |                  | Decode/RD1_D_r_reg[0]_0 |               53 |            340 |
-+-----------------------+------------------+-------------------------+------------------+----------------+
++-----------------------+---------------+-------------------------+------------------+----------------+
+|      Clock Signal     | Enable Signal |     Set/Reset Signal    | Slice Load Count | Bel Load Count |
++-----------------------+---------------+-------------------------+------------------+----------------+
+|  clk_100mhz_IBUF_BUFG |               | Decode/RD1_D_r_reg[0]_0 |               13 |             90 |
+| ~clk_BUFG             | Memory/p_0_in |                         |               12 |            192 |
+|  clk_BUFG             |               | Decode/RD1_D_r_reg[0]_0 |               51 |            356 |
++-----------------------+---------------+-------------------------+------------------+----------------+
 
 

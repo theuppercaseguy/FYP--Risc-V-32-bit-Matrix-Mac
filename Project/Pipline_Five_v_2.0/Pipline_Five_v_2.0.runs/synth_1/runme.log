@@ -14,7 +14,7 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 9956 
+INFO: Helper process launched with PID 15400 
 WARNING: [Synth 8-2490] overwriting previous definition of module Data_Memory [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v:23]
 WARNING: [Synth 8-2490] overwriting previous definition of module ALU [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:24]
 WARNING: [Synth 8-2490] overwriting previous definition of module Main_Decoder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Main_Decoder.v:24]
@@ -45,9 +45,9 @@ WARNING: [Synth 8-2490] overwriting previous definition of module writeback_cycl
 WARNING: [Synth 8-2490] overwriting previous definition of module hazard_unit [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Hazard_Unit.v:3]
 WARNING: [Synth 8-2490] overwriting previous definition of module Clock_slowed [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Slow_Clock.v:23]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 421.855 ; gain = 109.805
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 422.223 ; gain = 108.742
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Pipeline_top' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v:29]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_top' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Clock_slowed' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Slow_Clock.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'Clock_slowed' (1#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Slow_Clock.v:23]
 INFO: [Synth 8-6157] synthesizing module 'Multplex_Reg_Disp' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Multplex_Reg_Disp.v:23]
@@ -174,6 +174,7 @@ INFO: [Synth 8-6157] synthesizing module 'Main_Decoder' [D:/UNI/FYP/FYP--Risc-V-
 	Parameter R_op_basic bound to: 7'b0110011 
 	Parameter S_sw_op bound to: 7'b0100011 
 	Parameter B_op_basic bound to: 7'b1100011 
+	Parameter M_op_basic bound to: 7'b1110111 
 INFO: [Synth 8-6155] done synthesizing module 'Main_Decoder' (8#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Main_Decoder.v:24]
 INFO: [Synth 8-6157] synthesizing module 'ALU_Decoder' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU_Decoder.v:24]
 	Parameter I_op_basic bound to: 7'b0010011 
@@ -202,7 +203,7 @@ INFO: [Synth 8-6157] synthesizing module 'writeback_cycle' [D:/UNI/FYP/FYP--Risc
 INFO: [Synth 8-6155] done synthesizing module 'writeback_cycle' (19#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Writeback_Cycle.v:16]
 INFO: [Synth 8-6157] synthesizing module 'hazard_unit' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Hazard_Unit.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'hazard_unit' (20#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Hazard_Unit.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'Pipeline_top' (21#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_top' (21#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v:23]
 WARNING: [Synth 8-3331] design hazard_unit has unconnected port clk
 WARNING: [Synth 8-3331] design hazard_unit has unconnected port rst
 WARNING: [Synth 8-3331] design hazard_unit has unconnected port BranchE
@@ -303,7 +304,7 @@ WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[12]
 WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[1]
 WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.609 ; gain = 159.559
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 472.137 ; gain = 158.656
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -316,10 +317,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.609 ; gain = 159.559
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 472.137 ; gain = 158.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 471.609 ; gain = 159.559
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 472.137 ; gain = 158.656
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -327,12 +328,6 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc]
-WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc:1]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc:1]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'clk'. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc:3]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc:3]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
 Finished Parsing XDC File [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/constrs_1/new/piped_keys.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Pipeline_top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Pipeline_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -341,22 +336,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 812.906 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 818.902 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 812.906 ; gain = 500.855
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 819.406 ; gain = 505.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 812.906 ; gain = 500.855
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 819.406 ; gain = 505.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 812.906 ; gain = 500.855
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 819.406 ; gain = 505.926
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "clk_1msec" won't be mapped to RAM because address size (26) is larger than maximum supported(25)
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v:33]
@@ -368,7 +363,7 @@ INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To p
 INFO: [Synth 8-5546] ROM "Cout" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-327] inferring latch for variable 'Cout_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v:71]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 812.906 ; gain = 500.855
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 819.406 ; gain = 505.926
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -389,10 +384,10 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit         XORs := 1     
 	   3 Input      1 Bit         XORs := 1     
 +---Registers : 
-	               32 Bit    Registers := 23    
+	               32 Bit    Registers := 24    
 	                6 Bit    Registers := 2     
 	                5 Bit    Registers := 4     
-	                1 Bit    Registers := 13    
+	                1 Bit    Registers := 14    
 +---Multipliers : 
 	                32x32  Multipliers := 1     
 +---RAMs : 
@@ -408,8 +403,9 @@ Detailed RTL Component Info :
 	   2 Input      5 Bit        Muxes := 3     
 	  15 Input      4 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
 	   3 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 5     
 	  15 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -425,10 +421,11 @@ Detailed RTL Component Info :
 Module Clock_slowed 
 Detailed RTL Component Info : 
 +---Registers : 
-	                1 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
 +---Muxes : 
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
 	   3 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 2     
 Module Multplex_Reg_Disp 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -451,7 +448,7 @@ Detailed RTL Component Info :
 Module Instruction_Memory 
 Detailed RTL Component Info : 
 +---Registers : 
-	               32 Bit    Registers := 8     
+	               32 Bit    Registers := 9     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 1     
 Module fetch_cycle 
@@ -566,10 +563,13 @@ DSP Report: operator ALU/ALU_Out0 is absorbed into DSP ALU/ALU_Out0.
 DSP Report: Generating DSP ALU/ALU_Out0, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator ALU/ALU_Out0 is absorbed into DSP ALU/ALU_Out0.
 DSP Report: operator ALU/ALU_Out0 is absorbed into DSP ALU/ALU_Out0.
-WARNING: [Synth 8-6014] Unused sequential element clk_slow_inst/clk_1msec_reg was removed.  [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Slow_Clock.v:37]
+WARNING: [Synth 8-6014] Unused sequential element clk_slow_inst/clk_1msec_reg was removed.  [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Slow_Clock.v:36]
+WARNING: [Synth 8-6014] Unused sequential element clk_slow_inst/clk_25mhz_reg was removed.  [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.srcs/sources_1/new/Slow_Clock.v:37]
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3331] design hazard_unit has unconnected port clk
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[8][11]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][11]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][11]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][11]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
@@ -578,6 +578,7 @@ INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][11]' (FDRE_1) to
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][11]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][11]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][11]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[8][7]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][7]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][7]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][7]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
@@ -586,6 +587,7 @@ INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][7]' (FDRE_1) to 
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][7]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][7]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][7]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[8][8]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][8]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][8]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][8]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
@@ -594,6 +596,7 @@ INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][8]' (FDRE_1) to 
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][8]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][8]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][8]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[8][9]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][9]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][9]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][9]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
@@ -602,6 +605,7 @@ INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][9]' (FDSE_1) to 
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][9]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][9]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][9]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[8][10]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][10]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][10]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][10]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
@@ -610,6 +614,7 @@ INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][10]' (FDRE_1) to
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][10]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][10]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][10]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[8][30]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][30]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][30]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][30]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
@@ -618,14 +623,16 @@ INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][30]' (FDRE_1) to
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][30]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][30]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][30]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[8][25]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][25]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][25]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][25]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[4][25]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][25]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][25]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][25]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][25]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][25]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][25]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[8][31]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][31]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][31]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][31]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
@@ -634,6 +641,7 @@ INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][31]' (FDRE_1) to
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][31]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][31]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][31]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[8][29]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][29]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][29]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][29]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
@@ -642,41 +650,32 @@ INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][29]' (FDRE_1) to
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][29]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][29]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][29]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[8][28]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][28]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][28]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][28]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[4][28]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][28]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][28]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][28]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][28]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][28]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][28]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[8][27]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][27]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][27]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][27]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[4][27]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][27]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][27]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][27]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][27]' (FDSE_1) to 'Fetch/IMEM/Memory_reg[0][0]'
 INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][27]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][26]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][26]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][26]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[4][26]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[3][26]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[2][26]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[1][26]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[0][26]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[7][3]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[6][3]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[5][3]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
-INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[4][3]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'Fetch/IMEM/Memory_reg[8][26]' (FDRE_1) to 'Fetch/IMEM/Memory_reg[0][2]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Fetch/IMEM /\Memory_reg[4][17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Fetch/IMEM /\Memory_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Fetch/IMEM /\Memory_reg[2][22] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Fetch/IMEM /\Memory_reg[0][22] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Decode/BranchD_r_reg )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Decode/ResultSrcD_r_reg )
-WARNING: [Synth 8-3332] Sequential element (Memory_reg[4][17]) is unused and will be removed from module Instruction_Memory.
 WARNING: [Synth 8-3332] Sequential element (Memory_reg[0][22]) is unused and will be removed from module Instruction_Memory.
+WARNING: [Synth 8-3332] Sequential element (Memory_reg[2][22]) is unused and will be removed from module Instruction_Memory.
 WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[31]) is unused and will be removed from module Pipeline_top.
 WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[30]) is unused and will be removed from module Pipeline_top.
 WARNING: [Synth 8-3332] Sequential element (Fetch/Program_Counter/PC_reg[29]) is unused and will be removed from module Pipeline_top.
@@ -776,9 +775,9 @@ WARNING: [Synth 8-3332] Sequential element (Decode/PCD_r_reg[21]) is unused and 
 WARNING: [Synth 8-3332] Sequential element (Decode/PCD_r_reg[20]) is unused and will be removed from module Pipeline_top.
 WARNING: [Synth 8-3332] Sequential element (Decode/PCD_r_reg[19]) is unused and will be removed from module Pipeline_top.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Decode/Imm_Ext_D_r_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Decode/Imm_Ext_D_r_reg[0] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 812.906 ; gain = 500.855
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 819.406 ; gain = 505.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -817,13 +816,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 825.641 ; gain = 513.590
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 867.594 ; gain = 554.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 826.164 ; gain = 514.113
+Finished Timing Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 913.332 ; gain = 599.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -849,7 +848,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 845.691 ; gain = 533.641
+Finished Technology Mapping : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 913.332 ; gain = 599.852
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -873,7 +872,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 845.691 ; gain = 533.641
+Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 913.332 ; gain = 599.852
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -886,7 +885,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 845.691 ; gain = 533.641
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 913.332 ; gain = 599.852
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -898,25 +897,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 845.691 ; gain = 533.641
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 913.332 ; gain = 599.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 845.691 ; gain = 533.641
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 913.332 ; gain = 599.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 845.691 ; gain = 533.641
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 913.332 ; gain = 599.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 845.691 ; gain = 533.641
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 913.332 ; gain = 599.852
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -929,50 +928,52 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     2|
-|2     |CARRY4 |    23|
-|3     |LUT1   |     6|
-|4     |LUT2   |    78|
-|5     |LUT3   |    48|
-|6     |LUT4   |    49|
-|7     |LUT5   |     5|
-|8     |LUT6   |   143|
-|9     |MUXF7  |     4|
-|10    |RAM32M |    12|
-|11    |FDCE   |   203|
-|12    |FDPE   |     1|
-|13    |FDRE   |    11|
-|14    |IBUF   |     2|
-|15    |OBUF   |    17|
-+------+-------+------+
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |    27|
+|3     |DSP48E1 |     3|
+|4     |LUT1    |     6|
+|5     |LUT2    |    92|
+|6     |LUT3    |    42|
+|7     |LUT4    |     6|
+|8     |LUT5    |    54|
+|9     |LUT6    |    92|
+|10    |MUXF7   |     3|
+|11    |RAM32M  |    12|
+|12    |FDCE    |   211|
+|13    |FDPE    |     1|
+|14    |FDRE    |    11|
+|15    |IBUF    |     2|
+|16    |OBUF    |    17|
++------+--------+------+
 
 Report Instance Areas: 
 +------+--------------------+-------------------+------+
 |      |Instance            |Module             |Cells |
 +------+--------------------+-------------------+------+
-|1     |top                 |                   |   604|
-|2     |  Decode            |decode_cycle       |   194|
+|1     |top                 |                   |   581|
+|2     |  Decode            |decode_cycle       |   186|
 |3     |    Register_File   |Register_File      |    76|
-|4     |  Execute           |execute_cycle      |    96|
-|5     |  Fetch             |fetch_cycle        |    46|
-|6     |    IMEM            |Instruction_Memory |    11|
-|7     |    PC_adder        |Adder              |     4|
-|8     |    Program_Counter |Program_Counter    |    11|
-|9     |  Memory            |memory_cycle       |   170|
-|10    |  clk_slow_inst     |Clock_slowed       |    42|
-|11    |  displaying_ALU    |Multplex_Reg_Disp  |    32|
+|4     |  Execute           |execute_cycle      |   166|
+|5     |    ALU             |ALU                |   110|
+|6     |  Fetch             |fetch_cycle        |    57|
+|7     |    IMEM            |Instruction_Memory |     9|
+|8     |    PC_adder        |Adder              |     4|
+|9     |    Program_Counter |Program_Counter    |    16|
+|10    |  Memory            |memory_cycle       |    74|
+|11    |  clk_slow_inst     |Clock_slowed       |    42|
+|12    |  displaying_ALU    |Multplex_Reg_Disp  |    32|
 +------+--------------------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 845.691 ; gain = 533.641
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 913.332 ; gain = 599.852
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 319 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 845.691 ; gain = 192.344
-Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 845.691 ; gain = 533.641
+Synthesis finished with 0 errors, 0 critical warnings and 320 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:30 . Memory (MB): peak = 913.332 ; gain = 252.582
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 913.332 ; gain = 599.852
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 47 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 1 inverter(s) to 12 load pin(s).
@@ -981,11 +982,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-180 Infos, 334 Warnings, 2 Critical Warnings and 0 Errors encountered.
+181 Infos, 333 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 852.777 ; gain = 553.566
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 913.332 ; gain = 612.703
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_2.0/Pipline_Five_v_2.0.runs/synth_1/Pipeline_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Pipeline_top_utilization_synth.rpt -pb Pipeline_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 852.777 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Nov 26 03:42:40 2023...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 913.332 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 20 07:56:00 2023...
