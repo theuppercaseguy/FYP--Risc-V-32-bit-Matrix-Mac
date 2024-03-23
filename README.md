@@ -22,7 +22,8 @@ This project aims to develop a hardware-based acceleration solution for matrix m
 ## Coordinators
 
 - [Dr. Fahad Bin Muslim](https://www.linkedin.com/in/fahadbinmuslim/)
-- [Dr. Taj Muhammad](https://www.linkedin.com/in/taj-muhammad-khan-6a1833281/)
+- [Dr. Waqar Ahmed](https://www.linkedin.com/in/taj-muhammad-khan-6a1833281/)
+<!--- [Dr. Taj Muhammad](https://www.linkedin.com/in/taj-muhammad-khan-6a1833281/)-->
 
 ## Poster
 <p float="left">
@@ -72,10 +73,11 @@ Although the exact edition doesn't matter, just use the latest as possible.
 
 | Objectives | Date Started | Date Completed | Achived? | Version | Test's |
 |-------------------|------|------|------|-----|-----|
-| Single Cycle Processor    | 1/July/2023 | 27/July/2023 | True | 1.2 | [Test-1](docs/github_readmes/Single_Cycle_tests.md) |
-| 5 stages Pipelined Processor    | 30/July/2023 | 29/Aug/2023 | True | 3.0 | [Test-2](docs/github_readmes/Pipline_tests.md)|
-|MAC Instructions | Pending... | pending... | False | 0.0 ||
-|FPGA Implementation| 5/Nov/2023 | pending... | True | 0.0 ||
+| Single Cycle Processor    | 1-July-2023 | 27-July-2023 | True | 2.0 | [Test-1](docs/github_readmes/Single_Cycle_tests.md) |
+| 5 stages Pipelined Processor    | 10-Aug-2023 | 29-Oct-2023 | True | 3.0 | [Test-2](docs/github_readmes/Pipline_tests.md)|
+|Matrix MAC Module | 10-Nov-2023 | 30-Dec-2023 | True | 1.0 ||
+|RISC V Matrix MAC Processor | 05-Jan-2024 | 05-Feb-203 | True | 1.0 ||
+|FPGA Implementation|10-Feb-2023 | 23-Mar-2024 | True | 1.0 ||
 
 ### RISC-V Essential Registers
 
