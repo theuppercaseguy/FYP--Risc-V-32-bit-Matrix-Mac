@@ -5,7 +5,7 @@
 In this section, you'll find the details of the RISC V Matrix MAC Processor implementation and its instruction set architecture (ISA).
 
 ### Results
-![Image](../Media/FiveStagePiplined/Timining_Digram.png)
+![Image](../Media/RISC_V_MAC_Processor/Timining_Digram.png)
 
 
 <!--<p >-->
@@ -14,7 +14,7 @@ In this section, you'll find the details of the RISC V Matrix MAC Processor impl
 <!--</p>-->
 
 ### Schematics
-<img src="../Media/FiveStagePiplined/schematics.png"/>
+<img src="../Media/RISC_V_MAC_Processor/schematics.png"/>
 
 
 ### Instruction Set Architecture (ISA - Default)
