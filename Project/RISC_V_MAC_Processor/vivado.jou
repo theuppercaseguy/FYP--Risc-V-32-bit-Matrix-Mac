@@ -1,0 +1,111 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Mar 23 14:05:49 2024
+# Process ID: 11216
+# Current directory: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14924 D:\UNI\FYP\FYP--Risc-V-32-bit-Matrix-Mac\Project\RISC_V_MAC_Processor\RISC_V_MAC_Processor.xpr
+# Log file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/vivado.log
+# Journal file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg
+source Pipelined_Top_Testbench.tcl
+save_wave_config {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg}
+run 500
+save_wave_config {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg}
+relaunch_sim
+run 200
+run 100
+save_wave_config {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg}
+relaunch_sim
+save_wave_config {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg}
+relaunch_sim
+run 300
+relaunch_sim
+relaunch_sim
+run 500
+relaunch_sim
+save_wave_config {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg}
+run 500
+save_wave_config {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg}
+relaunch_sim
+run 300
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+save_wave_config {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg}
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+save_wave_config {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg}
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+save_wave_config {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg}
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+run 200
+relaunch_sim
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+relaunch_sim
+run 200
+run 200
+save_wave_config {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg}

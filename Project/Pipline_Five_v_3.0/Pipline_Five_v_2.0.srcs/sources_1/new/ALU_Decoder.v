@@ -28,7 +28,7 @@ module ALU_Decoder(ALUOp,funct3,funct7,op,ALUControl);
     input [6:0]funct7,op;
     
     output [5:0]ALUControl;
-     // I-Type Basic Instructions => SLLI, SRLI, SRAI, ADDI, LI ETC => OP => 0010011
+    // I-Type Basic Instructions => SLLI, SRLI, SRAI, ADDI, LI ETC => OP => 0010011
         // parameter I_ADDI_op = 7'b0010011;   //ADDI  => OP => 0010011 => I-TYPE
         parameter I_op_basic = 7'b0010011;   //ADDI  => OP => 0010011 => I-TYPE
           
@@ -49,9 +49,9 @@ module ALU_Decoder(ALUOp,funct3,funct7,op,ALUControl);
                       ((ALUOp == 2'b00) & ( op == I_op_basic ) & (funct3 == 3'b001) ) ? 6'b000111 :    //SLLI
                       ((ALUOp == 2'b00) & ( op == I_op_basic ) & (funct3 == 3'b101) ) ? 6'b000110 :    //SRLI
                       ((ALUOp == 2'b01) & ( op == B_op_basic ) & (funct3 == 3'b000) ) ? 6'b001001 :   // beq, branch if equal
-                      ((ALUOp == 2'b01) & ( op == B_op_basic ) & (funct3 == 3'b001) ) ? 6'b001010 :   // bne, branch if equal
-                      ((ALUOp == 2'b01) & ( op == B_op_basic ) & (funct3 == 3'b100) ) ? 6'b001011 :   // blt, branch if equal
-                      ((ALUOp == 2'b01) & ( op == B_op_basic ) & (funct3 == 3'b101) ) ? 6'b001000 :   // bge, branch if equal
+                      ((ALUOp == 2'b01) & ( op == B_op_basic ) & (funct3 == 3'b001) ) ? 6'b001010 :   // bne, branch if not equal
+                      ((ALUOp == 2'b01) & ( op == B_op_basic ) & (funct3 == 3'b100) ) ? 6'b001011 :   // blt, branch if less then
+                      ((ALUOp == 2'b01) & ( op == B_op_basic ) & (funct3 == 3'b101) ) ? 6'b001000 :   // bge, branch if greater then
                       ((ALUOp == 2'b10) & (funct3 == 3'b000) & ( op == R_op_basic & funct7 == 7'b0100000 )) ? 6'b000001 : //arithmetic subtraction 
                       ((ALUOp == 2'b10) & (funct3 == 3'b000) & ( op == R_op_basic & funct7 == 7'b0000000 )) ? 6'b000000 : //arithmetic addition
                       ((ALUOp == 2'b10) & (funct3 == 3'b000) & ( op == R_op_basic & funct7 == 7'b0000001 )) ? 6'b000010 : //arithmetic signed Multiplication

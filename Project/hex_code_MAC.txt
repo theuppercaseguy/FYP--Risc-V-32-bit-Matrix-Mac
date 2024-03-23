@@ -1,0 +1,160 @@
+Memory[0]     <= 32'h00100093
+Memory[0]     <= 32'h00100093
+Memory[0]     <= 32'h00200113
+Memory[0]     <= 32'h00300193
+Memory[0]     <= 32'h00400213
+Memory[0]     <= 32'h00500293
+Memory[0]     <= 32'h00600313
+Memory[0]     <= 32'h00700393
+Memory[0]     <= 32'h00800413
+Memory[0]     <= 32'h00900493
+Memory[0]     <= 32'h00A00513
+Memory[0]     <= 32'h00B00593
+Memory[0]     <= 32'h00C00613
+Memory[0]     <= 32'h00D00693
+Memory[0]     <= 32'h00E00713
+Memory[0]     <= 32'h00F00793
+Memory[0]     <= 32'h01000813
+Memory[0]     <= 32'h01100893
+Memory[0]     <= 32'h01200913
+Memory[0]     <= 32'h01300993
+Memory[0]     <= 32'h01400A13
+Memory[0]     <= 32'h01500A93
+Memory[0]     <= 32'h01600B13
+Memory[0]     <= 32'h01700B93
+Memory[0]     <= 32'h01800C13
+Memory[0]     <= 32'h01800C93
+Memory[0]     <= 32'h18102823
+Memory[0]     <= 32'h182028A3
+Memory[0]     <= 32'h18302923
+Memory[0]     <= 32'h184029A3
+Memory[0]     <= 32'h18502A23
+Memory[0]     <= 32'h18602AA3
+Memory[0]     <= 32'h18702B23
+Memory[0]     <= 32'h18802BA3
+Memory[0]     <= 32'h18902C23
+Memory[0]     <= 32'h18A02CA3
+Memory[0]     <= 32'h18B02D23
+Memory[0]     <= 32'h18C02DA3
+Memory[0]     <= 32'h18D02E23
+Memory[0]     <= 32'h18E02EA3
+Memory[0]     <= 32'h18F02F23
+Memory[0]     <= 32'h19002FA3
+Memory[0]     <= 32'h1B102023
+Memory[0]     <= 32'h1B2020A3
+Memory[0]     <= 32'h1B302123
+Memory[0]     <= 32'h1B4021A3
+Memory[0]     <= 32'h1B502223
+Memory[0]     <= 32'h1B6022A3
+Memory[0]     <= 32'h1B702323
+Memory[0]     <= 32'h1B8023A3
+Memory[0]     <= 32'h1B902423
+Memory[0]     <= 32'h01A00093
+Memory[0]     <= 32'h01B00113
+Memory[0]     <= 32'h01C00193
+Memory[0]     <= 32'h01D00213
+Memory[0]     <= 32'h01E00293
+Memory[0]     <= 32'h01F00313
+Memory[0]     <= 32'h02000393
+Memory[0]     <= 32'h02100413
+Memory[0]     <= 32'h02200493
+Memory[0]     <= 32'h02300513
+Memory[0]     <= 32'h02400593
+Memory[0]     <= 32'h02500613
+Memory[0]     <= 32'h02600693
+Memory[0]     <= 32'h02700713
+Memory[0]     <= 32'h02800793
+Memory[0]     <= 32'h02900813
+Memory[0]     <= 32'h02A00893
+Memory[0]     <= 32'h02B00913
+Memory[0]     <= 32'h02C00993
+Memory[0]     <= 32'h02D00A13
+Memory[0]     <= 32'h02E00A93
+Memory[0]     <= 32'h02F00B13
+Memory[0]     <= 32'h03000B93
+Memory[0]     <= 32'h03100C13
+Memory[0]     <= 32'h03200C93
+Memory[0]     <= 32'h1A1024A3
+Memory[0]     <= 32'h1A202523
+Memory[0]     <= 32'h1A3025A3
+Memory[0]     <= 32'h1A402623
+Memory[0]     <= 32'h1A5026A3
+Memory[0]     <= 32'h1A602723
+Memory[0]     <= 32'h1A7027A3
+Memory[0]     <= 32'h1A802823
+Memory[0]     <= 32'h1A9028A3
+Memory[0]     <= 32'h1AA02923
+Memory[0]     <= 32'h1AB029A3
+Memory[0]     <= 32'h1AC02A23
+Memory[0]     <= 32'h1AD02AA3
+Memory[0]     <= 32'h1AE02B23
+Memory[0]     <= 32'h1AF02BA3
+Memory[0]     <= 32'h1B002C23
+Memory[0]     <= 32'h1B102CA3
+Memory[0]     <= 32'h1B202D23
+Memory[0]     <= 32'h1B302DA3
+Memory[0]     <= 32'h1B402E23
+Memory[0]     <= 32'h1B502EA3
+Memory[0]     <= 32'h1B602F23
+Memory[0]     <= 32'h1B702FA3
+Memory[0]     <= 32'h1D802023
+Memory[0]     <= 32'h1D9020A3
+Memory[0]     <= 32'h00208D33
+Memory[0]     <= 32'h40418DB3
+Memory[0]     <= 32'h02628E33
+Memory[0]     <= 32'h00239E93
+Memory[0]     <= 32'h13A02623
+Memory[0]     <= 32'h13B026A3
+Memory[0]     <= 32'h13C02723
+Memory[0]     <= 32'h13D027A3
+Memory[0]     <= 32'h12C02F03
+Memory[0]     <= 32'h00000073
+
+
+
+
+01 0000000000 0000000000 011 1110111
+00 0000000101 000110010000 000 1110111
+00 0000000101 000110101001 001 1110111
+10 000000000 000000000 000 1110111
+11 000000000 000000000 000 1110111
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

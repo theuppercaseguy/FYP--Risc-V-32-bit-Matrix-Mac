@@ -2,12 +2,125 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Thu Jan 11 21:56:56 2024
-# Process ID: 2632
+# Start of session at: Wed Mar 13 19:33:41 2024
+# Process ID: 7388
 # Current directory: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13588 D:\UNI\FYP\FYP--Risc-V-32-bit-Matrix-Mac\Project\Pipline_Five_v_3.0\Pipline_Five_v_2.0.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13900 D:\UNI\FYP\FYP--Risc-V-32-bit-Matrix-Mac\Project\Pipline_Five_v_3.0\Pipline_Five_v_2.0.xpr
 # Log file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/vivado.log
 # Journal file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.xpr
+create_project RISC_V_MAC_Processor D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/RISC_V_MAC_Processor -part xc7a100tcsg324-1
+current_project Pipline_Five_v_2.0
+current_project RISC_V_MAC_Processor
+import_files -norecurse {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Instruction_Memory.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Controller.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Execute_Cycle.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Multplex_Reg_Disp.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Decode_Cycle.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Five_Stage_Pipeline_Top.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Main_Decoder.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Slow_Clock.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Data_Memory.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Sign_Extend.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/ALU_Decoder.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Hazard_Unit.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Control_Unit_Top.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Register_File.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Memory_Cycle.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Adder.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_3_by_1.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/debouncer_clock.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/WriteBack_Cycle.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Program_Counter.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Fetch_Cycle.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/Mux_2_by_1.v D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/sources_1/new/PC_Adder.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property SOURCE_SET {} [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/Pipe_Top_TB/new/PIPE_TB.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/new/PIPE_TB.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/new/PIPE_TB.v
+file delete -force D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/new/PIPE_TB.v
+remove_files  -fileset sim_1 D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/new/PIPE_TB.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipline_Five_v_2.0.srcs/Pipe_Top_TB/new/PIPE_TB.v
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+source Pipelined_Top_Testbench.tcl
+create_wave_config; add_wave /; set_property needs_save false [current_wave_config]
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg
+close_sim
+launch_simulation
+open_wave_config D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg
+source Pipelined_Top_Testbench.tcl
+relaunch_sim
+relaunch_sim
+save_wave_config {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg}
+relaunch_sim
+save_wave_config {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg}
+run 20
+run 20
+run 20
+run 20
+run 20
+run 20
+current_project Pipline_Five_v_2.0
+current_project RISC_V_MAC_Processor
+relaunch_sim
+run 20
+run 20
+run 20
+run 20
+run 20
+run 20
+run 20
+run 20
+run 20
+run 20
+run 20
+run 20
+run 20
+current_project Pipline_Five_v_2.0
+current_project RISC_V_MAC_Processor
+current_project Pipline_Five_v_2.0
+close_project
+save_wave_config {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg
+source Pipelined_Top_Testbench.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+open_wave_config D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg
+source Pipelined_Top_Testbench.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+file mkdir D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/new
+close [ open D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/new/MAC_Decoder.v w ]
+add_files D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/new/MAC_Decoder.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+import_files -norecurse D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/MAC_Module_Only/MAC_Module_Only.srcs/sources_1/new/Matric_MAC.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg}
+relaunch_sim
+RUN 500
+run 500
+relaunch_sim
+relaunch_sim
+relaunch_sim
+run 500
+run 500
+save_wave_config {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Pipline_Five_v_3.0/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg}
+close_sim
