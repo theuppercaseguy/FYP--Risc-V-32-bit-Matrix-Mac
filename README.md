@@ -22,7 +22,7 @@ This project aims to develop a hardware-based acceleration solution for matrix m
 ## Coordinators
 
 - [Dr. Fahad Bin Muslim](https://www.linkedin.com/in/fahadbinmuslim/)
-- [Dr. Waqar Ahmed](https://www.linkedin.com/in/taj-muhammad-khan-6a1833281/)
+- [Dr. Waqar Ahmed](https://orcid.org/0000-0001-9850-9339)
 <!--- [Dr. Taj Muhammad](https://www.linkedin.com/in/taj-muhammad-khan-6a1833281/)-->
 
 ## Poster
@@ -155,3 +155,11 @@ This project is licensed under [MIT](https://opensource.org/licenses/MIT) licens
 Give a ⭐️ if this project helped you!
 
 <p align="center"><i>Loved the project? Please visit our <a href="https://portfolio-saadkhan.vercel.app/">Website</a></i></p>
+
+
+
+
+
+
+
+
