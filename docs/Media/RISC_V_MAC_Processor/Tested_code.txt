@@ -1,0 +1,133 @@
+li   x1, 1
+li   x2, 2
+li   x3, 3
+li   x4, 4
+li   x5, 5
+li   x6, 6
+li   x7, 7
+li   x8, 8
+li   x9, 9
+li   x10, 10
+li   x11, 11
+li   x12, 12
+li   x13, 13
+li   x14, 14
+li   x15, 15
+li   x16, 16
+li   x17, 17
+li   x18, 18
+li   x19, 19
+li   x20, 20
+li   x21, 21
+li   x22, 22
+li   x23, 23
+li   x24, 24
+li   x25, 25
+sw   x1, 400(x0)
+sw   x2, 401(x0)
+sw   x3, 402(x0)
+sw   x4, 403(x0)
+sw   x5, 404(x0)
+sw   x6, 405(x0)
+sw   x7, 406(x0)
+sw   x8, 407(x0)
+sw   x9, 408(x0)
+sw   x10,409(x0)
+sw   x11, 410(x0)
+sw   x12, 411(x0)
+sw   x13, 412(x0)
+sw   x14, 413(x0)
+sw   x15, 414(x0)
+sw   x16, 415(x0)
+sw   x17, 416(x0)
+sw   x18, 417(x0)
+sw   x19, 418(x0)
+sw   x20, 419(x0)
+sw   x21, 420(x0)
+sw   x22, 421(x0)
+sw   x23, 422(x0)
+sw   x24, 423(x0)
+sw   x25, 424(x0)
+li   x1, 26
+li   x2, 27
+li   x3, 28
+li   x4, 29
+li   x5, 30
+li   x6, 31
+li   x7, 32
+li   x8, 33
+li   x9, 34
+li   x10, 35
+li   x11, 36
+li   x12, 37
+li   x13, 38
+li   x14, 39
+li   x15, 40
+li   x16, 41
+li   x17, 42
+li   x18, 43
+li   x19, 44
+li   x20, 45
+li   x21, 46
+li   x22, 47
+li   x23, 48
+li   x24, 49
+li   x25, 50
+sw   x1, 425(x0)
+sw   x2, 426(x0)
+sw   x3, 427(x0)
+sw   x4, 428(x0)
+sw   x5, 429(x0)
+sw   x6, 430(x0)
+sw   x7, 431(x0)
+sw   x8, 432(x0)
+sw   x9, 433(x0)
+sw   x10,434(x0)
+sw   x11, 435(x0)
+sw   x12, 436(x0)
+sw   x13, 437(x0)
+sw   x14, 438(x0)
+sw   x15, 439(x0)
+sw   x16, 440(x0)
+sw   x17, 441(x0)
+sw   x18, 442(x0)
+sw   x19, 443(x0)
+sw   x20, 444(x0)
+sw   x21, 445(x0)
+sw   x22, 446(x0)
+sw   x23, 447(x0)
+sw   x24, 448(x0)
+sw   x25, 449(x0)
+CLR ALL
+LMACA 400, 5
+LMACB 425, 5
+MAC ADD
+MACM
+STR
+ECALL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
