@@ -12,6 +12,8 @@ Hardware-Based Acceleration of Matrix MAC on an FPGA
 
 This project aims to develop a hardware-based acceleration solution for matrix multiply-accumulate (MAC) operations. We are designing a RISC-V-based processor with a custom instruction set architecture (ISA) optimized for efficient matrix MAC computations. By incorporating dedicated hardware accelerators and advanced optimization techniques, our goal is to enhance the performance and power efficiency of matrix operations, particularly in the context of machine learning and scientific computing applications.
 
+
+
 ## Team Members
 
 - [Saad Khan](https://www.linkedin.com/in/saad-k-7aba04138/)
@@ -31,8 +33,30 @@ This project aims to develop a hardware-based acceleration solution for matrix m
   <img src="docs/Media/FYP_poster_.png" width="300" height="450" />
 </p>
 
+## MATRIX MAC IMPLEMENTATION
+
+### RISC-V (5 Staged Pipelined) MATRIX MAC Processor.
+<p float="left">
+  <img src="docs/presentation-4/Material/5 staged piplined processor with hazard unit and matrix mac unit.png"  width="700" height="500" /> 
+</p>
+
+### MAC MODULE
+<p float="left">
+  <img src="docs/presentation-4/Material/MATRIX MAC MODULE.png"   width="700" height="400"/> 
+</p>
+
+### MAC DECODER
+<p float="left">
+  <img src="docs/presentation-4/Material/MAC Decoder picture V2.png"  width="700" height="400"/> 
+</p>  
+
+### MAC INSTRUCTION SET ARCHITECTURE
+<p float="left">
+  <img src="docs/presentation-4/Material/MATRIX MAC ISA.png" width="700" height="500" /> 
+</p>    
 
 ## Resources
+
 
 ### Books
 
@@ -91,7 +115,7 @@ Although the exact edition doesn't matter, just use the latest as possible.
 </p>
 
 
-## Current 5 Stage Pipeline Blocks/DataPath:
+## 5 Stage Pipelined Blocks/DataPath:
 
 ### 
 <table border="">
