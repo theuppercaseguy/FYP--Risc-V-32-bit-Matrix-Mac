@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Sat Mar 23 22:47:24 2024
+| Date             : Tue Mar 26 16:47:39 2024
 | Host             : Lucifer-Morning-Star running 64-bit major release  (build 9200)
 | Command          : report_power -file Pipeline_top_power_routed.rpt -pb Pipeline_top_power_summary_routed.pb -rpx Pipeline_top_power_routed.rpx
 | Design           : Pipeline_top
@@ -52,6 +52,7 @@ Table of Contents
 +--------------+-----------+----------+-----------+-----------------+
 | On-Chip      | Power (W) | Used     | Available | Utilization (%) |
 +--------------+-----------+----------+-----------+-----------------+
+| Clocks       |     0.000 |        3 |       --- |             --- |
 | Slice Logic  |     0.000 |        2 |       --- |             --- |
 |   Others     |     0.000 |        2 |       --- |             --- |
 | I/O          |     0.000 |       17 |       210 |            8.10 |

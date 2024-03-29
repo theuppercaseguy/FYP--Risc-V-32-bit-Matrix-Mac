@@ -11,19 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="970000000fs"></ZoomStartTime>
-      <ZoomEndTime time="1246000001fs"></ZoomEndTime>
-      <Cursor1Time time="1168800000fs"></Cursor1Time>
+      <ZoomStartTime time="3328000fs"></ZoomStartTime>
+      <ZoomEndTime time="5043328001fs"></ZoomEndTime>
+      <Cursor1Time time="1600000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="191"></NameColumnWidth>
-      <ValueColumnWidth column_width="257"></ValueColumnWidth>
+      <ValueColumnWidth column_width="87"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="10" />
-   <wave_markers>
-      <marker time="1105000000" label="" />
-      <marker time="1145000000" label="" />
-   </wave_markers>
    <wvobject fp_name="/Pipelined_Top_Testbench/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -107,7 +103,6 @@
    <wvobject fp_name="group122" type="group">
       <obj_property name="label">Decode</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/Pipelined_Top_Testbench/uut/Decode/EN" type="logic">
          <obj_property name="ElementShortName">EN</obj_property>
          <obj_property name="ObjectShortName">EN</obj_property>
@@ -404,6 +399,7 @@
    <wvobject fp_name="group180" type="group">
       <obj_property name="label">Memory</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="group178" type="group">
          <obj_property name="label">Data Memory</obj_property>
          <obj_property name="DisplayName">label</obj_property>
@@ -411,6 +407,7 @@
          <wvobject fp_name="/Pipelined_Top_Testbench/uut/Memory/Data_Memory/Data_Memory_Registers" type="array">
             <obj_property name="ElementShortName">Data_Memory_Registers[512:0][31:0]</obj_property>
             <obj_property name="ObjectShortName">Data_Memory_Registers[512:0][31:0]</obj_property>
+            <obj_property name="isExpanded"></obj_property>
          </wvobject>
          <wvobject fp_name="/Pipelined_Top_Testbench/uut/Memory/Data_Memory/A" type="array">
             <obj_property name="ElementShortName">A[31:0]</obj_property>
@@ -589,7 +586,6 @@
    <wvobject fp_name="group2037" type="group">
       <obj_property name="label">MAC_Decoder</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/Pipelined_Top_Testbench/uut/Memory/Data_Memory/start_adr" type="array">
          <obj_property name="ElementShortName">start_adr[9:0]</obj_property>
          <obj_property name="ObjectShortName">start_adr[9:0]</obj_property>
@@ -623,14 +619,6 @@
       <obj_property name="label">MAC Module</obj_property>
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="isExpanded"></obj_property>
-      <wvobject fp_name="/Pipelined_Top_Testbench/uut/Memory/Data_Memory/temp" type="array">
-         <obj_property name="ElementShortName">temp[31:0]</obj_property>
-         <obj_property name="ObjectShortName">temp[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/Pipelined_Top_Testbench/uut/Memory/Data_Memory/temp1" type="array">
-         <obj_property name="ElementShortName">temp1[31:0]</obj_property>
-         <obj_property name="ObjectShortName">temp1[31:0]</obj_property>
-      </wvobject>
       <wvobject fp_name="group1977" type="group">
          <obj_property name="label">Data_mem</obj_property>
          <obj_property name="DisplayName">label</obj_property>

@@ -49,19 +49,14 @@ module Data_Memory(
     parameter total_mem_reg = 512;
     
     reg [31:0] Data_Memory_Registers [total_mem_reg:0];
-    
-    wire [31:0]temp = Data_Memory_Registers[start_adr];
-    reg [31:0]temp1; //= Data_Memory_Registers[start_adr];
-    reg [31:0]temp2; //= Data_Memory_Registers[start_adr];
+   
     
     always@(*)
     begin
-        temp1 <= A[9:0];
         if( (MACDM == 2'b10 ) || (MACDM == 2'b01 ) )
         begin
             case(offset)
             5:begin
-                temp2 <= A[9:0];
                 A_11 <= Data_Memory_Registers[start_adr];    A_12 <= Data_Memory_Registers[start_adr+1];  A_13 <= Data_Memory_Registers[start_adr+2];  A_14 <= Data_Memory_Registers[start_adr+3];  A_15 <= Data_Memory_Registers[start_adr+4] ; 
                 A_21 <= Data_Memory_Registers[start_adr+5];  A_22 <= Data_Memory_Registers[start_adr+6];  A_23 <= Data_Memory_Registers[start_adr+7];  A_24 <= Data_Memory_Registers[start_adr+8];  A_25 <= Data_Memory_Registers[start_adr+9] ; 
                 A_31 <= Data_Memory_Registers[start_adr+10]; A_32 <= Data_Memory_Registers[start_adr+11]; A_33 <= Data_Memory_Registers[start_adr+12]; A_34 <= Data_Memory_Registers[start_adr+13]; A_35 <= Data_Memory_Registers[start_adr+14]; 
@@ -91,12 +86,7 @@ module Data_Memory(
             end
             default:
             begin
-                    temp1 <= 23;
-//                A_11[0] <= 0;  A_12[2] <= 0; A_13[3] <= 0; A_14[4] <= 0; A_15[5] <= 0; 
-//                A_21[0] <= 0;  A_22[2] <= 0; A_23[3] <= 0; A_24[4] <= 0; A_25[5] <= 0; 
-//                A_31[0] <= 0;  A_32[2] <= 0; A_33[3] <= 0; A_34[4] <= 0; A_35[5] <= 0; 
-//                A_41[0] <= 0;  A_42[2] <= 0; A_43[3] <= 0; A_44[4] <= 0; A_45[5] <= 0; 
-//                A_51[0] <= 0;  A_52[2] <= 0; A_53[3] <= 0; A_54[4] <= 0; A_55[5] <= 0;
+
             end
             endcase
        end   
@@ -108,21 +98,28 @@ module Data_Memory(
             Data_Memory_Registers[total_mem_reg-15] <= R_41; Data_Memory_Registers[total_mem_reg-16]  <= R_42; Data_Memory_Registers[total_mem_reg-17]  <= R_43; Data_Memory_Registers[total_mem_reg-18] <= R_44; Data_Memory_Registers[total_mem_reg-19] <= R_45; 
             Data_Memory_Registers[total_mem_reg-20] <= R_51; Data_Memory_Registers[total_mem_reg-21]  <= R_52; Data_Memory_Registers[total_mem_reg-22]  <= R_53; Data_Memory_Registers[total_mem_reg-23] <= R_54; Data_Memory_Registers[total_mem_reg-24] <= R_55; 
        end
+       else if(MACDM == 2'b00)
+       begin
+            if (WE)
+                begin
+                      Data_Memory_Registers[A] <= WD;
+                 end
+       end
+       
        else 
-        begin
-        
-        end
+       begin     
+       end
     end
     
-    always @(posedge clk)
-    begin
-        if (WE)
-            begin
-                Data_Memory_Registers[A] <= WD;
-            end
-    end
+//    always @(posedge clk)
+//    begin
+//        if (WE)
+//            begin
+//                Data_Memory_Registers[A] <= WD;
+//            end
+//    end
     //read
-    assign RD = ( WE == 1'b0 ) ? Data_Memory_Registers[A] : 32'h00000000;//read data at address A if we is low
+//    assign RD = ( WE == 1'b0 ) ? Data_Memory_Registers[A] : 32'h00000000;//read data at address A if we is low
 //    assign RD = (rst) ? 32'd0 : Data_Memory_Registers[A];
 
 

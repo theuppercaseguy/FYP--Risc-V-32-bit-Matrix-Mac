@@ -60,11 +60,14 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
+  set_param synth.incrementalSynthesisCache D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/.Xil/Vivado-2184-Lucifer-Morning-Star/incrSyn
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
@@ -73,6 +76,7 @@ set rc [catch {
   set_property ip_output_repo D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.runs/synth_1/Pipeline_top.dcp
+  read_xdc D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/constrs_1/new/CONST.xdc
   link_design -top Pipeline_top -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

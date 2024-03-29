@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Sat Mar 23 22:47:24 2024
+| Date         : Tue Mar 26 16:47:39 2024
 | Host         : Lucifer-Morning-Star running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file Pipeline_top_timing_summary_routed.rpt -pb Pipeline_top_timing_summary_routed.pb -rpx Pipeline_top_timing_summary_routed.rpx -warn_on_violation
 | Design       : Pipeline_top
@@ -129,13 +129,17 @@ Table of Contents
          NA           NA                     NA                   NA           NA           NA                     NA                   NA           NA           NA                      NA                    NA  
 
 
-There are no user specified timing constraints.
+All user specified timing constraints are met.
 
 
 ------------------------------------------------------------------------------------------------
 | Clock Summary
 | -------------
 ------------------------------------------------------------------------------------------------
+
+Clock       Waveform(ns)         Period(ns)      Frequency(MHz)
+-----       ------------         ----------      --------------
+clk_100mhz  {0.000 1.500}        3.000           333.333         
 
 
 ------------------------------------------------------------------------------------------------

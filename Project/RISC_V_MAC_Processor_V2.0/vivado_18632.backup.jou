@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Mar 27 04:39:50 2024
+# Process ID: 18632
+# Current directory: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22172 D:\UNI\FYP\FYP--Risc-V-32-bit-Matrix-Mac\Project\RISC_V_MAC_Processor_V2.0\RISC_V_MAC_Processor.xpr
+# Log file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/vivado.log
+# Journal file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.xpr
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+refresh_design
+close_design
+open_run synth_1 -name synth_1
+report_power -name {power_1}
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_3
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2

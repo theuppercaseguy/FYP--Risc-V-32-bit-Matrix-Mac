@@ -22,10 +22,6 @@
 `include "Hazard_unit.v"
 
 
-
-
-
-
 module Pipeline_top(button,clk_100mhz, rst, Data_Mem_display_reg, anode, SSD);
 
     // Declaration of I/O
@@ -37,7 +33,7 @@ module Pipeline_top(button,clk_100mhz, rst, Data_Mem_display_reg, anode, SSD);
 
 //--------------------------------------------------------    
     
-    //wire clk
+//    wire clk
 //    wire clk_debounce;   
     
 //   ------------------------------------------------------------

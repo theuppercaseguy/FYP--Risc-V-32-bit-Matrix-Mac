@@ -1,0 +1,7 @@
+Running: xsim.dir/Pipelined_Top_Testbench_behav/xsimk.exe -simmode gui -wdb Pipelined_Top_Testbench_behav.wdb -simrunnum 0 -socket 55188
+Design successfully loaded
+Design Loading Memory Usage: 6024 KB (Peak: 6024 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 7360 KB (Peak: 7360 KB)
+Simulation CPU Usage: 62 ms

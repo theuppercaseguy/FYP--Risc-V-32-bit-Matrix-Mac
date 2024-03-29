@@ -14,7 +14,7 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13220 
+INFO: Helper process launched with PID 17864 
 WARNING: [Synth 8-2490] overwriting previous definition of module ALU_Decoder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/ALU_Decoder.v:24]
 WARNING: [Synth 8-2490] overwriting previous definition of module Main_Decoder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Main_Decoder.v:24]
 WARNING: [Synth 8-2490] overwriting previous definition of module Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Adder.v:23]
@@ -45,9 +45,9 @@ WARNING: [Synth 8-2490] overwriting previous definition of module writeback_cycl
 WARNING: [Synth 8-2490] overwriting previous definition of module Clock_slowed [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Slow_Clock.v:23]
 WARNING: [Synth 8-2490] overwriting previous definition of module hazard_unit [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Hazard_unit.v:3]
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 421.547 ; gain = 109.672
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 421.023 ; gain = 108.152
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Pipeline_top' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Five_Stage_Pipeline_Top.v:29]
+INFO: [Synth 8-6157] synthesizing module 'Pipeline_top' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Five_Stage_Pipeline_Top.v:25]
 INFO: [Synth 8-6157] synthesizing module 'fetch_cycle' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Fetch_Cycle.v:8]
 INFO: [Synth 8-6157] synthesizing module 'MUX_2_by_1' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/MUX_2_by_1.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'MUX_2_by_1' (1#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/MUX_2_by_1.v:23]
@@ -256,7 +256,7 @@ INFO: [Synth 8-6157] synthesizing module 'writeback_cycle' [D:/UNI/FYP/FYP--Risc
 INFO: [Synth 8-6155] done synthesizing module 'writeback_cycle' (19#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Writeback_Cycle.v:16]
 INFO: [Synth 8-6157] synthesizing module 'hazard_unit' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Hazard_unit.v:3]
 INFO: [Synth 8-6155] done synthesizing module 'hazard_unit' (20#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Hazard_unit.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'Pipeline_top' (21#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Five_Stage_Pipeline_Top.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'Pipeline_top' (21#1) [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Five_Stage_Pipeline_Top.v:25]
 WARNING: [Synth 8-3331] design hazard_unit has unconnected port clk
 WARNING: [Synth 8-3331] design hazard_unit has unconnected port rst
 WARNING: [Synth 8-3331] design hazard_unit has unconnected port BranchE
@@ -297,6 +297,39 @@ WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[2]
 WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[1]
 WARNING: [Synth 8-3331] design writeback_cycle has unconnected port PCPlus4W[0]
 WARNING: [Synth 8-3331] design Matrix_MAC has unconnected port clk
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[31]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[30]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[29]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[28]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[27]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[26]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[25]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[24]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[23]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[22]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[21]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[20]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[19]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[18]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[17]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[16]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[15]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[14]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[13]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[12]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[11]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[10]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[9]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[8]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[7]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[6]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[5]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[4]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[3]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[2]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[1]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port RD[0]
+WARNING: [Synth 8-3331] design Data_Memory has unconnected port clk
 WARNING: [Synth 8-3331] design Data_Memory has unconnected port rst
 WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[19]
 WARNING: [Synth 8-3331] design Sign_Extend has unconnected port In[18]
@@ -324,48 +357,66 @@ WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[24]
 WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[23]
 WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[22]
 WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[21]
-WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[20]
-WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[19]
-WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[18]
-WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[17]
-WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[16]
-WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[15]
-WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[14]
-WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[13]
-WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[12]
-WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[1]
-WARNING: [Synth 8-3331] design Instruction_Memory has unconnected port A[0]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port Data_Mem_display_reg
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port anode[7]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port anode[6]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port anode[5]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port anode[4]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port anode[3]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port anode[2]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port anode[1]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port anode[0]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port SSD[7]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port SSD[6]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port SSD[5]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port SSD[4]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port SSD[3]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port SSD[2]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port SSD[1]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port SSD[0]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port button
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 583.137 ; gain = 271.262
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 616.082 ; gain = 303.211
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin Execute:MACControl_M[3] to constant 0 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Five_Stage_Pipeline_Top.v:135]
+WARNING: [Synth 8-3295] tying undriven pin Execute:MACControl_M[2] to constant 0 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Five_Stage_Pipeline_Top.v:135]
+WARNING: [Synth 8-3295] tying undriven pin Execute:MACControl_M[1] to constant 0 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Five_Stage_Pipeline_Top.v:135]
+WARNING: [Synth 8-3295] tying undriven pin Execute:MACControl_M[0] to constant 0 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Five_Stage_Pipeline_Top.v:135]
+WARNING: [Synth 8-3295] tying undriven pin Execute:MACDM_M[1] to constant 0 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Five_Stage_Pipeline_Top.v:135]
+WARNING: [Synth 8-3295] tying undriven pin Execute:MACDM_M[0] to constant 0 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Five_Stage_Pipeline_Top.v:135]
+WARNING: [Synth 8-3295] tying undriven pin Memory:MACControl_M[3] to constant 0 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Five_Stage_Pipeline_Top.v:174]
+WARNING: [Synth 8-3295] tying undriven pin Memory:MACControl_M[2] to constant 0 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Five_Stage_Pipeline_Top.v:174]
+WARNING: [Synth 8-3295] tying undriven pin Memory:MACControl_M[1] to constant 0 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Five_Stage_Pipeline_Top.v:174]
+WARNING: [Synth 8-3295] tying undriven pin Memory:MACControl_M[0] to constant 0 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Five_Stage_Pipeline_Top.v:174]
+WARNING: [Synth 8-3295] tying undriven pin Memory:MACDM_M[1] to constant 0 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Five_Stage_Pipeline_Top.v:174]
+WARNING: [Synth 8-3295] tying undriven pin Memory:MACDM_M[0] to constant 0 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Five_Stage_Pipeline_Top.v:174]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 583.137 ; gain = 271.262
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 616.082 ; gain = 303.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 616.082 ; gain = 303.211
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/constrs_1/new/CONST.xdc]
+Finished Parsing XDC File [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/constrs_1/new/CONST.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.675 . Memory (MB): peak = 1032.328 ; gain = 3.715
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1032.328 ; gain = 719.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
-INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 583.137 ; gain = 271.262
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1032.328 ; gain = 719.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 1032.328 ; gain = 719.457
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Adder.v:33]
 INFO: [Synth 8-5546] ROM "MemWrite" won't be mapped to RAM because it is too sparse
@@ -376,7 +427,107 @@ INFO: [Synth 8-5587] ROM size for "MACControl" is below threshold of ROM address
 INFO: [Synth 8-5546] ROM "MAC_OP_D" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/ALU.v:38]
 INFO: [Synth 8-5546] ROM "Cout" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "Data_Memory_Registers" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[488]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[489]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[490]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[491]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[492]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[493]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[494]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[495]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[496]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[497]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[498]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[499]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[500]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[501]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[502]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[503]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[504]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[505]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[506]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[507]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[508]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[509]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[510]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[511]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[512]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[0]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[1]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[2]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[3]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[4]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[5]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[6]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[7]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[8]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[9]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[10]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[11]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[12]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[13]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[14]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[15]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[16]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[17]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[18]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[19]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[20]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[21]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[22]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[23]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[24]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[25]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[26]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[27]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[28]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[29]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[30]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[31]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[32]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[33]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[34]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[35]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[36]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[37]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[38]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[39]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[40]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[41]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[42]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[43]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[44]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[45]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[46]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[47]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[48]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[49]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[50]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[51]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[52]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[53]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[54]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[55]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[56]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[57]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[58]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[59]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[60]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[61]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[62]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[63]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[64]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[65]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[66]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[67]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[68]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[69]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[70]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[71]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[72]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[73]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-3936] Found unconnected internal register 'Data_Memory_Registers_reg[74]' and it is trimmed from '32' to '13' bits. [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+INFO: [Common 17-14] Message 'Synth 8-3936' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5545] ROM "Data_Memory_Registers_reg[512]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "Data_Memory_Registers_reg[511]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "Data_Memory_Registers_reg[510]" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -480,108 +631,108 @@ INFO: [Synth 8-5545] ROM "Data_Memory_Registers_reg[413]" won't be mapped to RAM
 INFO: [Common 17-14] Message 'Synth 8-5545' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-5546] ROM "A_11" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-327] inferring latch for variable 'Cout_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/ALU.v:71]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[512]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[511]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[510]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[509]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[508]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[507]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[506]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[505]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[504]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[503]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[502]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[501]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[500]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[499]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[498]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[497]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[496]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[495]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[494]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[493]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[492]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[491]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[490]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[489]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[488]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:53]
-WARNING: [Synth 8-327] inferring latch for variable 'A_11_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:65]
-WARNING: [Synth 8-327] inferring latch for variable 'A_12_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:65]
-WARNING: [Synth 8-327] inferring latch for variable 'A_13_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:65]
-WARNING: [Synth 8-327] inferring latch for variable 'A_14_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:65]
-WARNING: [Synth 8-327] inferring latch for variable 'A_15_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:65]
-WARNING: [Synth 8-327] inferring latch for variable 'A_21_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:66]
-WARNING: [Synth 8-327] inferring latch for variable 'A_22_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:66]
-WARNING: [Synth 8-327] inferring latch for variable 'A_23_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:66]
-WARNING: [Synth 8-327] inferring latch for variable 'A_24_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:66]
-WARNING: [Synth 8-327] inferring latch for variable 'A_25_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:66]
-WARNING: [Synth 8-327] inferring latch for variable 'A_31_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:67]
-WARNING: [Synth 8-327] inferring latch for variable 'A_32_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:67]
-WARNING: [Synth 8-327] inferring latch for variable 'A_33_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:67]
-WARNING: [Synth 8-327] inferring latch for variable 'A_34_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:67]
-WARNING: [Synth 8-327] inferring latch for variable 'A_35_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:67]
-WARNING: [Synth 8-327] inferring latch for variable 'A_41_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:68]
-WARNING: [Synth 8-327] inferring latch for variable 'A_42_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:68]
-WARNING: [Synth 8-327] inferring latch for variable 'A_43_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:68]
-WARNING: [Synth 8-327] inferring latch for variable 'A_44_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:68]
-WARNING: [Synth 8-327] inferring latch for variable 'A_45_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:68]
-WARNING: [Synth 8-327] inferring latch for variable 'A_51_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:69]
-WARNING: [Synth 8-327] inferring latch for variable 'A_52_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:69]
-WARNING: [Synth 8-327] inferring latch for variable 'A_53_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:69]
-WARNING: [Synth 8-327] inferring latch for variable 'A_54_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:69]
-WARNING: [Synth 8-327] inferring latch for variable 'A_55_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:69]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_11_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:63]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_12_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:63]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_13_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:63]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_14_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:63]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_15_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:63]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_21_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:64]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_22_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:64]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_23_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:64]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_24_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:64]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_25_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:64]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_31_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:65]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_32_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:65]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_33_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:65]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_34_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:65]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_35_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:65]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_41_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:66]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_42_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:66]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_43_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:66]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_44_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:66]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_45_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:66]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_51_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:67]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_52_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:67]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_53_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:67]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_54_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:67]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_R_55_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:67]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_A_11_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:73]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_11_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:80]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_A_15_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:73]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_51_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:84]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_A_14_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:73]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_41_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:83]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_A_13_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:73]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_31_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:82]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_A_12_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:73]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_21_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:81]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_12_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:80]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_52_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:84]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_42_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:83]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_32_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:82]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_22_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:81]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_13_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:80]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_53_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:84]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_43_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:83]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_33_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:82]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_23_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:81]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_14_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:80]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_54_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:84]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_44_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:83]
-WARNING: [Synth 8-327] inferring latch for variable 'MAC_B_34_r_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'A_11_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'A_12_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'A_13_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'A_14_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'A_15_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'A_21_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'A_22_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'A_23_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'A_24_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'A_25_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:61]
+WARNING: [Synth 8-327] inferring latch for variable 'A_31_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'A_32_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'A_33_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'A_34_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'A_35_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:62]
+WARNING: [Synth 8-327] inferring latch for variable 'A_41_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'A_42_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'A_43_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'A_44_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'A_45_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:63]
+WARNING: [Synth 8-327] inferring latch for variable 'A_51_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'A_52_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'A_53_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'A_54_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'A_55_reg' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:64]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[512]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[511]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[510]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[509]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[508]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[507]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[506]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[505]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[504]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[503]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[502]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[501]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[500]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[499]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[498]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[497]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[496]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[495]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[494]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[493]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[492]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[491]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[490]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[489]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[488]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[487]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[486]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[485]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[484]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[483]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[482]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[481]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[480]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[479]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[478]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[477]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[476]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[475]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[474]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[473]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[472]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[471]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[470]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[469]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[468]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[467]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[466]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[465]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[464]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[463]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[462]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[461]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[460]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[459]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[458]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[457]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[456]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[455]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[454]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[453]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[452]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[451]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[450]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[449]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[448]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[447]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[446]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[445]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[444]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[443]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[442]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[441]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[440]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
+WARNING: [Synth 8-327] inferring latch for variable 'Data_Memory_Registers_reg[439]' [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:60]
 INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 835.551 ; gain = 523.676
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:42 ; elapsed = 00:01:49 . Memory (MB): peak = 1032.328 ; gain = 719.457
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -591,20 +742,17 @@ Report RTL Partitions:
 |1     |muxpart                 |           1|     32736|
 |2     |Instruction_Memory__GB1 |           1|      3713|
 |3     |fetch_cycle__GC0        |           1|       741|
-|4     |Data_Memory__GB0        |           1|     27462|
-|5     |Data_Memory__GB1        |           1|     13327|
-|6     |Data_Memory__GB2        |           1|     13332|
-|7     |Data_Memory__GB3        |           1|     19995|
-|8     |Data_Memory__GB4        |           1|     26646|
-|9     |Data_Memory__GB5        |           1|     33323|
-|10    |Data_Memory__GB6        |           1|     32942|
-|11    |Data_Memory__GB7        |           1|      9086|
-|12    |Data_Memory__GB8        |           1|     17062|
-|13    |Data_Memory__GB9        |           1|     26693|
-|14    |memory_cycle__GC0       |           1|     13551|
-|15    |Pipeline_top__GC0       |           1|      3657|
+|4     |Data_Memory__GB0        |           1|     19970|
+|5     |Data_Memory__GB1        |           1|     15663|
+|6     |Data_Memory__GB2        |           1|     33325|
+|7     |Data_Memory__GB3        |           1|     26490|
+|8     |Data_Memory__GB4        |           1|     26650|
+|9     |Data_Memory__GB5        |           1|     33333|
+|10    |Data_Memory__GB6        |           1|     26700|
+|11    |Data_Memory__GB7        |           1|     13336|
+|12    |memory_cycle__GC0       |           1|     13551|
+|13    |Pipeline_top__GC0       |           1|      3657|
 +------+------------------------+------------+----------+
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -619,7 +767,7 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit         XORs := 1     
 	   3 Input      1 Bit         XORs := 1     
 +---Registers : 
-	               32 Bit    Registers := 618   
+	               32 Bit    Registers := 130   
 	                6 Bit    Registers := 2     
 	                5 Bit    Registers := 4     
 	                4 Bit    Registers := 2     
@@ -631,11 +779,11 @@ Detailed RTL Component Info :
 	             1024 Bit         RAMs := 1     
 +---Muxes : 
 	   2 Input     33 Bit        Muxes := 2     
-	   2 Input     32 Bit        Muxes := 48    
+	   2 Input     32 Bit        Muxes := 47    
 	   4 Input     32 Bit        Muxes := 2     
 	  12 Input     32 Bit        Muxes := 1     
 	   2 Input     20 Bit        Muxes := 1     
-	   2 Input     13 Bit        Muxes := 21    
+	   2 Input     13 Bit        Muxes := 46    
 	   5 Input     13 Bit        Muxes := 21    
 	  11 Input     13 Bit        Muxes := 50    
 	   2 Input     10 Bit        Muxes := 1     
@@ -649,7 +797,8 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit        Muxes := 1     
 	   3 Input      2 Bit        Muxes := 4     
 	   2 Input      2 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 520   
+	   3 Input      1 Bit        Muxes := 513   
+	   2 Input      1 Bit        Muxes := 519   
 	   5 Input      1 Bit        Muxes := 1     
 	  11 Input      1 Bit        Muxes := 3     
 	  15 Input      1 Bit        Muxes := 1     
@@ -689,14 +838,12 @@ Detailed RTL Component Info :
 	   2 Input     32 Bit        Muxes := 6     
 Module Data_Memory 
 Detailed RTL Component Info : 
-+---Registers : 
-	               32 Bit    Registers := 488   
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 1     
-	   2 Input     13 Bit        Muxes := 21    
+	   2 Input     13 Bit        Muxes := 46    
 	   5 Input     13 Bit        Muxes := 21    
 	   2 Input     10 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 515   
+	   3 Input      1 Bit        Muxes := 513   
+	   2 Input      1 Bit        Muxes := 514   
 	   5 Input      1 Bit        Muxes := 1     
 Module Matrix_MAC 
 Detailed RTL Component Info : 
@@ -826,7 +973,6 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
-No constraint files found.
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
@@ -848,111 +994,106 @@ DSP Report: operator ALU/ALU_Out0 is absorbed into DSP ALU/ALU_Out0.
 DSP Report: Generating DSP ALU/ALU_Out0, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator ALU/ALU_Out0 is absorbed into DSP ALU/ALU_Out0.
 DSP Report: operator ALU/ALU_Out0 is absorbed into DSP ALU/ALU_Out0.
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port Data_Mem_display_reg
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port anode[7]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port anode[6]
-WARNING: [Synth 8-3331] design Pipeline_top has unconnected port anode[5]
-INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[0][0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[0][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[0][4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][6] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[0][7] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][18] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][19] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[0][20] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[0][31] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[1][0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[1][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[1][4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][6] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][7] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[1][8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][18] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][19] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][20] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[1][21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[1][31] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[2][0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[2][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[2][4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][6] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[2][7] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[2][8] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][9] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][11] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][12] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][13] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][16] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][17] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][18] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][19] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[2][20] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[2][21] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][22] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][23] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][24] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][25] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][26] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][27] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][28] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][29] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][30] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[2][31] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[3][0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\Memory_reg[3][1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[3][2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\Memory_reg[3][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[0][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[0][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[0][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[0][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][19] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[0][20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[0][31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[1][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[1][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[1][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[1][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][20] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[1][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[1][31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[2][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][3] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[2][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[2][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[2][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][19] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[2][20] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[2][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[2][31] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (IMEMi_1/\Memory_reg[3][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[3][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (IMEMi_1/\Memory_reg[3][3] )
 INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3886] merging instance 'i_0/Decode/Imm_Ext_D_r_reg[31]' (FDCE) to 'i_0/Decode/Imm_Ext_D_r_reg[30]'
 INFO: [Synth 8-3886] merging instance 'i_0/Decode/Imm_Ext_D_r_reg[30]' (FDCE) to 'i_0/Decode/Imm_Ext_D_r_reg[29]'
@@ -1378,7 +1519,7 @@ INFO: [Synth 8-3886] merging instance 'Matrix_MAC_uut/MAC_R_12_r_reg[30]' (LDC) 
 INFO: [Synth 8-3886] merging instance 'Matrix_MAC_uut/MAC_R_11_r_reg[29]' (LDC) to 'Matrix_MAC_uut/MAC_R_11_r_reg[30]'
 INFO: [Synth 8-3886] merging instance 'Matrix_MAC_uut/MAC_R_11_r_reg[30]' (LDC) to 'Matrix_MAC_uut/MAC_R_11_r_reg[31]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:15 ; elapsed = 00:01:28 . Memory (MB): peak = 903.902 ; gain = 592.027
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:19 ; elapsed = 00:05:05 . Memory (MB): peak = 1032.328 ; gain = 719.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1540,25 +1681,28 @@ Report RTL Partitions:
 |1     |muxpart                 |           1|     32736|
 |2     |Instruction_Memory__GB1 |           1|        64|
 |3     |fetch_cycle__GC0        |           1|       518|
-|4     |Data_Memory__GB0        |           1|     18984|
-|5     |Data_Memory__GB1        |           1|     13327|
-|6     |Data_Memory__GB2        |           1|     13331|
-|7     |Data_Memory__GB3        |           1|     14205|
-|8     |Data_Memory__GB4        |           1|     20015|
-|9     |Data_Memory__GB5        |           1|     21679|
-|10    |Data_Memory__GB6        |           1|     32253|
-|11    |Data_Memory__GB7        |           1|      7432|
-|12    |Data_Memory__GB8        |           1|      2077|
-|13    |Data_Memory__GB9        |           1|     18373|
-|14    |memory_cycle__GC0       |           1|      8274|
-|15    |Pipeline_top__GC0       |           1|      2720|
+|4     |Data_Memory__GB0        |           1|     14977|
+|5     |Data_Memory__GB1        |           1|     15026|
+|6     |Data_Memory__GB2        |           1|     20902|
+|7     |Data_Memory__GB3        |           1|      7265|
+|8     |Data_Memory__GB4        |           1|     20028|
+|9     |Data_Memory__GB5        |           1|     20051|
+|10    |Data_Memory__GB6        |           1|     18380|
+|11    |Data_Memory__GB7        |           1|     13326|
+|12    |memory_cycle__GC0       |           1|      8274|
+|13    |Pipeline_top__GC0       |           1|      2559|
 +------+------------------------+------------+----------+
-No constraint files found.
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:47 ; elapsed = 00:05:35 . Memory (MB): peak = 1055.430 ; gain = 742.559
+---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:16 ; elapsed = 00:01:29 . Memory (MB): peak = 903.902 ; gain = 592.027
+Finished Timing Optimization : Time (s): cpu = 00:04:48 ; elapsed = 00:05:36 . Memory (MB): peak = 1056.898 ; gain = 744.027
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1571,7 +1715,7 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:01:29 . Memory (MB): peak = 903.902 ; gain = 592.027
+Finished Technology Mapping : Time (s): cpu = 00:04:48 ; elapsed = 00:05:36 . Memory (MB): peak = 1056.898 ; gain = 744.027
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1595,7 +1739,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:01:30 . Memory (MB): peak = 903.902 ; gain = 592.027
+Finished IO Insertion : Time (s): cpu = 00:04:50 ; elapsed = 00:05:37 . Memory (MB): peak = 1056.898 ; gain = 744.027
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1608,7 +1752,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:01:30 . Memory (MB): peak = 903.902 ; gain = 592.027
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:50 ; elapsed = 00:05:37 . Memory (MB): peak = 1056.898 ; gain = 744.027
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1620,25 +1764,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:17 ; elapsed = 00:01:30 . Memory (MB): peak = 903.902 ; gain = 592.027
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:50 ; elapsed = 00:05:37 . Memory (MB): peak = 1056.898 ; gain = 744.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:17 ; elapsed = 00:01:30 . Memory (MB): peak = 903.902 ; gain = 592.027
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:50 ; elapsed = 00:05:37 . Memory (MB): peak = 1056.898 ; gain = 744.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:17 ; elapsed = 00:01:30 . Memory (MB): peak = 903.902 ; gain = 592.027
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:50 ; elapsed = 00:05:37 . Memory (MB): peak = 1056.898 ; gain = 744.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:17 ; elapsed = 00:01:30 . Memory (MB): peak = 903.902 ; gain = 592.027
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:50 ; elapsed = 00:05:37 . Memory (MB): peak = 1056.898 ; gain = 744.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1664,11 +1808,11 @@ Report Instance Areas:
 |1     |top      |       |    17|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:01:30 . Memory (MB): peak = 903.902 ; gain = 592.027
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:50 ; elapsed = 00:05:37 . Memory (MB): peak = 1056.898 ; gain = 744.027
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1239 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:17 ; elapsed = 00:01:31 . Memory (MB): peak = 903.902 ; gain = 592.027
-Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:01:31 . Memory (MB): peak = 903.902 ; gain = 592.027
+Synthesis finished with 0 errors, 0 critical warnings and 1146 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:54 ; elapsed = 00:05:04 . Memory (MB): peak = 1056.898 ; gain = 327.781
+Synthesis Optimization Complete : Time (s): cpu = 00:04:50 ; elapsed = 00:05:38 . Memory (MB): peak = 1056.898 ; gain = 744.027
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -1676,11 +1820,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-345 Infos, 384 Warnings, 0 Critical Warnings and 0 Errors encountered.
+347 Infos, 496 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:21 ; elapsed = 00:01:36 . Memory (MB): peak = 903.902 ; gain = 605.055
+synth_design: Time (s): cpu = 00:04:54 ; elapsed = 00:05:42 . Memory (MB): peak = 1056.898 ; gain = 756.914
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor/RISC_V_MAC_Processor.runs/synth_1/Pipeline_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Pipeline_top_utilization_synth.rpt -pb Pipeline_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 903.902 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Mar 23 22:46:14 2024...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.061 . Memory (MB): peak = 1056.898 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 26 16:43:14 2024...

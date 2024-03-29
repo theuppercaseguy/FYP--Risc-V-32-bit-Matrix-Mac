@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/ALU.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/ALU_Decoder.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/Adder.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/Control_Unit_Top.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/Decode_Cycle.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/Execute_Cycle.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/Fetch_Cycle.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/Five_Stage_Pipeline_Top.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/Hazard_Unit.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/Instruction_Memory.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/new/MAC_Decoder.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/Main_Decoder.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/Memory_Cycle.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/Multplex_Reg_Disp.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/Mux_2_by_1.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/Mux_3_by_1.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/Program_Counter.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/Register_File.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/Sign_Extend.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sources_1/imports/new/WriteBack_Cycle.v" \
+"../../../../RISC_V_MAC_Processor.srcs/sim_1/imports/new/PIPE_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,93 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/ALU_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Control_Unit_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Decoder
+WARNING: [VRFC 10-2845] overwriting previous definition of module ALU_Decoder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/ALU_Decoder.v:24]
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+INFO: [VRFC 10-311] analyzing module Control_Unit_Top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Decode_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decode_cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Execute_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+WARNING: [VRFC 10-2845] overwriting previous definition of module Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Adder.v:23]
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module Mux_3_by_1
+INFO: [VRFC 10-311] analyzing module ALU
+WARNING: [VRFC 10-2845] overwriting previous definition of module ALU [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/ALU.v:24]
+INFO: [VRFC 10-311] analyzing module execute_cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Fetch_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-311] analyzing module PC_Adder
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+WARNING: [VRFC 10-2845] overwriting previous definition of module MUX_2_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/MUX_2_by_1.v:23]
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module fetch_cycle
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Five_Stage_Pipeline_Top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+WARNING: [VRFC 10-2845] overwriting previous definition of module Program_Counter [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Program_Counter.v:23]
+INFO: [VRFC 10-311] analyzing module PC_Adder
+WARNING: [VRFC 10-2845] overwriting previous definition of module PC_Adder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/PC_Adder.v:23]
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+WARNING: [VRFC 10-2845] overwriting previous definition of module Instruction_Memory [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Instruction_Memory.v:23]
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module fetch_cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module fetch_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Fetch_Cycle.v:8]
+INFO: [VRFC 10-311] analyzing module decode_cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module decode_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Decode_Cycle.v:3]
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module Mux_3_by_1
+WARNING: [VRFC 10-2845] overwriting previous definition of module Mux_3_by_1 [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Mux_3_by_1.v:23]
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module execute_cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module execute_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Execute_Cycle.v:22]
+INFO: [VRFC 10-311] analyzing module Data_Memory
+WARNING: [VRFC 10-2845] overwriting previous definition of module Data_Memory [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Data_Memory.v:23]
+INFO: [VRFC 10-311] analyzing module memory_cycle
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module writeback_cycle
+INFO: [VRFC 10-311] analyzing module Clock_slowed
+INFO: [VRFC 10-311] analyzing module hazard_unit
+INFO: [VRFC 10-311] analyzing module Pipeline_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Hazard_Unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard_unit
+WARNING: [VRFC 10-2845] overwriting previous definition of module hazard_unit [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Hazard_Unit.v:3]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Instruction_Memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Instruction_Memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/new/MAC_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MAC_Decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Main_Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Main_Decoder
+WARNING: [VRFC 10-2845] overwriting previous definition of module Main_Decoder [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Main_Decoder.v:24]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Matric_MAC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Matrix_MAC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Memory_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Data_Memory
+INFO: [VRFC 10-311] analyzing module memory_cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module memory_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Memory_Cycle.v:5]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Multplex_Reg_Disp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Multplex_Reg_Disp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Mux_2_by_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Mux_3_by_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_3_by_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Program_Counter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Program_Counter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Register_File.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Register_File
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/Sign_Extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Sign_Extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/WriteBack_Cycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MUX_2_by_1
+INFO: [VRFC 10-311] analyzing module writeback_cycle
+WARNING: [VRFC 10-2845] overwriting previous definition of module writeback_cycle [D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sources_1/imports/new/WriteBack_Cycle.v:16]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sim_1/imports/new/PIPE_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Pipelined_Top_Testbench

@@ -1,0 +1,23 @@
+dfault Processor ISA
+5 stage piplining
+Fully Funtional Hazard unit (Hazard Unit)
+MATRIX MAC Unit
+Functional MAC Decoder
+MATRIX MAC ISA
+Complete Testing
+FPGA Implementation
+
+
+Requirements specified
+a
+Table of results: luts, dsps
+table of thorughput, latecny etc
+
+project management jira, github
+
+Demo: background me poster
+
+
+for future expansion we look towards creating an MMU(memory managment uni) for our processor
+which will let us boot a linux processor so we can program our processor more generically
+and after that we can also expand on the idea of making it a system on chip.
