@@ -29,8 +29,8 @@ This project aims to develop a hardware-based acceleration solution for matrix m
 
 ## Poster
 <p float="left">
-  <img src="docs/Media/RISC-V 32bit Matrix MAC Processor Poster.png" width="300" height="450" /> 
-  <img src="docs/Media/FYP_poster_.png" width="300" height="450" />
+  <img src="POSTER DESIGN/FINALISED POSTERS/RISCV Matrix MAC Processor with UART Transciver.png" width="300" height="450" /> 
+  <img src="POSTER DESIGN/FINALISED POSTERS/INTELLERA.png" width="300" height="450" />
 </p>
 
 ## MATRIX MAC IMPLEMENTATION
