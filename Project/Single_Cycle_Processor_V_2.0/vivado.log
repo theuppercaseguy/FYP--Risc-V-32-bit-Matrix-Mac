@@ -2,10 +2,10 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Tue Dec 19 08:11:02 2023
-# Process ID: 25004
+# Start of session at: Sat Apr 20 17:38:14 2024
+# Process ID: 10932
 # Current directory: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23900 D:\UNI\FYP\FYP--Risc-V-32-bit-Matrix-Mac\Project\Single_Cycle_Processor_V_2.0\Single_Cycle_Processor_V_2.0.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13212 D:\UNI\FYP\FYP--Risc-V-32-bit-Matrix-Mac\Project\Single_Cycle_Processor_V_2.0\Single_Cycle_Processor_V_2.0.xpr
 # Log file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/vivado.log
 # Journal file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0\vivado.jou
 #-----------------------------------------------------------
@@ -16,90 +16,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
-open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 937.891 ; gain = 182.367
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 866.879 ; gain = 119.004
 update_compile_order -fileset sources_1
-open_run impl_1
-INFO: [Netlist 29-17] Analyzing 154 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2018.2
-INFO: [Device 21-403] Loading part xc7k70tfbv676-1
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 1771.820 ; gain = 0.000
-Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 1771.820 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 108 instances were transformed.
-  RAM16X1S => RAM32X1S (RAMS32): 32 instances
-  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 64 instances
-  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
-
-open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:22 . Memory (MB): peak = 1878.168 ; gain = 903.012
-CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
-reset_run synth_1
-launch_runs impl_1 -jobs 3
-[Tue Dec 19 08:21:43 2023] Launched synth_1...
-Run output will be captured here: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.runs/synth_1/runme.log
-[Tue Dec 19 08:21:44 2023] Launched impl_1...
-Run output will be captured here: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.runs/impl_1/runme.log
-reset_run synth_1
-launch_runs impl_1 -jobs 3
-[Wed Dec 20 07:43:13 2023] Launched synth_1...
-Run output will be captured here: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.runs/synth_1/runme.log
-[Wed Dec 20 07:43:13 2023] Launched impl_1...
-Run output will be captured here: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.runs/impl_1/runme.log
-report_utilization -name utilization_1
-report_utilization: Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 1926.453 ; gain = 0.000
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
-INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
-INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-refresh_design
-INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2018.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Timing 38-478] Restoring timing data from binary archive.
-INFO: [Timing 38-479] Binary timing data restore complete.
-INFO: [Project 1-856] Restoring constraints from binary archive.
-INFO: [Project 1-853] Binary constraint restore complete.
-Reading XDEF placement.
-Reading placer database...
-Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1926.453 ; gain = 0.000
-Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.052 . Memory (MB): peak = 1926.453 ; gain = 0.000
-report_utilization -name utilization_1
-report_utilization: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1974.219 ; gain = 0.000
-reset_run impl_1
-launch_runs impl_1 -jobs 3
-[Wed Dec 20 08:00:28 2023] Launched impl_1...
-Run output will be captured here: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.runs/impl_1/runme.log
-report_utilization -name utilization_2
-report_utilization: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 1974.219 ; gain = 0.000
-report_power -name {power_1}
-Command: report_power -name power_1
-Running Vector-less Activity Propagation...
-
-Finished Running Vector-less Activity Propagation
-0 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
-report_power completed successfully
-set_property part xc7a100tcsg324-1 [current_project]
-reset_run synth_1
-launch_runs impl_1 -jobs 3
-[Wed Dec 20 08:06:29 2023] Launched synth_1...
-Run output will be captured here: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.runs/synth_1/runme.log
-[Wed Dec 20 08:06:29 2023] Launched impl_1...
-Run output will be captured here: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/Single_Cycle_Processor_V_2.0/Single_Cycle_Processor_V_2.0.runs/impl_1/runme.log
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
-INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
-INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
-report_utilization -name utilization_1
-report_utilization: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1999.195 ; gain = 0.000
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 20 08:16:05 2023...
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 20 21:27:39 2024...

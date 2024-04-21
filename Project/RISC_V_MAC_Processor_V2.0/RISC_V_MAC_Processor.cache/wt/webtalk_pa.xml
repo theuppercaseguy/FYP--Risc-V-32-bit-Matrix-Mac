@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Fri Mar 29 15:00:57 2024">
+<application name="pa" timeStamp="Mon Apr 22 02:53:13 2024">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="b7c6e057120b40d58459c22e040cd324" type="ProjectID"/>
 <property name="ProjectIteration" value="53" type="ProjectIteration"/>
@@ -18,14 +18,14 @@ This means code written to parse this file will need to be revisited each subseq
 </item>
 <item name="Java Command Handlers">
 <property name="AddSources" value="3" type="JavaHandler"/>
-<property name="AutoConnectTarget" value="4" type="JavaHandler"/>
+<property name="AutoConnectTarget" value="5" type="JavaHandler"/>
 <property name="EditPaste" value="6" type="JavaHandler"/>
 <property name="EditUndo" value="1" type="JavaHandler"/>
 <property name="LaunchOpenTarget" value="1" type="JavaHandler"/>
-<property name="LaunchProgramFpga" value="42" type="JavaHandler"/>
-<property name="OpenHardwareManager" value="51" type="JavaHandler"/>
-<property name="OpenRecentTarget" value="5" type="JavaHandler"/>
-<property name="ProgramDevice" value="43" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="43" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="54" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="6" type="JavaHandler"/>
+<property name="ProgramDevice" value="44" type="JavaHandler"/>
 <property name="ReportDRC" value="1" type="JavaHandler"/>
 <property name="ReportMethodology" value="1" type="JavaHandler"/>
 <property name="ReportTimingSummary" value="3" type="JavaHandler"/>
@@ -69,7 +69,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ExpReportTreePanel_EXP_REPORT_TREE_TABLE" value="3" type="GuiHandlerData"/>
 <property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="33" type="GuiHandlerData"/>
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="562" type="GuiHandlerData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="213" type="GuiHandlerData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="216" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_FIT" value="90" type="GuiHandlerData"/>
 <property name="HCodeEditor_CLOSE" value="11" type="GuiHandlerData"/>
 <property name="HCodeEditor_SEARCH_TEXT_COMBO_BOX" value="26" type="GuiHandlerData"/>
@@ -91,7 +91,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="NumJobsChooser_NUMBER_OF_JOBS" value="1" type="GuiHandlerData"/>
 <property name="PACodeEditor_GOTO_DEFINITION" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_ADD_SOURCES" value="3" type="GuiHandlerData"/>
-<property name="PACommandNames_AUTO_CONNECT_TARGET" value="4" type="GuiHandlerData"/>
+<property name="PACommandNames_AUTO_CONNECT_TARGET" value="5" type="GuiHandlerData"/>
 <property name="PACommandNames_AUTO_UPDATE_HIER" value="10" type="GuiHandlerData"/>
 <property name="PACommandNames_BITSTREAM_SETTINGS" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_DESIGN_RUNS_WINDOW" value="8" type="GuiHandlerData"/>
@@ -114,7 +114,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PlanAheadTab_SHOW_FLOW_NAVIGATOR" value="12" type="GuiHandlerData"/>
 <property name="PowerResultTab_REPORT_NAVIGATION_TREE" value="13" type="GuiHandlerData"/>
 <property name="PrimaryClocksPanel_RECOMMENDED_CONSTRAINTS_TABLE" value="1" type="GuiHandlerData"/>
-<property name="ProgramFpgaDialog_PROGRAM" value="41" type="GuiHandlerData"/>
+<property name="ProgramFpgaDialog_PROGRAM" value="42" type="GuiHandlerData"/>
 <property name="ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE" value="1" type="GuiHandlerData"/>
 <property name="ProgressDialog_CANCEL" value="1" type="GuiHandlerData"/>
 <property name="ProjectTab_RELOAD" value="1" type="GuiHandlerData"/>
@@ -150,9 +150,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="XdcEditorView_APPLY_ALL_CHANGES_TO_XDC_CONSTRAINTS" value="1" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="52" type="GuiMode"/>
+<property name="GuiMode" value="75" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="38" type="TclMode"/>
+<property name="TclMode" value="57" type="TclMode"/>
 </item>
 </section>
 </application>

@@ -1,0 +1,528 @@
+1
+00:00:00,360 --> 00:00:01,582
+ Welcome to the world and
+
+2
+00:00:01,598 --> 00:00:03,214
+ the awe inspiring realm of
+
+3
+00:00:03,254 --> 00:00:04,594
+ hardware acceleration,
+
+4
+00:00:05,054 --> 00:00:06,726
+ a universe where innovation
+
+5
+00:00:06,790 --> 00:00:08,414
+ is limitless and holds no
+
+6
+00:00:08,454 --> 00:00:09,246
+ boundaries.
+
+7
+00:00:09,390 --> 00:00:10,822
+ We ventured into crafting
+
+8
+00:00:10,878 --> 00:00:12,726
+ a groundbreaking RISC V
+
+9
+00:00:12,830 --> 00:00:14,326
+ processor armed with a
+
+10
+00:00:14,350 --> 00:00:15,886
+ matrix Mac unit.
+
+11
+00:00:16,030 --> 00:00:17,470
+ Stepping into the arena with
+
+12
+00:00:17,502 --> 00:00:19,078
+ powerhouses like Tesla,
+
+13
+00:00:19,166 --> 00:00:20,982
+ Firepro and Intel,
+
+14
+00:00:21,118 --> 00:00:22,406
+ each fuelling innovation
+
+15
+00:00:22,470 --> 00:00:24,342
+ in its own distinctive manner.
+
+16
+00:00:24,518 --> 00:00:26,014
+ Ponder upon the autonomous
+
+17
+00:00:26,054 --> 00:00:26,742
+ vehicle.
+
+18
+00:00:26,878 --> 00:00:28,390
+ An extraordinary marvel of
+
+19
+00:00:28,422 --> 00:00:29,904
+ this vehicle with its state
+
+20
+00:00:29,944 --> 00:00:31,824
+ of the art cameras and sensors,
+
+21
+00:00:31,944 --> 00:00:33,568
+ identifies obstructions,
+
+22
+00:00:33,696 --> 00:00:35,168
+ tracks its surroundings,
+
+23
+00:00:35,296 --> 00:00:36,888
+ and guarantees secure
+
+24
+00:00:36,936 --> 00:00:37,840
+ transit.
+
+25
+00:00:38,032 --> 00:00:39,432
+ It stands as a compelling
+
+26
+00:00:39,488 --> 00:00:40,904
+ testament to the vast and
+
+27
+00:00:40,944 --> 00:00:42,504
+ limitless potential of hardware
+
+28
+00:00:42,544 --> 00:00:44,016
+ acceleration in practical
+
+29
+00:00:44,080 --> 00:00:44,964
+ applications.
+
+30
+00:00:45,464 --> 00:00:46,936
+ Inside the Tesla Giga
+
+31
+00:00:46,960 --> 00:00:48,472
+ factory, we catch a glimpse
+
+32
+00:00:48,488 --> 00:00:50,000
+ of an advanced world taking
+
+33
+00:00:50,072 --> 00:00:50,672
+ shape.
+
+34
+00:00:50,808 --> 00:00:52,272
+ From self driving vehicles
+
+35
+00:00:52,328 --> 00:00:54,200
+ to humanoid robots, video,
+
+36
+00:00:54,272 --> 00:00:55,808
+ and AI driven autonomous
+
+37
+00:00:55,856 --> 00:00:57,724
+ entities, the need for hardware
+
+38
+00:00:57,764 --> 00:00:59,436
+ accelerators like RISC five
+
+39
+00:00:59,500 --> 00:01:01,276
+ processors is more palpable
+
+40
+00:01:01,380 --> 00:01:02,264
+ than ever.
+
+41
+00:01:02,644 --> 00:01:04,468
+ What does the future of computing
+
+42
+00:01:04,516 --> 00:01:05,292
+ look like?
+
+43
+00:01:05,428 --> 00:01:07,100
+ Its guided by a RISC five
+
+44
+00:01:07,172 --> 00:01:09,060
+ matrix Mac processor, an
+
+45
+00:01:09,092 --> 00:01:10,300
+ extraordinary innovation
+
+46
+00:01:10,372 --> 00:01:12,076
+ beyond the usual chip
+
+47
+00:01:12,260 --> 00:01:14,196
+ implemented on an FPGA.
+
+48
+00:01:14,300 --> 00:01:16,052
+ It manages structure, control,
+
+49
+00:01:16,148 --> 00:01:17,628
+ and data hazards with new
+
+50
+00:01:17,676 --> 00:01:18,556
+ techniques.
+
+51
+00:01:18,700 --> 00:01:20,660
+ Our processor deftly navigates
+
+52
+00:01:20,732 --> 00:01:21,756
+ through these hazards.
+
+53
+00:01:21,860 --> 00:01:23,340
+ Its a symphony of efficiency
+
+54
+00:01:23,372 --> 00:01:24,144
+ and performance.
+
+55
+00:01:24,874 --> 00:01:26,346
+ Moving from the processor,
+
+56
+00:01:26,410 --> 00:01:27,610
+ we journey into the domain
+
+57
+00:01:27,642 --> 00:01:29,530
+ of the urat transceiver,
+
+58
+00:01:29,722 --> 00:01:31,218
+ a marvel built by our very
+
+59
+00:01:31,266 --> 00:01:32,010
+ own hands.
+
+60
+00:01:32,082 --> 00:01:33,930
+ The GDS two file has
+
+61
+00:01:34,002 --> 00:01:35,050
+ already been sent for
+
+62
+00:01:35,082 --> 00:01:36,042
+ fabrication.
+
+63
+00:01:36,218 --> 00:01:37,970
+ A significant stride forward.
+
+64
+00:01:38,122 --> 00:01:39,370
+ This will mark the creation
+
+65
+00:01:39,402 --> 00:01:40,930
+ of our university's first
+
+66
+00:01:41,002 --> 00:01:42,746
+ ever fabricated chip.
+
+67
+00:01:42,890 --> 00:01:44,570
+ With lightning fast transmission
+
+68
+00:01:44,642 --> 00:01:46,146
+ speeds, our UART
+
+69
+00:01:46,210 --> 00:01:47,762
+ transceiver ensures real
+
+70
+00:01:47,818 --> 00:01:48,850
+ time communication.
+
+71
+00:01:49,002 --> 00:01:50,418
+ The heart of our processor
+
+72
+00:01:50,466 --> 00:01:51,850
+ lies the Matrix Mac
+
+73
+00:01:51,882 --> 00:01:53,574
+ module, a revolutionary
+
+74
+00:01:53,614 --> 00:01:55,198
+ edition that revolutionizes
+
+75
+00:01:55,246 --> 00:01:56,474
+ matrix manipulation.
+
+76
+00:01:56,894 --> 00:01:58,598
+ It enables efficient matrix
+
+77
+00:01:58,646 --> 00:02:00,542
+ operations like multiplication,
+
+78
+00:02:00,678 --> 00:02:01,694
+ addition, and
+
+79
+00:02:01,734 --> 00:02:02,694
+ subtraction.
+
+80
+00:02:02,854 --> 00:02:04,606
+ With the Matrix Mac module,
+
+81
+00:02:04,710 --> 00:02:06,150
+ our processor transcends
+
+82
+00:02:06,182 --> 00:02:07,998
+ limitations, opening doors
+
+83
+00:02:08,046 --> 00:02:09,274
+ to new possibilities.
+
+84
+00:02:09,574 --> 00:02:11,550
+ Our RISC five processor,
+
+85
+00:02:11,662 --> 00:02:13,158
+ already capable of handling
+
+86
+00:02:13,206 --> 00:02:14,886
+ over 20 instructions,
+
+87
+00:02:15,070 --> 00:02:16,582
+ now boasts an additional
+
+88
+00:02:16,638 --> 00:02:18,288
+ ten instructions.
+
+89
+00:02:18,486 --> 00:02:19,884
+ This means it can manage
+
+90
+00:02:19,964 --> 00:02:21,604
+ more complex computations
+
+91
+00:02:21,724 --> 00:02:23,412
+ and tackle diverse tasks
+
+92
+00:02:23,468 --> 00:02:24,492
+ with ease.
+
+93
+00:02:24,668 --> 00:02:25,892
+ This and the instruction
+
+94
+00:02:25,948 --> 00:02:27,260
+ set is a leap forward in
+
+95
+00:02:27,292 --> 00:02:28,868
+ computational capability,
+
+96
+00:02:29,036 --> 00:02:30,420
+ setting new standards in
+
+97
+00:02:30,452 --> 00:02:32,180
+ performance and versatility.
+
+98
+00:02:32,372 --> 00:02:33,868
+ But how does our processor
+
+99
+00:02:33,916 --> 00:02:35,020
+ orchestrate this symphony
+
+100
+00:02:35,052 --> 00:02:36,260
+ of computation?
+
+101
+00:02:36,452 --> 00:02:38,100
+ Instructions carefully
+
+102
+00:02:38,132 --> 00:02:39,756
+ constructed travel to our
+
+103
+00:02:39,780 --> 00:02:41,140
+ UART transceiver
+
+104
+00:02:41,292 --> 00:02:42,900
+ receiving they land in the
+
+105
+00:02:42,932 --> 00:02:44,116
+ instruction memory.
+
+106
+00:02:44,260 --> 00:02:45,996
+ The processor then executes
+
+107
+00:02:46,060 --> 00:02:47,708
+ each instruction with precision,
+
+108
+00:02:47,836 --> 00:02:49,164
+ guiding us to a brighter
+
+109
+00:02:49,204 --> 00:02:51,060
+ future in the computing world.
+
+110
+00:02:51,212 --> 00:02:53,164
+ Our journey doesnt end here.
+
+111
+00:02:53,284 --> 00:02:54,780
+ We have grand plans for the
+
+112
+00:02:54,812 --> 00:02:55,388
+ future.
+
+113
+00:02:55,556 --> 00:02:57,372
+ We aim to convert our RISCV
+
+114
+00:02:57,428 --> 00:02:59,244
+ processor into a system on
+
+115
+00:02:59,284 --> 00:03:01,076
+ chip, a single integrated
+
+116
+00:03:01,140 --> 00:03:02,212
+ circuit that can perform
+
+117
+00:03:02,308 --> 00:03:03,852
+ all the functions of a computer
+
+118
+00:03:03,908 --> 00:03:04,460
+ system.
+
+119
+00:03:04,612 --> 00:03:06,212
+ But were not stopping there
+
+120
+00:03:06,348 --> 00:03:08,044
+ were also developing an online
+
+121
+00:03:08,124 --> 00:03:09,908
+ simulator that will be accessible
+
+122
+00:03:09,956 --> 00:03:11,162
+ to the whole world.
+
+123
+00:03:11,308 --> 00:03:12,662
+ This will allow everyone
+
+124
+00:03:12,758 --> 00:03:14,646
+ from students to professionals,
+
+125
+00:03:14,750 --> 00:03:16,438
+ to test our product and
+
+126
+00:03:16,486 --> 00:03:17,654
+ experience its power
+
+127
+00:03:17,734 --> 00:03:18,702
+ firsthand.
+
+128
+00:03:18,838 --> 00:03:20,678
+ So join us as we continue
+
+129
+00:03:20,766 --> 00:03:21,886
+ to push the boundaries of
+
+130
+00:03:21,910 --> 00:03:23,582
+ what's possible in computing,
+
+131
+00:03:23,718 --> 00:03:25,334
+ and together we can shape
+
+132
+00:03:25,374 --> 00:03:26,454
+ the future of this industry.
+

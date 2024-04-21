@@ -33,7 +33,7 @@ module Pipeline_top(button,clk_100mhz, rst, clk_light_display, anode, SSD);
     output [7:0] SSD;
 
 //--------------------------------------------------------    
-    wire temp;
+//    wire temp;
     wire clk_debounce;   
     
 //   ------------------------------------------------------------
@@ -97,7 +97,7 @@ module Pipeline_top(button,clk_100mhz, rst, clk_light_display, anode, SSD);
                         .InstrD(InstrD), 
                         .PCD(PCD), 
                         .PCPlus4D(PCPlus4D),
-                        .temp(temp)
+//                        .temp(temp)
                     );
 
     // Decode Stage
@@ -223,8 +223,8 @@ module Pipeline_top(button,clk_100mhz, rst, clk_light_display, anode, SSD);
 
     // Hazard Unit
     hazard_unit hazard_unit(
-                        .rst(rst), 
-                        .clk(clk),
+//                        .rst(rst), 
+//                        .clk(clk),
                         .RegWriteE(RegWriteE),
                         .RegWriteM(RegWriteM), 
                         .RegWriteW(RegWriteW), 

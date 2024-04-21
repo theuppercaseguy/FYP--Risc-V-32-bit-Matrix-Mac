@@ -1,5 +1,0 @@
-Vivado Simulator 2018.2
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: E:/softwares/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto c57da56e0b76420b879c721c75b9ac56 --incr --debug typical --relax --mt 2 -L secureip --snapshot ALU_behav xil_defaultlib.ALU -log elaborate.log 
-Using 2 slave threads.
-ERROR: [XSIM 43-3225] Cannot find design unit xil_defaultlib.ALU in library work located at xsim.dir/work.

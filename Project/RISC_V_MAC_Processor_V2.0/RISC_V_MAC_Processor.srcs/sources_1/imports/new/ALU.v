@@ -35,49 +35,49 @@ module ALU(
     wire [31:0]Sum;
 
 
-    assign Sum = (ALU_Sel[0] == 1'b0) ? A + B : //ARITHMETIC ADITION
+    assign {Cout,Sum} = (ALU_Sel[0] == 1'b0) ? A + B : //ARITHMETIC ADITION
                                (A + ((~B)+1)) ; //ARITHMETIC SUBTRACTION using 2's compliment
     
     always @(*)
     begin
         case ( ALU_Sel )
             6'b000000: 
-                ALU_Out =  Sum ;                            //ARITHMETIC ADITION
+                ALU_Out <=  Sum ;                            //ARITHMETIC ADITION
             6'b000001: 
-                ALU_Out =  Sum ;                            //ARITHMETIC SUBTRACTION using 2's compliment
+                ALU_Out <=  Sum ;                            //ARITHMETIC SUBTRACTION using 2's compliment
             6'b000010: 
-                ALU_Out =  A * B;                            //ARITHMETIC Multiplication
+                ALU_Out <=  A * B;                            //ARITHMETIC Multiplication
             6'b000011: 
-                ALU_Out = A & B ;                           // bitwise and  
+                ALU_Out <= A & B ;                           // bitwise and  
             6'b000100: 
-               ALU_Out = A | B ;                           // bitwise or
+               ALU_Out <= A | B ;                           // bitwise or
             6'b00101: 
-                ALU_Out = A ^ B ;                           // bitwise XOR
+                ALU_Out <= A ^ B ;                           // bitwise XOR
             6'b000110:
-                ALU_Out = A >> B ;                          // Logical shift right B times
+                ALU_Out <= A >> B ;                          // Logical shift right B times
             6'b000111:
-                ALU_Out = A << B ;                          // Logical shift right B times
+                ALU_Out <= A << B ;                          // Logical shift right B times
             6'b001000: 
-                ALU_Out = (A >= B) ? 32'd1 : 32'd0;          // Greater equal comparison
+                ALU_Out <= (A >= B) ? 32'd1 : 32'd0;          // Greater equal comparison
             6'b001001: 
-                ALU_Out = (A == B) ? 32'd1 : 32'd0;         // Equal comparison
+                ALU_Out <= (A == B) ? 32'd1 : 32'd0;         // Equal comparison
             6'b001010: 
-                ALU_Out = (A != B) ? 32'd1 : 32'd0;         // Not Equal comparison
+                ALU_Out <= (A != B) ? 32'd1 : 32'd0;         // Not Equal comparison
             6'b001011: 
-                ALU_Out = (A < B) ? 32'd1 : 32'd0;          // Less Then comparison
+                ALU_Out <= (A < B) ? 32'd1 : 32'd0;          // Less Then comparison
             6'b001100:
-               ALU_Out  = (A < B) ? 32'd1 : 32'd0; //slt, set less then
+               ALU_Out  <= (A < B) ? 32'd1 : 32'd0; //slt, set less then
             6'b111111:
-               { Cout, ALU_Out } = {{33{1'b0}}} ;          //Ecall = Ebreak = end
+               ALU_Out <= {{33{1'b0}}} ;          //Ecall = Ebreak = end
             default: 
-                {Cout, ALU_Out} = {33{1'b0}};                //Nothing            
+               ALU_Out <= {33{1'b0}};                //Nothing            
         
         endcase
-        Overflow = ((Sum[31] ^ A[31]) & (~(ALU_Sel[0] ^ B[31] ^ A[31])) & (~ALU_Sel[1]));
+        Overflow <= ((Sum[31] ^ A[31]) & (~(ALU_Sel[0] ^ B[31] ^ A[31])) & (~ALU_Sel[1]));
         
-        CarryOut = ((~ALU_Sel[1]) & Cout);
-        Zero = ~|ALU_Out;
-        Negative = ALU_Out[31];
+        CarryOut <= ((~ALU_Sel[1]) & Cout);
+        Zero <= ~|ALU_Out;
+        Negative <= ALU_Out[31];
      end                 
 
 

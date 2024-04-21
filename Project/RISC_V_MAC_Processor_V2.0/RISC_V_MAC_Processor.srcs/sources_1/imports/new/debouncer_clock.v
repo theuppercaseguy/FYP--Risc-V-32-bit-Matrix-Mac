@@ -31,7 +31,7 @@ module debouncer_clock(input i_Clk, input i_Switch, output o_Switch);
       begin
         // Switch input is different than internal switch value, so an input is
         // changing.  Increase the counter until it is stable for enough time.  
-        if (i_Switch !== r_State && r_Count < c_DEBOUNCE_LIMIT)
+        if (i_Switch != r_State && r_Count < c_DEBOUNCE_LIMIT)
           r_Count <= r_Count + 1;
      
         // End of counter reached, switch is stable, register it, reset counter

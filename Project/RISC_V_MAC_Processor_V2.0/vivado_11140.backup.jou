@@ -1,0 +1,175 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Mar 27 09:34:52 2024
+# Process ID: 11140
+# Current directory: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4016 D:\UNI\FYP\FYP--Risc-V-32-bit-Matrix-Mac\Project\RISC_V_MAC_Processor_V2.0\RISC_V_MAC_Processor.xpr
+# Log file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/vivado.log
+# Journal file: D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+launch_simulation
+open_wave_config D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg
+source Pipelined_Top_Testbench.tcl
+run 600
+run 100
+run 100
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg
+source Pipelined_Top_Testbench.tcl
+run 600
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim
+launch_simulation
+open_wave_config D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg
+source Pipelined_Top_Testbench.tcl
+update_compile_order -fileset sources_1
+run 600
+relaunch_sim
+save_wave_config {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg}
+run 600
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+open_wave_config D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg
+source Pipelined_Top_Testbench.tcl
+run 300
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+close_sim
+launch_simulation
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+launch_simulation
+launch_simulation
+open_wave_config D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg
+source Pipelined_Top_Testbench.tcl
+run 500
+relaunch_sim
+run 500
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+relaunch_sim
+relaunch_sim
+run 300
+run 100
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+update_compile_order -fileset sources_1
+save_wave_config {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.srcs/sim_1/imports/Pipline_Five_v_3.0/Pipelined_Top_Basic_Frowarding_Unit_behav.wcfg
+source Pipelined_Top_Testbench.tcl
+run 500
+update_compile_order -fileset sources_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+run 500
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {D:/UNI/FYP/FYP--Risc-V-32-bit-Matrix-Mac/Project/RISC_V_MAC_Processor_V2.0/RISC_V_MAC_Processor.runs/impl_1/Pipeline_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_sim
